@@ -121,3 +121,45 @@ body {
         display: block;
     }
 }
+
+/* Letter Detail Page */
+.letter-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.big-letter {
+    font-size: 140px;
+    font-weight: bold;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+.audio-btn {
+    padding: 12px 25px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.audio-btn:hover {
+    background: #1e8449;
+}
+
+.word-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.word-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}

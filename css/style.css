@@ -1,0 +1,123 @@
+/* Color Palette */
+:root {
+    --maroon: #7B1E1E;
+    --saffron: #FF9933;
+    --sandstone: #F5E6CC;
+    --charcoal: #2E2E2E;
+    --white: #FFFFFF;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--sandstone);
+    color: var(--charcoal);
+}
+
+/* Header */
+.header {
+    background-color: var(--maroon);
+    color: var(--white);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: var(--white);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--sandstone);
+}
+
+.hero h1 {
+    color: var(--maroon);
+    font-size: 2.4rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--saffron);
+    color: var(--charcoal);
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Lessons Section */
+.lessons {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.lesson-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--charcoal);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--maroon);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: var(--maroon);
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

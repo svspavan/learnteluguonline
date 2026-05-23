@@ -55,10 +55,7 @@ async function loadItem() {
             </div>
         `;
 
-        if (window.initAudioPlayers) window.initAudioPlayers();
-        <div class="back-link">
-    <a href="category.html?name=${category}">← Back to ${category}</a>
-</div>
+        if (window.initAudioPlayers) window.initAudioPlayers();       
     } catch (e) {
         container.innerHTML = "<p>Error loading item data.</p>";
     }

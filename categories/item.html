@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Item</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../categories/index.html">Categories</a>
+    </nav>
+</header>
+
+<main class="letter-page-container">
+    <section id="itemContent"></section>
+</main>
+
+<script src="../js/script.js"></script>
+<script>
+async function loadItem() {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+    const key = params.get("key");
+    const container = document.getElementById("itemContent");
+
+    if (!category || !key) {
+        container.innerHTML = "<p>Invalid item.</p>";
+        return;
+    }
+
+    try {
+        const res = await fetch(`data/${category}.json`);
+        const data = await res.json();
+        const item = data[key];
+
+        if (!item) {
+            container.innerHTML = "<p>Item not found.</p>";
+            return;
+        }
+
+        container.innerHTML = `
+            <h2 class="big-word">${item.telugu}</h2>
+            <h3 class="word-meaning">${item.english}</h3>
+
+            <div class="audio-player" data-src="../audio/${item.audio}">
+                <button class="play-btn">▶</button>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="time-label">0:00</span>
+            </div>
+        `;
+
+        if (window.initAudioPlayers) window.initAudioPlayers();
+    } catch (e) {
+        container.innerHTML = "<p>Error loading item data.</p>";
+    }
+}
+document.addEventListener("DOMContentLoaded", loadItem);
+</script>
+
+</body>
+</html>

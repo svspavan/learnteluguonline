@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Numbers</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="index.html">Numbers</a>
+    </nav>
+</header>
+
+<main class="modules">
+    <h2>Telugu Numbers</h2>
+    <p class="modules-subtitle">Click a number to learn pronunciation and examples.</p>
+
+    <div id="numbersGrid" class="module-grid"></div>
+</main>
+
+<script>
+async function loadNumbers() {
+    const res = await fetch("data/numbers.json");
+    const numbers = await res.json();
+
+    const grid = document.getElementById("numbersGrid");
+
+    Object.keys(numbers).forEach(num => {
+        const item = numbers[num];
+
+        const card = document.createElement("a");
+        card.href = `number.html?num=${num}`;
+        card.className = "module-card";
+        card.innerHTML = `
+            <h3>${item.telugu}</h3>
+            <h4>${item.english}</h4>
+        `;
+
+        grid.appendChild(card);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadNumbers);
+</script>
+
+</body>
+</html>

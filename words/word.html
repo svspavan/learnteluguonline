@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Word</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="index.html">Words</a>
+    </nav>
+</header>
+
+<main class="word-page-container">
+    <section id="wordContent"></section>
+</main>
+
+<script src="../js/script.js"></script>
+<script>
+async function loadWord() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    const container = document.getElementById("wordContent");
+
+    if (!name) {
+        container.innerHTML = "<p>No word specified.</p>";
+        return;
+    }
+
+    try {
+        const res = await fetch("data/words.json");
+        const data = await res.json();
+        const word = data[name];
+
+        if (!word) {
+            container.innerHTML = "<p>Word not found.</p>";
+            return;
+        }
+
+        container.innerHTML = `
+            <h2 class="big-word">${word.telugu}</h2>
+            <h3 class="word-meaning">${word.english}</h3>
+
+            <div class="audio-player" data-src="../audio/${word.audio}">
+                <button class="play-btn">▶</button>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="time-label">0:00</span>
+            </div>
+
+            <h3>Example Sentence</h3>
+            <p class="example">${word.example}</p>
+            <p class="example-meaning">${word.example_english}</p>
+        `;
+
+        if (window.initAudioPlayers) window.initAudioPlayers();
+    } catch (e) {
+        container.innerHTML = "<p>Error loading word data.</p>";
+    }
+}
+document.addEventListener("DOMContentLoaded", loadWord);
+</script>
+</body>
+</html>

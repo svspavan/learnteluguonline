@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categories</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
+        <a href="index.html">Categories</a>
+    </nav>
+</header>
+
+<main class="modules">
+    <h2>Categories</h2>
+    <p class="modules-subtitle">Learn Telugu through themes like colors, animals, fruits, and vegetables.</p>
+
+    <div id="categoriesGrid" class="module-grid"></div>
+</main>
+
+<script>
+const categories = [
+    { key: "colors", label: "Colors", telugu: "రంగులు" },
+    { key: "animals", label: "Animals", telugu: "జంతువులు" },
+    { key: "fruits", label: "Fruits", telugu: "పండ్లు" },
+    { key: "vegetables", label: "Vegetables", telugu: "కూరగాయలు" }
+];
+
+function loadCategories() {
+    const grid = document.getElementById("categoriesGrid");
+
+    categories.forEach(cat => {
+        const card = document.createElement("a");
+        card.href = `category.html?name=${cat.key}`;
+        card.className = "module-card";
+        card.innerHTML = `
+            <h3>${cat.telugu}</h3>
+            <h4>${cat.label}</h4>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadCategories);
+</script>
+
+</body>
+</html>

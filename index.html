@@ -8,74 +8,104 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">Learn Telugu Online</div>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="alphabet/alphabet.html">Alphabet</a>
-            <a href="#">Words</a>
-            <a href="#">Sentences</a>
-            <a href="#">Stories</a>
-        </nav>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </header>
+<!-- Header -->
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="alphabet/alphabet.html">Alphabet</a>
+        <a href="words/index.html">Words</a>
+        <a href="numbers/index.html">Numbers</a>
+        <a href="categories/index.html">Categories</a>
+        <a href="padyalu/index.html">Padyalu</a>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="header-search">
+        <input type="text" id="globalSearch" 
+               placeholder="Search letters, words, numbers, colors..." 
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero hero-pattern">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
         <h1>తెలుగు నేర్చుకుందాం రండి</h1>
-        <h1>Learn Telugu with Tradition, Stories, and Heritage</h1>
+        <h2>Learn Telugu with Tradition, Stories, and Heritage</h2>
         <p>Start your journey into the beautiful Telugu language — rooted in culture, warmth, and history.</p>
-        <a href="alphabet/alphabet.html" class="cta-btn">Start Learning</a>
-    </section>
+        <a href="alphabet/alphabet.html" class="cta-btn">Start with Alphabet</a>
+    </div>
+</section>
 
-    <!-- Lessons Section -->
-    <section class="lessons">
-        <h2>Begin Your Learning</h2>
+<!-- Core Modules Section -->
+<section class="modules">
+    <h2>Start Your Learning Path</h2>
+    <p class="modules-subtitle">Begin with the basics and grow step by step.</p>
 
-        <div class="lesson-grid">
+    <div class="module-grid">
 
-            <!-- <a href="alphabet/alphabet copy.html" class="lesson-card">
-                <h3>Telugu Alphabet</h3>
-                <p>Learn vowels, consonants, and pronunciation.</p>
-            </a> -->
+        <a href="alphabet/alphabet.html" class="module-card">
+            <h3>తెలుగు అక్షరములు</h3>
+            <h4>Telugu Alphabet</h4>
+            <p>Learn vowels (అచ్చులు), consonants (హల్లులు), and their pronunciation.</p>
+        </a>
 
-            <a href="alphabet/alphabet.html" class="lesson-card">
-                <h3>తెలుగు అక్షరములు</h3>
-                <h3>Telugu Alphabet</h3>
-                <p>అచ్చులు, హల్లులు మరియు వాటి ఉచ్చారణ.</p>
-                <p>Learn vowels, consonants, and pronunciation.</p>
-            </a>
+        <a href="words/index.html" class="module-card">
+            <h3>పదములు</h3>
+            <h4>Words</h4>
+            <p>Build vocabulary with dynamic 3‑letter, 4‑letter, and category‑based words.</p>
+        </a>
 
-            <a href="#" class="lesson-card">
-                <h3>Words</h3>
-                <p>Build your vocabulary with simple words.</p>
-            </a>
+        <a href="numbers/index.html" class="module-card">
+            <h3>సంఖ్యలు</h3>
+            <h4>Numbers</h4>
+            <p>Learn Telugu numbers with audio and example sentences.</p>
+        </a>
 
-            <a href="#" class="lesson-card">
-                <h3>Sentences</h3>
-                <p>Form meaningful sentences step by step.</p>
-            </a>
+        <a href="categories/index.html" class="module-card">
+            <h3>వర్గములు</h3>
+            <h4>Categories</h4>
+            <p>Explore colors, animals, fruits, vegetables, and more.</p>
+        </a>
 
-            <a href="#" class="lesson-card">
-                <h3>Stories</h3>
-                <p>Enjoy simple Telugu stories for all ages.</p>
-            </a>
+    </div>
+</section>
 
-        </div>
-    </section>
+<!-- Cultural Section -->
+<section class="culture">
+    <h2>తెలుగు సాహిత్యం & నీతి పద్యాలు</h2>
+    <p class="culture-subtitle">Explore the wisdom of classical Telugu poetry.</p>
 
-    <section class="hero">
-        <h2>దేశ భాషలందు తెలుగు లెస్స - <i>శ్రీకృష్ణ దేవరాయలు </i></h2>
-        <!-- <h1>Learn Telugu with Tradition, Stories, and Heritage</h1> -->
-        <!-- <p>Start your journey into the beautiful Telugu language — rooted in culture, warmth, and history.</p>
-        <a href="alphabet/alphabet.html" class="cta-btn">Start Learning</a> -->
-    </section>
+    <div class="culture-grid">
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
-    </footer>
+        <a href="padyalu/padyam.html?type=vemana" class="culture-card">
+            <h3>వేమన శతకము</h3>
+            <p>Simple, powerful padyalu with deep moral lessons.</p>
+        </a>
+
+        <a href="padyalu/padyam.html?type=sumati" class="culture-card">
+            <h3>సుమతీ శతకము</h3>
+            <p>Timeless verses teaching values, ethics, and good conduct.</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- Quote Section -->
+<section class="quote-section">
+    <h2>దేశ భాషలందు తెలుగు లెస్స</h2>
+    <p><i>— శ్రీకృష్ణ దేవరాయలు</i></p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>

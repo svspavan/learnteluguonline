@@ -1,0 +1,424 @@
+{
+  "a": {
+    "telugu": "అ",
+    "english": "A",
+    "type": "vowel",
+    "audio": "a.mp3",
+    "examples": [
+      { "word": "అమ్మ", "meaning": "Mother" },
+      { "word": "అరటి", "meaning": "Banana" }
+    ]
+  },
+  "aa": {
+    "telugu": "ఆ",
+    "english": "Aa",
+    "type": "vowel",
+    "audio": "aa.mp3",
+    "examples": [
+      { "word": "ఆకు", "meaning": "Leaf" },
+      { "word": "ఆవు", "meaning": "Cow" }
+    ]
+  },
+  "i": {
+    "telugu": "ఇ",
+    "english": "I",
+    "type": "vowel",
+    "audio": "i.mp3",
+    "examples": [
+      { "word": "ఇల్లు", "meaning": "House" }
+    ]
+  },
+  "ee": {
+    "telugu": "ఈ",
+    "english": "Ee",
+    "type": "vowel",
+    "audio": "ee.mp3",
+    "examples": [
+      { "word": "ఈగ", "meaning": "Fly (insect)" }
+    ]
+  },
+  "u": {
+    "telugu": "ఉ",
+    "english": "U",
+    "type": "vowel",
+    "audio": "u.mp3",
+    "examples": [
+      { "word": "ఉల్లి", "meaning": "Onion" }
+    ]
+  },
+  "oo": {
+    "telugu": "ఊ",
+    "english": "Oo",
+    "type": "vowel",
+    "audio": "oo.mp3",
+    "examples": [
+      { "word": "ఊయల", "meaning": "Swing" }
+    ]
+  },
+  "ru": {
+    "telugu": "ఋ",
+    "english": "Ru",
+    "type": "vowel",
+    "audio": "ru.mp3",
+    "examples": []
+  },
+  "e": {
+    "telugu": "ఎ",
+    "english": "E",
+    "type": "vowel",
+    "audio": "e.mp3",
+    "examples": [
+      { "word": "ఎలుక", "meaning": "Rat" }
+    ]
+  },
+  "ee2": {
+    "telugu": "ఏ",
+    "english": "Ee (long)",
+    "type": "vowel",
+    "audio": "ee2.mp3",
+    "examples": [
+      { "word": "ఏడు", "meaning": "Seven" }
+    ]
+  },
+  "ai": {
+    "telugu": "ఐ",
+    "english": "Ai",
+    "type": "vowel",
+    "audio": "ai.mp3",
+    "examples": [
+      { "word": "ఐదు", "meaning": "Five" }
+    ]
+  },
+  "o": {
+    "telugu": "ఒ",
+    "english": "O",
+    "type": "vowel",
+    "audio": "o.mp3",
+    "examples": [
+      { "word": "ఒంటె", "meaning": "Camel" }
+    ]
+  },
+  "oo2": {
+    "telugu": "ఓ",
+    "english": "Oo (long)",
+    "type": "vowel",
+    "audio": "oo2.mp3",
+    "examples": [
+      { "word": "ఓడ", "meaning": "Boat" }
+    ]
+  },
+  "au": {
+    "telugu": "ఔ",
+    "english": "Au",
+    "type": "vowel",
+    "audio": "au.mp3",
+    "examples": [
+      { "word": "ఔషధం", "meaning": "Medicine" }
+    ]
+  },
+
+  "ka": {
+    "telugu": "క",
+    "english": "Ka",
+    "type": "consonant",
+    "audio": "ka.mp3",
+    "examples": [
+      { "word": "కలం", "meaning": "Pen" },
+      { "word": "కప్పు", "meaning": "Cup" }
+    ]
+  },
+  "kha": {
+    "telugu": "ఖ",
+    "english": "Kha",
+    "type": "consonant",
+    "audio": "kha.mp3",
+    "examples": [
+      { "word": "ఖడ్గం", "meaning": "Sword" }
+    ]
+  },
+  "ga": {
+    "telugu": "గ",
+    "english": "Ga",
+    "type": "consonant",
+    "audio": "ga.mp3",
+    "examples": [
+      { "word": "గుడి", "meaning": "Temple" }
+    ]
+  },
+  "gha": {
+    "telugu": "ఘ",
+    "english": "Gha",
+    "type": "consonant",
+    "audio": "gha.mp3",
+    "examples": []
+  },
+  "nga": {
+    "telugu": "ఙ",
+    "english": "Nga",
+    "type": "consonant",
+    "audio": "nga.mp3",
+    "examples": []
+  },
+
+  "cha": {
+    "telugu": "చ",
+    "english": "Cha",
+    "type": "consonant",
+    "audio": "cha.mp3",
+    "examples": [
+      { "word": "చెట్టు", "meaning": "Tree" }
+    ]
+  },
+  "chha": {
+    "telugu": "ఛ",
+    "english": "Chha",
+    "type": "consonant",
+    "audio": "chha.mp3",
+    "examples": []
+  },
+  "ja": {
+    "telugu": "జ",
+    "english": "Ja",
+    "type": "consonant",
+    "audio": "ja.mp3",
+    "examples": [
+      { "word": "జలము", "meaning": "Water" }
+    ]
+  },
+  "jha": {
+    "telugu": "ఝ",
+    "english": "Jha",
+    "type": "consonant",
+    "audio": "jha.mp3",
+    "examples": []
+  },
+  "nya": {
+    "telugu": "ఞ",
+    "english": "Nya",
+    "type": "consonant",
+    "audio": "nya.mp3",
+    "examples": []
+  },
+
+  "tta": {
+    "telugu": "ట",
+    "english": "Ṭa",
+    "type": "consonant",
+    "audio": "tta.mp3",
+    "examples": [
+      { "word": "టమోటా", "meaning": "Tomato" }
+    ]
+  },
+  "ttha": {
+    "telugu": "ఠ",
+    "english": "Ṭha",
+    "type": "consonant",
+    "audio": "ttha.mp3",
+    "examples": []
+  },
+  "dda": {
+    "telugu": "డ",
+    "english": "Ḍa",
+    "type": "consonant",
+    "audio": "dda.mp3",
+    "examples": [
+      { "word": "డబ్బు", "meaning": "Money" }
+    ]
+  },
+  "ddha": {
+    "telugu": "ఢ",
+    "english": "Ḍha",
+    "type": "consonant",
+    "audio": "ddha.mp3",
+    "examples": []
+  },
+  "nna": {
+    "telugu": "ణ",
+    "english": "Ṇa",
+    "type": "consonant",
+    "audio": "nna.mp3",
+    "examples": []
+  },
+
+  "ta": {
+    "telugu": "త",
+    "english": "Ta",
+    "type": "consonant",
+    "audio": "ta.mp3",
+    "examples": [
+      { "word": "తల", "meaning": "Head" }
+    ]
+  },
+  "tha": {
+    "telugu": "థ",
+    "english": "Tha",
+    "type": "consonant",
+    "audio": "tha.mp3",
+    "examples": []
+  },
+  "da": {
+    "telugu": "ద",
+    "english": "Da",
+    "type": "consonant",
+    "audio": "da.mp3",
+    "examples": [
+      { "word": "దీపం", "meaning": "Lamp" }
+    ]
+  },
+  "dha": {
+    "telugu": "ధ",
+    "english": "Dha",
+    "type": "consonant",
+    "audio": "dha.mp3",
+    "examples": []
+  },
+  "na": {
+    "telugu": "న",
+    "english": "Na",
+    "type": "consonant",
+    "audio": "na.mp3",
+    "examples": [
+      { "word": "నది", "meaning": "River" }
+    ]
+  },
+
+  "pa": {
+    "telugu": "ప",
+    "english": "Pa",
+    "type": "consonant",
+    "audio": "pa.mp3",
+    "examples": [
+      { "word": "పిల్లి", "meaning": "Cat" }
+    ]
+  },
+  "pha": {
+    "telugu": "ఫ",
+    "english": "Pha",
+    "type": "consonant",
+    "audio": "pha.mp3",
+    "examples": []
+  },
+  "ba": {
+    "telugu": "బ",
+    "english": "Ba",
+    "type": "consonant",
+    "audio": "ba.mp3",
+    "examples": [
+      { "word": "బడి", "meaning": "School" }
+    ]
+  },
+  "bha": {
+    "telugu": "భ",
+    "english": "Bha",
+    "type": "consonant",
+    "audio": "bha.mp3",
+    "examples": []
+  },
+  "ma": {
+    "telugu": "మ",
+    "english": "Ma",
+    "type": "consonant",
+    "audio": "ma.mp3",
+    "examples": [
+      { "word": "మామిడి", "meaning": "Mango" }
+    ]
+  },
+
+  "ya": {
+    "telugu": "య",
+    "english": "Ya",
+    "type": "consonant",
+    "audio": "ya.mp3",
+    "examples": [
+      { "word": "యజమాని", "meaning": "Owner" }
+    ]
+  },
+  "ra": {
+    "telugu": "ర",
+    "english": "Ra",
+    "type": "consonant",
+    "audio": "ra.mp3",
+    "examples": [
+      { "word": "రాము", "meaning": "Ramu (name)" }
+    ]
+  },
+  "la": {
+    "telugu": "ల",
+    "english": "La",
+    "type": "consonant",
+    "audio": "la.mp3",
+    "examples": [
+      { "word": "లడ్డు", "meaning": "Laddu" }
+    ]
+  },
+  "va": {
+    "telugu": "వ",
+    "english": "Va",
+    "type": "consonant",
+    "audio": "va.mp3",
+    "examples": [
+      { "word": "వెలుగు", "meaning": "Light" }
+    ]
+  },
+
+  "sha": {
+    "telugu": "శ",
+    "english": "Sha",
+    "type": "consonant",
+    "audio": "sha.mp3",
+    "examples": [
+      { "word": "శాంతి", "meaning": "Peace" }
+    ]
+  },
+  "ssha": {
+    "telugu": "ష",
+    "english": "Ṣha",
+    "type": "consonant",
+    "audio": "ssha.mp3",
+    "examples": [
+      { "word": "షడ్రుచులు", "meaning": "Six tastes" }
+    ]
+  },
+  "sa": {
+    "telugu": "స",
+    "english": "Sa",
+    "type": "consonant",
+    "audio": "sa.mp3",
+    "examples": [
+      { "word": "సూర్యుడు", "meaning": "Sun" }
+    ]
+  },
+  "ha": {
+    "telugu": "హ",
+    "english": "Ha",
+    "type": "consonant",
+    "audio": "ha.mp3",
+    "examples": [
+      { "word": "హంస", "meaning": "Swan" }
+    ]
+  },
+
+  "lla": {
+    "telugu": "ళ",
+    "english": "Ḷa",
+    "type": "consonant",
+    "audio": "lla.mp3",
+    "examples": []
+  },
+  "ksha": {
+    "telugu": "క్ష",
+    "english": "Ksha",
+    "type": "consonant",
+    "audio": "ksha.mp3",
+    "examples": [
+      { "word": "క్షమ", "meaning": "Forgiveness" }
+    ]
+  },
+  "rra": {
+    "telugu": "ఱ",
+    "english": "Ṛa",
+    "type": "consonant",
+    "audio": "rra.mp3",
+    "examples": []
+  }
+}

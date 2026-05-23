@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Number</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="index.html">Numbers</a>
+    </nav>
+</header>
+
+<main class="letter-page-container">
+    <section id="numberContent"></section>
+</main>
+
+<script src="../js/script.js"></script>
+<script>
+async function loadNumber() {
+    const params = new URLSearchParams(window.location.search);
+    const num = params.get("num");
+    const container = document.getElementById("numberContent");
+
+    if (!num) {
+        container.innerHTML = "<p>No number specified.</p>";
+        return;
+    }
+
+    try {
+        const res = await fetch("data/numbers.json");
+        const data = await res.json();
+        const item = data[num];
+
+        if (!item) {
+            container.innerHTML = "<p>Number not found.</p>";
+            return;
+        }
+
+        container.innerHTML = `
+            <h2 class="big-letter">${item.telugu}</h2>
+            <h3 class="letter-english">${item.english}</h3>
+
+            <div class="audio-player" data-src="../audio/${item.audio}">
+                <button class="play-btn">▶</button>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="time-label">0:00</span>
+            </div>
+
+            ${
+                item.example
+                    ? `<h3>Example</h3>
+                       <p class="example">${item.example}</p>
+                       <p class="example-meaning">${item.example_english}</p>`
+                    : ""
+            }
+        `;
+
+        if (window.initAudioPlayers) window.initAudioPlayers();
+    } catch (e) {
+        container.innerHTML = "<p>Error loading number data.</p>";
+    }
+}
+document.addEventListener("DOMContentLoaded", loadNumber);
+</script>
+
+</body>
+</html>

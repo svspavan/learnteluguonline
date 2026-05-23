@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Padyam</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Padyalu</a>
+    </nav>
+</header>
+
+<main class="letter-page-container">
+    <section id="padyamContent"></section>
+</main>
+
+<script>
+async function loadPadyam() {
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type");
+
+    const res = await fetch(`data/${type}.json`);
+    const data = await res.json();
+
+    const container = document.getElementById("padyamContent");
+
+    container.innerHTML = Object.keys(data)
+        .map(key => {
+            const p = data[key];
+            return `
+                <div class="padyam-block">
+                    <h3>${p.telugu}</h3>
+                    <p>${p.english}</p>
+                    <p><strong>Moral:</strong> ${p.moral}</p>
+                </div>
+            `;
+        })
+        .join("");
+}
+
+document.addEventListener("DOMContentLoaded", loadPadyam);
+</script>
+
+</body>
+</html>

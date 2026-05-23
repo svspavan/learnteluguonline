@@ -1,0 +1,82 @@
+{
+  "1": {
+    "telugu": "ఒకటి",
+    "english": "One",
+    "audio": "1.mp3",
+    "example": "ఒక ఆపిల్",
+    "example_english": "One apple"
+  },
+  "2": {
+    "telugu": "రెండు",
+    "english": "Two",
+    "audio": "2.mp3",
+    "example": "రెండు పుస్తకాలు",
+    "example_english": "Two books"
+  },
+  "3": {
+    "telugu": "మూడు",
+    "english": "Three",
+    "audio": "3.mp3",
+    "example": "మూడు పిల్లలు",
+    "example_english": "Three children"
+  },
+  "4": {
+    "telugu": "నాలుగు",
+    "english": "Four",
+    "audio": "4.mp3",
+    "example": "నాలుగు కుర్చీలు",
+    "example_english": "Four chairs"
+  },
+  "5": {
+    "telugu": "ఐదు",
+    "english": "Five",
+    "audio": "5.mp3",
+    "example": "ఐదు పెన్సిల్లు",
+    "example_english": "Five pencils"
+  },
+  "6": {
+    "telugu": "ఆరు",
+    "english": "Six",
+    "audio": "6.mp3",
+    "example": "ఆరు బొమ్మలు",
+    "example_english": "Six toys"
+  },
+  "7": {
+    "telugu": "ఏడు",
+    "english": "Seven",
+    "audio": "7.mp3",
+    "example": "ఏడు రోజులు",
+    "example_english": "Seven days"
+  },
+  "8": {
+    "telugu": "ఎనిమిది",
+    "english": "Eight",
+    "audio": "8.mp3",
+    "example": "ఎనిమిది గుడ్లు",
+    "example_english": "Eight eggs"
+  },
+  "9": {
+    "telugu": "తొమ్మిది",
+    "english": "Nine",
+    "audio": "9.mp3",
+    "example": "తొమ్మిది పూలు",
+    "example_english": "Nine flowers"
+  },
+  "10": {
+    "telugu": "పది",
+    "english": "Ten",
+    "audio": "10.mp3",
+    "example": "పది విద్యార్థులు",
+    "example_english": "Ten students"
+  },
+
+  "20": { "telugu": "ఇరవై", "english": "Twenty", "audio": "20.mp3" },
+  "30": { "telugu": "ముప్పై", "english": "Thirty", "audio": "30.mp3" },
+  "40": { "telugu": "నలభై", "english": "Forty", "audio": "40.mp3" },
+  "50": { "telugu": "యాభై", "english": "Fifty", "audio": "50.mp3" },
+  "60": { "telugu": "అరవై", "english": "Sixty", "audio": "60.mp3" },
+  "70": { "telugu": "డెబ్బై", "english": "Seventy", "audio": "70.mp3" },
+  "80": { "telugu": "ఎనభై", "english": "Eighty", "audio": "80.mp3" },
+  "90": { "telugu": "తొంభై", "english": "Ninety", "audio": "90.mp3" },
+  "100": { "telugu": "వంద", "english": "Hundred", "audio": "100.mp3" }
+}

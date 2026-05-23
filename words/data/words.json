@@ -1,0 +1,56 @@
+{
+  "amma": {
+    "telugu": "అమ్మ",
+    "english": "Mother",
+    "audio": "amma.mp3",
+    "example": "అమ్మ వంట చాలా రుచిగా ఉంటుంది.",
+    "example_english": "Mother’s cooking is very tasty.",
+    "category": "family",
+    "length": 3
+  },
+  "nanna": {
+    "telugu": "నాన్న",
+    "english": "Father",
+    "audio": "nanna.mp3",
+    "example": "నాన్న ఆఫీసుకు వెళ్తున్నారు.",
+    "example_english": "Father is going to the office.",
+    "category": "family",
+    "length": 3
+  },
+  "pilli": {
+    "telugu": "పిల్లి",
+    "english": "Cat",
+    "audio": "pilli.mp3",
+    "example": "పిల్లి పాలు తాగుతోంది.",
+    "example_english": "The cat is drinking milk.",
+    "category": "animals",
+    "length": 3
+  },
+  "gudi": {
+    "telugu": "గుడి",
+    "english": "Temple",
+    "audio": "gudi.mp3",
+    "example": "మేము గుడికి వెళ్లాము.",
+    "example_english": "We went to the temple.",
+    "category": "places",
+    "length": 3
+  },
+  "neellu": {
+    "telugu": "నీళ్ళు",
+    "english": "Water",
+    "audio": "neellu.mp3",
+    "example": "నీళ్ళు ఎక్కువగా తాగాలి.",
+    "example_english": "You should drink plenty of water.",
+    "category": "daily-use",
+    "length": 3
+  },
+  "chettu": {
+    "telugu": "చెట్టు",
+    "english": "Tree",
+    "audio": "chettu.mp3",
+    "example": "చెట్టు నీడ చాలా చల్లగా ఉంటుంది.",
+    "example_english": "The shade of the tree is very cool.",
+    "category": "nature",
+    "length": 3
+  }
+}

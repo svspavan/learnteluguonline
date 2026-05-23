@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
+        <a href="index.html">Categories</a>
+    </nav>
+</header>
+
+<main class="modules">
+    <h2 id="categoryTitle"></h2>
+    <div id="categoryGrid" class="module-grid"></div>
+</main>
+
+<script src="../js/script.js"></script>
+<script>
+async function loadCategory() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    const titleMap = {
+        colors: "రంగులు — Colors",
+        animals: "జంతువులు — Animals",
+        fruits: "పండ్లు — Fruits",
+        vegetables: "కూరగాయలు — Vegetables"
+    };
+
+    document.getElementById("categoryTitle").textContent = titleMap[name] || "Category";
+
+    const res = await fetch(`data/${name}.json`);
+    const items = await res.json();
+
+    const grid = document.getElementById("categoryGrid");
+
+    Object.keys(items).forEach(key => {
+        const item = items[key];
+
+        const card = document.createElement("a");
+        card.href = `../words/word.html?name=${key}`;
+        card.className = "module-card";
+        card.innerHTML = `
+            <h3>${item.telugu}</h3>
+            <h4>${item.english}</h4>
+        `;
+
+        grid.appendChild(card);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadCategory);
+</script>
+
+</body>
+</html>

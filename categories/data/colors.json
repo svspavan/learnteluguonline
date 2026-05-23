@@ -1,0 +1,6 @@
+{
+  "red": { "telugu": "ఎరుపు", "english": "Red", "audio": "red.mp3" },
+  "blue": { "telugu": "నీలం", "english": "Blue", "audio": "blue.mp3" },
+  "green": { "telugu": "ఆకుపచ్చ", "english": "Green", "audio": "green.mp3" },
+  "yellow": { "telugu": "పసుపు", "english": "Yellow", "audio": "yellow.mp3" }
+}

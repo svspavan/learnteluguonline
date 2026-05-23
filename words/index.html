@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Words</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="index.html">Words</a>
+    </nav>
+</header>
+
+<main class="modules">
+    <h2>Words Module</h2>
+    <p class="modules-subtitle">Click a word to learn its meaning, audio, and example sentence.</p>
+
+    <div id="wordsGrid" class="module-grid"></div>
+</main>
+
+<script>
+async function loadWords() {
+    const res = await fetch("data/words.json");
+    const words = await res.json();
+
+    const grid = document.getElementById("wordsGrid");
+
+    Object.keys(words).forEach(key => {
+        const item = words[key];
+
+        const card = document.createElement("a");
+        card.href = `word.html?name=${key}`;
+        card.className = "module-card";
+        card.innerHTML = `
+            <h3>${item.telugu}</h3>
+            <h4>${item.english}</h4>
+        `;
+
+        grid.appendChild(card);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadWords);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "title": "సంధులు — Sandhi",
+  "description": "Sandhi is the joining of sounds or letters when words or parts of words combine.",
+  "items": [
+    {
+      "heading": "అచ్చుల సంధి — Vowel Sandhi",
+      "explanation": "When two vowels meet, they may combine or change.",
+      "examples": [
+        "రామ + ఆలయం → రామాలయం",
+        "దేవ + ఆలయం → దేవాలయం"
+      ]
+    },
+    {
+      "heading": "హల్లుల సంధి — Consonant Sandhi",
+      "explanation": "Changes that occur when consonants meet.",
+      "examples": [
+        "తత్ + పర → తత్పర",
+        "సత్ + గుణ → సద్గుణ"
+      ]
+    },
+    {
+      "heading": "విసర్గ సంధి — Visarga Sandhi",
+      "explanation": "Changes involving 'ః' (visarga).",
+      "examples": [
+        "రామః + ఇతి → రామ ఇతి (in classical usage)",
+        "గురుః + ఆగచ్ఛతి → గురురాగచ్ఛతి"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "సమాసాలు — Samasam (Compounds)",
+  "description": "Samasam is the process of combining two or more words to form a compound word.",
+  "items": [
+    {
+      "heading": "ద్వంద్వ సమాసం — Dvandva Compound",
+      "explanation": "Two or more words of equal importance are joined.",
+      "examples": [
+        "అన్నదమ్ములు — Brothers.",
+        "రాజు–రాణి → రాజరాణి (King and Queen)."
+      ]
+    },
+    {
+      "heading": "తత్పురుష సమాసం — Tatpurusha Compound",
+      "explanation": "One word depends on the other; often like 'of', 'for', 'in'.",
+      "examples": [
+        "రాజు యొక్క కుమారుడు → రాజకుమారుడు (King's son).",
+        "గృహం కోసం పని → గృహపని (House work)."
+      ]
+    },
+    {
+      "heading": "బహువ్రీహి సమాసం — Bahuvrihi Compound",
+      "explanation": "The compound describes a person/thing by a quality.",
+      "examples": [
+        "చంద్రముఖి — One who has a moon-like face.",
+        "ధనవంతుడు — One who has wealth."
+      ]
+    },
+    {
+      "heading": "అవ్యయీభావ సమాసం — Avyayibhava Compound",
+      "explanation": "An indeclinable word (avyaya) combines with another word.",
+      "examples": [
+        "ఉప + వాసం → ఉపవాసం (fasting).",
+        "సహ + జీవనం → సహజీవనం (living together)."
+      ]
+    }
+  ]
+}

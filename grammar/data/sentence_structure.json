@@ -1,0 +1,39 @@
+{
+  "title": "వాక్య నిర్మాణం — Sentence Structure",
+  "description": "Basic Telugu sentence structure is generally Subject–Object–Verb (SOV).",
+  "items": [
+    {
+      "heading": "Basic SOV Order",
+      "explanation": "In Telugu, the verb usually comes at the end of the sentence.",
+      "examples": [
+        "రాము పుస్తకం చదువుతున్నాడు — Ramu (S) book (O) is reading (V).",
+        "ఆమె నీళ్లు తాగింది — She (S) water (O) drank (V)."
+      ]
+    },
+    {
+      "heading": "Forming Questions",
+      "explanation": "Questions are often formed by intonation or adding question words.",
+      "examples": [
+        "నువ్వు వస్తావా? — Will you come?",
+        "ఎక్కడికి వెళ్తున్నారు? — Where are you going?"
+      ]
+    },
+    {
+      "heading": "Negatives",
+      "explanation": "Negatives are formed using 'లేదు', 'కాదు', or negative verb forms.",
+      "examples": [
+        "నేను తినను — I do not eat.",
+        "అతను రాలేదు — He did not come.",
+        "ఇది సరైంది కాదు — This is not correct."
+      ]
+    },
+    {
+      "heading": "Polite Forms",
+      "explanation": "Use plural forms and respectful words for politeness.",
+      "examples": [
+        "మీరు ఎలా ఉన్నారు? — How are you? (respectful)",
+        "మీరు కూర్చోండి — Please sit."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Stories</a>
+    </nav>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<main class="letter-page-container">
+    <section id="storyContent"></section>
+</main>
+
+<script src="../js/script.js"></script>
+<script>
+async function loadStory() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    const res = await fetch("data/stories.json");
+    const data = await res.json();
+    const story = data[name];
+
+    const container = document.getElementById("storyContent");
+
+    if (!story) {
+        container.innerHTML = "<p>Story not found.</p>";
+        return;
+    }
+
+    container.innerHTML = `
+        <h2>${story.title}</h2>
+        <h3>${story.english_title}</h3>
+
+        ${story.image ? `<img src="../stories/images/${story.image}" class="story-image">` : ""}
+
+        <div class="audio-player" data-src="../audio/${story.audio}">
+            <button class="play-btn">▶</button>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <span class="time-label">0:00</span>
+        </div>
+    `;
+
+    story.paragraphs.forEach(p => {
+        container.innerHTML += `<p class="story-paragraph">${p}</p>`;
+    });
+
+    container.innerHTML += `
+        <h3>మూల్యం (Moral)</h3>
+        <p class="story-moral">${story.moral}</p>
+    `;
+
+    if (window.initAudioPlayers) window.initAudioPlayers();
+}
+
+buildBreadcrumb([
+    { label: "Stories", link: "index.html" },
+    { label: story.title }
+]);
+
+
+document.addEventListener("DOMContentLoaded", loadStory);
+</script>
+
+</body>
+</html>

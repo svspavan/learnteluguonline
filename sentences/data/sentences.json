@@ -1,0 +1,38 @@
+{
+  "greetings": {
+    "namaskaram": {
+      "telugu": "నమస్కారం",
+      "english": "Hello / Greetings",
+      "audio": "namaskaram.mp3",
+      "example": "నమస్కారం! ఎలా ఉన్నారు?",
+      "example_english": "Hello! How are you?"
+    },
+    "bagunnara": {
+      "telugu": "బాగున్నారా?",
+      "english": "Are you doing well?",
+      "audio": "bagunnara.mp3",
+      "example": "మీరు బాగున్నారా?",
+      "example_english": "Are you doing well?"
+    }
+  },
+
+  "home": {
+    "tinala": {
+      "telugu": "తినాలా?",
+      "english": "Do you want to eat?",
+      "audio": "tinala.mp3",
+      "example": "వెళ్దాం తినాలా?",
+      "example_english": "Shall we go eat?"
+    }
+  },
+
+  "travel": {
+    "ekkada": {
+      "telugu": "ఎక్కడికి వెళ్తున్నారు?",
+      "english": "Where are you going?",
+      "audio": "ekkada.mp3",
+      "example": "మీరు ఎక్కడికి వెళ్తున్నారు?",
+      "example_english": "Where are you going?"
+    }
+  }
+}

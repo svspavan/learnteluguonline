@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Grammar</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Grammar</a>
+    </nav>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<main class="modules">
+    <h2>Telugu Grammar</h2>
+    <p class="modules-subtitle">Learn grammar concepts with examples and explanations.</p>
+
+    <div id="grammarGrid" class="module-grid"></div>
+</main>
+
+<script>
+const grammarTopics = [
+    { key: "vibhaktulu", label: "Vibhaktulu (Cases)", telugu: "విభక్తులు" },
+    { key: "tenses", label: "Tenses", telugu: "కాలములు" },
+    { key: "verb_conjugation", label: "Verb Conjugation", telugu: "ధాతు రూపాలు" },
+    { key: "sentence_structure", label: "Sentence Structure", telugu: "వాక్య నిర్మాణం" },
+    { key: "sandhi", label: "Sandhi", telugu: "సంధులు" },
+    { key: "samasam", label: "Samasam", telugu: "సమాసాలు" },
+    { key: "pronouns", label: "Pronouns", telugu: "సర్వనామాలు" },
+    { key: "gender", label: "Gender", telugu: "లింగాలు" },
+    { key: "numbers", label: "Numbers", telugu: "వచనాలు" },
+    { key: "adjectives", label: "Adjectives", telugu: "విశేషణాలు" },
+    { key: "adverbs", label: "Adverbs", telugu: "క్రియావిశేషణాలు" }
+];
+
+function loadGrammarTopics() {
+    const grid = document.getElementById("grammarGrid");
+
+    grammarTopics.forEach(topic => {
+        const card = document.createElement("a");
+        card.href = `topic.html?name=${topic.key}`;
+        card.className = "module-card";
+        card.innerHTML = `
+            <h3>${topic.telugu}</h3>
+            <h4>${topic.label}</h4>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadGrammarTopics);
+</script>
+
+</body>
+</html>

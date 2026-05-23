@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grammar Topic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Grammar</a>
+    </nav>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<main class="letter-page-container">
+    <section id="topicContent"></section>
+</main>
+
+<script>
+async function loadTopic() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    const res = await fetch(`data/${name}.json`);
+    const data = await res.json();
+
+    const container = document.getElementById("topicContent");
+
+    container.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+
+    data.items.forEach(item => {
+        container.innerHTML += `
+            <div class="padyam-block">
+                <h3>${item.heading}</h3>
+                <p>${item.explanation}</p>
+
+                ${
+                    item.examples
+                        ? `<ul>${item.examples.map(ex => `<li>${ex}</li>`).join("")}</ul>`
+                        : ""
+                }
+            </div>
+        `;
+    });
+}
+
+buildBreadcrumb([
+    { label: "Grammar", link: "index.html" },
+    { label: data.title }
+]);
+
+
+document.addEventListener("DOMContentLoaded", loadTopic);
+</script>
+
+</body>
+</html>

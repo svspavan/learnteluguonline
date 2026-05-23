@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telugu Sentences</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Learn Telugu Online</div>
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Sentences</a>
+    </nav>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<main class="letter-page-container">
+    <section id="sentenceContent"></section>
+</main>
+
+<script src="../js/script.js"></script>
+<script>
+async function loadSentences() {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+
+    const res = await fetch("data/sentences.json");
+    const data = await res.json();
+
+    const container = document.getElementById("sentenceContent");
+    const sentences = data[category];
+
+    if (!sentences) {
+        container.innerHTML = "<p>Category not found.</p>";
+        return;
+    }
+
+    const labelMap = {
+        greetings: "Greetings",
+        home: "Home",
+        school: "School",
+        travel: "Travel",
+        daily: "Daily Use",
+        food: "Food"
+    };
+
+    container.innerHTML = `<h2>${labelMap[category] || category}</h2>`;
+
+    Object.keys(sentences).forEach(key => {
+        const s = sentences[key];
+
+        container.innerHTML += `
+            <div class="padyam-block">
+                <h3>${s.telugu}</h3>
+                <p>${s.english}</p>
+
+                <div class="audio-player" data-src="../audio/${s.audio}">
+                    <button class="play-btn">▶</button>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time-label">0:00</span>
+                </div>
+
+                <p><strong>Example:</strong> ${s.example}</p>
+                <p><strong>Meaning:</strong> ${s.example_english}</p>
+            </div>
+        `;
+    });
+
+    if (window.initAudioPlayers) window.initAudioPlayers();
+}
+
+buildBreadcrumb([
+    { label: "Sentences", link: "index.html" },
+    { label: labelMap[category] }
+]);
+
+
+document.addEventListener("DOMContentLoaded", loadSentences);
+</script>
+
+</body>
+</html>

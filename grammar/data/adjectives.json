@@ -1,0 +1,23 @@
+{
+  "title": "విశేషణాలు — Adjectives",
+  "description": "Adjectives describe or qualify nouns.",
+  "items": [
+    {
+      "heading": "Describing Quality",
+      "explanation": "Words that describe how something is.",
+      "examples": [
+        "మంచి పిల్లవాడు — Good boy.",
+        "చెడు అలవాటు — Bad habit.",
+        "పెద్ద ఇల్లు — Big house."
+      ]
+    },
+    {
+      "heading": "Describing Quantity",
+      "explanation": "Words that describe how much or how many.",
+      "examples": [
+        "చాలా నీళ్లు — A lot of water.",
+        "కొన్ని పుస్తకాలు — Some books."
+      ]
+    }
+  ]
+}

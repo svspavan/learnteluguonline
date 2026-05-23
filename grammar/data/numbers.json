@@ -1,0 +1,24 @@
+{
+  "title": "వచనాలు — Grammatical Number",
+  "description": "Telugu distinguishes between singular and plural forms.",
+  "items": [
+    {
+      "heading": "ఏకవచనం — Singular",
+      "explanation": "Refers to one person or thing.",
+      "examples": [
+        "పిల్లి — Cat.",
+        "పుస్తకం — Book.",
+        "వాడు వస్తాడు — He comes."
+      ]
+    },
+    {
+      "heading": "బహువచనం — Plural",
+      "explanation": "Refers to more than one person or thing.",
+      "examples": [
+        "పిల్లులు — Cats.",
+        "పుస్తకాలు — Books.",
+        "వాళ్లు వస్తారు — They come."
+      ]
+    }
+  ]
+}

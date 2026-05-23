@@ -1,0 +1,33 @@
+{
+  "title": "లింగాలు — Gender",
+  "description": "Telugu nouns have three genders: masculine, feminine, and neuter.",
+  "items": [
+    {
+      "heading": "పుంలింగం — Masculine Gender",
+      "explanation": "Used for male beings.",
+      "examples": [
+        "అతను — He.",
+        "రాజు — King.",
+        "బాలుడు — Boy."
+      ]
+    },
+    {
+      "heading": "స్త్రీలింగం — Feminine Gender",
+      "explanation": "Used for female beings.",
+      "examples": [
+        "ఆమె — She.",
+        "రాణి — Queen.",
+        "బాలిక — Girl."
+      ]
+    },
+    {
+      "heading": "నపుంసక లింగం — Neuter Gender",
+      "explanation": "Used for objects and sometimes for animals.",
+      "examples": [
+        "ఇది — This (thing).",
+        "ఇల్లు — House.",
+        "పుస్తకం — Book."
+      ]
+    }
+  ]
+}

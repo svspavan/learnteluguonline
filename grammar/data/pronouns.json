@@ -1,0 +1,52 @@
+{
+  "title": "సర్వనామాలు — Pronouns",
+  "description": "Pronouns replace nouns and are essential for fluent speech.",
+  "items": [
+    {
+      "heading": "First Person",
+      "explanation": "Refers to the speaker.",
+      "examples": [
+        "నేను — I.",
+        "మనం — We (inclusive).",
+        "మేము — We (exclusive)."
+      ]
+    },
+    {
+      "heading": "Second Person",
+      "explanation": "Refers to the listener.",
+      "examples": [
+        "నువ్వు — You (informal).",
+        "మీరు — You (formal/plural)."
+      ]
+    },
+    {
+      "heading": "Third Person",
+      "explanation": "Refers to others.",
+      "examples": [
+        "అతను — He.",
+        "ఆమె — She.",
+        "వాడు/వాళ్లు — He/They (colloquial).",
+        "వారు — They (respectful/plural)."
+      ]
+    },
+    {
+      "heading": "Demonstrative Pronouns",
+      "explanation": "Pointing to things.",
+      "examples": [
+        "ఇది — This.",
+        "అది — That.",
+        "ఇవి — These.",
+        "అవి — Those."
+      ]
+    },
+    {
+      "heading": "Interrogative Pronouns",
+      "explanation": "Used for questions.",
+      "examples": [
+        "ఎవరు — Who?",
+        "ఏది — Which?",
+        "ఏమి — What?"
+      ]
+    }
+  ]
+}

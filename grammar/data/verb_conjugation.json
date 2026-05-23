@@ -1,0 +1,39 @@
+{
+  "title": "ధాతు రూపాలు — Verb Conjugation",
+  "description": "Conjugation of common Telugu verbs for different pronouns in the present tense.",
+  "items": [
+    {
+      "heading": "Verb: తిను — to eat",
+      "explanation": "Present tense forms with different pronouns.",
+      "examples": [
+        "నేను తింటాను — I eat.",
+        "నువ్వు తింటావు — You eat (informal).",
+        "మీరు తింటారు — You eat (formal/plural).",
+        "అతను తింటాడు — He eats.",
+        "ఆమె తింటుంది — She eats.",
+        "వారు తింటారు — They eat."
+      ]
+    },
+    {
+      "heading": "Verb: వెళ్లు — to go",
+      "explanation": "Present tense forms.",
+      "examples": [
+        "నేను వెళ్తాను — I go.",
+        "నువ్వు వెళ్తావు — You go.",
+        "అతను వెళ్తాడు — He goes.",
+        "ఆమె వెళ్తుంది — She goes.",
+        "వారు వెళ్తారు — They go."
+      ]
+    },
+    {
+      "heading": "Verb: చదువు — to study/read",
+      "explanation": "Present tense forms.",
+      "examples": [
+        "నేను చదువుతాను — I study.",
+        "నువ్వు చదువుతావు — You study.",
+        "అతను చదువుతాడు — He studies.",
+        "ఆమె చదువుతుంది — She studies."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "క్రియావిశేషణాలు — Adverbs",
+  "description": "Adverbs describe how, when, or where an action happens.",
+  "items": [
+    {
+      "heading": "Manner — How?",
+      "explanation": "Describes the way an action is done.",
+      "examples": [
+        "నెమ్మదిగా నడిచాడు — He walked slowly.",
+        "బాగా చదివింది — She studied well."
+      ]
+    },
+    {
+      "heading": "Time — When?",
+      "explanation": "Describes when an action happens.",
+      "examples": [
+        "ఇప్పుడు వస్తాను — I will come now.",
+        "రేపు వెళ్తాం — We will go tomorrow."
+      ]
+    },
+    {
+      "heading": "Place — Where?",
+      "explanation": "Describes where an action happens.",
+      "examples": [
+        "ఇక్కడ కూర్చోండి — Sit here.",
+        "అక్కడికి వెళ్ళొద్దు — Don’t go there."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "కాలములు — Tenses",
+  "description": "Telugu has three primary tenses — present, past, and future — with continuous and perfect aspects.",
+  "items": [
+    {
+      "heading": "Present Tense — వర్తమాన కాలం",
+      "explanation": "Used for actions happening now or regularly.",
+      "examples": [
+        "నేను తింటాను — I eat.",
+        "అతను చదువుతాడు — He reads.",
+        "ఆమె పాడుతుంది — She sings."
+      ]
+    },
+    {
+      "heading": "Present Continuous — జరుగుతున్న వర్తమాన కాలం",
+      "explanation": "Used for actions that are happening right now.",
+      "examples": [
+        "నేను తింటున్నాను — I am eating.",
+        "అతను చదువుతున్నాడు — He is studying.",
+        "ఆమె వంట చేస్తున్నది — She is cooking."
+      ]
+    },
+    {
+      "heading": "Past Tense — భూత కాలం",
+      "explanation": "Used for actions that are completed in the past.",
+      "examples": [
+        "నేను తిన్నాను — I ate.",
+        "అతను చదివాడు — He studied.",
+        "ఆమె వచ్చింది — She came."
+      ]
+    },
+    {
+      "heading": "Past Continuous — జరుగుతున్న భూత కాలం",
+      "explanation": "Used for actions that were ongoing in the past.",
+      "examples": [
+        "నేను తింటున్నాను — I was eating.",
+        "అతను చదువుతున్నాడు — He was studying."
+      ]
+    },
+    {
+      "heading": "Future Tense — భవిష్యత్ కాలం",
+      "explanation": "Used for actions that will happen in the future.",
+      "examples": [
+        "నేను తింటాను — I will eat.",
+        "అతను వస్తాడు — He will come.",
+        "ఆమె వెళ్తుంది — She will go."
+      ]
+    }
+  ]
+}

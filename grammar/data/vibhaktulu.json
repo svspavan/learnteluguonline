@@ -1,0 +1,62 @@
+{
+  "title": "విభక్తులు — Vibhaktulu (Cases)",
+  "description": "Telugu has seven grammatical cases used to show the relationship between nouns and verbs in a sentence.",
+  "items": [
+    {
+      "heading": "1. ప్రథమ విభక్తి — Nominative Case",
+      "explanation": "Used for the subject of the sentence. It answers the question 'who?' or 'what?' is doing the action.",
+      "examples": [
+        "రాము వస్తాడు — Ramu comes.",
+        "పిల్లి నిద్రపోతుంది — The cat sleeps."
+      ]
+    },
+    {
+      "heading": "2. ద్వితీయ విభక్తి — Accusative Case",
+      "explanation": "Used for the direct object of the verb. It answers 'whom?' or 'what?' the action is done to.",
+      "examples": [
+        "రాము పుస్తకం చదువుతున్నాడు — Ramu is reading a book.",
+        "ఆమె నీళ్లు తాగింది — She drank water."
+      ]
+    },
+    {
+      "heading": "3. తృతీయ విభక్తి — Instrumental Case",
+      "explanation": "Shows the means or instrument by which an action is performed. Often expressed with 'తో' (with/by).",
+      "examples": [
+        "అతను కలంతో వ్రాశాడు — He wrote with a pen.",
+        "ఆమె బస్సుతో వెళ్ళింది — She went by bus."
+      ]
+    },
+    {
+      "heading": "4. చతుర్థి విభక్తి — Dative Case",
+      "explanation": "Indicates the indirect object or recipient. Often expressed with 'కి/కు' (to/for).",
+      "examples": [
+        "రాము నాకు పుస్తకం ఇచ్చాడు — Ramu gave me a book.",
+        "అమ్మ పిల్లలకు తిండి పెట్టింది — Mother fed the children."
+      ]
+    },
+    {
+      "heading": "5. పంచమి విభక్తి — Ablative Case",
+      "explanation": "Shows separation, source, or movement away from something. Often expressed with 'నుండి' (from).",
+      "examples": [
+        "అతను ఇంటి నుండి వచ్చాడు — He came from home.",
+        "ఆమె పాఠశాల నుండి వచ్చింది — She came from school."
+      ]
+    },
+    {
+      "heading": "6. షష్ఠి విభక్తి — Genitive Case",
+      "explanation": "Shows possession or relationship. Often expressed with 'యొక్క' or implied.",
+      "examples": [
+        "రాముని పుస్తకం — Ramu's book.",
+        "అమ్మ చేతి పని — Mother's handiwork."
+      ]
+    },
+    {
+      "heading": "7. సప్తమి విభక్తి — Locative Case",
+      "explanation": "Indicates location or place where something exists or happens. Often expressed with 'లో' (in/at).",
+      "examples": [
+        "పుస్తకం బల్లపై ఉంది — The book is on the table.",
+        "అతను గదిలో ఉన్నాడు — He is in the room."
+      ]
+    }
+  ]
+}

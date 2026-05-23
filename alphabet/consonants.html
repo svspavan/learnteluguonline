@@ -18,12 +18,16 @@
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<section class="modules">
-    <h2>హల్లులు — Consonants</h2>
-    <p class="modules-subtitle">Click a consonant to learn its sound and example words.</p>
+<nav class="breadcrumb" id="breadcrumb"></nav>
 
-    <div id="consonantsGrid" class="module-grid"></div>
-</section>
+<main class="page-container">
+    <section class="modules">
+        <h2>హల్లులు — Consonants</h2>
+        <p class="modules-subtitle">Click a consonant to learn its sound and example words.</p>
+
+        <div id="consonantsGrid" class="module-grid"></div>
+    </section>
+</main>
 
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
@@ -50,6 +54,11 @@ async function loadConsonants() {
         grid.appendChild(card);
     });
 }
+
+buildBreadcrumb([
+    { label: "Alphabet", link: "alphabet.html" },
+    { label: "Consonants" }
+]);
 
 document.addEventListener("DOMContentLoaded", loadConsonants);
 </script>

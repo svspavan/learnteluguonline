@@ -4,114 +4,49 @@
     <meta charset="UTF-8">
     <title>Telugu Letter</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .letter-page-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 2rem;
-            background-color: #f8e9d0;
-            min-height: 80vh;
-        }
-
-        .letter-header {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .big-letter {
-            font-size: 8rem;
-            color: #b34700;
-            margin: 0;
-        }
-
-        .letter-english {
-            font-size: 2rem;
-            color: #333;
-            margin: 0.5rem 0 1rem 0;
-        }
-
-        .audio-player {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            margin-bottom: 2rem;
-        }
-
-        .play-btn {
-            background: #ffd700;
-            border: none;
-            padding: 0.4rem 0.7rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .progress-container {
-            flex: 1;
-            height: 6px;
-            background: #ddd;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .progress-bar {
-            height: 100%;
-            width: 0%;
-            background: #ff9800;
-        }
-
-        .time-label {
-            font-size: 0.8rem;
-            color: #444;
-        }
-
-        .examples {
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .examples h3 {
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-
-        .word-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .word-list li {
-            font-size: 1.3rem;
-            margin: 0.4rem 0;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 0.3rem;
-        }
-
-        .word-list span {
-            color: #555;
-        }
-    </style>
 </head>
 <body>
+
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="alphabet.html">Alphabet</a>
         <a href="../words/index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
+        <a href="../categories/index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="letter-page-container">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<!-- Main Content -->
+<main class="page-container letter-page">
     <section id="letterContent"></section>
 </main>
 
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
 <script src="../js/script.js"></script>
+
 <script>
 async function loadLetter() {
     const params = new URLSearchParams(window.location.search);
@@ -133,11 +68,15 @@ async function loadLetter() {
             return;
         }
 
+        // Build breadcrumb AFTER loading letter
+        buildBreadcrumb([
+            { label: "Alphabet", link: "alphabet.html" },
+            { label: letter.telugu }
+        ]);
+
         container.innerHTML = `
-            <div class="letter-header">
-                <h2 class="big-letter">${letter.telugu}</h2>
-                <h3 class="letter-english">${letter.english}</h3>
-            </div>
+            <h2 class="big-letter">${letter.telugu}</h2>
+            <h3 class="letter-english">${letter.english}</h3>
 
             <div class="audio-player" data-src="../audio/${letter.audio}">
                 <button class="play-btn">▶</button>
@@ -147,24 +86,25 @@ async function loadLetter() {
                 <span class="time-label">0:00</span>
             </div>
 
-            <div class="examples">
-                <h3>Example Words</h3>
-                <ul class="word-list">
-                    ${
-                        (letter.examples || [])
-                            .map(ex => `<li>${ex.word} <span>— ${ex.meaning}</span></li>`)
-                            .join("")
-                    }
-                </ul>
-            </div>
+            <h3>Example Words</h3>
+            <ul class="word-list">
+                ${
+                    (letter.examples || [])
+                        .map(ex => `<li>${ex.word} <span>— ${ex.meaning}</span></li>`)
+                        .join("")
+                }
+            </ul>
         `;
 
         if (window.initAudioPlayers) window.initAudioPlayers();
+
     } catch (e) {
         container.innerHTML = "<p>Error loading letter data.</p>";
     }
 }
+
 document.addEventListener("DOMContentLoaded", loadLetter);
 </script>
+
 </body>
 </html>

@@ -7,19 +7,46 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
         <a href="../categories/index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="letter-page-container">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<!-- Main Content -->
+<main class="page-container">
     <section id="itemContent"></section>
 </main>
 
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
 <script src="../js/script.js"></script>
+
 <script>
 async function loadItem() {
     const params = new URLSearchParams(window.location.search);
@@ -42,9 +69,18 @@ async function loadItem() {
             return;
         }
 
+        // Build breadcrumb AFTER loading item
+        buildBreadcrumb([
+            { label: "Categories", link: "index.html" },
+            { label: category, link: `category.html?name=${category}` },
+            { label: item.telugu }
+        ]);
+
         container.innerHTML = `
-            <h2 class="big-word">${item.telugu}</h2>
-            <h3 class="word-meaning">${item.english}</h3>
+            <h2 class="big-letter">${item.telugu}</h2>
+            <h3 class="letter-english">${item.english}</h3>
+
+            ${item.image ? `<img src="../images/${item.image}" class="item-image">` : ""}
 
             <div class="audio-player" data-src="../audio/${item.audio}">
                 <button class="play-btn">▶</button>
@@ -53,16 +89,29 @@ async function loadItem() {
                 </div>
                 <span class="time-label">0:00</span>
             </div>
+
+            ${
+                item.example
+                    ? `
+                        <h3>Example</h3>
+                        <p class="story-paragraph">${item.example}</p>
+                        <p class="story-moral">${item.example_english}</p>
+                      `
+                    : ""
+            }
+
             <div class="back-link">
                 <a href="category.html?name=${category}">← Back to ${category}</a>
             </div>
         `;
 
-        if (window.initAudioPlayers) window.initAudioPlayers();       
+        if (window.initAudioPlayers) window.initAudioPlayers();
+
     } catch (e) {
         container.innerHTML = "<p>Error loading item data.</p>";
     }
 }
+
 document.addEventListener("DOMContentLoaded", loadItem);
 </script>
 

@@ -7,21 +7,46 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../alphabet/alphabet.html">Alphabet</a>
         <a href="../words/index.html">Words</a>
         <a href="../numbers/index.html">Numbers</a>
         <a href="index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="modules">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<!-- Main Content -->
+<main class="page-container">
     <h2 id="categoryTitle"></h2>
     <div id="categoryGrid" class="module-grid"></div>
 </main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../js/script.js"></script>
 
 <script>
 async function loadCategory() {
@@ -32,10 +57,12 @@ async function loadCategory() {
         colors: "రంగులు — Colors",
         animals: "జంతువులు — Animals",
         fruits: "పండ్లు — Fruits",
-        vegetables: "కూరగాయలు — Vegetables"
+        vegetables: "కూరగాయలు — Vegetables",
+        shapes: "ఆకారాలు — Shapes"
     };
 
-    document.getElementById("categoryTitle").textContent = titleMap[name] || "Category";
+    document.getElementById("categoryTitle").textContent =
+        titleMap[name] || "Category";
 
     const res = await fetch(`data/${name}.json`);
     const items = await res.json();
@@ -55,6 +82,12 @@ async function loadCategory() {
 
         grid.appendChild(card);
     });
+
+    // Build breadcrumb AFTER loading category
+    buildBreadcrumb([
+        { label: "Categories", link: "index.html" },
+        { label: titleMap[name] || "Category" }
+    ]);
 }
 
 document.addEventListener("DOMContentLoaded", loadCategory);

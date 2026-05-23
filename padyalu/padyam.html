@@ -7,36 +7,83 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
+        <a href="../categories/index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
         <a href="index.html">Padyalu</a>
+        <a href="../stories/index.html">Stories</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="letter-page-container">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<!-- Main Content -->
+<main class="page-container">
     <section id="padyamContent"></section>
 </main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../js/script.js"></script>
 
 <script>
 async function loadPadyam() {
     const params = new URLSearchParams(window.location.search);
     const type = params.get("type");
 
+    const titleMap = {
+        vemana: "వేమన శతకము — Vemana Satakam",
+        sumati: "సుమతీ శతకము — Sumati Satakam"
+    };
+
+    if (!type || !titleMap[type]) {
+        document.getElementById("padyamContent").innerHTML =
+            "<p>Invalid padyam type.</p>";
+        return;
+    }
+
     const res = await fetch(`data/${type}.json`);
     const data = await res.json();
 
     const container = document.getElementById("padyamContent");
 
-    container.innerHTML = Object.keys(data)
+    // Build breadcrumb AFTER loading
+    buildBreadcrumb([
+        { label: "Padyalu", link: "index.html" },
+        { label: titleMap[type] }
+    ]);
+
+    container.innerHTML = `<h2>${titleMap[type]}</h2>`;
+
+    container.innerHTML += Object.keys(data)
         .map(key => {
             const p = data[key];
             return `
                 <div class="padyam-block">
                     <h3>${p.telugu}</h3>
-                    <p>${p.english}</p>
-                    <p><strong>Moral:</strong> ${p.moral}</p>
+                    <p class="story-paragraph">${p.english}</p>
+                    <p class="story-moral"><strong>మూల్యం (Moral):</strong> ${p.moral}</p>
                 </div>
             `;
         })

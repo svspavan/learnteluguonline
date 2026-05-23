@@ -7,21 +7,46 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../alphabet/alphabet.html">Alphabet</a>
         <a href="../words/index.html">Words</a>
         <a href="index.html">Numbers</a>
+        <a href="../categories/index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="letter-page-container">
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<!-- Main Content -->
+<main class="page-container">
     <section id="numberContent"></section>
 </main>
 
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
 <script src="../js/script.js"></script>
+
 <script>
 async function loadNumber() {
     const params = new URLSearchParams(window.location.search);
@@ -43,6 +68,12 @@ async function loadNumber() {
             return;
         }
 
+        // Build breadcrumb AFTER loading number
+        buildBreadcrumb([
+            { label: "Numbers", link: "index.html" },
+            { label: item.telugu }
+        ]);
+
         container.innerHTML = `
             <h2 class="big-letter">${item.telugu}</h2>
             <h3 class="letter-english">${item.english}</h3>
@@ -57,18 +88,22 @@ async function loadNumber() {
 
             ${
                 item.example
-                    ? `<h3>Example</h3>
-                       <p class="example">${item.example}</p>
-                       <p class="example-meaning">${item.example_english}</p>`
+                    ? `
+                        <h3>Example</h3>
+                        <p class="story-paragraph">${item.example}</p>
+                        <p class="story-moral">${item.example_english}</p>
+                      `
                     : ""
             }
         `;
 
         if (window.initAudioPlayers) window.initAudioPlayers();
+
     } catch (e) {
         container.innerHTML = "<p>Error loading number data.</p>";
     }
 }
+
 document.addEventListener("DOMContentLoaded", loadNumber);
 </script>
 

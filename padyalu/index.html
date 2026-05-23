@@ -7,31 +7,68 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../alphabet/alphabet.html">Alphabet</a>
         <a href="../words/index.html">Words</a>
         <a href="../numbers/index.html">Numbers</a>
         <a href="../categories/index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
         <a href="index.html">Padyalu</a>
+        <a href="../stories/index.html">Stories</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="modules">
-    <h2>Padyalu</h2>
-    <div class="module-grid">
-        <a href="padyam.html?type=vemana" class="module-card">
-            <h3>వేమన పద్యాలు</h3>
-            <h4>Vemana Poems</h4>
-        </a>
-        <a href="padyam.html?type=sumati" class="module-card">
-            <h3>సుమతి శతకం</h3>
-            <h4>Sumati Satakam</h4>
-        </a>
-    </div>
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<!-- Main Content -->
+<main class="page-container">
+    <section class="modules">
+        <h2>తెలుగు పద్యములు</h2>
+        <p class="modules-subtitle">Vemana & Sumati Satakam</p>
+
+        <div class="module-grid">
+            <a href="padyam.html?type=vemana" class="module-card">
+                <h3>వేమన పద్యాలు</h3>
+                <h4>Vemana Poems</h4>
+            </a>
+
+            <a href="padyam.html?type=sumati" class="module-card">
+                <h3>సుమతీ శతకము</h3>
+                <h4>Sumati Satakam</h4>
+            </a>
+        </div>
+    </section>
 </main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    buildBreadcrumb([
+        { label: "Padyalu", link: "index.html" }
+    ]);
+});
+</script>
 
 </body>
 </html>

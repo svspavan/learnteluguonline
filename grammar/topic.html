@@ -7,19 +7,45 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
+        <a href="../alphabet/alphabet.html">Alphabet</a>
+        <a href="../words/index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
+        <a href="../categories/index.html">Categories</a>
         <a href="index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
+<!-- Breadcrumb -->
 <nav class="breadcrumb" id="breadcrumb"></nav>
 
-<main class="letter-page-container">
+<!-- Main Content -->
+<main class="page-container">
     <section id="topicContent"></section>
 </main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../js/script.js"></script>
 
 <script>
 async function loadTopic() {
@@ -31,29 +57,34 @@ async function loadTopic() {
 
     const container = document.getElementById("topicContent");
 
-    container.innerHTML = `<h2>${data.title}</h2><p>${data.description}</p>`;
+    // Build breadcrumb AFTER loading topic
+    buildBreadcrumb([
+        { label: "Grammar", link: "index.html" },
+        { label: data.title }
+    ]);
+
+    container.innerHTML = `
+        <h2>${data.title}</h2>
+        <p class="story-paragraph">${data.description}</p>
+    `;
 
     data.items.forEach(item => {
         container.innerHTML += `
             <div class="padyam-block">
                 <h3>${item.heading}</h3>
-                <p>${item.explanation}</p>
+                <p class="story-paragraph">${item.explanation}</p>
 
                 ${
                     item.examples
-                        ? `<ul>${item.examples.map(ex => `<li>${ex}</li>`).join("")}</ul>`
+                        ? `<ul class="word-list">
+                               ${item.examples.map(ex => `<li>${ex}</li>`).join("")}
+                           </ul>`
                         : ""
                 }
             </div>
         `;
     });
 }
-
-buildBreadcrumb([
-    { label: "Grammar", link: "index.html" },
-    { label: data.title }
-]);
-
 
 document.addEventListener("DOMContentLoaded", loadTopic);
 </script>

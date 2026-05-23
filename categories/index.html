@@ -7,30 +7,58 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../alphabet/alphabet.html">Alphabet</a>
         <a href="../words/index.html">Words</a>
         <a href="../numbers/index.html">Numbers</a>
         <a href="index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="modules">
-    <h2>Categories</h2>
-    <p class="modules-subtitle">Learn Telugu through themes like colors, animals, fruits, and vegetables.</p>
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
 
-    <div id="categoriesGrid" class="module-grid"></div>
+<!-- Main Content -->
+<main class="page-container">
+    <section class="modules">
+        <h2>Categories</h2>
+        <p class="modules-subtitle">Learn Telugu through themes like colors, animals, fruits, and vegetables.</p>
+
+        <div id="categoriesGrid" class="module-grid"></div>
+    </section>
 </main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../js/script.js"></script>
 
 <script>
 const categories = [
     { key: "colors", label: "Colors", telugu: "రంగులు" },
     { key: "animals", label: "Animals", telugu: "జంతువులు" },
     { key: "fruits", label: "Fruits", telugu: "పండ్లు" },
-    { key: "vegetables", label: "Vegetables", telugu: "కూరగాయలు" }
+    { key: "vegetables", label: "Vegetables", telugu: "కూరగాయలు" },
+    { key: "shapes", label: "Shapes", telugu: "ఆకారాలు" }
 ];
 
 function loadCategories() {
@@ -46,6 +74,10 @@ function loadCategories() {
         `;
         grid.appendChild(card);
     });
+
+    buildBreadcrumb([
+        { label: "Categories", link: "index.html" }
+    ]);
 }
 
 document.addEventListener("DOMContentLoaded", loadCategories);

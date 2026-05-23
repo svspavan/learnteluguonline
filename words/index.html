@@ -7,21 +7,50 @@
 </head>
 <body>
 
+<!-- Full H1 Header -->
 <header class="header">
     <div class="logo">Learn Telugu Online</div>
+
     <nav class="nav">
         <a href="../index.html">Home</a>
         <a href="../alphabet/alphabet.html">Alphabet</a>
         <a href="index.html">Words</a>
+        <a href="../numbers/index.html">Numbers</a>
+        <a href="../categories/index.html">Categories</a>
+        <a href="../grammar/index.html">Grammar</a>
+        <a href="../stories/index.html">Stories</a>
+        <a href="../padyalu/index.html">Padyalu</a>
     </nav>
+
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <div class="header-search">
+        <input type="text" id="globalSearch"
+               placeholder="Search letters, words, numbers, colors..."
+               oninput="handleGlobalSearch(event)">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<main class="modules">
-    <h2>Words Module</h2>
-    <p class="modules-subtitle">Click a word to learn its meaning, audio, and example sentence.</p>
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="breadcrumb"></nav>
 
-    <div id="wordsGrid" class="module-grid"></div>
+<!-- Main Content -->
+<main class="page-container">
+    <section class="modules">
+        <h2>Words Module</h2>
+        <p class="modules-subtitle">Click a word to learn its meaning, audio, and example sentence.</p>
+
+        <div id="wordsGrid" class="module-grid"></div>
+    </section>
 </main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../js/script.js"></script>
 
 <script>
 async function loadWords() {
@@ -43,6 +72,10 @@ async function loadWords() {
 
         grid.appendChild(card);
     });
+
+    buildBreadcrumb([
+        { label: "Words", link: "index.html" }
+    ]);
 }
 
 document.addEventListener("DOMContentLoaded", loadWords);

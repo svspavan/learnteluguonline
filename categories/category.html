@@ -23,7 +23,6 @@
     <div id="categoryGrid" class="module-grid"></div>
 </main>
 
-<script src="../js/script.js"></script>
 <script>
 async function loadCategory() {
     const params = new URLSearchParams(window.location.search);
@@ -47,7 +46,7 @@ async function loadCategory() {
         const item = items[key];
 
         const card = document.createElement("a");
-        card.href = `../words/word.html?name=${key}`;
+        card.href = `item.html?category=${name}&key=${key}`;
         card.className = "module-card";
         card.innerHTML = `
             <h3>${item.telugu}</h3>

@@ -409,3 +409,18 @@ body {
     font-size: 0.8rem;
     color: #444;
 }
+
+.back-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.back-link a {
+    color: #b34700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

@@ -2,26 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telugu Sentences</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="index.html">Sentences</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="../grammar/index.html" class="nav-link">Grammar</a>
+      <a href="index.html" class="nav-link active">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<main class="letter-page-container">
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="index.html">Sentences</a>
+  <span>›</span>
+  <span id="breadcrumbCategory">Category</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
+<main class="page-container">
     <section id="sentenceContent"></section>
 </main>
 
-<script src="../js/script.js"></script>
+
+<!-- ============================
+     FOOTER
+============================= -->
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadSentences() {
     const params = new URLSearchParams(window.location.search);
@@ -44,11 +94,22 @@ async function loadSentences() {
         school: "School",
         travel: "Travel",
         daily: "Daily Use",
-        food: "Food"
+        food: "Food & Eating",
+        work: "Workplace",
+        shopping: "Shopping",
+        health: "Health",
+        nature: "Nature"
     };
 
-    container.innerHTML = `<h2>${labelMap[category] || category}</h2>`;
+    const categoryLabel = labelMap[category] || category;
 
+    // Update breadcrumb
+    document.getElementById("breadcrumbCategory").textContent = categoryLabel;
+
+    // Title
+    container.innerHTML = `<h1 class="page-title">${categoryLabel}</h1>`;
+
+    // Render each sentence block
     Object.keys(sentences).forEach(key => {
         const s = sentences[key];
 
@@ -57,7 +118,7 @@ async function loadSentences() {
                 <h3>${s.telugu}</h3>
                 <p>${s.english}</p>
 
-                <div class="audio-player" data-src="../audio/${s.audio}">
+                <div class="audio-player" data-src="../assets/audio/${s.audio}">
                     <button class="play-btn">▶</button>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -71,14 +132,9 @@ async function loadSentences() {
         `;
     });
 
+    // Initialize audio players
     if (window.initAudioPlayers) window.initAudioPlayers();
 }
-
-buildBreadcrumb([
-    { label: "Sentences", link: "index.html" },
-    { label: labelMap[category] }
-]);
-
 
 document.addEventListener("DOMContentLoaded", loadSentences);
 </script>

@@ -2,56 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Categories</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories — వర్గాలు</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../alphabet/alphabet.html">Alphabet</a>
-        <a href="../words/index.html">Words</a>
-        <a href="../numbers/index.html">Numbers</a>
-        <a href="index.html">Categories</a>
-        <a href="../grammar/index.html">Grammar</a>
-        <a href="../stories/index.html">Stories</a>
-        <a href="../padyalu/index.html">Padyalu</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="index.html" class="nav-link active">Categories</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- Main Content -->
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <span>Categories</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container">
+
     <section class="modules">
-        <h2>Categories</h2>
-        <p class="modules-subtitle">Learn Telugu through themes like colors, animals, fruits, and vegetables.</p>
+        <h1 class="page-title">వర్గాలు — Categories</h1>
+        <p class="modules-subtitle">Learn Telugu through themes like colors, animals, fruits, vegetables, and more.</p>
 
         <div id="categoriesGrid" class="module-grid"></div>
     </section>
+
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="../js/script.js"></script>
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 const categories = [
     { key: "colors", label: "Colors", telugu: "రంగులు" },
@@ -70,14 +94,10 @@ function loadCategories() {
         card.className = "module-card";
         card.innerHTML = `
             <h3>${cat.telugu}</h3>
-            <h4>${cat.label}</h4>
+            <p>${cat.label}</p>
         `;
         grid.appendChild(card);
     });
-
-    buildBreadcrumb([
-        { label: "Categories", link: "index.html" }
-    ]);
 }
 
 document.addEventListener("DOMContentLoaded", loadCategories);

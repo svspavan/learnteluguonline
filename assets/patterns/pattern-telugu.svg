@@ -1,0 +1,15 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      font-size: 48px;
+      fill: rgba(123, 30, 30, 0.06); /* maroon at 6% opacity */
+    }
+  </style>
+
+  <text x="10" y="60">అ</text>
+  <text x="110" y="60">క</text>
+  <text x="10" y="160">త</text>
+  <text x="110" y="160">ప</text>
+  <text x="60" y="110">ర</text>
+</svg>

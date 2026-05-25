@@ -3,66 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telugu Alphabet</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Telugu Alphabet — అక్షరములు</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="alphabet.html">Alphabet</a>
-        <a href="#">Words</a>
-        <a href="#">Sentences</a>
-        <a href="#">Stories</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="alphabet.html" class="nav-link active">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <span>Alphabet</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container">
+
     <section class="lessons">
-        <h2>తెలుగు అక్షరములు</h2>
-        <h2>Telugu Alphabet</h2>
-        <p>తెలుగులో అచ్చులు మరియు హల్లులు నేర్చుకుందాం.</p>
-    <p>Learn Telugu vowels and consonants.</p>
 
-    <h2>Begin Your Learning</h2>
+        <h1 class="page-title">తెలుగు అక్షరములు</h1>
+        <p class="page-subtitle">Learn Telugu vowels (అచ్చులు) and consonants (హల్లులు)</p>
 
-    <div class="lesson-grid">
+        <h2 class="section-heading">Begin Your Learning</h2>
 
-        <a href="vowels.html" class="lesson-card">
-            <h3>అచ్చులు</h3>
-            <h3>Vowels</h3>
-            <!-- <p>Learn vowels. </p> -->
-        </a>
+        <div class="lesson-grid">
 
-        <a href="consonants.html" class="lesson-card">
-            <h3>హల్లులు</h3>
-            <h3>Consonants</h3>
-            <!-- <p>అచ్చులు, హల్లులు మరియు వాటి ఉచ్చారణ.</p> -->
-            <!-- <p>Learn consonants.</p> -->
-        </a>
+            <a href="vowels.html" class="lesson-card">
+                <h3>అచ్చులు</h3>
+                <p>Vowels</p>
+            </a>
 
+            <a href="consonants.html" class="lesson-card">
+                <h3>హల్లులు</h3>
+                <p>Consonants</p>
+            </a>
 
-    </div>
+        </div>
 
+    </section>
 
-
-
-</section>
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
 
-<script src="../js/script.js">
-    
-</script>
 </body>
 </html>

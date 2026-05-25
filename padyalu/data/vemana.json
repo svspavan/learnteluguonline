@@ -1,7 +1,14 @@
 {
   "guri-choodaku": {
-    "telugu": "గురి చూడకు గుణమును చూడుము",
-    "english": "Do not judge by appearance; judge by character.",
-    "moral": "Look at inner qualities, not outward looks."
+    "title": "గురి చూడకు",
+    "lines": [
+      "గురి చూడకు గుణమును చూడుము"
+    ],
+    "meaning": [
+      "Do not judge by appearance.",
+      "Judge by inner character and qualities."
+    ],
+    "moral": "Look at inner qualities, not outward looks.",
+    "audio": "guri_choodaku.mp3"
   }
 }

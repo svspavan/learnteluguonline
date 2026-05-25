@@ -1,7 +1,14 @@
 {
   "santosham": {
-    "telugu": "సంతోషమే జీవన ధనం",
-    "english": "Happiness is the true wealth of life.",
-    "moral": "Be content and grateful."
+    "title": "సంతోషమే జీవన ధనం",
+    "lines": [
+      "సంతోషమే జీవన ధనం"
+    ],
+    "meaning": [
+      "Happiness is the true wealth of life.",
+      "Be content and grateful for what you have."
+    ],
+    "moral": "Be content and grateful.",
+    "audio": "santosham.mp3"
   }
 }

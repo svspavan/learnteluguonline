@@ -2,56 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telugu Number</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../alphabet/alphabet.html">Alphabet</a>
-        <a href="../words/index.html">Words</a>
-        <a href="index.html">Numbers</a>
-        <a href="../categories/index.html">Categories</a>
-        <a href="../grammar/index.html">Grammar</a>
-        <a href="../stories/index.html">Stories</a>
-        <a href="../padyalu/index.html">Padyalu</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="index.html" class="nav-link">Numbers</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- Main Content -->
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="index.html">Numbers</a>
+  <span>›</span>
+  <span id="breadcrumbNumber">Number</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container">
     <section id="numberContent"></section>
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="../js/script.js"></script>
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadNumber() {
     const params = new URLSearchParams(window.location.search);
     const num = params.get("num");
     const container = document.getElementById("numberContent");
+    const breadcrumbLabel = document.getElementById("breadcrumbNumber");
 
     if (!num) {
         container.innerHTML = "<p>No number specified.</p>";
@@ -68,17 +92,14 @@ async function loadNumber() {
             return;
         }
 
-        // Build breadcrumb AFTER loading number
-        buildBreadcrumb([
-            { label: "Numbers", link: "index.html" },
-            { label: item.telugu }
-        ]);
+        // Update breadcrumb
+        breadcrumbLabel.textContent = item.telugu;
 
         container.innerHTML = `
-            <h2 class="big-letter">${item.telugu}</h2>
-            <h3 class="letter-english">${item.english}</h3>
+            <h1 class="big-letter">${item.telugu}</h1>
+            <h2 class="letter-english">${item.english}</h2>
 
-            <div class="audio-player" data-src="../audio/${item.audio}">
+            <div class="audio-player" data-src="../assets/audio/${item.audio}">
                 <button class="play-btn">▶</button>
                 <div class="progress-container">
                     <div class="progress-bar"></div>

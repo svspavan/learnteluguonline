@@ -2,28 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Telugu Sentences</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily‑Use Telugu Sentences</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="index.html">Sentences</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="../grammar/index.html" class="nav-link">Grammar</a>
+      <a href="index.html" class="nav-link active">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<main class="modules">
-    <h2>Daily‑Use Telugu Sentences</h2>
-    <p class="modules-subtitle">Click a category to explore sentences.</p>
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <span>Sentences</span>
+</nav>
 
-    <div id="sentenceCategories" class="module-grid"></div>
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
+<main class="page-container">
+    <section class="modules">
+        <h1 class="page-title">Daily‑Use Telugu Sentences</h1>
+        <p class="modules-subtitle">Click a category to explore sentences.</p>
+
+        <div id="sentenceCategories" class="module-grid"></div>
+    </section>
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadSentenceCategories() {
     const res = await fetch("data/sentences.json");
@@ -31,23 +82,27 @@ async function loadSentenceCategories() {
 
     const grid = document.getElementById("sentenceCategories");
 
+    const labelMap = {
+        greetings: "Greetings",
+        home: "Home",
+        school: "School",
+        travel: "Travel",
+        daily: "Daily Use",
+        food: "Food & Eating",
+        work: "Workplace",
+        shopping: "Shopping",
+        health: "Health",
+        nature: "Nature"
+    };
+
     Object.keys(data).forEach(cat => {
         const card = document.createElement("a");
         card.href = `sentence.html?category=${cat}`;
         card.className = "module-card";
 
-        const labelMap = {
-            greetings: "Greetings",
-            home: "Home",
-            school: "School",
-            travel: "Travel",
-            daily: "Daily Use",
-            food: "Food"
-        };
-
         card.innerHTML = `
             <h3>${labelMap[cat] || cat}</h3>
-            <h4>${cat}</h4>
+            <p>${cat}</p>
         `;
 
         grid.appendChild(card);

@@ -2,51 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Padyam</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Padyam</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../alphabet/alphabet.html">Alphabet</a>
-        <a href="../words/index.html">Words</a>
-        <a href="../numbers/index.html">Numbers</a>
-        <a href="../categories/index.html">Categories</a>
-        <a href="../grammar/index.html">Grammar</a>
-        <a href="index.html">Padyalu</a>
-        <a href="../stories/index.html">Stories</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="../grammar/index.html" class="nav-link">Grammar</a>
+      <a href="index.html" class="nav-link active">Padyalu</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- Main Content -->
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="index.html">Padyalu</a>
+  <span>›</span>
+  <span id="breadcrumbTitle">Padyam</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container">
     <section id="padyamContent"></section>
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="../js/script.js"></script>
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadPadyam() {
     const params = new URLSearchParams(window.location.search);
@@ -63,31 +87,49 @@ async function loadPadyam() {
         return;
     }
 
+    // Update breadcrumb
+    document.getElementById("breadcrumbTitle").textContent = titleMap[type];
+
     const res = await fetch(`data/${type}.json`);
     const data = await res.json();
 
     const container = document.getElementById("padyamContent");
 
-    // Build breadcrumb AFTER loading
-    buildBreadcrumb([
-        { label: "Padyalu", link: "index.html" },
-        { label: titleMap[type] }
-    ]);
+    container.innerHTML = `<h1 class="page-title">${titleMap[type]}</h1>`;
 
-    container.innerHTML = `<h2>${titleMap[type]}</h2>`;
+    Object.keys(data).forEach(key => {
+        const p = data[key];
 
-    container.innerHTML += Object.keys(data)
-        .map(key => {
-            const p = data[key];
-            return `
-                <div class="padyam-block">
-                    <h3>${p.telugu}</h3>
-                    <p class="story-paragraph">${p.english}</p>
-                    <p class="story-moral"><strong>మూల్యం (Moral):</strong> ${p.moral}</p>
+        const linesHTML = p.lines.map(line => `<div>${line}</div>`).join("");
+        const meaningHTML = p.meaning.map(m => `<li>${m}</li>`).join("");
+
+        container.innerHTML += `
+            <div class="padyam-block">
+                <h3>${p.title}</h3>
+
+                <div class="padyam-lines">
+                    ${linesHTML}
                 </div>
-            `;
-        })
-        .join("");
+
+                <div class="audio-player" data-src="../assets/audio/${p.audio}">
+                    <button class="play-btn">▶</button>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time-label">0:00</span>
+                </div>
+
+                <h4>Meaning</h4>
+                <ul class="meaning-list">
+                    ${meaningHTML}
+                </ul>
+
+                <p class="story-moral"><strong>Moral:</strong> ${p.moral}</p>
+            </div>
+        `;
+    });
+
+    if (window.initAudioPlayers) window.initAudioPlayers();
 }
 
 document.addEventListener("DOMContentLoaded", loadPadyam);

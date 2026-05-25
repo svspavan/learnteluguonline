@@ -2,56 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telugu Letter</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="alphabet.html">Alphabet</a>
-        <a href="../words/index.html">Words</a>
-        <a href="../numbers/index.html">Numbers</a>
-        <a href="../categories/index.html">Categories</a>
-        <a href="../grammar/index.html">Grammar</a>
-        <a href="../stories/index.html">Stories</a>
-        <a href="../padyalu/index.html">Padyalu</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- Main Content -->
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="alphabet.html">Alphabet</a>
+  <span>›</span>
+  <span id="breadcrumbLetter">Letter</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container letter-page">
     <section id="letterContent"></section>
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="../js/script.js"></script>
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadLetter() {
     const params = new URLSearchParams(window.location.search);
     const name = params.get("name");
     const container = document.getElementById("letterContent");
+    const breadcrumbLabel = document.getElementById("breadcrumbLetter");
 
     if (!name) {
         container.innerHTML = "<p>No letter specified.</p>";
@@ -68,17 +91,14 @@ async function loadLetter() {
             return;
         }
 
-        // Build breadcrumb AFTER loading letter
-        buildBreadcrumb([
-            { label: "Alphabet", link: "alphabet.html" },
-            { label: letter.telugu }
-        ]);
+        // Update breadcrumb
+        breadcrumbLabel.textContent = letter.telugu;
 
         container.innerHTML = `
-            <h2 class="big-letter">${letter.telugu}</h2>
-            <h3 class="letter-english">${letter.english}</h3>
+            <h1 class="big-letter">${letter.telugu}</h1>
+            <h2 class="letter-english">${letter.english}</h2>
 
-            <div class="audio-player" data-src="../audio/${letter.audio}">
+            <div class="audio-player" data-src="../assets/audio/${letter.audio}">
                 <button class="play-btn">▶</button>
                 <div class="progress-container">
                     <div class="progress-bar"></div>
@@ -96,6 +116,7 @@ async function loadLetter() {
             </ul>
         `;
 
+        // Initialize audio players if available
         if (window.initAudioPlayers) window.initAudioPlayers();
 
     } catch (e) {

@@ -1,8 +1,10 @@
 /* =========================================================
    MODERN TELUGU AESTHETIC — GLOBAL THEME SYSTEM
    ========================================================= */
+
+/* Light Mode */
 :root {
-    /* Light theme */
+    /* Global theme */
     --bg-color: #faf7f2;
     --text-color: #2a1f1a;
     --header-bg: #fff8f0;
@@ -26,10 +28,17 @@
 
     /* Transitions */
     --transition: 0.25s ease;
+
+    /* Module / Padyalu specific */
+    --module-title-color: #7b1fa2;
+    --module-subtitle-color: #5d4037;
+    --card-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    --card-shadow-hover: 0 6px 16px rgba(0,0,0,0.25);
+    --padyalu-bg: linear-gradient(#fff8e1, #fbe9e7);
 }
 
-/* Dark mode */
-.dark-mode {
+/* Dark Mode */
+body.dark-mode {
     --bg-color: #12100f;
     --text-color: #e8e0d9;
     --header-bg: #1b1816;
@@ -37,6 +46,13 @@
     --link-color: #ffb366;
     --shadow-soft: 0 2px 6px rgba(255,255,255,0.05);
     --shadow-strong: 0 4px 12px rgba(255,255,255,0.12);
+
+    /* Module / Padyalu specific */
+    --module-title-color: #e1bee7;
+    --module-subtitle-color: #d7ccc8;
+    --card-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    --card-shadow-hover: 0 6px 16px rgba(255,255,255,0.2);
+    --padyalu-bg: linear-gradient(#3a2a3d, #2a1f2c);
 }
 
 /* Smooth transitions */
@@ -77,86 +93,108 @@ main {
 /* =========================================================
    HEADER
    ========================================================= */
-.header {
-    background: var(--header-bg);
-    padding: 0.8rem 1.5rem;
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: #fff8f0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0.6rem 1.2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .logo {
-    font-size: 1.4rem;
     font-weight: 700;
-    color: var(--maroon);
+    font-size: 1.3rem;
+    color: #7B1E1E;
 }
 
-/* Navigation */
 .nav {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    flex: 1;
 }
 
-.nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
+.nav-link {
     position: relative;
+    text-decoration: none;
+    color: #2A1F1A;
+    font-weight: 500;
+    font-size: 0.95rem;
 }
 
-.nav a::after {
+.nav-link::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -3px;
-    width: 0%;
+    width: 0;
     height: 2px;
-    background: var(--saffron);
-    transition: width 0.25s ease;
+    background: #FF9933;
+    transition: width 0.2s ease;
 }
 
-.nav a:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
-/* Theme toggle */
 .theme-toggle {
-    background: none;
     border: none;
-    font-size: 1.4rem;
+    background: none;
+    font-size: 1.3rem;
     cursor: pointer;
-    color: var(--text-color);
 }
 
-/* Search bar */
-.header-search {
-    flex: 1;
-    max-width: 320px;
-}
+/* Mobile nav */
 
-.header-search input {
-    width: 100%;
-    padding: 0.45rem 0.6rem;
-    border-radius: 6px;
-    border: 1px solid #c9b8a8;
-    background: #fffdf8;
-}
-
-/* Mobile menu */
 .menu-toggle {
     display: none;
-    font-size: 1.8rem;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 56px;
+        background: #fff8f0;
+        flex-direction: column;
+        padding: 0.8rem 1.2rem;
+        display: none;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .theme-toggle {
+        margin-left: 0.5rem;
+    }
 }
 
 /* =========================================================
-   MODULE CARDS
+   MODULE CARDS (OTHER PAGES)
    ========================================================= */
 .modules {
     text-align: center;
@@ -247,7 +285,7 @@ main {
 }
 
 /* =========================================================
-   AUDIO PLAYER
+   AUDIO PLAYER (GENERIC)
    ========================================================= */
 .audio-player {
     display: flex;
@@ -317,7 +355,7 @@ main {
 }
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE (GLOBAL)
    ========================================================= */
 @media (max-width: 900px) {
     .header {
@@ -331,24 +369,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    .nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-        background: var(--header-bg);
-        border-top: 1px solid rgba(0,0,0,0.1);
-    }
-
-    .nav.open {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-    }
-
     .breadcrumb {
         margin: 0.5rem 1rem;
     }
@@ -493,103 +513,116 @@ main {
     color: #6A5A4A;
 }
 
-/* HEADER */
+/* ============================
+   MODULE SECTION (Reusable)
+   ============================ */
 
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    background: #fff8f0;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+.module-section {
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+    transition: background 0.3s ease;
 }
 
-.header-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0.6rem 1.2rem;
+/* Padyalu-specific module */
+.module-padyalu {
+    background: var(--padyalu-bg);
+}
+
+.module-title {
+    font-family: 'Pothana2000', 'Noto Sans Telugu', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--module-title-color);
+}
+
+.module-subtitle {
+    display: block;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: var(--module-subtitle-color);
+}
+
+/* Override layout only inside Padyalu module */
+.module-padyalu .module-grid {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.module-padyalu .module-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module-padyalu .module-card:hover {
+    transform: scale(1.03);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* Padyam card content */
+.padyam-card h3 {
+    font-family: 'Pothana2000', 'Noto Sans Telugu', sans-serif;
+    color: #8e24aa;
+    margin-bottom: 10px;
+}
+
+.padyam-line {
+    color: #5d4037;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.padyam-actions {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 8px;
 }
 
-.logo {
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #7B1E1E;
-}
-
-.nav {
-    display: flex;
-    gap: 1rem;
-    margin-left: 1.5rem;
-    flex: 1;
-}
-
-.nav-link {
-    position: relative;
+/* Audio + Read buttons on homepage */
+.audio-btn,
+.read-btn {
+    background: #ffb300;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
     text-decoration: none;
-    color: #2A1F1A;
-    font-weight: 500;
-    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background: #FF9933;
-    transition: width 0.2s ease;
+.audio-btn:hover,
+.read-btn:hover {
+    background: #f57c00;
+    transform: translateY(-1px);
 }
 
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
+/* ============================
+   ANIMATIONS
+   ============================ */
+
+.fade-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease forwards;
 }
 
-.theme-toggle {
-    border: none;
-    background: none;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
-/* Mobile nav */
-
-.menu-toggle {
-    display: none;
-    border: none;
-    background: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .nav {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 56px;
-        background: #fff8f0;
-        flex-direction: column;
-        padding: 0.8rem 1.2rem;
-        display: none;
-        border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-
-    .nav.open {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-    }
-
-    .theme-toggle {
-        margin-left: 0.5rem;
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

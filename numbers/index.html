@@ -2,56 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Telugu Numbers</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Numbers — సంఖ్యలు</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../alphabet/alphabet.html">Alphabet</a>
-        <a href="../words/index.html">Words</a>
-        <a href="index.html">Numbers</a>
-        <a href="../categories/index.html">Categories</a>
-        <a href="../grammar/index.html">Grammar</a>
-        <a href="../stories/index.html">Stories</a>
-        <a href="../padyalu/index.html">Padyalu</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="index.html" class="nav-link active">Numbers</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- Main Content -->
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <span>Numbers</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container">
+
     <section class="modules">
-        <h2>Telugu Numbers</h2>
-        <p class="modules-subtitle">Click a number to learn pronunciation and examples.</p>
+        <h1 class="page-title">సంఖ్యలు — Numbers</h1>
+        <p class="modules-subtitle">Click a number to learn pronunciation and example usage.</p>
 
         <div id="numbersGrid" class="module-grid"></div>
     </section>
+
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="../js/script.js"></script>
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadNumbers() {
     const res = await fetch("data/numbers.json");
@@ -67,15 +90,11 @@ async function loadNumbers() {
         card.className = "module-card";
         card.innerHTML = `
             <h3>${item.telugu}</h3>
-            <h4>${item.english}</h4>
+            <p>${item.english}</p>
         `;
 
         grid.appendChild(card);
     });
-
-    buildBreadcrumb([
-        { label: "Numbers", link: "index.html" }
-    ]);
 }
 
 document.addEventListener("DOMContentLoaded", loadNumbers);

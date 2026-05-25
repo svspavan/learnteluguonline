@@ -1,18 +1,34 @@
 {
-  "red": { "telugu": "ఎరుపు", "english": "Red", "audio": "red.mp3",
+  "red": {
+    "telugu": "ఎరుపు",
+    "english": "Red",
+    "audio": "red.mp3",
     "image": "red.png",
     "example": "ఎరుపు రంగు గులాబీ పువ్వు.",
-    "example_english": "A red rose." },
-  "blue": { "telugu": "నీలం", "english": "Blue", "audio": "blue.mp3",
+    "example_english": "A red rose."
+  },
+  "blue": {
+    "telugu": "నీలం",
+    "english": "Blue",
+    "audio": "blue.mp3",
     "image": "blue.png",
     "example": "నీలం రంగు ఆకాశం.",
-    "example_english": "The blue sky." },
-  "green": { "telugu": "ఆకుపచ్చ", "english": "Green", "audio": "green.mp3",
+    "example_english": "The blue sky."
+  },
+  "green": {
+    "telugu": "ఆకుపచ్చ",
+    "english": "Green",
+    "audio": "green.mp3",
     "image": "green.png",
     "example": "ఆకుపచ్చ గడ్డ పువ్వు.",
-    "example_english": "A green leaf." },
-  "yellow": { "telugu": "పసుపు", "english": "Yellow", "audio": "yellow.mp3",
+    "example_english": "A green leaf."
+  },
+  "yellow": {
+    "telugu": "పసుపు",
+    "english": "Yellow",
+    "audio": "yellow.mp3",
     "image": "yellow.png",
     "example": "పసుపు రంగు కర్ర.",
-    "example_english": "A yellow banana." }
+    "example_english": "A yellow banana."
+  }
 }

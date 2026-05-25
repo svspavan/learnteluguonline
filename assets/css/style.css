@@ -1,0 +1,628 @@
+/* =========================================================
+   MODERN TELUGU AESTHETIC — GLOBAL THEME SYSTEM
+   ========================================================= */
+
+/* Light Mode */
+:root {
+    /* Global theme */
+    --bg-color: #faf7f2;
+    --text-color: #2a1f1a;
+    --header-bg: #fff8f0;
+    --card-bg: #ffffff;
+    --link-color: #b34700;
+
+    /* Cultural palette */
+    --maroon: #7B1E1E;
+    --saffron: #FF9933;
+    --gold: #D4A017;
+    --sandstone: #F5E6CC;
+    --charcoal: #2E2E2E;
+
+    /* Layout */
+    --max-width: 1000px;
+    --page-padding: 2rem 1.5rem;
+
+    /* Shadows */
+    --shadow-soft: 0 2px 6px rgba(0,0,0,0.06);
+    --shadow-strong: 0 4px 12px rgba(0,0,0,0.12);
+
+    /* Transitions */
+    --transition: 0.25s ease;
+
+    /* Module / Padyalu specific */
+    --module-title-color: #7b1fa2;
+    --module-subtitle-color: #5d4037;
+    --card-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    --card-shadow-hover: 0 6px 16px rgba(0,0,0,0.25);
+    --padyalu-bg: linear-gradient(#fff8e1, #fbe9e7);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --bg-color: #12100f;
+    --text-color: #e8e0d9;
+    --header-bg: #1b1816;
+    --card-bg: #1f1c1a;
+    --link-color: #ffb366;
+    --shadow-soft: 0 2px 6px rgba(255,255,255,0.05);
+    --shadow-strong: 0 4px 12px rgba(255,255,255,0.12);
+
+    /* Module / Padyalu specific */
+    --module-title-color: #e1bee7;
+    --module-subtitle-color: #d7ccc8;
+    --card-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    --card-shadow-hover: 0 6px 16px rgba(255,255,255,0.2);
+    --padyalu-bg: linear-gradient(#3a2a3d, #2a1f2c);
+}
+
+/* Smooth transitions */
+* {
+    transition: background-color var(--transition),
+                color var(--transition),
+                border-color var(--transition),
+                box-shadow var(--transition);
+}
+
+/* =========================================================
+   GLOBAL LAYOUT
+   ========================================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.page-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--page-padding);
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: #fff8f0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #7B1E1E;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1.5rem;
+    flex: 1;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #2A1F1A;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #FF9933;
+    transition: width 0.2s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.theme-toggle {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* Mobile nav */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 56px;
+        background: #fff8f0;
+        flex-direction: column;
+        padding: 0.8rem 1.2rem;
+        display: none;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .theme-toggle {
+        margin-left: 0.5rem;
+    }
+}
+
+/* =========================================================
+   MODULE CARDS (OTHER PAGES)
+   ========================================================= */
+.modules {
+    text-align: center;
+}
+
+.modules-subtitle {
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    color: #6a5a4a;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+.module-card {
+    background: var(--card-bg);
+    padding: 1.3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-strong);
+    border-color: var(--saffron);
+}
+
+.module-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--maroon);
+}
+
+.module-card h4 {
+    margin: 0.4rem 0 0;
+    font-size: 0.95rem;
+    color: #6a5a4a;
+}
+
+/* =========================================================
+   DETAIL PAGES
+   ========================================================= */
+.big-letter {
+    font-size: 140px;
+    font-weight: bold;
+    color: var(--saffron);
+    margin-bottom: 20px;
+}
+
+.story-paragraph {
+    margin: 1rem 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.story-moral {
+    font-weight: bold;
+    color: var(--maroon);
+    margin-top: 1rem;
+}
+
+/* Images */
+.item-image,
+.story-image {
+    width: 240px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Back link */
+.back-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.back-link a {
+    color: var(--maroon);
+    font-weight: 600;
+}
+
+/* =========================================================
+   AUDIO PLAYER (GENERIC)
+   ========================================================= */
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 1rem 0;
+}
+
+.play-btn {
+    background: var(--gold);
+    border: none;
+    padding: 0.45rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000;
+}
+
+.progress-container {
+    flex: 1;
+    height: 6px;
+    background: #d8c7b8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--saffron);
+}
+
+.time-label {
+    font-size: 0.8rem;
+    color: #6a5a4a;
+}
+
+/* =========================================================
+   BREADCRUMBS
+   ========================================================= */
+.breadcrumb {
+    font-size: 0.95rem;
+    margin: 1rem 2rem;
+    color: #6a5a4a;
+}
+
+.breadcrumb a {
+    color: var(--maroon);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb span {
+    margin: 0 6px;
+    color: var(--saffron);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer {
+    background: var(--maroon);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 1.5rem;
+}
+
+/* =========================================================
+   RESPONSIVE (GLOBAL)
+   ========================================================= */
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header-search {
+        order: 3;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        margin: 0.5rem 1rem;
+    }
+}
+
+/* ============================
+   HERO SECTION (REFINED)
+   ============================ */
+
+.hero {
+    position: relative;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        #F7EEDC 0%,
+        #FCE7C2 100%
+    );
+    overflow: hidden;
+}
+
+/* Telugu script pattern overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/pattern-telugu.svg');
+    background-size: 260px;
+    background-repeat: repeat;
+    opacity: 0.18; /* subtle */
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #7B1E1E;
+    margin-bottom: 12px;
+}
+
+.hero-title::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #D4A017;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #4A3F36;
+    margin-bottom: 22px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #D4A017;
+    color: #7B1E1E;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(212,160,23,0.4);
+}
+
+/* ============================
+   LEARNING PATH (REFINED)
+   ============================ */
+
+.learning-path {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.lp-title {
+    font-size: 28px;
+    color: #7B1E1E;
+    font-weight: 700;
+}
+
+.lp-subtitle {
+    color: #6A5A4A;
+    margin-bottom: 28px;
+}
+
+.lp-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.lp-card {
+    background: #FFFFFF;
+    padding: 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #2A1F1A;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: 0.25s ease;
+}
+
+.lp-card:hover {
+    transform: translateY(-4px);
+    border-color: #FF9933;
+    box-shadow: 0 4px 14px rgba(255,153,51,0.25);
+}
+
+.lp-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.lp-card h3 {
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-size: 20px;
+    color: #7B1E1E;
+    margin-bottom: 4px;
+}
+
+.lp-card p {
+    font-size: 14px;
+    color: #6A5A4A;
+}
+
+/* ============================
+   MODULE SECTION (Reusable)
+   ============================ */
+
+.module-section {
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+/* Padyalu-specific module */
+.module-padyalu {
+    background: var(--padyalu-bg);
+}
+
+.module-title {
+    font-family: 'Pothana2000', 'Noto Sans Telugu', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--module-title-color);
+}
+
+.module-subtitle {
+    display: block;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: var(--module-subtitle-color);
+}
+
+/* Override layout only inside Padyalu module */
+.module-padyalu .module-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.module-padyalu .module-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module-padyalu .module-card:hover {
+    transform: scale(1.03);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* Padyam card content */
+.padyam-card h3 {
+    font-family: 'Pothana2000', 'Noto Sans Telugu', sans-serif;
+    color: #8e24aa;
+    margin-bottom: 10px;
+}
+
+.padyam-line {
+    color: #5d4037;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.padyam-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Audio + Read buttons on homepage */
+.audio-btn,
+.read-btn {
+    background: #ffb300;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.audio-btn:hover,
+.read-btn:hover {
+    background: #f57c00;
+    transform: translateY(-1px);
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+
+.fade-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

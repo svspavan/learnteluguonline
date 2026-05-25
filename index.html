@@ -3,125 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Telugu Online</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Learn Telugu Online — తెలుగు నేర్చుకుందాం</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon (optional if added later) -->
+    <!-- <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"> -->
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="alphabet/alphabet.html">Alphabet</a>
-        <a href="words/index.html">Words</a>
-        <a href="numbers/index.html">Numbers</a>
-        <a href="categories/index.html">Categories</a>
-        <a href="grammar/index.html">Grammar</a>
-        <a href="stories/index.html">Stories</a>
-        <a href="padyalu/index.html">Padyalu</a>
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="words/index.html" class="nav-link">Words</a>
+      <a href="numbers/index.html" class="nav-link">Numbers</a>
+      <a href="stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Hero Section -->
-<section class="hero hero-pattern">
+
+<!-- ============================
+     HERO SECTION
+============================= -->
+<section class="hero">
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
-        <h1>తెలుగు నేర్చుకుందాం రండి</h1>
-        <h2>Learn Telugu with Tradition, Stories, and Heritage</h2>
+        <h1 class="hero-title">తెలుగు నేర్చుకోవడం రండి</h1>
+        <p class="hero-subtitle">Learn Telugu with tradition, stories, and heritage</p>
         <p>Start your journey into the beautiful Telugu language — rooted in culture, warmth, and history.</p>
-        <a href="alphabet/alphabet.html" class="cta-btn">Start with Alphabet</a>
+        <a href="alphabet/alphabet.html" class="hero-btn">Start with Alphabet</a>
     </div>
 </section>
 
-<!-- Core Modules Section -->
-<section class="modules">
-    <h2>Start Your Learning Path</h2>
-    <p class="modules-subtitle">Begin with the basics and grow step by step.</p>
+
+<!-- ============================
+     LEARNING PATH
+============================= -->
+<main>
+<section class="learning-path">
+    <h2 class="lp-title">Start Your Learning Path</h2>
+    <p class="lp-subtitle">Choose a module to begin your journey</p>
+
+    <div class="lp-grid">
+
+        <a class="lp-card" href="alphabet/alphabet.html">
+            <div class="lp-icon">🅰️</div>
+            <h3>అక్షరాలు</h3>
+            <p>Alphabet</p>
+        </a>
+
+        <a class="lp-card" href="words/index.html">
+            <div class="lp-icon">📘</div>
+            <h3>పదాలు</h3>
+            <p>Words</p>
+        </a>
+
+        <a class="lp-card" href="numbers/index.html">
+            <div class="lp-icon">🔢</div>
+            <h3>సంఖ్యలు</h3>
+            <p>Numbers</p>
+        </a>
+
+        <a class="lp-card" href="categories/index.html">
+            <div class="lp-icon">🗂️</div>
+            <h3>వర్గాలు</h3>
+            <p>Categories</p>
+        </a>
+
+        <a class="lp-card" href="grammar/index.html">
+            <div class="lp-icon">✍️</div>
+            <h3>వ్యాకరణం</h3>
+            <p>Grammar</p>
+        </a>
+
+        <a class="lp-card" href="stories/index.html">
+            <div class="lp-icon">📜</div>
+            <h3>కథలు</h3>
+            <p>Stories</p>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ============================
+     PADYALU SECTION (REFINED)
+============================= -->
+<section class="module-section module-padyalu">
+    <h2 class="module-title">
+        తెలుగు సాహిత్యం & నీతి పద్యాలు
+        <span class="module-subtitle">Explore the wisdom of classical Telugu poetry</span>
+    </h2>
 
     <div class="module-grid">
 
-        <a href="alphabet/alphabet.html" class="module-card">
-            <h3>తెలుగు అక్షరములు</h3>
-            <h4>Telugu Alphabet</h4>
-            <p>Learn vowels (అచ్చులు), consonants (హల్లులు), and their pronunciation.</p>
-        </a>
-
-        <a href="words/index.html" class="module-card">
-            <h3>పదములు</h3>
-            <h4>Words</h4>
-            <p>Build vocabulary with dynamic 3‑letter, 4‑letter, and category‑based words.</p>
-        </a>
-
-        <a href="numbers/index.html" class="module-card">
-            <h3>సంఖ్యలు</h3>
-            <h4>Numbers</h4>
-            <p>Learn Telugu numbers with audio and example sentences.</p>
-        </a>
-
-        <a href="categories/index.html" class="module-card">
-            <h3>వర్గములు</h3>
-            <h4>Categories</h4>
-            <p>Explore colors, animals, fruits, vegetables, and more.</p>
-        </a>
-
-        <a href="grammar/index.html" class="module-card">
-            <h3>వ్యాకరణం</h3>
-            <h4>Grammar</h4>
-            <p>Learn vibhaktulu, tenses, verb forms, sentence structure, sandhi, samasam, and more.</p>
-        </a>
-
-        <a href="stories/index.html" class="module-card">
-            <h3>కథలు</h3>
-            <h4>Stories</h4>
-            <p>Short moral stories with audio and meaning.</p>
-        </a>
-
-    </div>
-</section>
-
-<!-- Cultural Section -->
-<section class="culture">
-    <h2>తెలుగు సాహిత్యం & నీతి పద్యాలు</h2>
-    <p class="culture-subtitle">Explore the wisdom of classical Telugu poetry.</p>
-
-    <div class="culture-grid">
-
-        <a href="padyalu/padyam.html?type=vemana" class="culture-card">
+        <!-- Vemana -->
+        <div class="module-card padyam-card fade-slide">
             <h3>వేమన శతకము</h3>
-            <p>Simple, powerful padyalu with deep moral lessons.</p>
-        </a>
+            <p class="padyam-line">గురి చూడకు గుణమును చూడుము...</p>
 
-        <a href="padyalu/padyam.html?type=sumati" class="culture-card">
+            <div class="padyam-actions">
+                <button class="audio-btn" data-audio="guri_choodaku.mp3">🔊 Listen</button>
+                <a href="padyalu/padyam.html?type=vemana" class="read-btn">Learn More →</a>
+            </div>
+        </div>
+
+        <!-- Sumati -->
+        <div class="module-card padyam-card fade-slide">
             <h3>సుమతీ శతకము</h3>
-            <p>Timeless verses teaching values, ethics, and good conduct.</p>
-        </a>
+            <p class="padyam-line">సంతోషమే జీవన ధనం...</p>
+
+            <div class="padyam-actions">
+                <button class="audio-btn" data-audio="santosham.mp3">🔊 Listen</button>
+                <a href="padyalu/padyam.html?type=sumati" class="read-btn">Learn More →</a>
+            </div>
+        </div>
 
     </div>
 </section>
 
-<!-- Quote Section -->
+
+<!-- ============================
+     QUOTE SECTION
+============================= -->
 <section class="quote-section">
     <h2>దేశ భాషలందు తెలుగు లెస్స</h2>
     <p><i>— శ్రీకృష్ణ దేవరాయలు</i></p>
 </section>
+</main>
 
-<!-- Footer -->
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="js/script.js"></script>
+
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="assets/js/script.js"></script>
+
+<!-- Inline audio handler for homepage padyam buttons -->
+<script>
+document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("audio-btn")) {
+        const audioFile = e.target.dataset.audio;
+        if (!audioFile) return;
+        const audio = new Audio("assets/audio/" + audioFile);
+        audio.play();
+    }
+});
+</script>
+
 </body>
 </html>

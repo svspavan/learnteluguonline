@@ -1,0 +1,42 @@
+{
+  "circle": {
+    "telugu": "వృత్తం",
+    "english": "Circle",
+    "audio": "circle.mp3",
+    "image": "circle.png",
+    "example": "వృత్తం ఒక గుండ్రటి ఆకారం.",
+    "example_english": "A circle is a round shape."
+  },
+  "square": {
+    "telugu": "చతురస్రం",
+    "english": "Square",
+    "audio": "square.mp3",
+    "image": "square.png",
+    "example": "చతురస్రానికి నాలుగు సమాన భుజాలు ఉంటాయి.",
+    "example_english": "A square has four equal sides."
+  },
+  "triangle": {
+    "telugu": "త్రిభుజం",
+    "english": "Triangle",
+    "audio": "triangle.mp3",
+    "image": "triangle.png",
+    "example": "త్రిభుజానికి మూడు కోణాలు ఉంటాయి.",
+    "example_english": "A triangle has three angles."
+  },
+  "rectangle": {
+    "telugu": "ఆయతం",
+    "english": "Rectangle",
+    "audio": "rectangle.mp3",
+    "image": "rectangle.png",
+    "example": "ఆయతంలో ఎదురెదురుగా ఉన్న భుజాలు సమానం.",
+    "example_english": "Opposite sides of a rectangle are equal."
+  },
+  "oval": {
+    "telugu": "అండాకారం",
+    "english": "Oval",
+    "audio": "oval.mp3",
+    "image": "oval.png",
+    "example": "అండాకారం గుడ్డు ఆకారంలా ఉంటుంది.",
+    "example_english": "An oval looks like the shape of an egg."
+  }
+}

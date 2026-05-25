@@ -1,5 +1,17 @@
 {
-  "pilli": { "telugu": "పిల్లి", "english": "Cat", "audio": "pilli.mp3" },
-  "kukka": { "telugu": "కుక్క", "english": "Dog", "audio": "kukka.mp3" },
-  "gurram": { "telugu": "గుర్రం", "english": "Horse", "audio": "gurram.mp3" }
+  "pilli": {
+    "telugu": "పిల్లి",
+    "english": "Cat",
+    "audio": "pilli.mp3"
+  },
+  "kukka": {
+    "telugu": "కుక్క",
+    "english": "Dog",
+    "audio": "kukka.mp3"
+  },
+  "gurram": {
+    "telugu": "గుర్రం",
+    "english": "Horse",
+    "audio": "gurram.mp3"
+  }
 }

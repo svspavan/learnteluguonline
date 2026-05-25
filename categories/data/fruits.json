@@ -1,5 +1,17 @@
 {
-  "mango": { "telugu": "మామిడి", "english": "Mango", "audio": "mango.mp3" },
-  "banana": { "telugu": "అరటి", "english": "Banana", "audio": "banana.mp3" },
-  "apple": { "telugu": "సేపు", "english": "Apple", "audio": "apple.mp3" }
+  "mango": {
+    "telugu": "మామిడి",
+    "english": "Mango",
+    "audio": "mango.mp3"
+  },
+  "banana": {
+    "telugu": "అరటి",
+    "english": "Banana",
+    "audio": "banana.mp3"
+  },
+  "apple": {
+    "telugu": "సేపు",
+    "english": "Apple",
+    "audio": "apple.mp3"
+  }
 }

@@ -2,88 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grammar Topic</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Full H1 Header -->
-<header class="header">
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
 
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../alphabet/alphabet.html">Alphabet</a>
-        <a href="../words/index.html">Words</a>
-        <a href="../numbers/index.html">Numbers</a>
-        <a href="../categories/index.html">Categories</a>
-        <a href="index.html">Grammar</a>
-        <a href="../stories/index.html">Stories</a>
-        <a href="../padyalu/index.html">Padyalu</a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="index.html" class="nav-link">Grammar</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-
-    <div class="header-search">
-        <input type="text" id="globalSearch"
-               placeholder="Search letters, words, numbers, colors..."
-               oninput="handleGlobalSearch(event)">
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
 </header>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- Main Content -->
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="index.html">Grammar</a>
+  <span>›</span>
+  <span id="breadcrumbTopic">Topic</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
 <main class="page-container">
     <section id="topicContent"></section>
 </main>
 
+
+<!-- ============================
+     FOOTER
+============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-<script src="../js/script.js"></script>
 
+<!-- ============================
+     GLOBAL SCRIPT
+============================= -->
+<script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
 <script>
 async function loadTopic() {
     const params = new URLSearchParams(window.location.search);
     const name = params.get("name");
 
-    const res = await fetch(`data/${name}.json`);
-    const data = await res.json();
+    if (!name) {
+        document.getElementById("topicContent").innerHTML = "<p>Invalid topic.</p>";
+        return;
+    }
 
-    const container = document.getElementById("topicContent");
+    try {
+        const res = await fetch(`data/${name}.json`);
+        const data = await res.json();
 
-    // Build breadcrumb AFTER loading topic
-    buildBreadcrumb([
-        { label: "Grammar", link: "index.html" },
-        { label: data.title }
-    ]);
+        const container = document.getElementById("topicContent");
 
-    container.innerHTML = `
-        <h2>${data.title}</h2>
-        <p class="story-paragraph">${data.description}</p>
-    `;
+        // Update breadcrumb
+        document.getElementById("breadcrumbTopic").textContent = data.title;
 
-    data.items.forEach(item => {
-        container.innerHTML += `
-            <div class="padyam-block">
-                <h3>${item.heading}</h3>
-                <p class="story-paragraph">${item.explanation}</p>
-
-                ${
-                    item.examples
-                        ? `<ul class="word-list">
-                               ${item.examples.map(ex => `<li>${ex}</li>`).join("")}
-                           </ul>`
-                        : ""
-                }
-            </div>
+        // Render main title + description
+        container.innerHTML = `
+            <h1 class="page-title">${data.title}</h1>
+            <p class="story-paragraph">${data.description}</p>
         `;
-    });
+
+        // Render each grammar block
+        data.items.forEach(item => {
+            container.innerHTML += `
+                <div class="padyam-block">
+                    <h3>${item.heading}</h3>
+                    <p class="story-paragraph">${item.explanation}</p>
+
+                    ${
+                        item.examples
+                            ? `<ul class="word-list">
+                                   ${item.examples.map(ex => `<li>${ex}</li>`).join("")}
+                               </ul>`
+                            : ""
+                    }
+                </div>
+            `;
+        });
+
+    } catch (e) {
+        document.getElementById("topicContent").innerHTML = "<p>Error loading topic data.</p>";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", loadTopic);

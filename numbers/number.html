@@ -147,6 +147,9 @@ async function loadNumber() {
         <p class="story-paragraph">${item.example}</p>
         <p class="story-moral">${item.example_english || ""}</p>
       ` : ""}
+
+      ${item.image ? `<img src="images/${item.image}" class="number-image">` : ""}
+
     `;
 
     if (window.initAudioPlayers) window.initAudioPlayers();

@@ -206,11 +206,61 @@ main {
     color: #6a5a4a;
 }
 
-.module-grid {
+/* .module-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.2rem;
+} */
+
+/* .module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: start;
+  margin-top: 2rem;
+} */
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-color, #5a2a00);
+}
+
+.play-progress {
+  width: 60%;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.play-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #a0522d;
+  transition: width 0.3s ease;
+}
+
 
 .module-card {
     background: var(--card-bg);
@@ -220,13 +270,19 @@ main {
     color: var(--text-color);
     box-shadow: var(--shadow-soft);
     border: 1px solid rgba(0,0,0,0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+    max-width: 240px;
+    box-sizing: border-box;
 }
 
 .module-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-strong);
+    /* transform: translateY(-4px); */
+    /* box-shadow: var(--shadow-strong); */
     border-color: var(--saffron);
+    transform: scale(1.04);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .module-card h3 {
@@ -329,7 +385,13 @@ main {
 .breadcrumb {
     font-size: 0.95rem;
     margin: 1rem 2rem;
-    color: #6a5a4a;
+    /* color: #6a5a4a; */
+    color: var(--accent-color, #5a2a00);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb a {
@@ -626,3 +688,212 @@ main {
         transform: translateY(0);
     }
 }
+
+.letter-practice-section {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.tracing-wrapper {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#tracingCanvas {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 1rem;
+  background-color: #fafafa;
+}
+
+.tracing-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcards-wrapper {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.flashcard {
+  width: 260px;
+  height: 160px;
+  margin: 0 auto 1rem;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.flashcard-front {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  font-size: 1rem;
+}
+
+.flashcard-controls {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+#autoTraceBtn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#autoTraceBtn:hover {
+  background-color: #e65c00;
+}
+
+
+/* Grid: responsive multi-column for cards */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+}
+
+/* Card hover */
+.module-card {
+  width: 100%;
+  max-width: 260px;
+  box-sizing: border-box;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--card-bg, #fff);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.module-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Play All progress bar */
+.play-progress {
+  width: 60%;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  margin: 0.75rem auto 1rem;
+  overflow: hidden;
+}
+
+.play-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #a0522d;
+  transition: width 0.25s linear;
+}
+
+/* Tracing & flashcards */
+.letter-practice-section, .tracing-wrapper, .flashcards-wrapper {
+  margin-top: 1.5rem;
+}
+
+#tracingCanvas {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto 1rem;
+  background: #fafafa;
+}
+
+.tracing-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flashcard */
+.flashcard {
+  width: 280px;
+  height: 170px;
+  margin: 0 auto 1rem;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.45s ease;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.flashcard-front { font-size: 1.6rem; font-weight: 700; }
+.flashcard-back { transform: rotateY(180deg); font-size: 1rem; }

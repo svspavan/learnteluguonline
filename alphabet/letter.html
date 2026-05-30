@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telugu Letter</title>
 
-    <!-- Global Styles -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-<!-- ============================
-     HEADER
-============================= -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
@@ -22,7 +18,7 @@
 
     <nav class="nav">
       <a href="../index.html" class="nav-link">Home</a>
-      <a href="alphabet.html" class="nav-link">Alphabet</a>
+      <a href="alphabet.html" class="nav-link active">Alphabet</a>
       <a href="../words/index.html" class="nav-link">Words</a>
       <a href="../sentences/index.html" class="nav-link">Sentences</a>
       <a href="../stories/index.html" class="nav-link">Stories</a>
@@ -32,10 +28,6 @@
   </div>
 </header>
 
-
-<!-- ============================
-     BREADCRUMB
-============================= -->
 <nav class="breadcrumb">
   <a href="../index.html">Home</a>
   <span>›</span>
@@ -44,84 +36,311 @@
   <span id="breadcrumbLetter">Letter</span>
 </nav>
 
+<main class="page-container">
 
-<!-- ============================
-     MAIN CONTENT
-============================= -->
-<main class="page-container letter-page">
-    <section id="letterContent"></section>
+    <section id="letterSection" class="letter-section"></section>
+
+    <section id="practiceSection" class="letter-practice-section">
+        <h2>Practice this letter</h2>
+
+        <!-- Tracing -->
+        <div class="tracing-wrapper">
+            <h3>Tracing</h3>
+            <canvas id="tracingCanvas"></canvas>
+            <div class="tracing-controls">
+                <button id="clearTracingBtn">Clear</button>
+                <button id="autoTraceBtn">Auto‑Trace</button>
+                <label>
+                    Stroke width:
+                    <input type="range" id="strokeWidth" min="2" max="16" value="6">
+                </label>
+                <label>
+                    Color:
+                    <input type="color" id="strokeColor" value="#333333">
+                </label>
+            </div>
+        </div>
+
+        <!-- Flashcards -->
+        <div class="flashcards-wrapper">
+            <h3>Flashcards (Examples)</h3>
+            <div id="flashcard" class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <p class="flashcard-main"></p>
+                    </div>
+                    <div class="flashcard-back">
+                        <p class="flashcard-meaning"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-controls">
+                <button id="prevCardBtn">Previous</button>
+                <button id="flipCardBtn">Flip</button>
+                <button id="nextCardBtn">Next</button>
+            </div>
+        </div>
+    </section>
+
 </main>
 
-
-<!-- ============================
-     FOOTER
-============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-
-<!-- ============================
-     GLOBAL SCRIPT
-============================= -->
 <script src="../assets/js/script.js"></script>
 
-<!-- ============================
-     PAGE-SPECIFIC SCRIPT
-============================= -->
 <script>
 async function loadLetter() {
     const params = new URLSearchParams(window.location.search);
-    const name = params.get("name");
-    const container = document.getElementById("letterContent");
-    const breadcrumbLabel = document.getElementById("breadcrumbLetter");
+    const key = params.get("name");
 
-    if (!name) {
-        container.innerHTML = "<p>No letter specified.</p>";
+    const res = await fetch("data/letters.json");
+    const letters = await res.json();
+
+    const item = letters[key];
+    if (!item) {
+        document.getElementById("letterSection").innerHTML =
+            "<p>Letter not found.</p>";
+        document.getElementById("practiceSection").style.display = "none";
         return;
     }
 
-    try {
-        const res = await fetch("data/letters.json");
-        const data = await res.json();
-        const letter = data[name];
-
-        if (!letter) {
-            container.innerHTML = "<p>Letter not found.</p>";
-            return;
-        }
-
-        // Update breadcrumb
-        breadcrumbLabel.textContent = letter.telugu;
-
-        container.innerHTML = `
-            <h1 class="big-letter">${letter.telugu}</h1>
-            <h2 class="letter-english">${letter.english}</h2>
-
-            <div class="audio-player" data-src="../assets/audio/${letter.audio}">
-                <button class="play-btn">▶</button>
-                <div class="progress-container">
-                    <div class="progress-bar"></div>
-                </div>
-                <span class="time-label">0:00</span>
-            </div>
-
-            <h3>Example Words</h3>
-            <ul class="word-list">
-                ${
-                    (letter.examples || [])
-                        .map(ex => `<li>${ex.word} <span>— ${ex.meaning}</span></li>`)
-                        .join("")
-                }
-            </ul>
-        `;
-
-        // Initialize audio players if available
-        if (window.initAudioPlayers) window.initAudioPlayers();
-
-    } catch (e) {
-        container.innerHTML = "<p>Error loading letter data.</p>";
+    // document.getElementById("breadcrumbLetter").textContent = item.telugu;
+    const from = params.get("from");
+    const breadcrumbContainer = document.querySelector(".breadcrumb");
+    breadcrumbContainer.innerHTML = `
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="alphabet.html">Alphabet</a>
+    <span>›</span>
+    ${
+        from === "vowels"
+        ? `<a href="vowels.html">Vowels</a><span>›</span>`
+        : from === "consonants"
+        ? `<a href="consonants.html">Consonants</a><span>›</span>`
+        : ""
     }
+    <span>${item.telugu}</span>
+    `;
+
+
+    const section = document.getElementById("letterSection");
+
+    const audioHTML = item.audio
+        ? `
+        <div class="audio-player" data-src="audio/${item.audio}">
+            <button class="play-btn">▶</button>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <span class="time-label">0:00</span>
+        </div>
+        `
+        : "";
+
+    const examplesHTML = item.examples && item.examples.length
+        ? item.examples
+            .map(ex => `<li><strong>${ex.word}</strong> — ${ex.meaning}</li>`)
+            .join("")
+        : "<li>No examples available.</li>";
+
+    section.innerHTML = `
+        <h1 class="page-title">${item.telugu} — ${item.english}</h1>
+        ${audioHTML}
+        <h3>Examples</h3>
+        <ul class="examples-list">
+            ${examplesHTML}
+        </ul>
+    `;
+
+    if (window.initAudioPlayers) window.initAudioPlayers();
+
+    initTracing(item.telugu);
+    initFlashcards(item.examples || []);
+}
+
+/* ===== Tracing ===== */
+function initTracing(letterChar) {
+    const canvas = document.getElementById("tracingCanvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+        const parentWidth = canvas.parentElement.clientWidth;
+        canvas.width = Math.min(parentWidth, 500);
+        canvas.height = canvas.width * 0.8;
+        drawGuide();
+    }
+
+    function drawGuide() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.globalAlpha = 0.15;
+        ctx.fillStyle = "#000";
+        const fontSize = canvas.height * 0.7;
+        ctx.font = fontSize + "px serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(letterChar, canvas.width / 2, canvas.height / 2);
+        ctx.globalAlpha = 1.0;
+    }
+
+    let drawing = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    function getPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return {
+            x: clientX - rect.left,
+            y: clientY - rect.top
+        };
+    }
+
+    function startDraw(e) {
+        e.preventDefault();
+        drawing = true;
+        const pos = getPos(e);
+        lastX = pos.x;
+        lastY = pos.y;
+    }
+
+    function draw(e) {
+        if (!drawing) return;
+        e.preventDefault();
+        const pos = getPos(e);
+        const color = document.getElementById("strokeColor").value;
+        const width = document.getElementById("strokeWidth").value;
+
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(pos.x, pos.y);
+        ctx.stroke();
+
+        lastX = pos.x;
+        lastY = pos.y;
+    }
+
+    function endDraw(e) {
+        if (!drawing) return;
+        e.preventDefault();
+        drawing = false;
+    }
+
+    canvas.addEventListener("mousedown", startDraw);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", endDraw);
+    canvas.addEventListener("mouseleave", endDraw);
+
+    canvas.addEventListener("touchstart", startDraw, { passive: false });
+    canvas.addEventListener("touchmove", draw, { passive: false });
+    canvas.addEventListener("touchend", endDraw, { passive: false });
+    canvas.addEventListener("touchcancel", endDraw, { passive: false });
+
+    document.getElementById("clearTracingBtn").addEventListener("click", () => {
+        drawGuide();
+    });
+
+    /* ===== AUTO‑TRACE MODE ===== */
+    document.getElementById("autoTraceBtn").addEventListener("click", () => {
+        autoTrace(letterChar);
+    });
+
+
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+}
+
+function autoTrace(letterChar) {
+    const canvas = document.getElementById("tracingCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Reset canvas and draw faint guide
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.globalAlpha = 0.15;
+    ctx.fillStyle = "#000";
+    const fontSize = canvas.height * 0.7;
+    ctx.font = fontSize + "px Noto Sans Telugu, sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(letterChar, canvas.width / 2, canvas.height / 2);
+    ctx.globalAlpha = 1.0;
+
+    // Auto‑trace style
+    ctx.strokeStyle = "#ff6600";
+    ctx.lineWidth = 8;
+    ctx.lineCap = "round";
+
+    // Convert text to pixels for animation
+    const textWidth = ctx.measureText(letterChar).width;
+    const startX = (canvas.width - textWidth) / 2;
+    const startY = canvas.height / 2;
+
+    let progress = 0;
+    const totalSteps = 100; // smoothness
+
+    function animate() {
+        progress++;
+        const alpha = progress / totalSteps;
+
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.strokeText(letterChar, canvas.width / 2, startY);
+        ctx.restore();
+
+        if (progress < totalSteps) {
+            requestAnimationFrame(animate);
+        }
+    }
+
+    animate();
+}
+
+
+/* ===== Flashcards ===== */
+function initFlashcards(examples) {
+    const flashcard = document.getElementById("flashcard");
+    const frontEl = flashcard.querySelector(".flashcard-main");
+    const backEl = flashcard.querySelector(".flashcard-meaning");
+    const prevBtn = document.getElementById("prevCardBtn");
+    const nextBtn = document.getElementById("nextCardBtn");
+    const flipBtn = document.getElementById("flipCardBtn");
+
+    if (!examples.length) {
+        flashcard.style.display = "none";
+        document.querySelector(".flashcard-controls").style.display = "none";
+        return;
+    }
+
+    let index = 0;
+
+    function renderCard() {
+        const ex = examples[index];
+        frontEl.textContent = ex.word;
+        backEl.textContent = ex.meaning;
+        flashcard.classList.remove("flipped");
+    }
+
+    prevBtn.addEventListener("click", () => {
+        index = (index - 1 + examples.length) % examples.length;
+        renderCard();
+    });
+
+    nextBtn.addEventListener("click", () => {
+        index = (index + 1) % examples.length;
+        renderCard();
+    });
+
+    flipBtn.addEventListener("click", () => {
+        flashcard.classList.toggle("flipped");
+    });
+
+    renderCard();
 }
 
 document.addEventListener("DOMContentLoaded", loadLetter);

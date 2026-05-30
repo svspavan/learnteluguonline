@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telugu Number</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Telugu Number</title>
 
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Telugu Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
-<!-- ============================
-     HEADER
-============================= -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
@@ -33,10 +32,6 @@
   </div>
 </header>
 
-
-<!-- ============================
-     BREADCRUMB
-============================= -->
 <nav class="breadcrumb">
   <a href="../index.html">Home</a>
   <span>›</span>
@@ -45,84 +40,318 @@
   <span id="breadcrumbNumber">Number</span>
 </nav>
 
-
-<!-- ============================
-     MAIN CONTENT
-============================= -->
 <main class="page-container">
-    <section id="numberContent"></section>
+  <section id="numberContent"></section>
+
+  <!-- Practice section -->
+  <section id="practiceSection" class="letter-practice-section" style="display:none;">
+    <h2>Practice this number</h2>
+
+    <!-- Tracing -->
+    <div class="tracing-wrapper">
+      <h3>Tracing</h3>
+      <canvas id="tracingCanvas"></canvas>
+
+      <div class="tracing-controls">
+        <button id="clearTracingBtn">Clear</button>
+        <button id="autoTraceBtn">Auto‑Trace</button>
+
+        <label>Stroke width:
+          <input type="range" id="strokeWidth" min="2" max="24" value="10">
+        </label>
+
+        <label>Color:
+          <input type="color" id="strokeColor" value="#333333">
+        </label>
+      </div>
+    </div>
+
+    <!-- Flashcards -->
+    <div class="flashcards-wrapper">
+      <h3>Flashcards (Examples)</h3>
+
+      <div id="flashcard" class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <p class="flashcard-main"></p>
+          </div>
+          <div class="flashcard-back">
+            <p class="flashcard-meaning"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard-controls">
+        <button id="prevCardBtn">Previous</button>
+        <button id="flipCardBtn">Flip</button>
+        <button id="nextCardBtn">Next</button>
+      </div>
+    </div>
+  </section>
 </main>
 
-
-<!-- ============================
-     FOOTER
-============================= -->
 <footer class="footer">
-    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+  <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-
-<!-- ============================
-     GLOBAL SCRIPT
-============================= -->
 <script src="../assets/js/script.js"></script>
 
-<!-- ============================
-     PAGE-SPECIFIC SCRIPT
-============================= -->
 <script>
+/* ============================
+   LOAD NUMBER
+============================= */
 async function loadNumber() {
-    const params = new URLSearchParams(window.location.search);
-    const num = params.get("num");
-    const container = document.getElementById("numberContent");
-    const breadcrumbLabel = document.getElementById("breadcrumbNumber");
+  const params = new URLSearchParams(window.location.search);
+  const num = params.get("num");
+  const container = document.getElementById("numberContent");
 
-    if (!num) {
-        container.innerHTML = "<p>No number specified.</p>";
-        return;
+  if (!num) {
+    container.innerHTML = "<p>No number specified.</p>";
+    return;
+  }
+
+  try {
+    const res = await fetch("data/numbers.json");
+    const data = await res.json();
+    const item = data[num];
+
+    if (!item) {
+      container.innerHTML = "<p>Number not found.</p>";
+      return;
     }
 
-    try {
-        const res = await fetch("data/numbers.json");
-        const data = await res.json();
-        const item = data[num];
+    // Breadcrumb
+    document.querySelector(".breadcrumb").innerHTML = `
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <a href="index.html">Numbers</a>
+      <span>›</span>
+      <span>${item.telugu}</span>
+    `;
 
-        if (!item) {
-            container.innerHTML = "<p>Number not found.</p>";
-            return;
-        }
+    // Main content
+    container.innerHTML = `
+      <h1 class="big-letter">${item.telugu}</h1>
+      <h2 class="letter-english">${item.english}</h2>
 
-        // Update breadcrumb
-        breadcrumbLabel.textContent = item.telugu;
+      ${item.audio ? `
+        <div class="audio-player" data-src="audio/${item.audio}">
+          <button class="play-btn">▶</button>
+          <div class="progress-container"><div class="progress-bar"></div></div>
+          <span class="time-label">0:00</span>
+        </div>
+      ` : ""}
 
-        container.innerHTML = `
-            <h1 class="big-letter">${item.telugu}</h1>
-            <h2 class="letter-english">${item.english}</h2>
+      ${item.example ? `
+        <h3>Example</h3>
+        <p class="story-paragraph">${item.example}</p>
+        <p class="story-moral">${item.example_english || ""}</p>
+      ` : ""}
+    `;
 
-            <div class="audio-player" data-src="../assets/audio/${item.audio}">
-                <button class="play-btn">▶</button>
-                <div class="progress-container">
-                    <div class="progress-bar"></div>
-                </div>
-                <span class="time-label">0:00</span>
-            </div>
+    if (window.initAudioPlayers) window.initAudioPlayers();
 
-            ${
-                item.example
-                    ? `
-                        <h3>Example</h3>
-                        <p class="story-paragraph">${item.example}</p>
-                        <p class="story-moral">${item.example_english}</p>
-                      `
-                    : ""
-            }
-        `;
+    // Show practice section
+    document.getElementById("practiceSection").style.display = "block";
 
-        if (window.initAudioPlayers) window.initAudioPlayers();
+    // Init tracing + flashcards
+    initTracing(item.telugu);
 
-    } catch (e) {
-        container.innerHTML = "<p>Error loading number data.</p>";
+    const examples = item.example
+      ? [{ word: item.telugu, meaning: item.example_english || item.example }]
+      : [];
+
+    initFlashcards(examples);
+
+  } catch (e) {
+    console.error(e);
+    container.innerHTML = "<p>Error loading number data.</p>";
+  }
+}
+
+/* ============================
+   TRACING
+============================= */
+function initTracing(char) {
+  const canvas = document.getElementById("tracingCanvas");
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas() {
+    const parentWidth = canvas.parentElement.clientWidth;
+    canvas.width = Math.min(parentWidth, 500);
+    canvas.height = canvas.width * 0.8;
+
+    document.fonts.ready.then(() => drawGuide());
+  }
+
+  function drawGuide() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Background FIRST
+    ctx.fillStyle = "#f9f9f9";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Faint guide
+    ctx.globalAlpha = 0.12;
+    ctx.fillStyle = "#000";
+
+    const charCount = char.length;
+    const fontSize =
+      charCount <= 2 ? canvas.height * 0.7 :
+      charCount <= 4 ? canvas.height * 0.55 :
+                       canvas.height * 0.45;
+
+    ctx.font = fontSize + "px 'Noto Sans Telugu', 'Pothana2000', serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(char, canvas.width / 2, canvas.height / 2);
+
+    ctx.globalAlpha = 1.0;
+  }
+
+  /* Drawing */
+  let drawing = false, lastX = 0, lastY = 0;
+
+  function getPos(e) {
+    const rect = canvas.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+    return { x, y };
+  }
+
+  function startDraw(e) {
+    e.preventDefault();
+    drawing = true;
+    const pos = getPos(e);
+    lastX = pos.x; lastY = pos.y;
+  }
+
+  function draw(e) {
+    if (!drawing) return;
+    e.preventDefault();
+
+    const pos = getPos(e);
+    ctx.strokeStyle = document.getElementById("strokeColor").value;
+    ctx.lineWidth = document.getElementById("strokeWidth").value;
+    ctx.lineCap = "round";
+
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.stroke();
+
+    lastX = pos.x; lastY = pos.y;
+  }
+
+  function endDraw() { drawing = false; }
+
+  canvas.addEventListener("mousedown", startDraw);
+  canvas.addEventListener("mousemove", draw);
+  canvas.addEventListener("mouseup", endDraw);
+  canvas.addEventListener("mouseleave", endDraw);
+
+  canvas.addEventListener("touchstart", startDraw, { passive: false });
+  canvas.addEventListener("touchmove", draw, { passive: false });
+  canvas.addEventListener("touchend", endDraw, { passive: false });
+
+  document.getElementById("clearTracingBtn").addEventListener("click", drawGuide);
+
+  document.getElementById("autoTraceBtn").addEventListener("click", () => autoTrace(char));
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+}
+
+/* ============================
+   AUTO‑TRACE
+============================= */
+function autoTrace(char) {
+  const canvas = document.getElementById("tracingCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const charCount = char.length;
+  const fontSize =
+    charCount <= 2 ? canvas.height * 0.7 :
+    charCount <= 4 ? canvas.height * 0.55 :
+                     canvas.height * 0.45;
+
+  let progress = 0;
+  const totalSteps = 80;
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Background
+    ctx.fillStyle = "#f9f9f9";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Faint guide
+    ctx.globalAlpha = 0.12;
+    ctx.fillStyle = "#000";
+    ctx.font = fontSize + "px 'Noto Sans Telugu', 'Pothana2000', serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(char, canvas.width / 2, canvas.height / 2);
+
+    // Auto‑trace stroke
+    ctx.globalAlpha = progress / totalSteps;
+    ctx.strokeStyle = "#ff6600";
+    ctx.lineWidth = 10;
+    ctx.strokeText(char, canvas.width / 2, canvas.height / 2);
+
+    ctx.globalAlpha = 1.0;
+
+    if (progress < totalSteps) {
+      progress++;
+      requestAnimationFrame(animate);
     }
+  }
+
+  document.fonts.ready.then(() => animate());
+}
+
+/* ============================
+   FLASHCARDS
+============================= */
+function initFlashcards(examples) {
+  const flashcard = document.getElementById("flashcard");
+  const frontEl = flashcard.querySelector(".flashcard-main");
+  const backEl = flashcard.querySelector(".flashcard-meaning");
+
+  const prevBtn = document.getElementById("prevCardBtn");
+  const nextBtn = document.getElementById("nextCardBtn");
+  const flipBtn = document.getElementById("flipCardBtn");
+
+  if (!examples.length) {
+    flashcard.style.display = "none";
+    document.querySelector(".flashcard-controls").style.display = "none";
+    return;
+  }
+
+  let index = 0;
+
+  function renderCard() {
+    const ex = examples[index];
+    frontEl.textContent = ex.word;
+    backEl.textContent = ex.meaning;
+    flashcard.classList.remove("flipped");
+  }
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + examples.length) % examples.length;
+    renderCard();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % examples.length;
+    renderCard();
+  });
+
+  flipBtn.addEventListener("click", () => {
+    flashcard.classList.toggle("flipped");
+  });
+
+  renderCard();
 }
 
 document.addEventListener("DOMContentLoaded", loadNumber);

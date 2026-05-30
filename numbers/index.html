@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telugu Numbers — సంఖ్యలు</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Telugu Numbers — సంఖ్యలు</title>
 
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Telugu Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    /* Additional spacing + layout polish */
+    .numbers-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      justify-content: center;
+    }
+
+    .numbers-toolbar select,
+    .numbers-toolbar button {
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background: var(--card-bg, #fff);
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .grid-compact .module-card { padding: 0.6rem; }
+    .grid-comfortable .module-card { padding: 1rem; }
+    .grid-large .module-card { padding: 1.4rem; }
+
+    .module-card h3 {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .module-card p {
+      margin-top: 0;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ============================
-     HEADER
-============================= -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
@@ -33,68 +69,180 @@
   </div>
 </header>
 
-
-<!-- ============================
-     BREADCRUMB
-============================= -->
 <nav class="breadcrumb">
   <a href="../index.html">Home</a>
   <span>›</span>
   <span>Numbers</span>
 </nav>
 
-
-<!-- ============================
-     MAIN CONTENT
-============================= -->
 <main class="page-container">
+  <section class="modules">
+    <h1 class="page-title">సంఖ్యలు — Numbers</h1>
 
-    <section class="modules">
-        <h1 class="page-title">సంఖ్యలు — Numbers</h1>
-        <p class="modules-subtitle">Click a number to learn pronunciation and example usage.</p>
+    <!-- Play All -->
+    <button id="playAllBtn" class="play-all-btn">🔊 Play All Numbers</button>
+    <div id="playProgress" class="play-progress">
+      <div id="playProgressBar" class="play-progress-bar"></div>
+    </div>
 
-        <div id="numbersGrid" class="module-grid"></div>
-    </section>
+    <!-- Toolbar -->
+    <div class="numbers-toolbar">
+      <select id="filterSelect">
+        <option value="all">Show All</option>
+        <option value="1-10">1–10</option>
+        <option value="20-100">20–100</option>
+      </select>
 
+      <select id="sortSelect">
+        <option value="numeric">Sort: Numeric</option>
+        <option value="telugu">Sort: Telugu</option>
+        <option value="english">Sort: English</option>
+      </select>
+
+      <select id="gridSelect">
+        <option value="comfortable">Grid: Comfortable</option>
+        <option value="compact">Grid: Compact</option>
+        <option value="large">Grid: Large</option>
+      </select>
+    </div>
+
+    <p class="modules-subtitle">Click a number to learn pronunciation and example usage.</p>
+
+    <div id="numbersGrid" class="module-grid grid-comfortable"></div>
+  </section>
 </main>
 
-
-<!-- ============================
-     FOOTER
-============================= -->
 <footer class="footer">
-    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+  <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-
-<!-- ============================
-     GLOBAL SCRIPT
-============================= -->
 <script src="../assets/js/script.js"></script>
 
-<!-- ============================
-     PAGE-SPECIFIC SCRIPT
-============================= -->
 <script>
+let numbersData = {};
+let playAllList = [];
+
+/* ============================
+   LOAD NUMBERS
+============================= */
 async function loadNumbers() {
+  try {
     const res = await fetch("data/numbers.json");
-    const numbers = await res.json();
+    numbersData = await res.json();
 
+    renderNumbers();
+    setupToolbar();
+
+  } catch (e) {
+    console.error("Error loading numbers:", e);
+    document.getElementById("numbersGrid").innerHTML =
+      "<p>Unable to load numbers right now.</p>";
+  }
+}
+
+/* ============================
+   RENDER NUMBERS
+============================= */
+function renderNumbers() {
+  const grid = document.getElementById("numbersGrid");
+  grid.innerHTML = "";
+  playAllList = [];
+
+  let keys = Object.keys(numbersData);
+
+  /* Apply filter */
+  const filter = document.getElementById("filterSelect").value;
+  if (filter === "1-10") {
+    keys = keys.filter(k => Number(k) >= 1 && Number(k) <= 10);
+  } else if (filter === "20-100") {
+    keys = keys.filter(k => Number(k) >= 20);
+  }
+
+  /* Apply sorting */
+  const sort = document.getElementById("sortSelect").value;
+  if (sort === "numeric") {
+    keys.sort((a,b) => Number(a) - Number(b));
+  } else if (sort === "telugu") {
+    keys.sort((a,b) => numbersData[a].telugu.localeCompare(numbersData[b].telugu));
+  } else if (sort === "english") {
+    keys.sort((a,b) => numbersData[a].english.localeCompare(numbersData[b].english));
+  }
+
+  /* Render cards */
+  keys.forEach(num => {
+    const item = numbersData[num];
+
+    if (item.audio) playAllList.push(`audio/${item.audio}`);
+
+    const card = document.createElement("a");
+    card.href = `number.html?num=${encodeURIComponent(num)}&from=numbers`;
+    card.className = "module-card fade-slide";
+
+    const audioHTML = item.audio ? `
+      <div class="audio-player" data-src="audio/${item.audio}">
+        <button class="play-btn">▶</button>
+        <div class="progress-container"><div class="progress-bar"></div></div>
+        <span class="time-label">0:00</span>
+      </div>
+    ` : "";
+
+    card.innerHTML = `
+      <h3>${item.telugu}</h3>
+      <p>${item.english}</p>
+      ${audioHTML}
+    `;
+
+    grid.appendChild(card);
+  });
+
+  if (window.initAudioPlayers) window.initAudioPlayers();
+}
+
+/* ============================
+   TOOLBAR HANDLERS
+============================= */
+function setupToolbar() {
+  document.getElementById("filterSelect").addEventListener("change", renderNumbers);
+  document.getElementById("sortSelect").addEventListener("change", renderNumbers);
+
+  document.getElementById("gridSelect").addEventListener("change", e => {
     const grid = document.getElementById("numbersGrid");
+    grid.classList.remove("grid-compact", "grid-comfortable", "grid-large");
+    grid.classList.add(`grid-${e.target.value}`);
+  });
 
-    Object.keys(numbers).forEach(num => {
-        const item = numbers[num];
+  document.getElementById("playAllBtn").addEventListener("click", () => {
+    playAllWithProgress(playAllList);
+  });
+}
 
-        const card = document.createElement("a");
-        card.href = `number.html?num=${num}`;
-        card.className = "module-card";
-        card.innerHTML = `
-            <h3>${item.telugu}</h3>
-            <p>${item.english}</p>
-        `;
+/* ============================
+   PLAY ALL
+============================= */
+function playAllWithProgress(list) {
+  if (!list.length) return;
 
-        grid.appendChild(card);
-    });
+  const progressBar = document.getElementById("playProgressBar");
+  let index = 0;
+
+  function playNext() {
+    if (index >= list.length) {
+      progressBar.style.width = "100%";
+      return;
+    }
+
+    const audio = new Audio(list[index]);
+    audio.play();
+
+    const progress = ((index + 1) / list.length) * 100;
+    progressBar.style.width = `${progress}%`;
+
+    index++;
+    audio.addEventListener("ended", playNext);
+  }
+
+  progressBar.style.width = "0%";
+  playNext();
 }
 
 document.addEventListener("DOMContentLoaded", loadNumbers);

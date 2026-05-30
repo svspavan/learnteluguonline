@@ -69,8 +69,28 @@
     "example": "పది విద్యార్థులు",
     "example_english": "Ten students"
   },
+  "11": { "telugu": "పదకొండు", "english": "Eleven", "audio": "11.mp3" },
+  "12": { "telugu": "పన్నెండు", "english": "Twelve", "audio": "12.mp3" },
+  "13": { "telugu": "పదమూడు", "english": "Thirteen", "audio": "13.mp3" },
+  "14": { "telugu": "పద్నాలుగు", "english": "Fourteen", "audio": "14.mp3" },
+  "15": { "telugu": "పదిహేను", "english": "Fifteen", "audio": "15.mp3" },
+  "16": { "telugu": "పదహారు", "english": "Sixteen", "audio": "16.mp3" },
+  "17": { "telugu": "పదిహేడు", "english": "Seventeen", "audio": "17.mp3" },
+  "18": { "telugu": "పద్దెనిమిది", "english": "Eighteen", "audio": "18.mp3" },
+  "19": { "telugu": "పంతొమ్మిది", "english": "Nineteen", "audio": "19.mp3" },
 
   "20": { "telugu": "ఇరవై", "english": "Twenty", "audio": "20.mp3" },
+  "21": { "telugu": "ఇరవై ఒకటి", "english": "Twenty-one", "audio": "21.mp3" },
+  "22": { "telugu": "ఇరవై రెండు", "english": "Twenty-two", "audio": "22.mp3" },
+  "23": { "telugu": "ఇరవై మూడు", "english": "Twenty-three", "audio": "23.mp3" },
+  "24": { "telugu": "ఇరవై నాలుగు", "english": "Twenty-four", "audio": "24.mp3" },
+  "25": { "telugu": "ఇరవై ఐదు", "english": "Twenty-five", "audio": "25.mp3" },
+  "26": { "telugu": "ఇరవై ఆరు", "english": "Twenty-six", "audio": "26.mp3" },
+  "27": { "telugu": "ఇరవై ఏడు", "english": "Twenty-seven", "audio": "27.mp3" },
+  "28": { "telugu": "ఇరవై ఎనిమిది", "english": "Twenty-eight", "audio": "28.mp3" },
+  "29": { "telugu": "ఇరవై తొమ్మిది", "english": "Twenty-nine", "audio": "29.mp3" },
+
+
   "30": { "telugu": "ముప్పై", "english": "Thirty", "audio": "30.mp3" },
   "40": { "telugu": "నలభై", "english": "Forty", "audio": "40.mp3" },
   "50": { "telugu": "యాభై", "english": "Fifty", "audio": "50.mp3" },

@@ -22,7 +22,7 @@
 
     <nav class="nav">
       <a href="../index.html" class="nav-link">Home</a>
-      <a href="alphabet.html" class="nav-link">Alphabet</a>
+      <a href="alphabet.html" class="nav-link active">Alphabet</a>
       <a href="../words/index.html" class="nav-link">Words</a>
       <a href="../sentences/index.html" class="nav-link">Sentences</a>
       <a href="../stories/index.html" class="nav-link">Stories</a>
@@ -52,7 +52,13 @@
 
     <section class="modules">
         <h1 class="page-title">అచ్చులు — Vowels</h1>
-        <p class="modules-subtitle">Click a vowel to learn its sound and example words.</p>
+
+        <!-- Play all vowels -->
+        <button id="playAllBtn" class="play-all-btn">🔊 Play All Vowels</button>
+
+        <p class="modules-subtitle">
+            Click a vowel to hear its sound or open the letter page for examples.
+        </p>
 
         <div id="vowelsGrid" class="module-grid"></div>
     </section>
@@ -78,24 +84,78 @@
 ============================= -->
 <script>
 async function loadVowels() {
-    const res = await fetch("data/letters.json");
-    const letters = await res.json();
+    try {
+        const res = await fetch("data/letters.json");
+        const letters = await res.json();
 
-    const grid = document.getElementById("vowelsGrid");
+        const grid = document.getElementById("vowelsGrid");
+        const playAllList = [];
 
-    Object.keys(letters).forEach(key => {
-        const item = letters[key];
-        if (item.type !== "vowel") return;
+        Object.keys(letters).forEach(key => {
+            const item = letters[key];
+            if (item.type !== "vowel") return;
 
-        const card = document.createElement("a");
-        card.href = `letter.html?name=${key}`;
-        card.className = "module-card";
-        card.innerHTML = `
-            <h3>${item.telugu}</h3>
-            <p>${item.english}</p>
-        `;
-        grid.appendChild(card);
-    });
+            const hasAudio = !!item.audio;
+            if (hasAudio) {
+                playAllList.push(`audio/${item.audio}`);
+            }
+
+            const card = document.createElement("div");
+            card.className = "module-card fade-slide";
+
+            const audioHTML = hasAudio
+                ? `
+                <div class="audio-player" data-src="audio/${item.audio}">
+                    <button class="play-btn">▶</button>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time-label">0:00</span>
+                </div>
+                `
+                : "";
+
+            card.innerHTML = `
+                <h3>${item.telugu}</h3>
+                <p>${item.english}</p>
+                ${audioHTML}
+                <a href="letter.html?name=${key}&from=vowels" class="learn-more">Learn More →</a>
+            `;
+
+            grid.appendChild(card);
+        });
+
+        if (window.initAudioPlayers) window.initAudioPlayers();
+
+        const playAllBtn = document.getElementById("playAllBtn");
+        playAllBtn.addEventListener("click", () => {
+            playAllVowels(playAllList);
+        });
+    } catch (e) {
+        console.error("Error loading vowels:", e);
+        document.getElementById("vowelsGrid").innerHTML =
+            "<p>Unable to load vowels right now.</p>";
+    }
+}
+
+// Sequentially play all vowel audio files
+function playAllVowels(list) {
+    if (!list || list.length === 0) return;
+
+    let index = 0;
+
+    function playNext() {
+        if (index >= list.length) return;
+
+        const src = list[index];
+        const audio = new Audio(src);
+        index++;
+
+        audio.addEventListener("ended", playNext);
+        audio.play();
+    }
+
+    playNext();
 }
 
 document.addEventListener("DOMContentLoaded", loadVowels);

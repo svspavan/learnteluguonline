@@ -115,6 +115,24 @@
     "examples": [
       { "word": "ఔషధం", "meaning": "Medicine" }
     ]
+  },  
+  "am": {
+    "telugu": "అం",
+    "english": "Am",
+    "type": "vowel",
+    "audio": "am.mp3",
+    "examples": [
+      { "word": "అంగడి", "meaning": "Shop" }
+    ]
+  },  
+  "aha": {
+    "telugu": "అః",
+    "english": "Aha",
+    "type": "vowel",
+    "audio": "aha.mp3",
+    "examples": [
+      { "word": "అంతఃపురం", "meaning": "Palace" }
+    ]
   },
 
   "ka": {

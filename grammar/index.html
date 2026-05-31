@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telugu Grammar — వ్యాకరణం</title>
 
+    <!-- Telugu Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Global Styles -->
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .grammar-card h3 {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .grammar-card p {
+            opacity: 0.85;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .grammar-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .grammar-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
 
 <body>
@@ -23,12 +50,10 @@
     <nav class="nav">
       <a href="../index.html" class="nav-link">Home</a>
       <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
-      <a href="../words/index.html" class="nav-link">Words</a>
       <a href="../numbers/index.html" class="nav-link">Numbers</a>
       <a href="../categories/index.html" class="nav-link">Categories</a>
       <a href="index.html" class="nav-link active">Grammar</a>
       <a href="../sentences/index.html" class="nav-link">Sentences</a>
-      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
@@ -39,11 +64,20 @@
 <!-- ============================
      BREADCRUMB
 ============================= -->
-<nav class="breadcrumb">
+<!-- <nav class="breadcrumb">
   <a href="../index.html">Home</a>
   <span>›</span>
   <span>Grammar</span>
+</nav> -->
+
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="overview.html">Grammar</a>
+  <span>›</span>
+  <span>Topics</span>
 </nav>
+
 
 
 <!-- ============================
@@ -98,11 +132,13 @@ function loadGrammarTopics() {
     grammarTopics.forEach(topic => {
         const card = document.createElement("a");
         card.href = `topic.html?name=${topic.key}`;
-        card.className = "module-card";
+        card.className = "module-card grammar-card fade-slide";
+
         card.innerHTML = `
             <h3>${topic.telugu}</h3>
             <p>${topic.label}</p>
         `;
+
         grid.appendChild(card);
     });
 }

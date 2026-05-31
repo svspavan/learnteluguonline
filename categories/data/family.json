@@ -1,0 +1,82 @@
+{
+  "father": {
+    "telugu": "నాన్న",
+    "english": "Father",
+    "audio": "father.mp3",
+    "image": "father.png",
+    "example": "నాన్న పని చేస్తారు.",
+    "example_english": "Father works."
+  },
+  "mother": {
+    "telugu": "అమ్మ",
+    "english": "Mother",
+    "audio": "mother.mp3",
+    "image": "mother.png",
+    "example": "అమ్మ భోజనం చేస్తుంది.",
+    "example_english": "Mother cooks food."
+  },
+  "brother": {
+    "telugu": "అన్న",
+    "english": "Brother",
+    "audio": "brother.mp3",
+    "image": "brother.png",
+    "example": "అన్న నాతో ఆడుకుంటాడు.",
+    "example_english": "Brother plays with me."
+  },
+  "sister": {
+    "telugu": "అక్క",
+    "english": "Sister",
+    "audio": "sister.mp3",
+    "image": "sister.png",
+    "example": "అక్క కథలు చెబుతుంది.",
+    "example_english": "Sister tells stories."
+  },
+  "grandfather": {
+    "telugu": "తాతయ్య",
+    "english": "Grandfather",
+    "audio": "grandfather.mp3",
+    "image": "grandfather.png",
+    "example": "తాతయ్య నడుస్తారు.",
+    "example_english": "Grandfather walks."
+  },
+  "grandmother": {
+    "telugu": "అమ్మమ్మ",
+    "english": "Grandmother",
+    "audio": "grandmother.mp3",
+    "image": "grandmother.png",
+    "example": "అమ్మమ్మ ముద్దు పెడుతుంది.",
+    "example_english": "Grandmother gives a kiss."
+  },
+  "baby": {
+    "telugu": "బిడ్డ",
+    "english": "Baby",
+    "audio": "baby.mp3",
+    "image": "baby.png",
+    "example": "బిడ్డ నవ్వుతుంది.",
+    "example_english": "The baby smiles."
+  },
+  "uncle": {
+    "telugu": "మామయ్య",
+    "english": "Uncle",
+    "audio": "uncle.mp3",
+    "image": "uncle.png",
+    "example": "మామయ్య బహుమతి ఇస్తారు.",
+    "example_english": "Uncle gives a gift."
+  },
+  "aunt": {
+    "telugu": "అత్తయ్య",
+    "english": "Aunt",
+    "audio": "aunt.mp3",
+    "image": "aunt.png",
+    "example": "అత్తయ్య నన్ను ప్రేమిస్తుంది.",
+    "example_english": "Aunt loves me."
+  },
+  "cousin": {
+    "telugu": "మరిది",
+    "english": "Cousin",
+    "audio": "cousin.mp3",
+    "image": "cousin.png",
+    "example": "మరిది నాతో ఆడుకుంటాడు.",
+    "example_english": "My cousin plays with me."
+  }
+}

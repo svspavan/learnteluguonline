@@ -5,15 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grammar Topic</title>
 
+    <!-- Telugu Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Global Styles -->
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .topic-title {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .topic-description {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 1.5rem auto;
+            opacity: 0.85;
+            font-size: 1.05rem;
+        }
+
+        .back-grammar {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 0.9rem;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 999px;
+            background: var(--card-bg, #fff);
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            color: inherit;
+            font-size: 0.95rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .back-grammar:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .topic-header-wrap {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .grammar-block {
+            background: var(--card-bg, #fff);
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1.5rem;
+            animation: fadeSlide 0.5s ease forwards;
+        }
+
+        .grammar-block h3 {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+            font-weight: 700;
+        }
+
+        .grammar-block p {
+            opacity: 0.9;
+            margin-bottom: 0.6rem;
+        }
+
+        .examples-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0.4rem 0 0.2rem 0;
+        }
+
+        .examples-list li {
+            margin-bottom: 0.6rem;
+        }
+
+        .example-telugu {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-weight: 700;
+        }
+
+        .example-english {
+            opacity: 0.85;
+            font-size: 0.95rem;
+        }
+
+        .examples-audio {
+            margin-top: 0.3rem;
+        }
+
+        .grammar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .grammar-table th,
+        .grammar-table td {
+            border: 1px solid rgba(0,0,0,0.08);
+            padding: 0.4rem 0.6rem;
+            text-align: left;
+        }
+
+        .grammar-table th {
+            background: rgba(0,0,0,0.03);
+            font-weight: 600;
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .floating-overview-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent-color, #b33a3a);
+            color: #fff;
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 999;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .floating-overview-btn:hover {
+            background: var(--accent-color-dark, #8c2e2e);
+            transform: translateY(-2px);
+        }
+
+    </style>
 </head>
 
 <body>
 
-<!-- ============================
-     HEADER
-============================= -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
@@ -23,55 +156,47 @@
     <nav class="nav">
       <a href="../index.html" class="nav-link">Home</a>
       <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
-      <a href="../words/index.html" class="nav-link">Words</a>
       <a href="../numbers/index.html" class="nav-link">Numbers</a>
       <a href="../categories/index.html" class="nav-link">Categories</a>
-      <a href="index.html" class="nav-link">Grammar</a>
+      <a href="index.html" class="nav-link active">Grammar</a>
       <a href="../sentences/index.html" class="nav-link">Sentences</a>
-      <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
 
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
   </div>
 </header>
 
-
-<!-- ============================
-     BREADCRUMB
-============================= -->
-<nav class="breadcrumb">
+<!-- <nav class="breadcrumb">
   <a href="../index.html">Home</a>
   <span>›</span>
   <a href="index.html">Grammar</a>
   <span>›</span>
   <span id="breadcrumbTopic">Topic</span>
+</nav> -->
+
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="overview.html">Grammar</a>
+  <span>›</span>
+  <a href="index.html">Topics</a>
+  <span>›</span>
+  <span id="breadcrumbTopic">Topic</span>
 </nav>
 
 
-<!-- ============================
-     MAIN CONTENT
-============================= -->
 <main class="page-container">
     <section id="topicContent"></section>
+    <a href="overview.html" class="floating-overview-btn">📘 Grammar Overview</a>
+
 </main>
 
-
-<!-- ============================
-     FOOTER
-============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-
-<!-- ============================
-     GLOBAL SCRIPT
-============================= -->
 <script src="../assets/js/script.js"></script>
 
-<!-- ============================
-     PAGE-SPECIFIC SCRIPT
-============================= -->
 <script>
 async function loadTopic() {
     const params = new URLSearchParams(window.location.search);
@@ -88,35 +213,77 @@ async function loadTopic() {
 
         const container = document.getElementById("topicContent");
 
-        // Update breadcrumb
-        document.getElementById("breadcrumbTopic").textContent = data.title;
+        document.getElementById("breadcrumbTopic").textContent = data.title || "Topic";
 
-        // Render main title + description
         container.innerHTML = `
-            <h1 class="page-title">${data.title}</h1>
-            <p class="story-paragraph">${data.description}</p>
+          <div class="topic-header-wrap">
+            <h1 class="topic-title">${data.title}</h1>
+            <p class="topic-description">${data.description || ""}</p>
+            <a href="index.html" class="back-grammar">← Back to Grammar</a>
+          </div>
         `;
 
-        // Render each grammar block
-        data.items.forEach(item => {
-            container.innerHTML += `
-                <div class="padyam-block">
-                    <h3>${item.heading}</h3>
-                    <p class="story-paragraph">${item.explanation}</p>
+        (data.items || []).forEach(block => {
+            const examples = block.examples || [];
+            const table = block.table;
 
-                    ${
-                        item.examples
-                            ? `<ul class="word-list">
-                                   ${item.examples.map(ex => `<li>${ex}</li>`).join("")}
-                               </ul>`
-                            : ""
-                    }
-                </div>
+            const examplesHTML = examples.length
+              ? `
+                <ul class="examples-list">
+                  ${examples.map(ex => `
+                    <li>
+                      <div class="example-telugu">${ex.telugu || ""}</div>
+                      ${ex.english ? `<div class="example-english">${ex.english}</div>` : ""}
+                      ${ex.audio ? `
+                        <div class="examples-audio">
+                          <div class="audio-player" data-src="audio/grammar/${name}/${ex.audio}">
+                            <button class="play-btn">▶</button>
+                            <div class="progress-container"><div class="progress-bar"></div></div>
+                            <span class="time-label">0:00</span>
+                          </div>
+                        </div>
+                      ` : ""}
+                    </li>
+                  `).join("")}
+                </ul>
+              `
+              : "";
+
+            const tableHTML = table && table.headers && table.rows
+              ? `
+                <table class="grammar-table">
+                  <thead>
+                    <tr>
+                      ${table.headers.map(h => `<th>${h}</th>`).join("")}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${table.rows.map(row => `
+                      <tr>
+                        ${row.map(cell => `<td>${cell}</td>`).join("")}
+                      </tr>
+                    `).join("")}
+                  </tbody>
+                </table>
+              `
+              : "";
+
+            container.innerHTML += `
+              <div class="grammar-block fade-slide">
+                <h3>${block.heading}</h3>
+                <p>${block.explanation || ""}</p>
+                ${tableHTML}
+                ${examplesHTML}
+              </div>
             `;
         });
 
+        if (window.initAudioPlayers) window.initAudioPlayers();
+
     } catch (e) {
-        document.getElementById("topicContent").innerHTML = "<p>Error loading topic data.</p>";
+        console.error(e);
+        document.getElementById("topicContent").innerHTML =
+            "<p>Error loading topic data.</p>";
     }
 }
 

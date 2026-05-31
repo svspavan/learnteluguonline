@@ -1,38 +1,85 @@
 {
   "title": "ధాతు రూపాలు — Verb Conjugation",
-  "description": "Conjugation of common Telugu verbs for different pronouns in the present tense.",
+  "description": "తెలుగులో క్రియలు వ్యక్తి, వచనం, కాలం ఆధారంగా మారుతాయి. ఇక్కడ మూడు సాధారణ క్రియలైన తిను, వెళ్లు, చదువు యొక్క వర్తమాన, భూత, భవిష్యత్ రూపాలు ఇవ్వబడ్డాయి.",
   "items": [
     {
-      "heading": "Verb: తిను — to eat",
-      "explanation": "Present tense forms with different pronouns.",
+      "heading": "1. తిను — To Eat",
+      "explanation": "‘తిను’ క్రియను వ్యక్తి మరియు కాలం ఆధారంగా ఇలా మార్చుతారు.",
+      "table": {
+        "headers": ["Person", "Present", "Past", "Future"],
+        "rows": [
+          ["నేను", "తింటాను", "తిన్నాను", "తింటాను"],
+          ["నువ్వు", "తింటావు", "తిన్నావు", "తింటావు"],
+          ["అతను", "తింటాడు", "తిన్నాడు", "తింటాడు"],
+          ["ఆమె", "తింటుంది", "తిన్నింది", "తింటుంది"],
+          ["వారు", "తింటారు", "తిన్నారు", "తింటారు"]
+        ]
+      },
       "examples": [
-        "నేను తింటాను — I eat.",
-        "నువ్వు తింటావు — You eat (informal).",
-        "మీరు తింటారు — You eat (formal/plural).",
-        "అతను తింటాడు — He eats.",
-        "ఆమె తింటుంది — She eats.",
-        "వారు తింటారు — They eat."
+        {
+          "telugu": "నేను అన్నం తింటాను.",
+          "english": "I eat rice.",
+          "audio": "nenu_annam_tintanu.mp3"
+        },
+        {
+          "telugu": "అతను పండ్లు తిన్నాడు.",
+          "english": "He ate fruits.",
+          "audio": "atanu_pandlu_tinnadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Verb: వెళ్లు — to go",
-      "explanation": "Present tense forms.",
+      "heading": "2. వెళ్లు — To Go",
+      "explanation": "‘వెళ్లు’ క్రియకు వర్తమాన, భూత, భవిష్యత్ రూపాలు ఇలా ఉంటాయి.",
+      "table": {
+        "headers": ["Person", "Present", "Past", "Future"],
+        "rows": [
+          ["నేను", "వెళ్తాను", "వెళ్లాను", "వెళ్తాను"],
+          ["నువ్వు", "వెళ్తావు", "వెళ్లావు", "వెళ్తావు"],
+          ["అతను", "వెళ్తాడు", "వెళ్లాడు", "వెళ్తాడు"],
+          ["ఆమె", "వెళ్తుంది", "వెళ్లింది", "వెళ్తుంది"],
+          ["వారు", "వెళ్తారు", "వెళ్లారు", "వెళ్తారు"]
+        ]
+      },
       "examples": [
-        "నేను వెళ్తాను — I go.",
-        "నువ్వు వెళ్తావు — You go.",
-        "అతను వెళ్తాడు — He goes.",
-        "ఆమె వెళ్తుంది — She goes.",
-        "వారు వెళ్తారు — They go."
+        {
+          "telugu": "నేను పాఠశాలకు వెళ్తాను.",
+          "english": "I go to school.",
+          "audio": "nenu_paatashalaku_veltanu.mp3"
+        },
+        {
+          "telugu": "ఆమె మార్కెట్‌కి వెళ్లింది.",
+          "english": "She went to the market.",
+          "audio": "aame_market_ki_vellindi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Verb: చదువు — to study/read",
-      "explanation": "Present tense forms.",
+      "heading": "3. చదువు — To Study / Read",
+      "explanation": "‘చదువు’ క్రియను వ్యక్తి మరియు కాలం ఆధారంగా ఇలా మార్చుతారు.",
+      "table": {
+        "headers": ["Person", "Present", "Past", "Future"],
+        "rows": [
+          ["నేను", "చదువుతాను", "చదివాను", "చదువుతాను"],
+          ["నువ్వు", "చదువుతావు", "చదివావు", "చదువుతావు"],
+          ["అతను", "చదువుతాడు", "చదివాడు", "చదువుతాడు"],
+          ["ఆమె", "చదువుతుంది", "చదివింది", "చదువుతుంది"],
+          ["వారు", "చదువుతారు", "చదివారు", "చదువుతారు"]
+        ]
+      },
       "examples": [
-        "నేను చదువుతాను — I study.",
-        "నువ్వు చదువుతావు — You study.",
-        "అతను చదువుతాడు — He studies.",
-        "ఆమె చదువుతుంది — She studies."
+        {
+          "telugu": "నేను తెలుగు చదువుతాను.",
+          "english": "I study Telugu.",
+          "audio": "nenu_telugu_chadavutanu.mp3"
+        },
+        {
+          "telugu": "వారు పుస్తకం చదివారు.",
+          "english": "They read a book.",
+          "audio": "varu_pustakam_chadivaru.mp3"
+        }
       ]
     }
   ]

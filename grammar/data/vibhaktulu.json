@@ -1,61 +1,161 @@
 {
   "title": "విభక్తులు — Vibhaktulu (Cases)",
-  "description": "Telugu has seven grammatical cases used to show the relationship between nouns and verbs in a sentence.",
+  "description": "విభక్తులు వాక్యంలో నామవాచకానికి పాత్రను చూపిస్తాయి — కర్త, కర్మ, అధికరణం, సమ్బంధం మొదలైనవి. తెలుగు వ్యాకరణంలో మొత్తం ఎనిమిది విభక్తులు ఉన్నాయి.",
   "items": [
     {
-      "heading": "1. ప్రథమ విభక్తి — Nominative Case",
-      "explanation": "Used for the subject of the sentence. It answers the question 'who?' or 'what?' is doing the action.",
+      "heading": "1. ప్రథమా విభక్తి (Nominative Case)",
+      "explanation": "క్రియను చేసే కర్తను సూచిస్తుంది. వాక్యంలో 'ఎవరు?' అనే ప్రశ్నకు సమాధానం.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Role"],
+        "rows": [
+          ["ప్రథమా", "—", "రాము", "Subject"],
+          ["ప్రథమా", "—", "సీత", "Subject"]
+        ]
+      },
       "examples": [
-        "రాము వస్తాడు — Ramu comes.",
-        "పిల్లి నిద్రపోతుంది — The cat sleeps."
+        {
+          "telugu": "రాము వస్తాడు.",
+          "english": "Ramu comes.",
+          "audio": "ramu_vastadu.mp3"
+        },
+        {
+          "telugu": "సీత నవ్వుతుంది.",
+          "english": "Sita laughs.",
+          "audio": "sita_navvutundi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "2. ద్వితీయ విభక్తి — Accusative Case",
-      "explanation": "Used for the direct object of the verb. It answers 'whom?' or 'what?' the action is done to.",
+      "heading": "2. ద్వితీయా విభక్తి (Accusative Case)",
+      "explanation": "క్రియకు గురయ్యే కర్మను సూచిస్తుంది. 'ఎవరిని? ఏమిని?' అనే ప్రశ్నలకు సమాధానం.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Role"],
+        "rows": [
+          ["ద్వితీయా", "-ను", "రామును", "Object"],
+          ["ద్వితీయా", "-ని", "పుస్తకాన్ని", "Object"]
+        ]
+      },
       "examples": [
-        "రాము పుస్తకం చదువుతున్నాడు — Ramu is reading a book.",
-        "ఆమె నీళ్లు తాగింది — She drank water."
+        {
+          "telugu": "రాము పుస్తకాన్ని చదువుతున్నాడు.",
+          "english": "Ramu is reading the book.",
+          "audio": "ramu_pustakam_chadivutunnadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "3. తృతీయ విభక్తి — Instrumental Case",
-      "explanation": "Shows the means or instrument by which an action is performed. Often expressed with 'తో' (with/by).",
+      "heading": "3. తృతీయా విభక్తి (Instrumental Case)",
+      "explanation": "క్రియ ఏ సాధనంతో జరుగుతుందో చూపిస్తుంది. 'ద్వారా', 'తో' అనే భావం.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Meaning"],
+        "rows": [
+          ["తృతీయా", "-తో", "కత్తితో", "with a knife"],
+          ["తృతీయా", "-తో", "రాముతో", "with Ramu"]
+        ]
+      },
       "examples": [
-        "అతను కలంతో వ్రాశాడు — He wrote with a pen.",
-        "ఆమె బస్సుతో వెళ్ళింది — She went by bus."
+        {
+          "telugu": "అతను పెన్నుతో వ్రాశాడు.",
+          "english": "He wrote with a pen.",
+          "audio": "penuto_vrasadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "4. చతుర్థి విభక్తి — Dative Case",
-      "explanation": "Indicates the indirect object or recipient. Often expressed with 'కి/కు' (to/for).",
+      "heading": "4. చతుర్థీ విభక్తి (Dative Case)",
+      "explanation": "ఎవరికి? ఏదికి? అనే భావం. క్రియ యొక్క గ్రహీతను సూచిస్తుంది.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Meaning"],
+        "rows": [
+          ["చతుర్థీ", "-కి", "రాముకి", "to Ramu"],
+          ["చతుర్థీ", "-కు", "అమ్మకు", "to mother"]
+        ]
+      },
       "examples": [
-        "రాము నాకు పుస్తకం ఇచ్చాడు — Ramu gave me a book.",
-        "అమ్మ పిల్లలకు తిండి పెట్టింది — Mother fed the children."
+        {
+          "telugu": "నేను రాముకి పుస్తకం ఇచ్చాను.",
+          "english": "I gave a book to Ramu.",
+          "audio": "ramuki_pustakam_ichanu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "5. పంచమి విభక్తి — Ablative Case",
-      "explanation": "Shows separation, source, or movement away from something. Often expressed with 'నుండి' (from).",
+      "heading": "5. పంచమి విభక్తి (Ablative Case)",
+      "explanation": "ఎక్కడి నుండి? ఎవరి నుండి? అనే భావం.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Meaning"],
+        "rows": [
+          ["పంచమి", "-నుండి", "ఇంటినుండి", "from home"],
+          ["పంచమి", "-నుండి", "అతనినుండి", "from him"]
+        ]
+      },
       "examples": [
-        "అతను ఇంటి నుండి వచ్చాడు — He came from home.",
-        "ఆమె పాఠశాల నుండి వచ్చింది — She came from school."
+        {
+          "telugu": "అతను పాఠశాలనుండి వచ్చాడు.",
+          "english": "He came from school.",
+          "audio": "paathashalanundi_vachadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "6. షష్ఠి విభక్తి — Genitive Case",
-      "explanation": "Shows possession or relationship. Often expressed with 'యొక్క' or implied.",
+      "heading": "6. షష్ఠీ విభక్తి (Genitive Case)",
+      "explanation": "సంబంధాన్ని చూపిస్తుంది. 'యొక్క', 'of' అనే భావం.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Meaning"],
+        "rows": [
+          ["షష్ఠీ", "-యొక్క", "రాముని యొక్క", "Ramu's"],
+          ["షష్ఠీ", "-ది", "అమ్మది", "Mother's"]
+        ]
+      },
       "examples": [
-        "రాముని పుస్తకం — Ramu's book.",
-        "అమ్మ చేతి పని — Mother's handiwork."
+        {
+          "telugu": "ఇది రాముని పుస్తకం.",
+          "english": "This is Ramu's book.",
+          "audio": "ramuni_pustakam.mp3"
+        }
       ]
     },
+
     {
-      "heading": "7. సప్తమి విభక్తి — Locative Case",
-      "explanation": "Indicates location or place where something exists or happens. Often expressed with 'లో' (in/at).",
+      "heading": "7. సప్తమీ విభక్తి (Locative Case)",
+      "explanation": "ఎక్కడ? అనే భావం. స్థలాన్ని సూచిస్తుంది.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Meaning"],
+        "rows": [
+          ["సప్తమీ", "-లో", "ఇంటిలో", "in the house"],
+          ["సప్తమీ", "-పై", "మెజపై", "on the table"]
+        ]
+      },
       "examples": [
-        "పుస్తకం బల్లపై ఉంది — The book is on the table.",
-        "అతను గదిలో ఉన్నాడు — He is in the room."
+        {
+          "telugu": "పుస్తకం మెజపై ఉంది.",
+          "english": "The book is on the table.",
+          "audio": "pustakam_mejapai_undi.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "8. సంబోధనా విభక్తి (Vocative Case)",
+      "explanation": "ఎవరిని పిలుస్తున్నామో చూపిస్తుంది.",
+      "table": {
+        "headers": ["Case", "Marker", "Example", "Meaning"],
+        "rows": [
+          ["సంబోధనా", "—", "రామా!", "O Ramu!"],
+          ["సంబోధనా", "—", "అమ్మా!", "O mother!"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "రామా! ఇక్కడికి రా.",
+          "english": "Rama! Come here.",
+          "audio": "ramaa_ikkadiki_rra.mp3"
+        }
       ]
     }
   ]

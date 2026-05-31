@@ -1,37 +1,84 @@
 {
   "title": "సమాసాలు — Samasam (Compounds)",
-  "description": "Samasam is the process of combining two or more words to form a compound word.",
+  "description": "రెండు లేదా ఎక్కువ పదాలు కలసి ఒక కొత్త పదంగా మారితే దాన్ని సమాసం అంటారు. తెలుగు వ్యాకరణంలో నాలుగు ప్రధాన సమాసాలు ఉన్నాయి — ద్వంద్వ, తత్పురుష, బహువ్రీహి, అవ్యయీభావ.",
   "items": [
     {
-      "heading": "ద్వంద్వ సమాసం — Dvandva Compound",
-      "explanation": "Two or more words of equal importance are joined.",
+      "heading": "1. ద్వంద్వ సమాసం (Dvandva Compound)",
+      "explanation": "రెండు పదాలు సమాన ప్రాధాన్యంతో కలిసినప్పుడు వచ్చే సమాసం. అర్థం రెండు పదాల సమ్మేళనం.",
+      "table": {
+        "headers": ["Word 1", "Word 2", "Result", "Meaning"],
+        "rows": [
+          ["అన్న", "తమ్ముడు", "అన్నతమ్ముళ్లు", "Brothers"],
+          ["రాజు", "రాణి", "రాజరాణి", "King & Queen"],
+          ["పాలు", "బెల్లం", "పాలబెల్లం", "Milk & Jaggery"]
+        ]
+      },
       "examples": [
-        "అన్నదమ్ములు — Brothers.",
-        "రాజు–రాణి → రాజరాణి (King and Queen)."
+        {
+          "telugu": "అన్నతమ్ముళ్లు కలిసి వచ్చారు.",
+          "english": "The brothers came together.",
+          "audio": "annatammullu_kalisi_vacharu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "తత్పురుష సమాసం — Tatpurusha Compound",
-      "explanation": "One word depends on the other; often like 'of', 'for', 'in'.",
+      "heading": "2. తత్పురుష సమాసం (Tatpurusha Compound)",
+      "explanation": "ఒక పదం మరొక పదానికి ఆధీనంగా ఉండే సమాసం. సాధారణంగా 'యొక్క', 'కోసం', 'లో', 'పై' వంటి భావాలు ఉంటాయి.",
+      "table": {
+        "headers": ["Base Phrase", "Result", "Meaning"],
+        "rows": [
+          ["రాజు యొక్క కుమారుడు", "రాజకుమారుడు", "King's son → Prince"],
+          ["గృహం కోసం పని", "గృహపని", "House work"],
+          ["పాఠశాల లో గురువు", "పాఠశాల గురువు", "School teacher"]
+        ]
+      },
       "examples": [
-        "రాజు యొక్క కుమారుడు → రాజకుమారుడు (King's son).",
-        "గృహం కోసం పని → గృహపని (House work)."
+        {
+          "telugu": "రాజకుమారుడు సభలో ఉన్నాడు.",
+          "english": "The prince is in the court.",
+          "audio": "rajakumarudu_sabhalo_unnadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "బహువ్రీహి సమాసం — Bahuvrihi Compound",
-      "explanation": "The compound describes a person or thing by a quality.",
+      "heading": "3. బహువ్రీహి సమాసం (Bahuvrihi Compound)",
+      "explanation": "సమాస పదం వేరే వ్యక్తి లేదా వస్తువును సూచిస్తుంది. అర్థం పదాలకన్నా వేరే దానిపై ఉంటుంది.",
+      "table": {
+        "headers": ["Base Meaning", "Compound", "Meaning"],
+        "rows": [
+          ["చంద్రుని వంటి ముఖం ఉన్నది", "చంద్రముఖి", "One with a moon-like face"],
+          ["ధనం ఉన్నవాడు", "ధనవంతుడు", "Wealthy person"],
+          ["పండితుడు ఉన్న ఇల్లు", "పండితగృహం", "House of a scholar"]
+        ]
+      },
       "examples": [
-        "చంద్రముఖి — One who has a moon-like face.",
-        "ధనవంతుడు — One who has wealth."
+        {
+          "telugu": "ఆమె చంద్రముఖి.",
+          "english": "She has a moon-like face.",
+          "audio": "aame_chandramukhi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "అవ్యయీభావ సమాసం — Avyayibhava Compound",
-      "explanation": "An indeclinable word (avyaya) combines with another word.",
+      "heading": "4. అవ్యయీభావ సమాసం (Avyayibhava Compound)",
+      "explanation": "అవ్యయం (ఉపసర్గం/అవ్యయ పదం) ముందుకు వచ్చి సమాసం ఏర్పడుతుంది. అర్థం అవ్యయ పదం ఆధారంగా ఉంటుంది.",
+      "table": {
+        "headers": ["Avyaya + Word", "Result", "Meaning"],
+        "rows": [
+          ["ఉప + వాసం", "ఉపవాసం", "Fasting"],
+          ["సహ + జీవనం", "సహజీవనం", "Living together"],
+          ["అతి + వేగం", "అతివేగం", "High speed"]
+        ]
+      },
       "examples": [
-        "ఉప + వాసం → ఉపవాసం (fasting).",
-        "సహ + జీవనం → సహజీవనం (living together)."
+        {
+          "telugu": "అతను ఉపవాసం చేస్తున్నాడు.",
+          "english": "He is fasting.",
+          "audio": "atanu_upavasam_chestunnadu.mp3"
+        }
       ]
     }
   ]

@@ -1,0 +1,82 @@
+{
+  "car": {
+    "telugu": "కారు",
+    "english": "Car",
+    "audio": "car.mp3",
+    "image": "car.png",
+    "example": "కారు రోడ్డుపై నడుస్తుంది.",
+    "example_english": "The car moves on the road."
+  },
+  "bus": {
+    "telugu": "బస్సు",
+    "english": "Bus",
+    "audio": "bus.mp3",
+    "image": "bus.png",
+    "example": "బస్సులో చాలా మంది ప్రయాణిస్తారు.",
+    "example_english": "Many people travel in the bus."
+  },
+  "bike": {
+    "telugu": "బైక్",
+    "english": "Bike",
+    "audio": "bike.mp3",
+    "image": "bike.png",
+    "example": "బైక్ వేగంగా నడుస్తుంది.",
+    "example_english": "The bike goes fast."
+  },
+  "train": {
+    "telugu": "రైలు",
+    "english": "Train",
+    "audio": "train.mp3",
+    "image": "train.png",
+    "example": "రైలు పట్టాలపై నడుస్తుంది.",
+    "example_english": "The train runs on tracks."
+  },
+  "aeroplane": {
+    "telugu": "విమానం",
+    "english": "Aeroplane",
+    "audio": "aeroplane.mp3",
+    "image": "aeroplane.png",
+    "example": "విమానం ఆకాశంలో ఎగురుతుంది.",
+    "example_english": "The aeroplane flies in the sky."
+  },
+  "boat": {
+    "telugu": "పడవ",
+    "english": "Boat",
+    "audio": "boat.mp3",
+    "image": "boat.png",
+    "example": "పడవ నీటిలో తేలుతుంది.",
+    "example_english": "The boat floats on water."
+  },
+  "ship": {
+    "telugu": "నౌక",
+    "english": "Ship",
+    "audio": "ship.mp3",
+    "image": "ship.png",
+    "example": "నౌక సముద్రంలో ప్రయాణిస్తుంది.",
+    "example_english": "The ship travels in the sea."
+  },
+  "truck": {
+    "telugu": "లారీ",
+    "english": "Truck",
+    "audio": "truck.mp3",
+    "image": "truck.png",
+    "example": "లారీ బరువు సరుకు తీసుకెళ్తుంది.",
+    "example_english": "The truck carries heavy goods."
+  },
+  "auto": {
+    "telugu": "ఆటో",
+    "english": "Auto Rickshaw",
+    "audio": "auto.mp3",
+    "image": "auto.png",
+    "example": "ఆటో మూడు చక్రాలు కలిగి ఉంటుంది.",
+    "example_english": "The auto has three wheels."
+  },
+  "tractor": {
+    "telugu": "ట్రాక్టర్",
+    "english": "Tractor",
+    "audio": "tractor.mp3",
+    "image": "tractor.png",
+    "example": "ట్రాక్టర్ పొలంలో పని చేస్తుంది.",
+    "example_english": "The tractor works in the field."
+  }
+}

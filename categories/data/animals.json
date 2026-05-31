@@ -2,16 +2,81 @@
   "pilli": {
     "telugu": "పిల్లి",
     "english": "Cat",
-    "audio": "pilli.mp3"
+    "audio": "pilli.mp3",
+    "image": "pilli.png",
+    "example": "పిల్లి పాలు తాగుతుంది.",
+    "example_english": "The cat drinks milk."
   },
   "kukka": {
     "telugu": "కుక్క",
     "english": "Dog",
-    "audio": "kukka.mp3"
+    "audio": "kukka.mp3",
+    "image": "kukka.png",
+    "example": "కుక్క పరుగెత్తుతుంది.",
+    "example_english": "The dog runs."
   },
   "gurram": {
     "telugu": "గుర్రం",
     "english": "Horse",
-    "audio": "gurram.mp3"
+    "audio": "gurram.mp3",
+    "image": "gurram.png",
+    "example": "గుర్రం వేగంగా పరుగెడుతుంది.",
+    "example_english": "The horse runs fast."
+  },
+  "kothi": {
+    "telugu": "కోతి",
+    "english": "Monkey",
+    "audio": "kothi.mp3",
+    "image": "kothi.png",
+    "example": "కోతి చెట్టు ఎక్కుతుంది.",
+    "example_english": "The monkey climbs a tree."
+  },
+  "enugu": {
+    "telugu": "ఏనుగు",
+    "english": "Elephant",
+    "audio": "enugu.mp3",
+    "image": "enugu.png",
+    "example": "ఏనుగు పెద్దది.",
+    "example_english": "The elephant is big."
+  },
+  "tabelu": {
+    "telugu": "తాబేలు",
+    "english": "Turtle",
+    "audio": "tabelu.mp3",
+    "image": "tabelu.png",
+    "example": "తాబేలు నెమ్మదిగా నడుస్తుంది.",
+    "example_english": "The turtle walks slowly."
+  },
+  "pilli-papa": {
+    "telugu": "పిల్లి పాప",
+    "english": "Kitten",
+    "audio": "pilli-papa.mp3",
+    "image": "pilli-papa.png",
+    "example": "పిల్లి పాప చిన్నది.",
+    "example_english": "The kitten is small."
+  },
+  "kukka-papa": {
+    "telugu": "కుక్క పాప",
+    "english": "Puppy",
+    "audio": "kukka-papa.mp3",
+    "image": "kukka-papa.png",
+    "example": "కుక్క పాప ఆడుకుంటుంది.",
+    "example_english": "The puppy plays."
+  },
+  "pilli-gadu": {
+    "telugu": "పిల్లి గాడు",
+    "english": "Tomcat",
+    "audio": "pilli-gadu.mp3",
+    "image": "pilli-gadu.png",
+    "example": "పిల్లి గాడు నిద్రపోతుంది.",
+    "example_english": "The tomcat sleeps."
+  },
+  "kodi": {
+    "telugu": "కోడి",
+    "english": "Hen",
+    "audio": "kodi.mp3",
+    "image": "kodi.png",
+    "example": "కోడి గుడ్లు పెడుతుంది.",
+    "example_english": "The hen lays eggs."
   }
 }

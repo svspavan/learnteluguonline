@@ -4,39 +4,79 @@
     "english": "Circle",
     "audio": "circle.mp3",
     "image": "circle.png",
-    "example": "వృత్తం ఒక గుండ్రటి ఆకారం.",
-    "example_english": "A circle is a round shape."
+    "example": "వృత్తం గుండ్రంగా ఉంటుంది.",
+    "example_english": "The circle is round."
   },
   "square": {
     "telugu": "చతురస్రం",
     "english": "Square",
     "audio": "square.mp3",
     "image": "square.png",
-    "example": "చతురస్రానికి నాలుగు సమాన భుజాలు ఉంటాయి.",
-    "example_english": "A square has four equal sides."
+    "example": "చతురస్రం నాలుగు భుజాలు కలిగి ఉంటుంది.",
+    "example_english": "The square has four sides."
   },
   "triangle": {
     "telugu": "త్రిభుజం",
     "english": "Triangle",
     "audio": "triangle.mp3",
     "image": "triangle.png",
-    "example": "త్రిభుజానికి మూడు కోణాలు ఉంటాయి.",
-    "example_english": "A triangle has three angles."
+    "example": "త్రిభుజం మూడు కోణాలు కలిగి ఉంటుంది.",
+    "example_english": "The triangle has three corners."
   },
   "rectangle": {
     "telugu": "ఆయతం",
     "english": "Rectangle",
     "audio": "rectangle.mp3",
     "image": "rectangle.png",
-    "example": "ఆయతంలో ఎదురెదురుగా ఉన్న భుజాలు సమానం.",
-    "example_english": "Opposite sides of a rectangle are equal."
+    "example": "ఆయతం పొడవుగా ఉంటుంది.",
+    "example_english": "The rectangle is long."
   },
   "oval": {
     "telugu": "అండాకారం",
     "english": "Oval",
     "audio": "oval.mp3",
     "image": "oval.png",
-    "example": "అండాకారం గుడ్డు ఆకారంలా ఉంటుంది.",
-    "example_english": "An oval looks like the shape of an egg."
+    "example": "అండాకారం గుడ్డు లా ఉంటుంది.",
+    "example_english": "The oval looks like an egg."
+  },
+  "star": {
+    "telugu": "నక్షత్రం",
+    "english": "Star",
+    "audio": "star.mp3",
+    "image": "star.png",
+    "example": "నక్షత్రం ఆకాశంలో మెరిసుతుంది.",
+    "example_english": "The star shines in the sky."
+  },
+  "heart": {
+    "telugu": "హృదయం",
+    "english": "Heart",
+    "audio": "heart.mp3",
+    "image": "heart.png",
+    "example": "హృదయం ఆకారం అందంగా ఉంటుంది.",
+    "example_english": "The heart shape is beautiful."
+  },
+  "diamond": {
+    "telugu": "వజ్రాకారం",
+    "english": "Diamond",
+    "audio": "diamond.mp3",
+    "image": "diamond.png",
+    "example": "వజ్రాకారం గాలిపటం లా ఉంటుంది.",
+    "example_english": "The diamond shape looks like a kite."
+  },
+  "pentagon": {
+    "telugu": "పంచభుజం",
+    "english": "Pentagon",
+    "audio": "pentagon.mp3",
+    "image": "pentagon.png",
+    "example": "పంచభుజం ఐదు భుజాలు కలిగి ఉంటుంది.",
+    "example_english": "The pentagon has five sides."
+  },
+  "hexagon": {
+    "telugu": "షడ్భుజం",
+    "english": "Hexagon",
+    "audio": "hexagon.mp3",
+    "image": "hexagon.png",
+    "example": "షడ్భుజం ఆరు భుజాలు కలిగి ఉంటుంది.",
+    "example_english": "The hexagon has six sides."
   }
 }

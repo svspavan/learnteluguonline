@@ -1,19 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telugu Item</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Item — Learn Telugu</title>
 
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Telugu Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .item-container {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .item-telugu {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .item-english {
+      font-size: 1.4rem;
+      opacity: 0.85;
+      margin-bottom: 1rem;
+    }
+
+    .item-image {
+      max-width: 260px;
+      margin: 1rem auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .item-image:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .example-block {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: var(--card-bg, #fff);
+      border-radius: 10px;
+      box-shadow: var(--shadow-sm);
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .example-telugu {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+    }
+
+    .example-english {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .item-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .item-nav a {
+      padding: 0.6rem 1rem;
+      background: var(--card-bg, #fff);
+      border-radius: 8px;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .item-nav a:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .fade-slide {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: fadeSlide 0.45s ease forwards;
+    }
+
+    @keyframes fadeSlide {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .item-telugu { font-size: 2.4rem; }
+      .item-english { font-size: 1.1rem; }
+      .item-image { max-width: 200px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ============================
-     HEADER
-============================= -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
@@ -25,7 +126,7 @@
       <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
       <a href="../words/index.html" class="nav-link">Words</a>
       <a href="../numbers/index.html" class="nav-link">Numbers</a>
-      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="index.html" class="nav-link">Categories</a>
       <a href="../sentences/index.html" class="nav-link">Sentences</a>
       <a href="../stories/index.html" class="nav-link">Stories</a>
     </nav>
@@ -34,106 +135,169 @@
   </div>
 </header>
 
+<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- ============================
-     BREADCRUMB
-============================= -->
-<nav class="breadcrumb">
-  <a href="../index.html">Home</a>
-  <span>›</span>
-  <a href="index.html">Categories</a>
-  <span>›</span>
-  <a id="breadcrumbCategoryLink" href="#">Category</a>
-  <span>›</span>
-  <span id="breadcrumbItem">Item</span>
-</nav>
-
-
-<!-- ============================
-     MAIN CONTENT
-============================= -->
 <main class="page-container">
-    <section id="itemContent"></section>
+  <section class="modules">
+
+    <div class="item-container fade-slide">
+      <div class="item-telugu" id="itemTelugu">—</div>
+      <div class="item-english" id="itemEnglish">—</div>
+
+      <div id="audioContainer"></div>
+
+      <img id="itemImage" class="item-image" style="display:none;" alt="">
+    </div>
+
+    <div id="exampleBlock" class="example-block" style="display:none;">
+      <div class="example-telugu" id="exampleTelugu"></div>
+      <div class="example-english" id="exampleEnglish"></div>
+    </div>
+
+    <div class="item-nav">
+      <a id="prevItem" href="#">← Previous</a>
+      <a id="nextItem" href="#">Next →</a>
+    </div>
+
+  </section>
 </main>
 
-
-<!-- ============================
-     FOOTER
-============================= -->
 <footer class="footer">
-    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+  <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-
-<!-- ============================
-     GLOBAL SCRIPT
-============================= -->
 <script src="../assets/js/script.js"></script>
 
-<!-- ============================
-     PAGE-SPECIFIC SCRIPT
-============================= -->
 <script>
+/* Category metadata for breadcrumb */
+const categoryMeta = {
+  colors:   { telugu: "రంగులు" },
+  animals:  { telugu: "జంతువులు" },
+  fruits:   { telugu: "పండ్లు" },
+  vegetables:{ telugu: "కూరగాయలు" },
+  shapes:   { telugu: "ఆకారాలు" },
+  toys:     { telugu: "బొమ్మలు" },
+  household:{ telugu: "ఇంటి వస్తువులు" },
+  family:   { telugu: "కుటుంబం" },
+  bodyparts:{ telugu: "శరీర భాగాలు" },
+  vehicles: { telugu: "వాహనాలు" },
+  nature:   { telugu: "ప్రకృతి" },
+  school:   { telugu: "పాఠశాల వస్తువులు" }
+};
+
+let itemsData = {};
+let keys = [];
+let currentIndex = -1;
+
+/* ============================
+   LOAD ITEM
+============================= */
 async function loadItem() {
-    const params = new URLSearchParams(window.location.search);
-    const category = params.get("category");
-    const key = params.get("key");
-    const container = document.getElementById("itemContent");
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  const id = params.get("id");
 
-    if (!category || !key) {
-        container.innerHTML = "<p>Invalid item.</p>";
-        return;
+  if (!category || !id) {
+    document.querySelector(".modules").innerHTML = "<p>Item not found.</p>";
+    return;
+  }
+
+  try {
+    const res = await fetch(`data/${category}.json`);
+    itemsData = await res.json();
+
+    keys = Object.keys(itemsData);
+    currentIndex = keys.indexOf(id);
+
+    if (currentIndex === -1) {
+      document.querySelector(".modules").innerHTML = "<p>Item not found.</p>";
+      return;
     }
 
-    try {
-        const res = await fetch(`data/${category}.json`);
-        const data = await res.json();
-        const item = data[key];
+    renderItem(category, id);
+    setupNavigation(category);
 
-        if (!item) {
-            container.innerHTML = "<p>Item not found.</p>";
-            return;
-        }
+  } catch (e) {
+    console.error("Error loading item:", e);
+    document.querySelector(".modules").innerHTML =
+      "<p>Error loading item data.</p>";
+  }
+}
 
-        // Update breadcrumb
-        document.getElementById("breadcrumbCategoryLink").textContent = category;
-        document.getElementById("breadcrumbCategoryLink").href = `category.html?name=${category}`;
-        document.getElementById("breadcrumbItem").textContent = item.telugu;
+/* ============================
+   RENDER ITEM
+============================= */
+function renderItem(category, id) {
+  const item = itemsData[id];
+  if (!item) return;
 
-        container.innerHTML = `
-            <h1 class="big-letter">${item.telugu}</h1>
-            <h2 class="letter-english">${item.english}</h2>
+  const catLabel = categoryMeta[category]?.telugu || category;
 
-            ${item.image ? `<img src="../assets/images/${item.image}" class="item-image">` : ""}
+  // Breadcrumb
+  document.getElementById("breadcrumb").innerHTML = `
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="index.html">Categories</a>
+    <span>›</span>
+    <a href="category.html?name=${category}">${catLabel}</a>
+    <span>›</span>
+    <span>${item.telugu}</span>
+  `;
 
-            <div class="audio-player" data-src="../assets/audio/${item.audio}">
-                <button class="play-btn">▶</button>
-                <div class="progress-container">
-                    <div class="progress-bar"></div>
-                </div>
-                <span class="time-label">0:00</span>
-            </div>
+  // Main text
+  document.getElementById("itemTelugu").textContent = item.telugu;
+  document.getElementById("itemEnglish").textContent = item.english;
 
-            ${
-                item.example
-                    ? `
-                        <h3>Example</h3>
-                        <p class="story-paragraph">${item.example}</p>
-                        <p class="story-moral">${item.example_english}</p>
-                      `
-                    : ""
-            }
+  // Audio
+  const audioContainer = document.getElementById("audioContainer");
+  audioContainer.innerHTML = item.audio ? `
+    <div class="audio-player" data-src="audio/${category}/${item.audio}">
+      <button class="play-btn">▶</button>
+      <div class="progress-container"><div class="progress-bar"></div></div>
+      <span class="time-label">0:00</span>
+    </div>
+  ` : "";
 
-            <div class="back-link">
-                <a href="category.html?name=${category}">← Back to ${category}</a>
-            </div>
-        `;
+  if (window.initAudioPlayers) window.initAudioPlayers();
 
-        if (window.initAudioPlayers) window.initAudioPlayers();
+  // Image
+  const img = document.getElementById("itemImage");
+  if (item.image) {
+    img.src = `images/${category}/${item.image}`;
+    img.alt = item.english;
+    img.style.display = "block";
+  } else {
+    img.style.display = "none";
+  }
 
-    } catch (e) {
-        container.innerHTML = "<p>Error loading item data.</p>";
-    }
+  // Example
+  if (item.example) {
+    document.getElementById("exampleTelugu").textContent = item.example;
+    document.getElementById("exampleEnglish").textContent = item.example_english || "";
+    document.getElementById("exampleBlock").style.display = "block";
+  } else {
+    document.getElementById("exampleBlock").style.display = "none";
+  }
+}
+
+/* ============================
+   NEXT / PREVIOUS
+============================= */
+function setupNavigation(category) {
+  const prevBtn = document.getElementById("prevItem");
+  const nextBtn = document.getElementById("nextItem");
+
+  prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + keys.length) % keys.length;
+    const newId = keys[currentIndex];
+    window.location.href = `item.html?category=${category}&id=${newId}`;
+  };
+
+  nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % keys.length;
+    const newId = keys[currentIndex];
+    window.location.href = `item.html?category=${category}&id=${newId}`;
+  };
 }
 
 document.addEventListener("DOMContentLoaded", loadItem);

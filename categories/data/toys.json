@@ -1,0 +1,79 @@
+{
+  "ball": {
+    "telugu": "బంతి",
+    "english": "Ball",
+    "audio": "ball.mp3",
+    "image": "ball.png",
+    "example": "బంతి గుండ్రంగా ఉంటుంది.",
+    "example_english": "The ball is round."
+  },
+  "doll": {
+    "telugu": "బొమ్మ",
+    "english": "Doll",
+    "audio": "doll.mp3",
+    "image": "doll.png",
+    "example": "బొమ్మ అందంగా ఉంటుంది.",
+    "example_english": "The doll is beautiful."
+  },
+  "car-toy": {
+    "telugu": "కారు బొమ్మ",
+    "english": "Toy Car",
+    "audio": "car-toy.mp3",
+    "image": "car-toy.png",
+    "example": "కారు బొమ్మ వేగంగా నడుస్తుంది.",
+    "example_english": "The toy car moves fast."
+  },
+  "train-toy": {
+    "telugu": "రైలు బొమ్మ",
+    "english": "Toy Train",
+    "audio": "train-toy.mp3",
+    "image": "train-toy.png",
+    "example": "రైలు బొమ్మ శబ్దం చేస్తుంది.",
+    "example_english": "The toy train makes noise."
+  },
+  "teddy": {
+    "telugu": "టెడ్డి బేర్",
+    "english": "Teddy Bear",
+    "audio": "teddy.mp3",
+    "image": "teddy.png",
+    "example": "టెడ్డి బేర్ мягంగా ఉంటుంది.",
+    "example_english": "The teddy bear is soft."
+  },
+  "blocks": {
+    "telugu": "బ్లాక్స్",
+    "english": "Blocks",
+    "audio": "blocks.mp3",
+    "image": "blocks.png",
+    "example": "బ్లాక్స్ తో ఇల్లు కట్టవచ్చు.",
+    "example_english": "You can build a house with blocks."
+  },
+  "balloon": {
+    "telugu": "బెలూన్",
+    "english": "Balloon",
+    "audio": "balloon.mp3",
+    "image": "balloon.png",
+    "example": "బెలూన్ గాల్లో ఎగురుతుంది.",
+    "example_english": "The balloon flies in the air."
+  },
+  "drum": {
+    "telugu": "డ్రమ్",
+    "english": "Drum",
+    "audio": "drum.mp3",
+    "image": "drum.png",
+    "example": "డ్రమ్ శబ్దం చేస్తుంది.",
+    "example_english": "The drum makes sound."
+  },
+  "kite": {
+    "telugu": "గాలిపటం",
+    "english": "Kite",
+    "audio": "kite.mp3",
+    "image": "kite.png",
+    "example": "గాలిపటం ఆకాశంలో ఎగురుతుంది.",
+    "example_english": "The kite flies in the sky."
+  },
+  "robot-toy": {
+    "telugu": "రోబో బొమ్మ",
+    "english": "Robot Toy",
+    "audio": "robot-toy.mp3",
+    "image": "robot-toy.png",
+    "example

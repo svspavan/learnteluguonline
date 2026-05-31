@@ -1,32 +1,64 @@
 {
   "title": "లింగాలు — Gender",
-  "description": "Telugu nouns have three genders: masculine, feminine, and neuter.",
+  "description": "తెలుగులో నామవాచకాలు మూడు లింగాలుగా విభజించబడతాయి — పుంలింగం, స్త్రీలింగం, నపుంసకలింగం. లింగం ఆధారంగా క్రియారూపాలు, సర్వనామాలు మారుతాయి.",
   "items": [
     {
-      "heading": "పుంలింగం — Masculine Gender",
-      "explanation": "Used for male beings.",
+      "heading": "1. పుంలింగం (Masculine Gender)",
+      "explanation": "పురుషులను లేదా పురుష లక్షణాలు ఉన్నవాటిని సూచించే నామవాచకాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["అతను", "He"],
+          ["రాము", "Ramu"],
+          ["బాలుడు", "Boy"]
+        ]
+      },
       "examples": [
-        "అతను — He.",
-        "రాజు — King.",
-        "బాలుడు — Boy."
+        {
+          "telugu": "అతను వస్తున్నాడు.",
+          "english": "He is coming.",
+          "audio": "athanu_vastunnadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "స్త్రీలింగం — Feminine Gender",
-      "explanation": "Used for female beings.",
+      "heading": "2. స్త్రీలింగం (Feminine Gender)",
+      "explanation": "స్త్రీలను లేదా స్త్రీ లక్షణాలు ఉన్నవాటిని సూచించే నామవాచకాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఆమె", "She"],
+          ["సీత", "Sita"],
+          ["బాలిక", "Girl"]
+        ]
+      },
       "examples": [
-        "ఆమె — She.",
-        "రాణి — Queen.",
-        "బాలిక — Girl."
+        {
+          "telugu": "ఆమె నవ్వుతోంది.",
+          "english": "She is smiling.",
+          "audio": "aame_navvutondi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "నపుంసక లింగం — Neuter Gender",
-      "explanation": "Used for objects and sometimes for animals.",
+      "heading": "3. నపుంసకలింగం (Neuter Gender)",
+      "explanation": "జీవరహిత వస్తువులు లేదా లింగం లేని పదాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఇది", "This (object)"],
+          ["పుస్తకం", "Book"],
+          ["ఇల్లు", "House"]
+        ]
+      },
       "examples": [
-        "ఇది — This (thing).",
-        "ఇల్లు — House.",
-        "పుస్తకం — Book."
+        {
+          "telugu": "ఇది నా ఇల్లు.",
+          "english": "This is my house.",
+          "audio": "idi_naa_illu.mp3"
+        }
       ]
     }
   ]

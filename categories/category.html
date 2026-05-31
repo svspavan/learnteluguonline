@@ -1,19 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Category — Learn Telugu</title>
 
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Telugu Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    /* Header */
+    .category-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .category-emoji {
+      font-size: 3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .category-title {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      font-size: 2rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .category-subtitle {
+      font-size: 1rem;
+      opacity: 0.75;
+      margin-top: 0.2rem;
+    }
+
+    /* Toolbar (same spacing style as Numbers) */
+    .category-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .category-toolbar select,
+    .category-toolbar button {
+      padding: 0.6rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background: var(--card-bg, #fff);
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .category-toolbar select:hover,
+    .category-toolbar button:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Grid (same as Numbers) */
+    #itemsGrid.module-grid {
+      margin-top: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    /* Card styling (same proportions as Numbers) */
+    #itemsGrid .module-card {
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    #itemsGrid .module-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    /* Telugu + English text inside cards */
+    #itemsGrid .module-card h3 {
+      font-family: 'Noto Sans Telugu', sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+
+    #itemsGrid .module-card p {
+      margin-top: 0;
+      opacity: 0.85;
+      font-size: 1rem;
+    }
+
+    /* Audio player spacing inside cards */
+    #itemsGrid .audio-player {
+      margin-top: 0.6rem;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ============================
-     HEADER
-============================= -->
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
@@ -34,82 +124,221 @@
   </div>
 </header>
 
+<nav class="breadcrumb" id="breadcrumb"></nav>
 
-<!-- ============================
-     BREADCRUMB
-============================= -->
-<nav class="breadcrumb">
-  <a href="../index.html">Home</a>
-  <span>›</span>
-  <a href="index.html">Categories</a>
-  <span>›</span>
-  <span id="breadcrumbCategory">Category</span>
-</nav>
-
-
-<!-- ============================
-     MAIN CONTENT
-============================= -->
 <main class="page-container">
+  <section class="modules">
 
-    <h1 id="categoryTitle" class="page-title"></h1>
+    <!-- Category Header -->
+    <div class="category-header">
+      <div class="category-emoji" id="catEmoji">📁</div>
+      <h1 class="category-title" id="catTitle">Category</h1>
+      <p class="category-subtitle" id="catSubtitle"></p>
+    </div>
 
-    <div id="categoryGrid" class="module-grid"></div>
+    <!-- Play All -->
+    <button id="playAllBtn" class="play-all-btn">🔊 Play All</button>
+    <div id="playProgress" class="play-progress">
+      <div id="playProgressBar" class="play-progress-bar"></div>
+    </div>
 
+    <!-- Toolbar -->
+    <div class="category-toolbar">
+      <select id="sortSelect">
+        <option value="telugu">Sort: Telugu</option>
+        <option value="english">Sort: English</option>
+      </select>
+
+      <select id="gridSelect">
+        <option value="comfortable">Grid: Comfortable</option>
+        <option value="compact">Grid: Compact</option>
+        <option value="large">Grid: Large</option>
+      </select>
+    </div>
+
+    <!-- Items Grid -->
+    <div id="itemsGrid" class="module-grid grid-comfortable"></div>
+
+  </section>
 </main>
 
-
-<!-- ============================
-     FOOTER
-============================= -->
 <footer class="footer">
-    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+  <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
 
-
-<!-- ============================
-     GLOBAL SCRIPT
-============================= -->
 <script src="../assets/js/script.js"></script>
 
-<!-- ============================
-     PAGE-SPECIFIC SCRIPT
-============================= -->
 <script>
+/* ============================
+   CATEGORY METADATA
+============================= */
+const categoryMeta = {
+  colors:   { emoji: "🎨", telugu: "రంగులు", english: "Colors" },
+  animals:  { emoji: "🐾", telugu: "జంతువులు", english: "Animals" },
+  fruits:   { emoji: "🍎", telugu: "పండ్లు", english: "Fruits" },
+  vegetables:{ emoji: "🥕", telugu: "కూరగాయలు", english: "Vegetables" },
+  shapes:   { emoji: "🔺", telugu: "ఆకారాలు", english: "Shapes" },
+  toys:     { emoji: "🧸", telugu: "బొమ్మలు", english: "Toys" },
+  household:{ emoji: "🏠", telugu: "ఇంటి వస్తువులు", english: "Household Items" },
+  family:   { emoji: "👨‍👩‍👦", telugu: "కుటుంబం", english: "Family" },
+  bodyparts:{ emoji: "🧍‍♂️", telugu: "శరీర భాగాలు", english: "Body Parts" },
+  vehicles: { emoji: "🚗", telugu: "వాహనాలు", english: "Vehicles" },
+  nature:   { emoji: "🌿", telugu: "ప్రకృతి", english: "Nature" },
+  school:   { emoji: "📚", telugu: "పాఠశాల వస్తువులు", english: "School Items" }
+};
+
+let itemsData = {};
+let playAllList = [];
+let currentCategoryName = ""; // store the active category name
+let currentKeys = [];
+
+/* ============================
+   LOAD CATEGORY
+============================= */
 async function loadCategory() {
-    const params = new URLSearchParams(window.location.search);
-    const name = params.get("name");
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
 
-    const titleMap = {
-        colors: "రంగులు — Colors",
-        animals: "జంతువులు — Animals",
-        fruits: "పండ్లు — Fruits",
-        vegetables: "కూరగాయలు — Vegetables",
-        shapes: "ఆకారాలు — Shapes"
-    };
+  if (!name || !categoryMeta[name]) {
+    document.querySelector(".modules").innerHTML = "<p>Category not found.</p>";
+    return;
+  }
 
-    const title = titleMap[name] || "Category";
-    document.getElementById("categoryTitle").textContent = title;
-    document.getElementById("breadcrumbCategory").textContent = title;
+  currentCategoryName = name;
+  const meta = categoryMeta[name];
 
+  // Breadcrumb
+  document.getElementById("breadcrumb").innerHTML = `
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="index.html">Categories</a>
+    <span>›</span>
+    <span>${meta.telugu}</span>
+  `;
+
+  // Header
+  document.getElementById("catEmoji").textContent = meta.emoji;
+  document.getElementById("catTitle").textContent = meta.telugu;
+  document.getElementById("catSubtitle").textContent = meta.english;
+
+  try {
     const res = await fetch(`data/${name}.json`);
-    const items = await res.json();
+    itemsData = await res.json();
 
-    const grid = document.getElementById("categoryGrid");
+    renderItems();
+    setupToolbar(name);
 
-    Object.keys(items).forEach(key => {
-        const item = items[key];
+  } catch (e) {
+    console.error("Error loading category:", e);
+    document.getElementById("itemsGrid").innerHTML =
+      "<p>Unable to load items right now.</p>";
+  }
+}
 
-        const card = document.createElement("a");
-        card.href = `item.html?category=${name}&key=${key}`;
-        card.className = "module-card";
-        card.innerHTML = `
-            <h3>${item.telugu}</h3>
-            <p>${item.english}</p>
-        `;
+/* ============================
+   RENDER ITEMS
+============================= */
+function renderItems() {
+  const grid = document.getElementById("itemsGrid");
+  grid.innerHTML = "";
+  playAllList = [];
 
-        grid.appendChild(card);
-    });
+  let keys = Object.keys(itemsData || {});
+  currentKeys = keys.slice(); // keep a copy for navigation if needed
+
+  /* Sorting */
+  const sort = document.getElementById("sortSelect").value;
+  if (sort === "telugu") {
+    keys.sort((a,b) => (itemsData[a].telugu || "").localeCompare(itemsData[b].telugu || ""));
+  } else {
+    keys.sort((a,b) => (itemsData[a].english || "").localeCompare(itemsData[b].english || ""));
+  }
+
+  /* Render cards */
+  keys.forEach(key => {
+    const item = itemsData[key];
+
+    if (item && item.audio) {
+      playAllList.push(`audio/${currentCategoryName}/${item.audio}`);
+    }
+
+    const card = document.createElement("a");
+    card.href = `item.html?category=${encodeURIComponent(currentCategoryName)}&id=${encodeURIComponent(key)}`;
+    card.className = "module-card fade-slide";
+
+    const audioHTML = (item && item.audio) ? `
+      <div class="audio-player" data-src="audio/${currentCategoryName}/${item.audio}">
+        <button class="play-btn">▶</button>
+        <div class="progress-container"><div class="progress-bar"></div></div>
+        <span class="time-label">0:00</span>
+      </div>
+    ` : "";
+
+    const teluguText = item && item.telugu ? item.telugu : "";
+    const englishText = item && item.english ? item.english : "";
+
+    card.innerHTML = `
+      <h3>${teluguText}</h3>
+      <p>${englishText}</p>
+      ${audioHTML}
+    `;
+
+    grid.appendChild(card);
+  });
+
+  if (window.initAudioPlayers) window.initAudioPlayers();
+}
+
+/* ============================
+   TOOLBAR HANDLERS
+============================= */
+function setupToolbar(categoryName) {
+  // Remove previous listeners to avoid duplicates (defensive)
+  const sortSelect = document.getElementById("sortSelect");
+  const gridSelect = document.getElementById("gridSelect");
+  const playAllBtn = document.getElementById("playAllBtn");
+
+  // Re-attach listeners (remove first if present)
+  sortSelect.onchange = renderItems;
+
+  gridSelect.onchange = e => {
+    const grid = document.getElementById("itemsGrid");
+    grid.classList.remove("grid-compact", "grid-comfortable", "grid-large");
+    grid.classList.add(`grid-${e.target.value}`);
+  };
+
+  playAllBtn.onclick = () => {
+    playAllWithProgress(playAllList);
+  };
+}
+
+/* ============================
+   PLAY ALL
+============================= */
+function playAllWithProgress(list) {
+  if (!list.length) return;
+
+  const progressBar = document.getElementById("playProgressBar");
+  let index = 0;
+
+  function playNext() {
+    if (index >= list.length) {
+      progressBar.style.width = "100%";
+      return;
+    }
+
+    const audio = new Audio(list[index]);
+    audio.play();
+
+    const progress = ((index + 1) / list.length) * 100;
+    progressBar.style.width = `${progress}%`;
+
+    index++;
+    audio.addEventListener("ended", playNext);
+  }
+
+  progressBar.style.width = "0%";
+  playNext();
 }
 
 document.addEventListener("DOMContentLoaded", loadCategory);

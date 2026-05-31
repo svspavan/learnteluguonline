@@ -1,29 +1,82 @@
 {
   "title": "క్రియావిశేషణాలు — Adverbs",
-  "description": "Adverbs describe how, when, or where an action happens.",
+  "description": "క్రియ ఎలా, ఎప్పుడు, ఎక్కడ జరుగుతుందో తెలియజేసే పదాలను క్రియావిశేషణాలు అంటారు. ఇవి క్రియను మరింత స్పష్టంగా వివరిస్తాయి.",
   "items": [
     {
-      "heading": "Manner — How?",
-      "explanation": "Describes the way an action is done.",
+      "heading": "1. విధి క్రియావిశేషణాలు (Adverbs of Manner)",
+      "explanation": "క్రియ ఎలా జరుగుతుందో తెలియజేస్తాయి. సాధారణంగా '-గా' తో ముగుస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["నెమ్మదిగా", "Slowly"],
+          ["బాగా", "Well"],
+          ["త్వరగా", "Quickly"],
+          ["జాగ్రత్తగా", "Carefully"]
+        ]
+      },
       "examples": [
-        "నెమ్మదిగా నడిచాడు — He walked slowly.",
-        "బాగా చదివింది — She studied well."
+        {
+          "telugu": "అతను నెమ్మదిగా నడిచాడు.",
+          "english": "He walked slowly.",
+          "audio": "nemmadiga_nadichadu.mp3"
+        },
+        {
+          "telugu": "ఆమె బాగా చదువుతుంది.",
+          "english": "She studies well.",
+          "audio": "baaga_chadavutundi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Time — When?",
-      "explanation": "Describes when an action happens.",
+      "heading": "2. కాల క్రియావిశేషణాలు (Adverbs of Time)",
+      "explanation": "క్రియ ఎప్పుడు జరుగుతుందో తెలియజేస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఇప్పుడు", "Now"],
+          ["రేపు", "Tomorrow"],
+          ["నిన్న", "Yesterday"],
+          ["తరువాత", "Later"]
+        ]
+      },
       "examples": [
-        "ఇప్పుడు వస్తాను — I will come now.",
-        "రేపు వెళ్తాం — We will go tomorrow."
+        {
+          "telugu": "నేను ఇప్పుడు వస్తాను.",
+          "english": "I will come now.",
+          "audio": "ippudu_vastaanu.mp3"
+        },
+        {
+          "telugu": "మనం రేపు వెళ్తాం.",
+          "english": "We will go tomorrow.",
+          "audio": "repu_veltham.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Place — Where?",
-      "explanation": "Describes where an action happens.",
+      "heading": "3. స్థల క్రియావిశేషణాలు (Adverbs of Place)",
+      "explanation": "క్రియ ఎక్కడ జరుగుతుందో తెలియజేస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఇక్కడ", "Here"],
+          ["అక్కడ", "There"],
+          ["ఎక్కడైనా", "Anywhere"],
+          ["లోపల", "Inside"]
+        ]
+      },
       "examples": [
-        "ఇక్కడ కూర్చోండి — Sit here.",
-        "అక్కడికి వెళ్ళొద్దు — Don’t go there."
+        {
+          "telugu": "ఇక్కడ కూర్చోండి.",
+          "english": "Sit here.",
+          "audio": "ikkada_kurchondi.mp3"
+        },
+        {
+          "telugu": "అక్కడికి వెళ్ళొద్దు.",
+          "english": "Don't go there.",
+          "audio": "akkadiki_velloddu.mp3"
+        }
       ]
     }
   ]

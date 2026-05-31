@@ -4,31 +4,79 @@
     "english": "Red",
     "audio": "red.mp3",
     "image": "red.png",
-    "example": "ఎరుపు రంగు గులాబీ పువ్వు.",
-    "example_english": "A red rose."
+    "example": "ఎరుపు బంతి ఉంది.",
+    "example_english": "There is a red ball."
   },
   "blue": {
     "telugu": "నీలం",
     "english": "Blue",
     "audio": "blue.mp3",
     "image": "blue.png",
-    "example": "నీలం రంగు ఆకాశం.",
-    "example_english": "The blue sky."
+    "example": "నీలం ఆకాశం ఉంది.",
+    "example_english": "The sky is blue."
   },
   "green": {
     "telugu": "ఆకుపచ్చ",
     "english": "Green",
     "audio": "green.mp3",
     "image": "green.png",
-    "example": "ఆకుపచ్చ గడ్డ పువ్వు.",
-    "example_english": "A green leaf."
+    "example": "ఆకుపచ్చ ఆకు ఉంది.",
+    "example_english": "There is a green leaf."
   },
   "yellow": {
     "telugu": "పసుపు",
     "english": "Yellow",
     "audio": "yellow.mp3",
     "image": "yellow.png",
-    "example": "పసుపు రంగు కర్ర.",
-    "example_english": "A yellow banana."
+    "example": "పసుపు పువ్వు ఉంది.",
+    "example_english": "There is a yellow flower."
+  },
+  "black": {
+    "telugu": "నలుపు",
+    "english": "Black",
+    "audio": "black.mp3",
+    "image": "black.png",
+    "example": "నలుపు పిల్లి ఉంది.",
+    "example_english": "There is a black cat."
+  },
+  "white": {
+    "telugu": "తెలుపు",
+    "english": "White",
+    "audio": "white.mp3",
+    "image": "white.png",
+    "example": "తెలుపు కాగితం ఉంది.",
+    "example_english": "There is a white paper."
+  },
+  "orange": {
+    "telugu": "నారింజ",
+    "english": "Orange",
+    "audio": "orange.mp3",
+    "image": "orange.png",
+    "example": "నారింజ రంగు బొమ్మ ఉంది.",
+    "example_english": "There is an orange toy."
+  },
+  "pink": {
+    "telugu": "గులాబీ",
+    "english": "Pink",
+    "audio": "pink.mp3",
+    "image": "pink.png",
+    "example": "గులాబీ పువ్వు ఉంది.",
+    "example_english": "There is a pink flower."
+  },
+  "brown": {
+    "telugu": "గోధుమ",
+    "english": "Brown",
+    "audio": "brown.mp3",
+    "image": "brown.png",
+    "example": "గోధుమ రంగు కుర్చీ ఉంది.",
+    "example_english": "There is a brown chair."
+  },
+  "purple": {
+    "telugu": "ఊదా",
+    "english": "Purple",
+    "audio": "purple.mp3",
+    "image": "purple.png",
+    "example": "ఊదా రంగు బెలూన్ ఉంది.",
+    "example_english": "There is a purple balloon."
   }
 }

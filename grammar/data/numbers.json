@@ -1,23 +1,120 @@
 {
   "title": "వచనాలు — Grammatical Number",
-  "description": "Telugu distinguishes between singular and plural forms.",
+  "description": "తెలుగులో వచనం అంటే ఏ పదం ఏకవచనంలో ఉందా, బహువచనంలో ఉందా అనే భావం. నామవాచకాలు, సర్వనామాలు, క్రియలు వచనం ఆధారంగా మారుతాయి.",
   "items": [
     {
-      "heading": "ఏకవచనం — Singular",
-      "explanation": "Refers to one person or thing.",
+      "heading": "1. ఏకవచనం (Singular)",
+      "explanation": "ఒక వ్యక్తి, ఒక వస్తువు లేదా ఒక భావాన్ని సూచించే రూపం.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["పిల్లవాడు", "Boy"],
+          ["పుస్తకం", "Book"],
+          ["ఇల్లు", "House"]
+        ]
+      },
       "examples": [
-        "పిల్లి — Cat.",
-        "పుస్తకం — Book.",
-        "వాడు వస్తాడు — He comes."
+        {
+          "telugu": "పిల్లవాడు వస్తున్నాడు.",
+          "english": "The boy is coming.",
+          "audio": "pillavadu_vastunnadu.mp3"
+        },
+        {
+          "telugu": "ఇల్లు పెద్దది.",
+          "english": "The house is big.",
+          "audio": "illu_peddadi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "బహువచనం — Plural",
-      "explanation": "Refers to more than one person or thing.",
+      "heading": "2. బహువచనం (Plural)",
+      "explanation": "ఒకటి కంటే ఎక్కువ వ్యక్తులు లేదా వస్తువులను సూచించే రూపం. సాధారణంగా '-లు', '-లు', '-లు' వంటి ప్రత్యయాలు వస్తాయి.",
+      "table": {
+        "headers": ["Singular", "Plural", "Meaning"],
+        "rows": [
+          ["పిల్లవాడు", "పిల్లలు", "Boys"],
+          ["పుస్తకం", "పుస్తకాలు", "Books"],
+          ["ఇల్లు", "ఇళ్ళు", "Houses"]
+        ]
+      },
       "examples": [
-        "పిల్లులు — Cats.",
-        "పుస్తకాలు — Books.",
-        "వాళ్లు వస్తారు — They come."
+        {
+          "telugu": "పిల్లలు ఆడుతున్నారు.",
+          "english": "The children are playing.",
+          "audio": "pillalu_adutunnaru.mp3"
+        },
+        {
+          "telugu": "పుస్తకాలు టేబుల్‌పై ఉన్నాయి.",
+          "english": "The books are on the table.",
+          "audio": "pustakalu_table_pai_unnayi.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "3. సంఖ్యా పదాలు (Cardinal Numbers)",
+      "explanation": "వస్తువుల సంఖ్యను తెలియజేసే పదాలు.",
+      "table": {
+        "headers": ["Number", "Telugu", "English"],
+        "rows": [
+          ["1", "ఒకటి", "One"],
+          ["2", "రెండు", "Two"],
+          ["3", "మూడు", "Three"],
+          ["10", "పది", "Ten"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "రెండు పిల్లలు వచ్చారు.",
+          "english": "Two children came.",
+          "audio": "rendu_pillalu_vacharu.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "4. క్రమ సంఖ్యలు (Ordinal Numbers)",
+      "explanation": "క్రమాన్ని తెలియజేసే సంఖ్యలు.",
+      "table": {
+        "headers": ["Number", "Telugu", "English"],
+        "rows": [
+          ["1st", "మొదటి", "First"],
+          ["2nd", "రెండవ", "Second"],
+          ["3rd", "మూడవ", "Third"],
+          ["10th", "పదవ", "Tenth"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "అతను మొదటి స్థానంలో ఉన్నాడు.",
+          "english": "He is in the first position.",
+          "audio": "modati_sthanam_unnadu.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "5. వచనం ఆధారంగా క్రియ మార్పు (Verb Agreement with Number)",
+      "explanation": "కర్త ఏకవచనంలో ఉంటే క్రియా ఏకవచనంలో, బహువచనంలో ఉంటే క్రియా బహువచనంలో ఉంటుంది.",
+      "table": {
+        "headers": ["Subject", "Verb Form", "Meaning"],
+        "rows": [
+          ["పిల్లవాడు", "వస్తున్నాడు", "Boy is coming"],
+          ["పిల్లలు", "వస్తున్నారు", "Children are coming"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "పిల్లవాడు వస్తున్నాడు.",
+          "english": "The boy is coming.",
+          "audio": "pillavadu_vastunnadu_2.mp3"
+        },
+        {
+          "telugu": "పిల్లలు వస్తున్నారు.",
+          "english": "The children are coming.",
+          "audio": "pillalu_vastunnaru_2.mp3"
+        }
       ]
     }
   ]

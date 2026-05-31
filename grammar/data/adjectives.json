@@ -1,22 +1,88 @@
 {
   "title": "విశేషణాలు — Adjectives",
-  "description": "Adjectives describe or qualify nouns.",
+  "description": "విశేషణాలు నామవాచకాలను వివరించే పదాలు. గుణం, పరిమాణం, రంగు, ఆకారం వంటి లక్షణాలను తెలియజేస్తాయి.",
   "items": [
     {
-      "heading": "Describing Quality",
-      "explanation": "Words that describe how something is.",
+      "heading": "1. గుణ విశేషణాలు (Quality Adjectives)",
+      "explanation": "వస్తువు లేదా వ్యక్తి యొక్క గుణాన్ని తెలియజేస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["మంచి", "Good"],
+          ["చెడు", "Bad"],
+          ["పెద్ద", "Big"],
+          ["చిన్న", "Small"]
+        ]
+      },
       "examples": [
-        "మంచి పిల్లవాడు — Good boy.",
-        "చెడు అలవాటు — Bad habit.",
-        "పెద్ద ఇల్లు — Big house."
+        {
+          "telugu": "అతను మంచి బాలుడు.",
+          "english": "He is a good boy.",
+          "audio": "manchi_baaludu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Describing Quantity",
-      "explanation": "Words that describe how much or how many.",
+      "heading": "2. పరిమాణ విశేషణాలు (Quantity Adjectives)",
+      "explanation": "ఎంత? ఎంతమంది? అనే భావాన్ని తెలియజేస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["చాలా", "A lot / Many"],
+          ["కొన్ని", "Some"],
+          ["రెండు", "Two"],
+          ["అనేక", "Many"]
+        ]
+      },
       "examples": [
-        "చాలా నీళ్లు — A lot of water.",
-        "కొన్ని పుస్తకాలు — Some books."
+        {
+          "telugu": "అక్కడ చాలా పుస్తకాలు ఉన్నాయి.",
+          "english": "There are many books there.",
+          "audio": "chala_pustakalu_unnayi.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "3. రంగు విశేషణాలు (Color Adjectives)",
+      "explanation": "వస్తువుల రంగును తెలియజేస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఎరుపు", "Red"],
+          ["నీలం", "Blue"],
+          ["పచ్చ", "Green"],
+          ["తెలుపు", "White"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "అది ఎరుపు పువ్వు.",
+          "english": "That is a red flower.",
+          "audio": "erupu_puvvu.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "4. ఆకార విశేషణాలు (Shape Adjectives)",
+      "explanation": "వస్తువుల ఆకారాన్ని తెలియజేస్తాయి.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["గుండ్రం", "Round"],
+          ["చదరపు", "Square"],
+          ["లంబాకారం", "Rectangular"],
+          ["త్రిభుజం", "Triangular"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "ఇది గుండ్రం బంతి.",
+          "english": "This is a round ball.",
+          "audio": "gundram_banti.mp3"
+        }
       ]
     }
   ]

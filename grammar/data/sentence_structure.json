@@ -1,38 +1,123 @@
 {
   "title": "వాక్య నిర్మాణం — Sentence Structure",
-  "description": "Basic Telugu sentence structure is generally Subject–Object–Verb (SOV).",
+  "description": "తెలుగు వాక్య నిర్మాణం సాధారణంగా Subject–Object–Verb (SOV) క్రమాన్ని అనుసరిస్తుంది. ప్రశ్నలు, నిషేధాలు, గౌరవ రూపాలు, సంయుక్త వాక్యాలు వంటి నిర్మాణాలు కూడా ఉన్నాయి.",
   "items": [
     {
-      "heading": "Basic SOV Order",
-      "explanation": "In Telugu, the verb usually comes at the end of the sentence.",
+      "heading": "1. ప్రాథమిక SOV క్రమం (Basic SOV Order)",
+      "explanation": "తెలుగులో క్రియ సాధారణంగా వాక్య చివరలో వస్తుంది. కర్త → కర్మ → క్రియా క్రమం ఎక్కువగా ఉపయోగిస్తారు.",
+      "table": {
+        "headers": ["Part", "Telugu", "Meaning"],
+        "rows": [
+          ["Subject (S)", "రాము", "Ramu"],
+          ["Object (O)", "పుస్తకం", "Book"],
+          ["Verb (V)", "చదువుతున్నాడు", "is reading"]
+        ]
+      },
       "examples": [
-        "రాము పుస్తకం చదువుతున్నాడు — Ramu (S) book (O) is reading (V).",
-        "ఆమె నీళ్లు తాగింది — She (S) water (O) drank (V)."
+        {
+          "telugu": "రాము పుస్తకం చదువుతున్నాడు.",
+          "english": "Ramu is reading a book.",
+          "audio": "ramu_pustakam_chadivutunnadu.mp3"
+        },
+        {
+          "telugu": "ఆమె నీళ్లు తాగింది.",
+          "english": "She drank water.",
+          "audio": "aame_neellu_tagindi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Forming Questions",
-      "explanation": "Questions are often formed by intonation or adding question words.",
+      "heading": "2. ప్రశ్న వాక్యాలు (Forming Questions)",
+      "explanation": "తెలుగులో ప్రశ్నలు సాధారణంగా స్వర మార్పుతో లేదా ప్రశ్నార్థక పదాలతో ఏర్పడతాయి. క్రియా చివరలోనే ఉంటుంది.",
+      "table": {
+        "headers": ["Question Word", "Telugu", "Meaning"],
+        "rows": [
+          ["Who", "ఎవరు", "Who"],
+          ["What", "ఏమి / ఏమిటి", "What"],
+          ["Where", "ఎక్కడ", "Where"],
+          ["When", "ఎప్పుడు", "When"],
+          ["Why", "ఎందుకు", "Why"]
+        ]
+      },
       "examples": [
-        "నువ్వు వస్తావా? — Will you come?",
-        "ఎక్కడికి వెళ్తున్నారు? — Where are you going?"
+        {
+          "telugu": "నువ్వు వస్తావా?",
+          "english": "Will you come?",
+          "audio": "nuvvu_vastava.mp3"
+        },
+        {
+          "telugu": "ఎక్కడికి వెళ్తున్నారు?",
+          "english": "Where are you going?",
+          "audio": "ekkadiki_veltunnaru.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Negatives",
-      "explanation": "Negatives are formed using 'లేదు', 'కాదు', or negative verb forms.",
+      "heading": "3. నిషేధ వాక్యాలు (Negative Sentences)",
+      "explanation": "తెలుగులో నిషేధం 'లేదు', 'కాదు', లేదా క్రియ యొక్క నిషేధ రూపంతో వ్యక్తమవుతుంది.",
+      "table": {
+        "headers": ["Form", "Example", "Meaning"],
+        "rows": [
+          ["Verb Negative", "తినను", "I do not eat"],
+          ["Past Negative", "రాలేదు", "Did not come"],
+          ["Is not / Are not", "సరైంది కాదు", "Is not correct"]
+        ]
+      },
       "examples": [
-        "నేను తినను — I do not eat.",
-        "అతను రాలేదు — He did not come.",
-        "ఇది సరైంది కాదు — This is not correct."
+        {
+          "telugu": "నేను తినను.",
+          "english": "I do not eat.",
+          "audio": "nenu_tinnanu.mp3"
+        },
+        {
+          "telugu": "అతను రాలేదు.",
+          "english": "He did not come.",
+          "audio": "atanu_raledu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Polite Forms",
-      "explanation": "Use plural forms and respectful words for politeness.",
+      "heading": "4. గౌరవ వాక్యాలు (Polite / Formal Forms)",
+      "explanation": "గౌరవంగా మాట్లాడేటప్పుడు బహువచన రూపాలు, 'మీరు', 'దయచేసి' వంటి పదాలు ఉపయోగిస్తారు.",
       "examples": [
-        "మీరు ఎలా ఉన్నారు — How are you (respectful).",
-        "మీరు కూర్చోండి — Please sit."
+        {
+          "telugu": "మీరు ఎలా ఉన్నారు?",
+          "english": "How are you (respectful)?",
+          "audio": "meeru_ela_unnaru.mp3"
+        },
+        {
+          "telugu": "దయచేసి కూర్చోండి.",
+          "english": "Please sit.",
+          "audio": "dayachesi_kurchondi.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "5. సంయుక్త వాక్యాలు (Compound Sentences)",
+      "explanation": "రెండు లేదా అంతకంటే ఎక్కువ వాక్యాలను 'మరియు', 'కానీ', 'అందుకే' వంటి సంధి పదాలతో కలిపి సంయుక్త వాక్యాలు చేస్తారు.",
+      "table": {
+        "headers": ["Connector", "Telugu", "Meaning"],
+        "rows": [
+          ["and", "మరియు", "and"],
+          ["but", "కానీ", "but"],
+          ["because", "అందుకే", "because"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "అతను చదువుతున్నాడు మరియు ఆమె వంట చేస్తున్నది.",
+          "english": "He is studying and she is cooking.",
+          "audio": "he_studying_she_cooking.mp3"
+        },
+        {
+          "telugu": "వర్షం పడుతోంది అందుకే నేను బయటకు వెళ్లలేదు.",
+          "english": "It is raining, so I did not go outside.",
+          "audio": "varsham_anduke_velaledu.mp3"
+        }
       ]
     }
   ]

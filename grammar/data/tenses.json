@@ -1,49 +1,128 @@
 {
   "title": "కాలములు — Tenses",
-  "description": "Telugu has three primary tenses — present, past, and future — with continuous and perfect aspects.",
+  "description": "తెలుగులో మూడు ప్రధాన కాలములు — వర్తమాన, భూత, భవిష్యత్. ప్రతి కాలానికి కొనసాగింపు (Continuous) మరియు సంపూర్ణ (Perfect) రూపాలు కూడా ఉంటాయి.",
   "items": [
     {
-      "heading": "Present Tense — వర్తమాన కాలం",
-      "explanation": "Used for actions happening now or regularly.",
+      "heading": "వర్తమాన కాలం (Present Tense)",
+      "explanation": "ఇప్పుడు జరుగుతున్న లేదా అలవాటుగా జరిగే క్రియలను సూచిస్తుంది.",
+      "table": {
+        "headers": ["Person", "Telugu Form", "English Meaning"],
+        "rows": [
+          ["First Person", "నేను చదువుతాను", "I read / I study"],
+          ["Second Person", "నువ్వు చదువుతావు", "You read"],
+          ["Third Person (M)", "అతను చదువుతాడు", "He reads"],
+          ["Third Person (F)", "ఆమె చదువుతుంది", "She reads"]
+        ]
+      },
       "examples": [
-        "నేను తింటాను — I eat.",
-        "అతను చదువుతాడు — He reads.",
-        "ఆమె పాడుతుంది — She sings."
+        {
+          "telugu": "నేను తెలుగు నేర్చుకుంటున్నాను.",
+          "english": "I am learning Telugu.",
+          "audio": "present_learning_telugu.mp3"
+        },
+        {
+          "telugu": "అతను పుస్తకం చదువుతాడు.",
+          "english": "He reads a book.",
+          "audio": "present_he_reads_book.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Present Continuous — జరుగుతున్న వర్తమాన కాలం",
-      "explanation": "Used for actions that are happening right now.",
+      "heading": "వర్తమాన కొనసాగింపు కాలం (Present Continuous)",
+      "explanation": "ఇప్పుడు జరుగుతున్న క్రియలను సూచిస్తుంది.",
       "examples": [
-        "నేను తింటున్నాను — I am eating.",
-        "అతను చదువుతున్నాడు — He is studying.",
-        "ఆమె వంట చేస్తున్నది — She is cooking."
+        {
+          "telugu": "నేను తింటున్నాను.",
+          "english": "I am eating.",
+          "audio": "present_cont_i_am_eating.mp3"
+        },
+        {
+          "telugu": "ఆమె వంట చేస్తున్నది.",
+          "english": "She is cooking.",
+          "audio": "present_cont_she_is_cooking.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Past Tense — భూత కాలం",
-      "explanation": "Used for actions that are completed in the past.",
+      "heading": "భూత కాలం (Past Tense)",
+      "explanation": "ఇప్పటికే పూర్తయిన క్రియలను సూచిస్తుంది.",
+      "table": {
+        "headers": ["Person", "Telugu Form", "English Meaning"],
+        "rows": [
+          ["First Person", "నేను చదివాను", "I read / I studied"],
+          ["Second Person", "నువ్వు చదివావు", "You read"],
+          ["Third Person (M)", "అతను చదివాడు", "He read"],
+          ["Third Person (F)", "ఆమె చదివింది", "She read"]
+        ]
+      },
       "examples": [
-        "నేను తిన్నాను — I ate.",
-        "అతను చదివాడు — He studied.",
-        "ఆమె వచ్చింది — She came."
+        {
+          "telugu": "రాము పాఠశాలకు వెళ్లాడు.",
+          "english": "Ramu went to school.",
+          "audio": "past_ramu_went_school.mp3"
+        },
+        {
+          "telugu": "నేను సినిమా చూశాను.",
+          "english": "I watched a movie.",
+          "audio": "past_i_watched_movie.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Past Continuous — జరుగుతున్న భూత కాలం",
-      "explanation": "Used for actions that were ongoing in the past.",
+      "heading": "భూత కొనసాగింపు కాలం (Past Continuous)",
+      "explanation": "గతంలో ఒక సమయంలో జరుగుతున్న క్రియలను సూచిస్తుంది.",
       "examples": [
-        "నేను తింటున్నాను — I was eating.",
-        "అతను చదువుతున్నాడు — He was studying."
+        {
+          "telugu": "నేను తింటున్నాను.",
+          "english": "I was eating.",
+          "audio": "past_cont_i_was_eating.mp3"
+        },
+        {
+          "telugu": "అతను చదువుతున్నాడు.",
+          "english": "He was studying.",
+          "audio": "past_cont_he_was_studying.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Future Tense — భవిష్యత్ కాలం",
-      "explanation": "Used for actions that will happen in the future.",
+      "heading": "భవిష్యత్ కాలం (Future Tense)",
+      "explanation": "ఇంకా జరగబోయే క్రియలను సూచిస్తుంది.",
+      "table": {
+        "headers": ["Person", "Telugu Form", "English Meaning"],
+        "rows": [
+          ["First Person", "నేను చదువుతాను", "I will read"],
+          ["Second Person", "నువ్వు చదువుతావు", "You will read"],
+          ["Third Person (M)", "అతను చదువుతాడు", "He will read"],
+          ["Third Person (F)", "ఆమె చదువుతుంది", "She will read"]
+        ]
+      },
       "examples": [
-        "నేను తింటాను — I will eat.",
-        "అతను వస్తాడు — He will come.",
-        "ఆమె వెళ్తుంది — She will go."
+        {
+          "telugu": "రాము రేపు వస్తాడు.",
+          "english": "Ramu will come tomorrow.",
+          "audio": "future_ramu_will_come.mp3"
+        },
+        {
+          "telugu": "నేను రేపు చదువుతాను.",
+          "english": "I will study tomorrow.",
+          "audio": "future_i_will_study.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "భవిష్యత్ కొనసాగింపు కాలం (Future Continuous)",
+      "explanation": "భవిష్యత్తులో ఒక సమయంలో జరుగుతున్న క్రియలను సూచిస్తుంది.",
+      "examples": [
+        {
+          "telugu": "నేను రేపు ఈ సమయానికి చదువుతున్నాను.",
+          "english": "I will be studying at this time tomorrow.",
+          "audio": "future_cont_i_will_be_studying.mp3"
+        }
       ]
     }
   ]

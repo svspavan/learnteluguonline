@@ -1,17 +1,82 @@
 {
-  "mango": {
-    "telugu": "మామిడి",
-    "english": "Mango",
-    "audio": "mango.mp3"
+  "apple": {
+    "telugu": "ఆపిల్",
+    "english": "Apple",
+    "audio": "apple.mp3",
+    "image": "apple.png",
+    "example": "ఆపిల్ తీపిగా ఉంటుంది.",
+    "example_english": "The apple is sweet."
   },
   "banana": {
     "telugu": "అరటి",
     "english": "Banana",
-    "audio": "banana.mp3"
+    "audio": "banana.mp3",
+    "image": "banana.png",
+    "example": "అరటి పండు мягంగా ఉంటుంది.",
+    "example_english": "The banana is soft."
   },
-  "apple": {
-    "telugu": "సేపు",
-    "english": "Apple",
-    "audio": "apple.mp3"
+  "mango": {
+    "telugu": "మామిడి",
+    "english": "Mango",
+    "audio": "mango.mp3",
+    "image": "mango.png",
+    "example": "మామిడి పండు రుచిగా ఉంటుంది.",
+    "example_english": "The mango is tasty."
+  },
+  "orange": {
+    "telugu": "నారింజ",
+    "english": "Orange",
+    "audio": "orange.mp3",
+    "image": "orange.png",
+    "example": "నారింజ పండు పుల్లగా ఉంటుంది.",
+    "example_english": "The orange is sour."
+  },
+  "grapes": {
+    "telugu": "ద్రాక్ష",
+    "english": "Grapes",
+    "audio": "grapes.mp3",
+    "image": "grapes.png",
+    "example": "ద్రాక్ష పండ్లు చిన్నగా ఉంటాయి.",
+    "example_english": "Grapes are small."
+  },
+  "watermelon": {
+    "telugu": "పుచ్చకాయ",
+    "english": "Watermelon",
+    "audio": "watermelon.mp3",
+    "image": "watermelon.png",
+    "example": "పుచ్చకాయ పెద్దగా ఉంటుంది.",
+    "example_english": "The watermelon is big."
+  },
+  "pineapple": {
+    "telugu": "అనాసపండు",
+    "english": "Pineapple",
+    "audio": "pineapple.mp3",
+    "image": "pineapple.png",
+    "example": "అనాసపండు గట్టిగా ఉంటుంది.",
+    "example_english": "The pineapple is hard."
+  },
+  "papaya": {
+    "telugu": "బొప్పాయి",
+    "english": "Papaya",
+    "audio": "papaya.mp3",
+    "image": "papaya.png",
+    "example": "బొప్పాయి పండు ఆరోగ్యకరం.",
+    "example_english": "Papaya is healthy."
+  },
+  "guava": {
+    "telugu": "జామ",
+    "english": "Guava",
+    "audio": "guava.mp3",
+    "image": "guava.png",
+    "example": "జామ పండు కరకరలాడుతుంది.",
+    "example_english": "The guava is crunchy."
+  },
+  "strawberry": {
+    "telugu": "స్ట్రాబెర్రీ",
+    "english": "Strawberry",
+    "audio": "strawberry.mp3",
+    "image": "strawberry.png",
+    "example": "స్ట్రాబెర్రీ ఎరుపుగా ఉంటుంది.",
+    "example_english": "The strawberry is red."
   }
 }

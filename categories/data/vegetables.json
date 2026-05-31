@@ -1,17 +1,82 @@
 {
-  "tomato": {
-    "telugu": "టమోటా",
-    "english": "Tomato",
-    "audio": "tomato.mp3"
+  "carrot": {
+    "telugu": "గాజర్",
+    "english": "Carrot",
+    "audio": "carrot.mp3",
+    "image": "carrot.png",
+    "example": "గాజర్ కరకరలాడుతుంది.",
+    "example_english": "The carrot is crunchy."
   },
   "potato": {
-    "telugu": "బంగాళదుంప",
+    "telugu": "బంగాళాదుంప",
     "english": "Potato",
-    "audio": "potato.mp3"
+    "audio": "potato.mp3",
+    "image": "potato.png",
+    "example": "బంగాళాదుంప мягంగా ఉంటుంది.",
+    "example_english": "The potato is soft."
   },
-  "carrot": {
-    "telugu": "క్యారెట్",
-    "english": "Carrot",
-    "audio": "carrot.mp3"
+  "tomato": {
+    "telugu": "టమాటా",
+    "english": "Tomato",
+    "audio": "tomato.mp3",
+    "image": "tomato.png",
+    "example": "టమాటా ఎరుపుగా ఉంటుంది.",
+    "example_english": "The tomato is red."
+  },
+  "onion": {
+    "telugu": "ఉల్లిపాయ",
+    "english": "Onion",
+    "audio": "onion.mp3",
+    "image": "onion.png",
+    "example": "ఉల్లిపాయ కారం గా ఉంటుంది.",
+    "example_english": "The onion is spicy."
+  },
+  "brinjal": {
+    "telugu": "వంకాయ",
+    "english": "Brinjal",
+    "audio": "brinjal.mp3",
+    "image": "brinjal.png",
+    "example": "వంకాయ పచ్చగా ఉంటుంది.",
+    "example_english": "The brinjal is purple."
+  },
+  "cabbage": {
+    "telugu": "క్యాబేజీ",
+    "english": "Cabbage",
+    "audio": "cabbage.mp3",
+    "image": "cabbage.png",
+    "example": "క్యాబేజీ ఆకులు мягంగా ఉంటాయి.",
+    "example_english": "Cabbage leaves are soft."
+  },
+  "cauliflower": {
+    "telugu": "కాలీఫ్లవర్",
+    "english": "Cauliflower",
+    "audio": "cauliflower.mp3",
+    "image": "cauliflower.png",
+    "example": "కాలీఫ్లవర్ తెలుపుగా ఉంటుంది.",
+    "example_english": "The cauliflower is white."
+  },
+  "beans": {
+    "telugu": "బీన్స్",
+    "english": "Beans",
+    "audio": "beans.mp3",
+    "image": "beans.png",
+    "example": "బీన్స్ పొడవుగా ఉంటాయి.",
+    "example_english": "Beans are long."
+  },
+  "spinach": {
+    "telugu": "పాలకూర",
+    "english": "Spinach",
+    "audio": "spinach.mp3",
+    "image": "spinach.png",
+    "example": "పాలకూర ఆకుపచ్చగా ఉంటుంది.",
+    "example_english": "Spinach is green."
+  },
+  "bottle-gourd": {
+    "telugu": "సొరకాయ",
+    "english": "Bottle Gourd",
+    "audio": "bottle-gourd.mp3",
+    "image": "bottle-gourd.png",
+    "example": "సొరకాయ పొడవుగా ఉంటుంది.",
+    "example_english": "The bottle gourd is long."
   }
 }

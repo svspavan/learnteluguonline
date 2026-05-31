@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Overview — వ్యాకరణ పరిచయం</title>
+
+    <!-- Telugu Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .overview-section {
+            background: var(--card-bg, #fff);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1.8rem;
+            animation: fadeSlide 0.5s ease forwards;
+        }
+
+        .overview-section h2 {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 1.6rem;
+            margin-bottom: 0.6rem;
+            font-weight: 700;
+        }
+
+        .overview-section p {
+            opacity: 0.9;
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .learning-path li,
+        .topic-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .topic-list a {
+            text-decoration: none;
+            color: var(--link-color);
+            font-weight: 600;
+        }
+
+        .start-topics-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: var(--accent-color);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .start-topics-btn:hover {
+            background: var(--accent-color-dark);
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .start-topics-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem; /* ensures space above footer */
+            padding: 0.7rem 1.4rem;
+            background: var(--accent-color, #b33a3a);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .start-topics-btn:hover {
+            background: var(--accent-color-dark, #8c2e2e);
+            transform: translateY(-2px);
+        }
+
+        .start-topics-btn {
+            display: block;
+            text-align: center;
+            width: fit-content;
+            margin: 1.5rem auto 2.5rem auto;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<!-- ============================
+     HEADER
+============================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">Learn Telugu Online</div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+    <nav class="nav">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="index.html" class="nav-link active">Grammar</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
+</header>
+
+
+<!-- ============================
+     BREADCRUMB
+============================= -->
+<nav class="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="index.html">Grammar</a>
+  <span>›</span>
+  <span>Overview</span>
+</nav>
+
+
+<!-- ============================
+     MAIN CONTENT
+============================= -->
+<main class="page-container">
+
+    <h1 class="page-title">వ్యాకరణ పరిచయం — Grammar Overview</h1>
+    <p class="modules-subtitle">A clear, structured introduction to Telugu grammar.</p>
+
+    <!-- What is Grammar -->
+    <section class="overview-section">
+        <h2>వ్యాకరణం అంటే ఏమిటి? (What is Grammar?)</h2>
+        <p>
+            వ్యాకరణం అంటే భాషను సరిగా, స్పష్టంగా, అర్థవంతంగా ఉపయోగించడానికి అవసరమైన నియమాలు.
+            తెలుగు వ్యాకరణం వాక్య నిర్మాణం, విభక్తులు, క్రియారూపాలు, సంధులు, సమాసాలు వంటి అంశాలను కలిగి ఉంటుంది.
+        </p>
+    </section>
+
+    <!-- SOV Rule -->
+    <section class="overview-section">
+        <h2>తెలుగు వాక్య క్రమం (Telugu Sentence Order)</h2>
+        <p>తెలుగు భాషలో సాధారణ వాక్య క్రమం:</p>
+
+        <p style="font-weight:700; font-size:1.2rem; text-align:center; margin:1rem 0;">
+            కర్త (Subject) → కర్మ (Object) → క్రియా (Verb)
+        </p>
+
+        <p>ఉదాహరణలు:</p>
+        <ul class="topic-list">
+            <li><strong>రాము పుస్తకం చదువుతున్నాడు.</strong> — Ramu is reading a book.</li>
+            <li><strong>నేను తెలుగు నేర్చుకుంటున్నాను.</strong> — I am learning Telugu.</li>
+        </ul>
+    </section>
+
+    <!-- Core Grammar Areas -->
+    <section class="overview-section">
+        <h2>తెలుగు వ్యాకరణంలోని ప్రధాన అంశాలు</h2>
+        <p>ఈ కోర్సులో మీరు నేర్చుకునే 10 ముఖ్యమైన వ్యాకరణ అంశాలు ఇవి:</p>
+
+        <ul class="topic-list">
+            <li><strong>విభక్తులు</strong> — Noun roles in sentences</li>
+            <li><strong>వాక్య నిర్మాణం</strong> — How sentences are built</li>
+            <li><strong>కాలములు</strong> — Tenses</li>
+            <li><strong>ధాతు రూపాలు</strong> — Verb conjugation</li>
+            <li><strong>సర్వనామాలు</strong> — Pronouns</li>
+            <li><strong>విశేషణాలు</strong> — Adjectives</li>
+            <li><strong>క్రియావిశేషణాలు</strong> — Adverbs</li>
+            <li><strong>సంధులు</strong> — Sound changes</li>
+            <li><strong>సమాసాలు</strong> — Compound words</li>
+            <li><strong>వచనాలు</strong> — Singular & plural grammar</li>
+        </ul>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="overview-section">
+        <h2>సిఫార్సు చేసిన అభ్యాస క్రమం (Recommended Learning Path)</h2>
+        <p>తెలుగు వ్యాకరణాన్ని సులభంగా నేర్చుకోవడానికి ఈ క్రమాన్ని అనుసరించండి:</p>
+
+        <ol class="learning-path">
+            <li>విభక్తులు (Cases)</li>
+            <li>వాక్య నిర్మాణం (Sentence Structure)</li>
+            <li>కాలములు (Tenses)</li>
+            <li>ధాతు రూపాలు (Verb Conjugation)</li>
+            <li>సర్వనామాలు (Pronouns)</li>
+            <li>విశేషణాలు (Adjectives)</li>
+            <li>క్రియావిశేషణాలు (Adverbs)</li>
+            <li>సంధులు (Sandhi)</li>
+            <li>సమాసాలు (Samasam)</li>
+            <li>వచనాలు (Numbers — Grammar)</li>
+        </ol>
+    </section>
+
+    <!-- Links to Topics -->
+    <section class="overview-section">
+        <h2>వ్యాకరణ అంశాలు (Grammar Topics)</h2>
+        <p>ప్రతి అంశాన్ని వివరంగా నేర్చుకోవడానికి క్రింది లింకులను ఉపయోగించండి:</p>
+
+        <ul class="topic-list">
+            <li><a href="topic.html?name=vibhaktulu">విభక్తులు — Cases</a></li>
+            <li><a href="topic.html?name=sentence_structure">వాక్య నిర్మాణం — Sentence Structure</a></li>
+            <li><a href="topic.html?name=tenses">కాలములు — Tenses</a></li>
+            <li><a href="topic.html?name=verb_conjugation">ధాతు రూపాలు — Verb Conjugation</a></li>
+            <li><a href="topic.html?name=pronouns">సర్వనామాలు — Pronouns</a></li>
+            <li><a href="topic.html?name=adjectives">విశేషణాలు — Adjectives</a></li>
+            <li><a href="topic.html?name=adverbs">క్రియావిశేషణాలు — Adverbs</a></li>
+            <li><a href="topic.html?name=sandhi">సంధులు — Sandhi</a></li>
+            <li><a href="topic.html?name=samasam">సమాసాలు — Samasam</a></li>
+            <li><a href="topic.html?name=numbers">వచనాలు — Numbers (Grammar)</a></li>
+        </ul>
+
+        <a href="index.html" class="start-topics-btn">Browse All Grammar Topics →</a>
+    </section>
+
+</main>
+
+
+<!-- ============================
+     FOOTER
+============================= -->
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+
+</body>
+</html>

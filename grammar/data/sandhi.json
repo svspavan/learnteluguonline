@@ -1,30 +1,127 @@
 {
   "title": "సంధులు — Sandhi",
-  "description": "Sandhi is the joining of sounds or letters when words or parts of words combine.",
+  "description": "సంధి అంటే రెండు అక్షరాలు లేదా పదాలు కలిసినప్పుడు వచ్చే ధ్వని మార్పులు. తెలుగులో ముఖ్యంగా అచ్చుసంధులు, హల్లుసంధులు, విసర్గసంధులు ఉంటాయి. అచ్చుసంధుల్లో సవర్ణదీర్ఘసంధి, గుణసంధి, వృద్ధిసంధి ముఖ్యమైనవి.",
   "items": [
+
     {
-      "heading": "అచ్చుల సంధి — Vowel Sandhi",
-      "explanation": "When two vowels meet, they may combine or change.",
+      "heading": "1. సవర్ణదీర్ఘసంధి (Savarna Deergha Sandhi)",
+      "explanation": "ఒకే రకమైన రెండు అచ్చులు కలిసినప్పుడు అవి దీర్ఘంగా మారుతాయి. ఉదా: అ + అ → ఆ, ఇ + ఇ → ఈ, ఉ + ఉ → ఊ.",
+      "table": {
+        "headers": ["Before", "Rule", "After"],
+        "rows": [
+          ["రామ + అలయం", "అ + అ → ఆ", "రామాలయం"],
+          ["కవి + ఇష్టుడు", "ఇ + ఇ → ఈ", "కవీష్టుడు"],
+          ["గురు + ఉపదేశం", "ఉ + ఉ → ఊ", "గురూపదేశం"]
+        ]
+      },
       "examples": [
-        "రామ + ఆలయం → రామాలయం",
-        "దేవ + ఆలయం → దేవాలయం"
+        {
+          "telugu": "రామాలయం ప్రసిద్ధి.",
+          "english": "The temple of Rama is famous.",
+          "audio": "ramaalayam.mp3"
+        },
+        {
+          "telugu": "కవీష్టుడు మంచి కవి.",
+          "english": "Kaveeshtuḍu is a good poet.",
+          "audio": "kaveeshtudu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "హల్లుల సంధి — Consonant Sandhi",
-      "explanation": "Changes that occur when consonants meet.",
+      "heading": "2. గుణసంధి (Guna Sandhi)",
+      "explanation": "అ + ఇ → ఏ, అ + ఉ → ఓ వంటి మార్పులు గుణసంధి. ఇది సంస్కృత మూల పదాల్లో ఎక్కువగా కనిపిస్తుంది.",
+      "table": {
+        "headers": ["Before", "Rule", "After"],
+        "rows": [
+          ["రాజ + ఇంద్రుడు", "అ + ఇ → ఏ", "రాజేంద్రుడు"],
+          ["రవి + ఉదయం", "అ + ఉ → ఓ", "రవోదయం"],
+          ["మహ + ఇంద్రుడు", "అ + ఇ → ఏ", "మహేంద్రుడు"]
+        ]
+      },
       "examples": [
-        "తత్ + పర → తత్పర",
-        "సత్ + గుణ → సద్గుణ"
+        {
+          "telugu": "రాజేంద్రుడు సభలో ఉన్నాడు.",
+          "english": "Rajendra is in the court.",
+          "audio": "rajendrudu.mp3"
+        },
+        {
+          "telugu": "రవోదయం అందంగా కనిపించింది.",
+          "english": "Ravi’s sunrise looked beautiful.",
+          "audio": "ravodayam.mp3"
+        }
       ]
     },
+
     {
-      "heading": "విసర్గ సంధి — Visarga Sandhi",
-      "explanation": "Changes involving 'ః' (visarga).",
+      "heading": "3. వృద్ధిసంధి (Vriddhi Sandhi)",
+      "explanation": "అ + ఏ → ఐ, అ + ఓ → ఔ వంటి మార్పులు వృద్ధిసంధి. ఇది సంస్కృత సమాస పదాల్లో ఎక్కువగా కనిపిస్తుంది.",
+      "table": {
+        "headers": ["Before", "Rule", "After"],
+        "rows": [
+          ["దేవ + ఏశ్వరుడు", "అ + ఏ → ఐ", "దేవైశ్వరుడు"],
+          ["రాజ + ఓషధి", "అ + ఓ → ఔ", "రాజౌషధి"]
+        ]
+      },
       "examples": [
-        "రామః + ఇతి → రామ ఇతి (in classical usage)",
-        "గురుః + ఆగచ్ఛతి → గురురాగచ్ఛతి"
+        {
+          "telugu": "దేవైశ్వరుడు దేవాలయంలో ఉన్నాడు.",
+          "english": "Devaiśwara is in the temple.",
+          "audio": "devaiswarudu.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "4. హల్లుసంధులు (Consonant Sandhi)",
+      "explanation": "రెండు హల్లులు కలిసినప్పుడు లేదా హల్లుతో అచ్చు కలిసినప్పుడు వచ్చే మార్పులు. వీటిలో ద్విత్వం (రెట్టింపు), లోపం (లుప్తం), పరరూపం వంటి మార్పులు ఉంటాయి.",
+      "table": {
+        "headers": ["Type", "Before", "After", "Meaning"],
+        "rows": [
+          ["ద్విత్వసంధి", "తత్ + పరుడు", "తత్తరుడు", "tat + parudu → noble person"],
+          ["ద్విత్వసంధి", "సత్ + పురుషుడు", "సత్తురుషుడు", "sat + puruṣudu → good man"],
+          ["లోపసంధి", "సత్ + గుణం", "సద్గుణం", "sat + guṇam → good quality"],
+          ["లోపసంధి", "లోక + క్షేమం", "లోక్షేమం", "loka + kṣema → welfare of the world"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "అతను సద్గుణం కలవాడు.",
+          "english": "He is a person with good qualities.",
+          "audio": "sadgunam.mp3"
+        },
+        {
+          "telugu": "లోక్షేమం కోసం ప్రార్థించాలి.",
+          "english": "We should pray for the welfare of the world.",
+          "audio": "lokkshemam.mp3"
+        }
+      ]
+    },
+
+    {
+      "heading": "5. విసర్గసంధులు (Visarga Sandhi)",
+      "explanation": "విసర్గ (ః) తరువాత అచ్చు లేదా హల్లుతో కలిసినప్పుడు వచ్చే మార్పులు. ఇవి సంస్కృత మూల పదాల్లో కనిపిస్తాయి.",
+      "table": {
+        "headers": ["Before", "After", "Meaning"],
+        "rows": [
+          ["రామః + ఇతి", "రామ ఇతి", "Ramaḥ + iti → ‘Rama’ thus"],
+          ["గురుః + ఆగచ్ఛతి", "గురురాగచ్ఛతి", "guruḥ + āgacchati → The teacher is coming"],
+          ["శివః + ఆలయం", "శివాలయం", "śivaḥ + ālaya → Temple of Shiva"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "గురురాగచ్ఛతి.",
+          "english": "The teacher is coming.",
+          "audio": "gurur_agachchati.mp3"
+        },
+        {
+          "telugu": "శివాలయం పవిత్ర స్థలం.",
+          "english": "The Shiva temple is a sacred place.",
+          "audio": "shivalayam.mp3"
+        }
       ]
     }
+
   ]
 }

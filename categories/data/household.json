@@ -1,0 +1,82 @@
+{
+  "chair": {
+    "telugu": "కుర్చీ",
+    "english": "Chair",
+    "audio": "chair.mp3",
+    "image": "chair.png",
+    "example": "కుర్చీ మీద కూర్చుంటాను.",
+    "example_english": "I sit on the chair."
+  },
+  "table": {
+    "telugu": "మెజ్జ",
+    "english": "Table",
+    "audio": "table.mp3",
+    "image": "table.png",
+    "example": "మెజ్జ మీద పుస్తకం ఉంది.",
+    "example_english": "There is a book on the table."
+  },
+  "bed": {
+    "telugu": "మంచం",
+    "english": "Bed",
+    "audio": "bed.mp3",
+    "image": "bed.png",
+    "example": "మంచం మీద నిద్రపోతాను.",
+    "example_english": "I sleep on the bed."
+  },
+  "cup": {
+    "telugu": "కప్పు",
+    "english": "Cup",
+    "audio": "cup.mp3",
+    "image": "cup.png",
+    "example": "కప్పులో నీళ్లు ఉన్నాయి.",
+    "example_english": "There is water in the cup."
+  },
+  "plate": {
+    "telugu": "పళ్లెం",
+    "english": "Plate",
+    "audio": "plate.mp3",
+    "image": "plate.png",
+    "example": "పళ్లెంలో భోజనం ఉంది.",
+    "example_english": "There is food on the plate."
+  },
+  "spoon": {
+    "telugu": "చెంచా",
+    "english": "Spoon",
+    "audio": "spoon.mp3",
+    "image": "spoon.png",
+    "example": "చెంచాతో తింటాను.",
+    "example_english": "I eat with a spoon."
+  },
+  "door": {
+    "telugu": "తలుపు",
+    "english": "Door",
+    "audio": "door.mp3",
+    "image": "door.png",
+    "example": "తలుపు తెరిచి ఉంది.",
+    "example_english": "The door is open."
+  },
+  "window": {
+    "telugu": "కిటికీ",
+    "english": "Window",
+    "audio": "window.mp3",
+    "image": "window.png",
+    "example": "కిటికీ దగ్గర గాలి వస్తుంది.",
+    "example_english": "Air comes through the window."
+  },
+  "lamp": {
+    "telugu": "దీపం",
+    "english": "Lamp",
+    "audio": "lamp.mp3",
+    "image": "lamp.png",
+    "example": "దీపం వెలుగుతుంది.",
+    "example_english": "The lamp gives light."
+  },
+  "clock": {
+    "telugu": "గడియారం",
+    "english": "Clock",
+    "audio": "clock.mp3",
+    "image": "clock.png",
+    "example": "గడియారం సమయం చూపుతుంది.",
+    "example_english": "The clock shows the time."
+  }
+}

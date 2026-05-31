@@ -1,51 +1,132 @@
 {
   "title": "సర్వనామాలు — Pronouns",
-  "description": "Pronouns replace nouns and are essential for fluent speech.",
+  "description": "సర్వనామాలు అంటే నామవాచకాలకు బదులుగా ఉపయోగించే పదాలు. తెలుగు భాషలో వ్యక్తి, సంఖ్య, గౌరవం ఆధారంగా సర్వనామాలు మారుతాయి.",
   "items": [
     {
-      "heading": "First Person",
-      "explanation": "Refers to the speaker.",
+      "heading": "1. వ్యక్తి సర్వనామాలు (Personal Pronouns)",
+      "explanation": "మాట్లాడేవారు, వినేవారు, ఇతరులను సూచించే సర్వనామాలు.",
+      "table": {
+        "headers": ["Person", "Telugu", "English Meaning"],
+        "rows": [
+          ["First Person Singular", "నేను", "I"],
+          ["First Person Plural (Inclusive)", "మనం", "We (including listener)"],
+          ["First Person Plural (Exclusive)", "మేము", "We (excluding listener)"],
+          ["Second Person Singular", "నువ్వు", "You (informal)"],
+          ["Second Person Formal/Plural", "మీరు", "You (formal/plural)"],
+          ["Third Person Singular (Male)", "అతను", "He"],
+          ["Third Person Singular (Female)", "ఆమె", "She"],
+          ["Third Person Plural", "వారు", "They"]
+        ]
+      },
       "examples": [
-        "నేను — I.",
-        "మనం — We (inclusive).",
-        "మేము — We (exclusive)."
+        {
+          "telugu": "నేను తెలుగు నేర్చుకుంటున్నాను.",
+          "english": "I am learning Telugu.",
+          "audio": "nenu_telugu_nerchukuntunnanu.mp3"
+        },
+        {
+          "telugu": "మీరు మంచి పని చేస్తున్నారు.",
+          "english": "You are doing good work.",
+          "audio": "meeru_manchi_pani_chestunnaru.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Second Person",
-      "explanation": "Refers to the listener.",
+      "heading": "2. సూచన సర్వనామాలు (Demonstrative Pronouns)",
+      "explanation": "దగ్గరలో ఉన్నవి, దూరంలో ఉన్నవి చూపించడానికి ఉపయోగించే సర్వనామాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఇది", "This"],
+          ["అది", "That"],
+          ["ఇవి", "These"],
+          ["అవి", "Those"]
+        ]
+      },
       "examples": [
-        "నువ్వు — You (informal).",
-        "మీరు — You (formal/plural)."
+        {
+          "telugu": "ఇది నా పుస్తకం.",
+          "english": "This is my book.",
+          "audio": "idi_naa_pustakam.mp3"
+        },
+        {
+          "telugu": "అవి మా ఇంటి దగ్గర ఉన్నాయి.",
+          "english": "Those are near our house.",
+          "audio": "avi_maa_inti_daggar_unnayi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Third Person",
-      "explanation": "Refers to others.",
+      "heading": "3. ప్రశ్నార్థక సర్వనామాలు (Interrogative Pronouns)",
+      "explanation": "ప్రశ్నలు అడగడానికి ఉపయోగించే సర్వనామాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["ఎవరు", "Who"],
+          ["ఏది", "Which"],
+          ["ఏమి", "What"]
+        ]
+      },
       "examples": [
-        "అతను — He.",
-        "ఆమె — She.",
-        "వాడు/వాళ్లు — He/They (colloquial).",
-        "వారు — They (respectful/plural)."
+        {
+          "telugu": "ఇది ఎవరి పుస్తకం?",
+          "english": "Whose book is this?",
+          "audio": "idi_evari_pustakam.mp3"
+        },
+        {
+          "telugu": "ఏది సరైంది?",
+          "english": "Which one is correct?",
+          "audio": "edi_sarainadi.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Demonstrative Pronouns",
-      "explanation": "Pointing to things.",
+      "heading": "4. ప్రతిఫల సర్వనామాలు (Reflexive Pronouns)",
+      "explanation": "కర్త తనపైనే క్రియను చేసుకున్నప్పుడు ఉపయోగించే సర్వనామాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["తానే", "Himself / Herself"],
+          ["తమనే", "Themselves"]
+        ]
+      },
       "examples": [
-        "ఇది — This.",
-        "అది — That.",
-        "ఇవి — These.",
-        "అవి — Those."
+        {
+          "telugu": "అతనే పని చేశాడు.",
+          "english": "He himself did the work.",
+          "audio": "atane_pani_chesadu.mp3"
+        }
       ]
     },
+
     {
-      "heading": "Interrogative Pronouns",
-      "explanation": "Used for questions.",
+      "heading": "5. స్వామ్య సర్వనామాలు (Possessive Pronouns)",
+      "explanation": "స్వంతం లేదా అధికారం చూపించే సర్వనామాలు.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["నాది", "Mine"],
+          ["నీది", "Yours (informal)"],
+          ["మీది", "Yours (formal)"],
+          ["అతనిది", "His"],
+          ["ఆమెది", "Hers"],
+          ["వారిది", "Theirs"]
+        ]
+      },
       "examples": [
-        "ఎవరు — Who.",
-        "ఏది — Which.",
-        "ఏమి — What."
+        {
+          "telugu": "ఇది నాది.",
+          "english": "This is mine.",
+          "audio": "idi_naadi.mp3"
+        },
+        {
+          "telugu": "అది వారిది.",
+          "english": "That is theirs.",
+          "audio": "adi_varidi.mp3"
+        }
       ]
     }
   ]

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://learnteluguonline.com/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- SEO Pages -->
+  <url>
+    <loc>https://learnteluguonline.com/learn-telugu-for-beginners.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://learnteluguonline.com/telugu-grammar-basics.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://learnteluguonline.com/100-basic-telugu-sentences.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://learnteluguonline.com/telugu-vibhaktulu-explained.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://learnteluguonline.com/telugu-sandhi-rules.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- Grammar Section -->
+  <url>
+    <loc>https://learnteluguonline.com/grammar/overview.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://learnteluguonline.com/grammar/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- Grammar Topic Page (dynamic) -->
+  <url>
+    <loc>https://learnteluguonline.com/grammar/topic.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- Alphabet -->
+  <url>
+    <loc>https://learnteluguonline.com/alphabet/alphabet.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- Numbers -->
+  <url>
+    <loc>https://learnteluguonline.com/numbers/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- Sentences -->
+  <url>
+    <loc>https://learnteluguonline.com/sentences/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+  <!-- Categories -->
+  <url>
+    <loc>https://learnteluguonline.com/categories/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+
+</urlset>

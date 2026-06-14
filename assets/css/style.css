@@ -902,3 +902,62 @@ main {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   transform: translateY(-4px);
 }
+
+.popular-guides {
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fffaf5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 1100px;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #5a2a00;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.guide-card {
+  display: block;
+  padding: 1.2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 160px;
+}
+
+.guide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.guide-card h3 {
+  color: #7a2e00;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.guide-card p {
+  color: #333;
+  opacity: 0.85;
+  line-height: 1.5;
+}

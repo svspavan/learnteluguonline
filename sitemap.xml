@@ -23,12 +23,15 @@
 
   <!-- Core Modules -->
   <url><loc>https://learnteluguonline.com/alphabet/alphabet.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://learnteluguonline.com/alphabet/vowels.html</loc><lastmod>2026-06-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://learnteluguonline.com/alphabet/consonants.html</loc><lastmod>2026-06-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://learnteluguonline.com/words/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://learnteluguonline.com/sentences/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://learnteluguonline.com/numbers/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://learnteluguonline.com/categories/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://learnteluguonline.com/stories/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://learnteluguonline.com/padyalu/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://learnteluguonline.com/rachanalu/index.html</loc><lastmod>2026-06-14</lastmod><priority>0.7</priority></url>
 
   <!-- Grammar Section -->
   <url><loc>https://learnteluguonline.com/grammar/overview.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>

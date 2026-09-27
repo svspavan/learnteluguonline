@@ -52,5 +52,284 @@
     "example_english": "The shade of the tree is very cool.",
     "category": "nature",
     "length": 3
+  },
+
+  "anna": {
+    "telugu": "అన్న",
+    "english": "Elder Brother",
+    "audio": "anna.mp3",
+    "example": "అన్న స్కూలుకి వెళ్తున్నాడు.",
+    "example_english": "Elder brother is going to school.",
+    "category": "family",
+    "length": 2
+  },
+  "akka": {
+    "telugu": "అక్క",
+    "english": "Elder Sister",
+    "audio": "akka.mp3",
+    "example": "అక్క పాట పాడుతోంది.",
+    "example_english": "Elder sister is singing a song.",
+    "category": "family",
+    "length": 2
+  },
+  "taata": {
+    "telugu": "తాత",
+    "english": "Grandfather",
+    "audio": "taata.mp3",
+    "example": "తాత కథలు చెప్తారు.",
+    "example_english": "Grandfather tells stories.",
+    "category": "family",
+    "length": 2
+  },
+
+  "kukka": {
+    "telugu": "కుక్క",
+    "english": "Dog",
+    "audio": "kukka.mp3",
+    "example": "కుక్క గట్టిగా మొరుగుతోంది.",
+    "example_english": "The dog is barking loudly.",
+    "category": "animals",
+    "length": 2
+  },
+  "aavu": {
+    "telugu": "ఆవు",
+    "english": "Cow",
+    "audio": "aavu.mp3",
+    "example": "ఆవు గడ్డి తింటోంది.",
+    "example_english": "The cow is eating grass.",
+    "category": "animals",
+    "length": 2
+  },
+  "pakshi": {
+    "telugu": "పక్షి",
+    "english": "Bird",
+    "audio": "pakshi.mp3",
+    "example": "పక్షి ఆకాశంలో ఎగురుతోంది.",
+    "example_english": "The bird is flying in the sky.",
+    "category": "animals",
+    "length": 2
+  },
+
+  "aakasham": {
+    "telugu": "ఆకాశం",
+    "english": "Sky",
+    "audio": "aakasham.mp3",
+    "example": "ఆకాశం నీలంగా ఉంది.",
+    "example_english": "The sky is blue.",
+    "category": "nature",
+    "length": 3
+  },
+  "suryudu": {
+    "telugu": "సూర్యుడు",
+    "english": "Sun",
+    "audio": "suryudu.mp3",
+    "example": "సూర్యుడు తూర్పున ఉదయిస్తాడు.",
+    "example_english": "The sun rises in the east.",
+    "category": "nature",
+    "length": 3
+  },
+  "chandrudu": {
+    "telugu": "చంద్రుడు",
+    "english": "Moon",
+    "audio": "chandrudu.mp3",
+    "example": "చంద్రుడు రాత్రి కనిపిస్తాడు.",
+    "example_english": "The moon appears at night.",
+    "category": "nature",
+    "length": 3
+  },
+  "puvvu": {
+    "telugu": "పువ్వు",
+    "english": "Flower",
+    "audio": "puvvu.mp3",
+    "example": "పువ్వు చాలా అందంగా ఉంది.",
+    "example_english": "The flower is very beautiful.",
+    "category": "nature",
+    "length": 2
+  },
+  "varsham": {
+    "telugu": "వర్షం",
+    "english": "Rain",
+    "audio": "varsham.mp3",
+    "example": "బయట వర్షం పడుతోంది.",
+    "example_english": "It is raining outside.",
+    "category": "nature",
+    "length": 2
+  },
+
+  "badi": {
+    "telugu": "బడి",
+    "english": "School",
+    "audio": "badi.mp3",
+    "example": "పిల్లలు బడికి వెళ్తారు.",
+    "example_english": "Children go to school.",
+    "category": "places",
+    "length": 2
+  },
+  "illu": {
+    "telugu": "ఇల్లు",
+    "english": "House",
+    "audio": "illu.mp3",
+    "example": "మా ఇల్లు చాలా పెద్దది.",
+    "example_english": "Our house is very big.",
+    "category": "places",
+    "length": 2
+  },
+  "bazaru": {
+    "telugu": "బజారు",
+    "english": "Market",
+    "audio": "bazaru.mp3",
+    "example": "అమ్మ బజారుకు వెళ్ళింది.",
+    "example_english": "Mother went to the market.",
+    "category": "places",
+    "length": 3
+  },
+
+  "pustakam": {
+    "telugu": "పుస్తకం",
+    "english": "Book",
+    "audio": "pustakam.mp3",
+    "example": "నేను పుస్తకం చదువుతున్నాను.",
+    "example_english": "I am reading a book.",
+    "category": "daily-use",
+    "length": 3
+  },
+  "kalam": {
+    "telugu": "కలం",
+    "english": "Pen",
+    "audio": "kalam.mp3",
+    "example": "కలంతో రాయండి.",
+    "example_english": "Write with the pen.",
+    "category": "daily-use",
+    "length": 2
+  },
+  "battalu": {
+    "telugu": "బట్టలు",
+    "english": "Clothes",
+    "audio": "battalu.mp3",
+    "example": "బట్టలు ఉతకాలి.",
+    "example_english": "The clothes need to be washed.",
+    "category": "daily-use",
+    "length": 3
+  },
+  "kurchee": {
+    "telugu": "కుర్చీ",
+    "english": "Chair",
+    "audio": "kurchee.mp3",
+    "example": "కుర్చీలో కూర్చో.",
+    "example_english": "Sit on the chair.",
+    "category": "daily-use",
+    "length": 2
+  },
+  "roju": {
+    "telugu": "రోజు",
+    "english": "Day",
+    "audio": "roju.mp3",
+    "example": "ప్రతి రోజు స్కూలుకి వెళ్తాను.",
+    "example_english": "I go to school every day.",
+    "category": "daily-use",
+    "length": 2
+  },
+  "udayam": {
+    "telugu": "ఉదయం",
+    "english": "Morning",
+    "audio": "udayam.mp3",
+    "example": "ఉదయం త్వరగా లేవాలి.",
+    "example_english": "One should wake up early in the morning.",
+    "category": "daily-use",
+    "length": 3
+  },
+
+  "annam": {
+    "telugu": "అన్నం",
+    "english": "Rice / Food",
+    "audio": "annam.mp3",
+    "example": "అన్నం తినండి.",
+    "example_english": "Eat the rice.",
+    "category": "food",
+    "length": 2
+  },
+  "paalu": {
+    "telugu": "పాలు",
+    "english": "Milk",
+    "audio": "paalu.mp3",
+    "example": "పిల్లవాడు పాలు తాగుతున్నాడు.",
+    "example_english": "The child is drinking milk.",
+    "category": "food",
+    "length": 2
+  },
+  "pandu": {
+    "telugu": "పండు",
+    "english": "Fruit",
+    "audio": "pandu.mp3",
+    "example": "ఈ పండు తీపిగా ఉంది.",
+    "example_english": "This fruit is sweet.",
+    "category": "food",
+    "length": 2
+  },
+  "koora": {
+    "telugu": "కూర",
+    "english": "Curry",
+    "audio": "koora.mp3",
+    "example": "కూర చాలా బాగుంది.",
+    "example_english": "The curry is very good.",
+    "category": "food",
+    "length": 2
+  },
+
+  "kannu": {
+    "telugu": "కన్ను",
+    "english": "Eye",
+    "audio": "kannu.mp3",
+    "example": "నా కన్ను నొప్పిగా ఉంది.",
+    "example_english": "My eye hurts.",
+    "category": "body",
+    "length": 2
+  },
+  "cheyyi": {
+    "telugu": "చెయ్యి",
+    "english": "Hand",
+    "audio": "cheyyi.mp3",
+    "example": "నీ చెయ్యి కడుక్కో.",
+    "example_english": "Wash your hand.",
+    "category": "body",
+    "length": 2
+  },
+  "kaalu": {
+    "telugu": "కాలు",
+    "english": "Leg",
+    "audio": "kaalu.mp3",
+    "example": "అతని కాలు నొప్పిగా ఉంది.",
+    "example_english": "His leg hurts.",
+    "category": "body",
+    "length": 2
+  },
+
+  "erupu": {
+    "telugu": "ఎరుపు",
+    "english": "Red",
+    "audio": "erupu.mp3",
+    "example": "ఈ పువ్వు ఎరుపు రంగులో ఉంది.",
+    "example_english": "This flower is red in color.",
+    "category": "colors",
+    "length": 3
+  },
+
+  "santosham": {
+    "telugu": "సంతోషం",
+    "english": "Happiness",
+    "audio": "santosham.mp3",
+    "example": "నాకు చాలా సంతోషంగా ఉంది.",
+    "example_english": "I am very happy.",
+    "category": "emotions",
+    "length": 3
+  },
+  "manchi": {
+    "telugu": "మంచి",
+    "english": "Good",
+    "audio": "manchi.mp3",
+    "example": "ఇది మంచి పని.",
+    "example_english": "This is a good deed.",
+    "category": "adjectives",
+    "length": 2
   }
 }

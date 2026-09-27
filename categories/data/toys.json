@@ -36,7 +36,7 @@
     "english": "Teddy Bear",
     "audio": "teddy.mp3",
     "image": "teddy.png",
-    "example": "టెడ్డి బేర్ мягంగా ఉంటుంది.",
+    "example": "టెడ్డి బేర్ మెత్తగా ఉంటుంది.",
     "example_english": "The teddy bear is soft."
   },
   "blocks": {
@@ -76,4 +76,7 @@
     "english": "Robot Toy",
     "audio": "robot-toy.mp3",
     "image": "robot-toy.png",
-    "example
+    "example": "రోబో బొమ్మ మాట్లాడుతుంది.",
+    "example_english": "The robot toy talks."
+  }
+}

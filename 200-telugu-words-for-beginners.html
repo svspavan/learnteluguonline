@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>200 Telugu Words for Beginners</title>
 <meta name="description" content="Learn 200 essential Telugu words for beginners. Includes common nouns, verbs, adjectives, and daily-use vocabulary with English meanings.">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -38,15 +39,32 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">Learn Telugu Online</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="alphabet/alphabet.html">Alphabet</a>
-      <a href="grammar/overview.html">Grammar</a>
-      <a href="sentences/index.html">Sentences</a>
-      <a href="categories/index.html">Categories</a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="words/index.html" class="nav-link">Words</a>
+      <a href="numbers/index.html" class="nav-link">Numbers</a>
+      <a href="categories/index.html" class="nav-link">Categories</a>
+      <a href="grammar/overview.html" class="nav-link">Grammar</a>
+      <a href="sentences/index.html" class="nav-link">Sentences</a>
+      <a href="stories/index.html" class="nav-link">Stories</a>
+      <a href="padyalu/index.html" class="nav-link">Shatakalu</a>
+      <a href="rachanalu/index.html" class="nav-link">Padya Rachanalu</a>
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search..." autocomplete="off" aria-label="Search">
+        <div class="search-results"></div>
+      </div>
     </nav>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
   </div>
 </header>
+
+<nav class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span>›</span>
+  <span>200 Telugu Words for Beginners</span>
+</nav>
 
 <main class="page-container">
 
@@ -116,8 +134,10 @@
 </main>
 
 <footer class="footer">
-  <p>© 2026 LearnTeluguOnline.com</p>
+  <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
 </footer>
+
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>

@@ -104,7 +104,7 @@ main {
 }
 
 .header-inner {
-    max-width: 1000px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0.6rem 1.2rem;
     display: flex;
@@ -120,9 +120,133 @@ main {
 
 .nav {
     display: flex;
-    gap: 1rem;
-    margin-left: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.7rem;
+    margin-left: 1rem;
     flex: 1;
+}
+
+.search-box {
+    position: relative;
+    margin-left: auto;
+    align-self: center;
+}
+
+.search-input {
+    width: 120px;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.15);
+    background: var(--card-bg, #fff);
+    color: var(--text-color);
+    font-size: 0.85rem;
+    transition: width 0.2s ease, border-color 0.2s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    width: 200px;
+    border-color: var(--saffron);
+}
+
+.search-results {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    width: 280px;
+    max-height: 340px;
+    overflow-y: auto;
+    background: var(--card-bg, #fff);
+    border-radius: 10px;
+    box-shadow: var(--shadow-strong);
+    border: 1px solid rgba(0,0,0,0.08);
+    z-index: 50;
+}
+
+.search-results.open {
+    display: block;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.55rem 0.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-item.active {
+    background: var(--header-bg);
+}
+
+.search-result-main {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.search-result-telugu {
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-result-english {
+    font-size: 0.78rem;
+    opacity: 0.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-result-type {
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--maroon);
+    background: rgba(123, 30, 30, 0.08);
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+}
+
+.search-no-results {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 1050px) {
+    .search-box {
+        margin: 0.6rem 0 0;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-input:focus {
+        width: 100%;
+    }
+
+    .search-results {
+        width: 100%;
+    }
 }
 
 .nav-link {
@@ -130,7 +254,8 @@ main {
     text-decoration: none;
     color: #2A1F1A;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.83rem;
+    white-space: nowrap;
 }
 
 .nav-link::after {
@@ -166,7 +291,7 @@ main {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
     .nav {
         position: absolute;
         left: 0;
@@ -319,6 +444,98 @@ main {
     margin-top: 1rem;
 }
 
+/* =========================================================
+   PADYAM / VERSE BLOCKS (Shatakalu, Padya Rachanalu, Sentences)
+   ========================================================= */
+.padyam-block {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.padyam-block h3 {
+    font-family: 'Noto Sans Telugu', sans-serif;
+    color: var(--maroon);
+    margin: 0 0 0.8rem;
+}
+
+.padyam-lines {
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.padyam-lines div {
+    margin-bottom: 0.2rem;
+}
+
+.meaning-list {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.6;
+}
+
+.meaning-list li {
+    margin-bottom: 0.4rem;
+}
+
+.rachana-challenge {
+    background: var(--header-bg);
+    border-left: 4px solid var(--saffron);
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.rachana-challenge .challenge-label {
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--maroon);
+    opacity: 0.8;
+    margin-bottom: 0.3rem;
+}
+
+.rachana-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.chandassu-tag {
+    display: inline-block;
+    background: rgba(123, 30, 30, 0.08);
+    color: var(--maroon);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+}
+
+.poet-credit {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.rachana-empty {
+    text-align: center;
+    padding: 3rem 1.2rem;
+    opacity: 0.75;
+}
+
 /* Images */
 .item-image,
 .story-image {
@@ -460,7 +677,7 @@ main {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background-image: url('../assets/pattern-telugu.svg');
+    background-image: url('../patterns/pattern-telugu.svg');
     background-size: 260px;
     background-repeat: repeat;
     opacity: 0.18; /* subtle */
@@ -960,4 +1177,409 @@ main {
   color: #333;
   opacity: 0.85;
   line-height: 1.5;
+}
+
+/* ============================
+   START LEARNING CTA
+   ============================ */
+
+.start-learning {
+  background: var(--header-bg);
+  padding: 3rem 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.start-learning-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.start-learning h2 {
+  color: var(--maroon);
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.start-learning p {
+  color: var(--text-color);
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.start-learning-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.primary-btn {
+  background: var(--maroon);
+  color: #fff;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--maroon);
+  border: 2px solid var(--maroon);
+}
+
+.secondary-btn:hover {
+  background: var(--maroon);
+  color: #fff;
+}
+
+/* ============================
+   RECOMMENDED LEARNING FLOW
+   ============================ */
+
+.learning-flow {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.flow-steps {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  counter-reset: flow-counter;
+  text-align: left;
+}
+
+.flow-steps li {
+  counter-increment: flow-counter;
+  position: relative;
+  padding: 0.9rem 1rem 0.9rem 3.2rem;
+  margin-bottom: 0.8rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.flow-steps li::before {
+  content: counter(flow-counter);
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  background: var(--saffron);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.flow-steps li a {
+  color: var(--link-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.flow-steps li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   TELUGU FOR KIDS
+   ============================ */
+
+.kids-learning {
+  margin: 3rem auto;
+  padding: 2rem 1.2rem;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.kids-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.kids-card {
+  padding: 1.2rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kids-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+}
+
+.kids-card h3 {
+  color: var(--maroon);
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.kids-card p {
+  opacity: 0.85;
+  font-size: 0.92rem;
+  margin-bottom: 0.9rem;
+}
+
+/* ============================
+   CAROUSEL (Stories / Padyalu)
+   ============================ */
+
+.carousel-section {
+  margin: 3rem auto;
+  max-width: 1000px;
+  padding: 0 1.2rem;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem 3rem;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.carousel-item h3 {
+  color: var(--maroon);
+  margin-bottom: 0.5rem;
+  font-family: 'Noto Sans Telugu', sans-serif;
+}
+
+.carousel-item p {
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--card-bg);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  z-index: 2;
+  color: var(--maroon);
+}
+
+.carousel-arrow.prev { left: 0.5rem; }
+.carousel-arrow.next { right: 0.5rem; }
+
+.carousel-arrow:hover {
+  background: var(--saffron);
+  color: #fff;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.15);
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: var(--saffron);
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    padding: 1.5rem 2.4rem;
+  }
+
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* ============================
+   EXPLORE MORE TELUGU
+   ============================ */
+
+.explore-more {
+  margin: 3rem auto;
+  padding: 2rem 1.2rem;
+  max-width: 1100px;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.explore-card {
+  display: block;
+  padding: 1.2rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.explore-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+}
+
+.explore-card h3 {
+  color: var(--maroon);
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.explore-card p {
+  opacity: 0.85;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ============================
+   QUOTE SECTION
+   ============================ */
+
+.quote-section {
+  text-align: center;
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 1.5rem 1.2rem;
+}
+
+.quote-section h2 {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 1.6rem;
+  color: var(--maroon);
+  margin-bottom: 0.5rem;
+}
+
+.quote-section p {
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+/* ============================
+   ABOUT SITE
+   ============================ */
+
+.about-site {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1.5rem 1.2rem;
+  text-align: center;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+/* ============================
+   FOOTER COLUMNS
+   ============================ */
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: left;
+  padding: 0 1.2rem;
+}
+
+.footer-column h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 0.8rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  max-width: 1000px;
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.85rem;
+  opacity: 0.85;
 }

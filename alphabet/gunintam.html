@@ -94,6 +94,7 @@
 
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+    <p class="footer-contact"><a href="../contact.html">Contact Us</a></p>
 </footer>
 
 <script src="../assets/js/script.js"></script>
@@ -109,6 +110,7 @@ const GUNINTHAM_VOWEL_FORMS = [
     { key: "u",   matra: "ు",  suffix: "u"  },
     { key: "oo",  matra: "ూ",  suffix: "ū"  },
     { key: "ru",  matra: "ృ",  suffix: "ṛu" },
+    { key: "ruu", matra: "ౄ",  suffix: "ṝu" },
     { key: "e",   matra: "ె",  suffix: "e"  },
     { key: "ee2", matra: "ే",  suffix: "ē"  },
     { key: "ai",  matra: "ై",  suffix: "ai" },
@@ -150,7 +152,7 @@ async function loadGunintam() {
     document.getElementById("gunintamTitle").textContent =
         `${item.telugu} గుణింతం — ${item.english} Guninthamu`;
     document.getElementById("gunintamSubtitle").textContent =
-        `All 15 vowel forms of ${item.telugu} (${item.english}).`;
+        `All ${GUNINTHAM_VOWEL_FORMS.length} vowel forms of ${item.telugu} (${item.english}).`;
 
     const root = item.english.slice(0, -1); // "Ka" -> "K", "Ṭa" -> "Ṭ"
     const playAllList = [];

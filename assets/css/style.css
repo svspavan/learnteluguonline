@@ -536,6 +536,50 @@ main {
     opacity: 0.75;
 }
 
+/* ============================
+   WHATSAPP SHARE BUTTON
+   ============================ */
+.whatsapp-share-btn {
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    z-index: 100;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-share-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.whatsapp-share-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-share-btn {
+        right: 1rem;
+        bottom: 1rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-share-btn svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
 /* Images */
 .item-image,
 .story-image {
@@ -631,6 +675,20 @@ main {
     text-align: center;
     padding: 15px;
     margin-top: 1.5rem;
+}
+
+.footer-contact {
+    margin: 0.4rem 0 0;
+    font-size: 0.85rem;
+}
+
+.footer-contact a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: underline;
+}
+
+.footer-contact a:hover {
+    color: #fff;
 }
 
 /* =========================================================

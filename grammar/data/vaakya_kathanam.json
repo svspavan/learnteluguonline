@@ -1,0 +1,58 @@
+{
+  "title": "కథనం, నిషేధం & షరతు — Reported Speech, Negation & Conditionals",
+  "description": "ఒకరి మాటలను నివేదించడం (ప్రత్యక్ష/పరోక్ష కథనం), క్రియను నిషేధార్థకంగా మార్చడం, మరియు షరతులతో కూడిన వాక్యాలు ఏర్పరచడం — ఇవి రోజువారీ సంభాషణలో తరచుగా అవసరమయ్యే క్రియా రూపాలు.",
+  "items": [
+    {
+      "heading": "1. ప్రత్యక్ష కథనం (Direct Speech)",
+      "explanation": "ఒక వ్యక్తి చెప్పిన మాటలను యథాతథంగా, కొటేషన్‌లో ఉదహరించడం.",
+      "examples": [
+        {
+          "telugu": "రాము \"నేను రేపు వస్తాను\" అన్నాడు.",
+          "english": "Ramu said, \"I will come tomorrow.\"",
+          "audio": "direct_speech_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "2. పరోక్ష కథనం (Indirect / Reported Speech)",
+      "explanation": "ప్రత్యక్ష కథనాన్ని తన సొంత మాటల్లో నివేదించడం — సర్వనామం, క్రియ మారుతాయి.",
+      "examples": [
+        {
+          "telugu": "రాము తాను రేపు వస్తానని చెప్పాడు.",
+          "english": "Ramu said that he would come tomorrow.",
+          "audio": "indirect_speech_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "3. నిషేధార్థక క్రియలు (Negative Verb Forms)",
+      "explanation": "క్రియను నిషేధార్థకంగా మార్చడానికి ప్రత్యేక నిషేధ ప్రత్యయాలు, రూపాలు వాడతారు.",
+      "table": {
+        "headers": ["Positive", "Negative"],
+        "rows": [
+          ["వెళ్తాడు", "వెళ్ళడు"],
+          ["తిన్నాడు", "తినలేదు"],
+          ["వస్తుంది", "రాదు"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "అతను ఈరోజు స్కూలుకు వెళ్ళడు.",
+          "english": "He is not going to school today.",
+          "audio": "negative_verb_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "4. షరతు వాక్యాలు (Conditional Verb Forms)",
+      "explanation": "క్రియకు '-తే' ప్రత్యయం చేర్చడం ద్వారా, లేదా 'అయితే' వాడటం ద్వారా షరతును తెలియజేస్తారు.",
+      "examples": [
+        {
+          "telugu": "వర్షం పడితే మేము బయటకు వెళ్ళము.",
+          "english": "If it rains, we will not go outside.",
+          "audio": "conditional_1.mp3"
+        }
+      ]
+    }
+  ]
+}

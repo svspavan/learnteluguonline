@@ -1,0 +1,72 @@
+{
+  "title": "జాతీయాలు, సామెతలు — Idioms & Proverbs",
+  "description": "జాతీయాలు అంటే స్థిరపడిన భావయుక్తమైన పలుకుబళ్ళు; సామెతలు అంటే జీవిత అనుభవాన్ని తెలియజేసే సూక్తులు. రెండూ నిత్య వ్యవహారంలో మాటకు బలం, రుచి తెస్తాయి.",
+  "items": [
+    {
+      "heading": "1. గోరుచుట్టు మీద రోకటిపోటు (జాతీయం)",
+      "explanation": "ఇప్పటికే ఉన్న చిన్న బాధ మీద మరో పెద్ద బాధ రావడం — 'Adding insult to injury' అనే భావం.",
+      "examples": [
+        {
+          "telugu": "ఇంట్లో గొడవ పెద్దదైతే, ఉద్యోగం పోవడం గోరుచుట్టు మీద రోకటిపోటు లాంటిది.",
+          "english": "With trouble at home already, losing the job was like a pestle-blow on a boil.",
+          "audio": "goruchuttu_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "2. అరటిపండు ఒలిచి చేతిలో పెట్టినట్లు (జాతీయం)",
+      "explanation": "ఒక పనిని లేదా విషయాన్ని అతి సులభంగా, అందుబాటులో అందించడం.",
+      "examples": [
+        {
+          "telugu": "ఉపాధ్యాయుడు పాఠాన్ని అరటిపండు ఒలిచి చేతిలో పెట్టినట్లు చెప్పాడు.",
+          "english": "The teacher explained the lesson as if he peeled a banana and placed it in your hand.",
+          "audio": "aratipandu_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "3. కోతి కొమ్మచ్చి ఆడటం (జాతీయం)",
+      "explanation": "ఒక పని పూర్తి చేయకుండా ఒకదాని నుండి మరొకదానికి మారుతూ ఉండటం — నిలకడ లేకపోవడం.",
+      "examples": [
+        {
+          "telugu": "అతను ఏ పనీ పూర్తి చేయకుండా కోతి కొమ్మచ్చి ఆడుతున్నాడు.",
+          "english": "He keeps jumping from one thing to another without finishing anything.",
+          "audio": "kothi_kommachi_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "4. చేతులు కాలాక ఆకులు పట్టుకున్నట్లు (సామెత)",
+      "explanation": "నష్టం జరిగిన తర్వాత జాగ్రత్త తీసుకోవడం — మరీ ఆలస్యంగా స్పందించడం.",
+      "examples": [
+        {
+          "telugu": "పరీక్ష ముందు రోజు చదవడం చేతులు కాలాక ఆకులు పట్టుకున్నట్లు ఉంటుంది.",
+          "english": "Studying the day before the exam is like grabbing leaves after your hands have already burned.",
+          "audio": "chetulu_kalaka_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "5. కొండను తవ్వి ఎలుకను పట్టినట్లు (సామెత)",
+      "explanation": "చాలా శ్రమ పడి, పెద్ద ప్రయత్నం చేసి కూడా చాలా చిన్న ఫలితం రావడం.",
+      "examples": [
+        {
+          "telugu": "అంత శ్రమ పడి చిన్న పొరపాటు పట్టుకోవడం కొండను తవ్వి ఎలుకను పట్టినట్లు అయింది.",
+          "english": "Putting in so much effort to catch a small mistake was like digging a mountain to catch a mouse.",
+          "audio": "kondanu_tavvi_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "6. కప్పకు ఈత నేర్పినట్లు (సామెత)",
+      "explanation": "ఇప్పటికే బాగా తెలిసిన వ్యక్తికి అదే విషయాన్ని నేర్పడానికి ప్రయత్నించడం — అనవసరమైన శ్రమ.",
+      "examples": [
+        {
+          "telugu": "అనుభవజ్ఞుడికి ఆ సంగతి చెప్పడం కప్పకు ఈత నేర్పినట్లు ఉంటుంది.",
+          "english": "Explaining that to an expert is like teaching a frog to swim.",
+          "audio": "kappaku_eta_1.mp3"
+        }
+      ]
+    }
+  ]
+}

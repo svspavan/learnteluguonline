@@ -66,6 +66,7 @@
 ============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+    <p class="footer-contact"><a href="../contact.html">Contact Us</a></p>
 </footer>
 
 
@@ -82,26 +83,39 @@ async function loadPadyam() {
     const params = new URLSearchParams(window.location.search);
     const type = params.get("type");
 
-    const titleMap = {
-        vemana: "వేమన శతకము — Vemana Satakam",
-        sumati: "సుమతీ శతకము — Sumati Satakam"
-    };
+    const shatakaluRes = await fetch("data/shatakalu.json");
+    const shatakalu = await shatakaluRes.json();
 
-    if (!type || !titleMap[type]) {
+    if (!type || !shatakalu[type]) {
         document.getElementById("padyamContent").innerHTML =
             "<p>Invalid padyam type.</p>";
         return;
     }
 
+    const meta = shatakalu[type];
+    const title = `${meta.telugu} — ${meta.english}`;
+
     // Update breadcrumb
-    document.getElementById("breadcrumbTitle").textContent = titleMap[type];
+    document.getElementById("breadcrumbTitle").textContent = title;
 
     const res = await fetch(`data/${type}.json`);
     const data = await res.json();
 
     const container = document.getElementById("padyamContent");
 
-    container.innerHTML = `<h1 class="page-title">${titleMap[type]}</h1>`;
+    container.innerHTML = `
+        <h1 class="page-title">${title}</h1>
+        ${meta.author ? `<p class="modules-subtitle">${meta.author}</p>` : ""}
+    `;
+
+    if (!Object.keys(data).length) {
+        container.innerHTML += `
+            <div class="rachana-empty">
+                <p>పద్యాలు త్వరలో వస్తాయి — Verses coming soon. Check back later!</p>
+            </div>
+        `;
+        return;
+    }
 
     Object.keys(data).forEach(key => {
         const p = data[key];

@@ -58,19 +58,9 @@
 <main class="page-container">
     <section class="modules">
         <h1 class="page-title">తెలుగు శతకములు</h1>
-        <p class="modules-subtitle">Vemana & Sumati Satakam</p>
+        <p class="modules-subtitle">Classical Telugu Shatakams</p>
 
-        <div class="module-grid">
-            <a href="padyam.html?type=vemana" class="module-card">
-                <h3>వేమన శతకం</h3>
-                <p>Vemana Shatakam</p>
-            </a>
-
-            <a href="padyam.html?type=sumati" class="module-card">
-                <h3>సుమతీ శతకము</h3>
-                <p>Sumati Satakam</p>
-            </a>
-        </div>
+        <div id="shatakaluGrid" class="module-grid"></div>
     </section>
 </main>
 
@@ -80,6 +70,7 @@
 ============================= -->
 <footer class="footer">
     <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+    <p class="footer-contact"><a href="../contact.html">Contact Us</a></p>
 </footer>
 
 
@@ -87,6 +78,31 @@
      GLOBAL SCRIPT
 ============================= -->
 <script src="../assets/js/script.js"></script>
+
+<!-- ============================
+     PAGE-SPECIFIC SCRIPT
+============================= -->
+<script>
+async function loadShatakalu() {
+    const res = await fetch("data/shatakalu.json");
+    const shatakalu = await res.json();
+    const grid = document.getElementById("shatakaluGrid");
+
+    Object.keys(shatakalu).forEach(key => {
+        const s = shatakalu[key];
+        const card = document.createElement("a");
+        card.href = `padyam.html?type=${key}`;
+        card.className = "module-card fade-slide";
+        card.innerHTML = `
+            <h3>${s.telugu}</h3>
+            <p>${s.english}</p>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadShatakalu);
+</script>
 
 </body>
 </html>

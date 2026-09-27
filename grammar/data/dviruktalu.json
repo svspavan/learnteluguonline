@@ -1,0 +1,62 @@
+{
+  "title": "ద్విరుక్తాలు, జంట పదాలు — Reduplication & Paired Words",
+  "description": "తెలుగులో ఒక పదాన్ని రెండుసార్లు వాడటం లేదా రెండు సంబంధిత పదాలను జతచేయడం ద్వారా అర్థాన్ని బలపరచడం, నిత్య వ్యవహారంలో ఒక ప్రత్యేక సొగసు తీసుకురావడం జరుగుతుంది.",
+  "items": [
+    {
+      "heading": "1. ద్విరుక్తాలు (Reduplicated Words)",
+      "explanation": "ఒకే పదాన్ని రెండుసార్లు వాడటం ద్వారా అర్థాన్ని బలపరచడం లేదా నిరంతరతను తెలియజేయడం.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["చిన్న చిన్న", "very small / tiny (emphasis)"],
+          ["మెల్ల మెల్లగా", "slowly, gradually"],
+          ["రోజు రోజుకు", "day by day"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "పిల్లలు మెల్ల మెల్లగా నడుస్తున్నారు.",
+          "english": "The children are walking slowly.",
+          "audio": "dvirukta_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "2. జంట పదాలు (Paired Words)",
+      "explanation": "రెండు సంబంధిత పదాలను జతచేసి ఒక సమూహాన్ని లేదా భావనను తెలియజేయడం.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["అన్నదమ్ములు", "Brothers"],
+          ["అక్కచెల్లెళ్ళు", "Sisters"],
+          ["తల్లిదండ్రులు", "Parents"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "అన్నదమ్ములు కలిసి ఆడుకుంటున్నారు.",
+          "english": "The brothers are playing together.",
+          "audio": "jantapadam_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "3. అనుకరణ ద్విరుక్తాలు (Echo Reduplication)",
+      "explanation": "మొదటి పదానికి ప్రాస కలిసే ఒక పదాన్ని జతచేసి 'మరియు ఇతరాలు' అనే భావాన్ని కలిగించడం — ఇది సంభాషణ భాషలో సాధారణం.",
+      "table": {
+        "headers": ["Telugu", "English Meaning"],
+        "rows": [
+          ["తిండి గిండి", "food and such"],
+          ["బట్టలు గిట్టలు", "clothes and such"]
+        ]
+      },
+      "examples": [
+        {
+          "telugu": "తిండి గిండి తిన్నావా?",
+          "english": "Did you eat food and stuff?",
+          "audio": "echo_reduplication_1.mp3"
+        }
+      ]
+    }
+  ]
+}

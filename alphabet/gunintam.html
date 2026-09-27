@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Guninthalu</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .gunintam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1.25rem;
+            justify-content: center;
+            margin: 2rem auto 0;
+            max-width: 1000px;
+        }
+
+        .gunintam-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 10px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .gunintam-telugu {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 2.4rem;
+            color: var(--maroon);
+            margin: 0;
+        }
+
+        .gunintam-translit {
+            margin: 0.4rem 0 0;
+            color: #6a5a4a;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">Learn Telugu Online</div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+            <nav class="nav">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link active">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="../grammar/overview.html" class="nav-link">Grammar</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
+      <a href="../padyalu/index.html" class="nav-link">Shatakalu</a>
+      <a href="../rachanalu/index.html" class="nav-link">Padya Rachanalu</a>
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search..." autocomplete="off" aria-label="Search">
+        <div class="search-results"></div>
+      </div>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<main class="page-container">
+
+    <section class="modules">
+        <h1 class="page-title" id="gunintamTitle">Guninthalu</h1>
+        <p class="modules-subtitle" id="gunintamSubtitle"></p>
+
+        <button id="playAllBtn" class="play-all-btn">🔊 Play All</button>
+        <div id="playProgress" class="play-progress">
+            <div id="playProgressBar" class="play-progress-bar"></div>
+        </div>
+
+        <div id="gunintamGrid" class="gunintam-grid"></div>
+    </section>
+
+    <div class="back-link">
+        <a id="backToLetter" href="alphabet.html">← Back</a>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+
+<script>
+// Telugu vowel signs (matras) applied to a base consonant, and their
+// romanized suffix — same key order as the vowel entries in data/letters.json.
+const GUNINTHAM_VOWEL_FORMS = [
+    { key: "a",   matra: "",        suffix: "a"  },
+    { key: "aa",  matra: "ా",  suffix: "ā"  },
+    { key: "i",   matra: "ి",  suffix: "i"  },
+    { key: "ee",  matra: "ీ",  suffix: "ī"  },
+    { key: "u",   matra: "ు",  suffix: "u"  },
+    { key: "oo",  matra: "ూ",  suffix: "ū"  },
+    { key: "ru",  matra: "ృ",  suffix: "ṛu" },
+    { key: "e",   matra: "ె",  suffix: "e"  },
+    { key: "ee2", matra: "ే",  suffix: "ē"  },
+    { key: "ai",  matra: "ై",  suffix: "ai" },
+    { key: "o",   matra: "ొ",  suffix: "o"  },
+    { key: "oo2", matra: "ో",  suffix: "ō"  },
+    { key: "au",  matra: "ౌ",  suffix: "au" },
+    { key: "am",  matra: "ం",  suffix: "aṁ" },
+    { key: "aha", matra: "ః",  suffix: "aḥ" }
+];
+
+async function loadGunintam() {
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get("name");
+
+    const res = await fetch("data/letters.json");
+    const letters = await res.json();
+    const item = letters[key];
+
+    const grid = document.getElementById("gunintamGrid");
+
+    if (!item || item.type !== "consonant") {
+        document.getElementById("gunintamTitle").textContent = "Not found";
+        grid.innerHTML = "<p>Guninthalu are only available for consonants.</p>";
+        return;
+    }
+
+    document.getElementById("breadcrumb").innerHTML = `
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="alphabet.html">Alphabet</a>
+        <span>›</span>
+        <a href="consonants.html">Consonants</a>
+        <span>›</span>
+        <a href="letter.html?name=${key}&from=consonants">${item.telugu}</a>
+        <span>›</span>
+        <span>గుణింతం</span>
+    `;
+
+    document.getElementById("gunintamTitle").textContent =
+        `${item.telugu} గుణింతం — ${item.english} Guninthamu`;
+    document.getElementById("gunintamSubtitle").textContent =
+        `All 15 vowel forms of ${item.telugu} (${item.english}).`;
+
+    const root = item.english.slice(0, -1); // "Ka" -> "K", "Ṭa" -> "Ṭ"
+    const playAllList = [];
+
+    grid.innerHTML = GUNINTHAM_VOWEL_FORMS.map(v => {
+        const src = `audio/gunintam/${key}_${v.key}.mp3`;
+        playAllList.push(src);
+
+        return `
+        <div class="gunintam-card fade-slide">
+            <p class="gunintam-telugu">${item.telugu}${v.matra}</p>
+            <p class="gunintam-translit">${root}${v.suffix}</p>
+            <div class="audio-player" data-src="${src}">
+                <button class="play-btn">▶</button>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="time-label">0:00</span>
+            </div>
+        </div>
+        `;
+    }).join("");
+
+    if (window.initAudioPlayers) window.initAudioPlayers();
+
+    document.getElementById("backToLetter").href = `letter.html?name=${key}&from=consonants`;
+
+    document.getElementById("playAllBtn").addEventListener("click", () => {
+        playAllWithProgress(playAllList);
+    });
+}
+
+function playAllWithProgress(list) {
+    if (!list || list.length === 0) return;
+
+    const progressBar = document.getElementById("playProgressBar");
+    let index = 0;
+
+    function playNext() {
+        if (index >= list.length) {
+            progressBar.style.width = "100%";
+            return;
+        }
+
+        const audio = new Audio(list[index]);
+        audio.play();
+
+        const progress = ((index + 1) / list.length) * 100;
+        progressBar.style.width = `${progress}%`;
+
+        index++;
+        audio.addEventListener("ended", playNext);
+    }
+
+    progressBar.style.width = "0%";
+    playNext();
+}
+
+document.addEventListener("DOMContentLoaded", loadGunintam);
+</script>
+
+</body>
+</html>

@@ -1,4 +1,17 @@
 /* ---------------------------------------------------------
+   MISSING IMAGE FALLBACK
+   Many content entries reference image files that don't exist yet.
+   Hide the broken-image icon instead of showing it. "error" doesn't
+   bubble, so this must be a capture-phase listener on document.
+--------------------------------------------------------- */
+document.addEventListener("error", (e) => {
+    if (e.target.tagName === "IMG") {
+        e.target.style.display = "none";
+    }
+}, true);
+
+
+/* ---------------------------------------------------------
    GLOBAL AUDIO PLAYER
 --------------------------------------------------------- */
 window.initAudioPlayers = function () {
@@ -48,115 +61,245 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* ---------------------------------------------------------
    GLOBAL SEARCH
+   Root-relative paths ("/...") are used throughout so this works
+   identically from the homepage, root SEO pages, and any section
+   page, regardless of folder depth.
 --------------------------------------------------------- */
 
-// Letter lookup
-const letterMap = {
-    "అ": "a", "a": "a",
-    "ఆ": "aa", "aa": "aa",
-    "ఇ": "i", "i": "i",
-    "ఈ": "ee", "ee": "ee",
-    "ఉ": "u", "u": "u",
-    "ఊ": "oo", "oo": "oo",
-    "ఎ": "e", "e": "e",
-    "ఏ": "ee2", "ee2": "ee2",
-    "ఐ": "ai", "ai": "ai",
-    "ఒ": "o", "o": "o",
-    "ఓ": "oo2", "oo2": "oo2",
-    "ఔ": "au", "au": "au",
-
-    "క": "ka", "ka": "ka",
-    "ఖ": "kha", "kha": "kha",
-    "గ": "ga", "ga": "ga",
-    "ఘ": "gha", "gha": "gha",
-    "ఙ": "nga", "nga": "nga",
-
-    "చ": "cha", "cha": "cha",
-    "ఛ": "chha", "chha": "chha",
-    "జ": "ja", "ja": "ja",
-    "ఝ": "jha", "jha": "jha",
-    "ఞ": "nya", "nya": "nya",
-
-    "ట": "tta", "tta": "tta",
-    "ఠ": "ttha", "ttha": "ttha",
-    "డ": "dda", "dda": "dda",
-    "ఢ": "ddha", "ddha": "ddha",
-    "ణ": "nna", "nna": "nna",
-
-    "త": "ta", "ta": "ta",
-    "థ": "tha", "tha": "tha",
-    "ద": "da", "da": "da",
-    "ధ": "dha", "dha": "dha",
-    "న": "na", "na": "na",
-
-    "ప": "pa", "pa": "pa",
-    "ఫ": "pha", "pha": "pha",
-    "బ": "ba", "ba": "ba",
-    "భ": "bha", "bha": "bha",
-    "మ": "ma", "ma": "ma",
-
-    "య": "ya", "ya": "ya",
-    "ర": "ra", "ra": "ra",
-    "ల": "la", "la": "la",
-    "వ": "va", "va": "va",
-
-    "శ": "sha", "sha": "sha",
-    "ష": "ssha", "ssha": "ssha",
-    "స": "sa", "sa": "sa",
-    "హ": "ha", "ha": "ha",
-
-    "ళ": "lla", "lla": "lla",
-    "క్ష": "ksha", "ksha": "ksha",
-    "ఱ": "rra", "rra": "rra"
+const CATEGORY_META = {
+    colors: { telugu: "రంగులు", english: "Colors" },
+    animals: { telugu: "జంతువులు", english: "Animals" },
+    fruits: { telugu: "పండ్లు", english: "Fruits" },
+    vegetables: { telugu: "కూరగాయలు", english: "Vegetables" },
+    shapes: { telugu: "ఆకారాలు", english: "Shapes" },
+    toys: { telugu: "బొమ్మలు", english: "Toys" },
+    household: { telugu: "ఇంటి వస్తువులు", english: "Household Items" },
+    family: { telugu: "కుటుంబం", english: "Family" },
+    bodyparts: { telugu: "శరీర భాగాలు", english: "Body Parts" },
+    vehicles: { telugu: "వాహనాలు", english: "Vehicles" },
+    nature: { telugu: "ప్రకృతి", english: "Nature" },
+    school: { telugu: "పాఠశాల వస్తువులు", english: "School Items" }
 };
 
-// Word lookup (auto-loaded)
-let words = {};
+const GRAMMAR_TOPICS = [
+    { key: "vibhaktulu", label: "Vibhaktulu (Cases)", telugu: "విభక్తులు" },
+    { key: "tenses", label: "Tenses", telugu: "కాలములు" },
+    { key: "verb_conjugation", label: "Verb Conjugation", telugu: "ధాతు రూపాలు" },
+    { key: "sentence_structure", label: "Sentence Structure", telugu: "వాక్య నిర్మాణం" },
+    { key: "sandhi", label: "Sandhi", telugu: "సంధులు" },
+    { key: "samasam", label: "Samasam", telugu: "సమాసాలు" },
+    { key: "pronouns", label: "Pronouns", telugu: "సర్వనామాలు" },
+    { key: "gender", label: "Gender", telugu: "లింగాలు" },
+    { key: "numbers", label: "Numbers (Grammar)", telugu: "వచనాలు" },
+    { key: "adjectives", label: "Adjectives", telugu: "విశేషణాలు" },
+    { key: "adverbs", label: "Adverbs", telugu: "క్రియావిశేషణాలు" }
+];
 
-(async function preloadWords() {
+const SENTENCE_CATEGORIES = [
+    "greetings", "home", "travel", "daily", "food", "work", "shopping", "health",
+    "school", "family", "nature", "emergency", "temple", "feelings", "directions",
+    "technology", "weather", "transport", "restaurant", "phone_calls", "kids",
+    "neighbors", "sports"
+];
+
+function prettifyKey(key) {
+    return key.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+
+let searchIndex = null;
+let searchIndexPromise = null;
+
+async function fetchJSON(url) {
     try {
-        const res = await fetch("../words/data/words.json");
-        words = await res.json();
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        return await res.json();
     } catch (e) {
-        // ignore if not on words pages
-    }
-})();
-
-async function handleGlobalSearch(event) {
-    const query = event.target.value.trim().toLowerCase();
-    if (!query) return;
-
-    // Letters
-    if (letterMap[query]) {
-        window.location.href = `../alphabet/letter.html?name=${letterMap[query]}`;
-        return;
-    }
-
-    // Words
-    if (words[query]) {
-        window.location.href = `../words/word.html?name=${query}`;
-        return;
-    }
-
-    // Numbers
-    if (!isNaN(query)) {
-        window.location.href = `../numbers/number.html?num=${query}`;
-        return;
-    }
-
-    // Categories
-    const categories = ["colors", "animals", "fruits", "vegetables", "shapes"];
-    if (categories.includes(query)) {
-        window.location.href = `../categories/category.html?name=${query}`;
-        return;
-    }
-
-    // Padyalu
-    if (query === "vemana" || query === "sumati") {
-        window.location.href = `../padyalu/padyam.html?type=${query}`;
-        return;
+        return null;
     }
 }
+
+async function buildSearchIndex() {
+    const [letters, words, numbers, stories] = await Promise.all([
+        fetchJSON("/alphabet/data/letters.json"),
+        fetchJSON("/words/data/words.json"),
+        fetchJSON("/numbers/data/numbers.json"),
+        fetchJSON("/stories/data/stories.json")
+    ]);
+
+    const index = [];
+
+    for (const [key, item] of Object.entries(letters || {})) {
+        index.push({
+            type: item.type === "vowel" ? "Vowel" : "Consonant",
+            telugu: item.telugu,
+            english: item.english,
+            keys: [key],
+            url: `/alphabet/letter.html?name=${key}&from=${item.type === "vowel" ? "vowels" : "consonants"}`
+        });
+    }
+
+    for (const [key, item] of Object.entries(words || {})) {
+        index.push({
+            type: "Word",
+            telugu: item.telugu,
+            english: item.english,
+            keys: [key],
+            url: `/words/word.html?name=${key}`
+        });
+    }
+
+    for (const [num, item] of Object.entries(numbers || {})) {
+        index.push({
+            type: "Number",
+            telugu: item.telugu,
+            english: item.english,
+            keys: [num],
+            url: `/numbers/number.html?num=${num}&from=numbers`
+        });
+    }
+
+    for (const [key, item] of Object.entries(stories || {})) {
+        index.push({
+            type: "Story",
+            telugu: item.title,
+            english: item.english_title,
+            keys: [key],
+            url: `/stories/story.html?name=${key}`
+        });
+    }
+
+    for (const [key, meta] of Object.entries(CATEGORY_META)) {
+        index.push({
+            type: "Category",
+            telugu: meta.telugu,
+            english: meta.english,
+            keys: [key],
+            url: `/categories/category.html?name=${key}`
+        });
+    }
+
+    for (const topic of GRAMMAR_TOPICS) {
+        index.push({
+            type: "Grammar",
+            telugu: topic.telugu,
+            english: topic.label,
+            keys: [topic.key],
+            url: `/grammar/topic.html?name=${topic.key}`
+        });
+    }
+
+    for (const key of SENTENCE_CATEGORIES) {
+        index.push({
+            type: "Sentences",
+            telugu: "",
+            english: prettifyKey(key),
+            keys: [key],
+            url: `/sentences/sentence.html?category=${key}`
+        });
+    }
+
+    index.push({ type: "Shatakam", telugu: "వేమన శతకము", english: "Vemana Satakam", keys: ["vemana"], url: "/padyalu/padyam.html?type=vemana" });
+    index.push({ type: "Shatakam", telugu: "సుమతీ శతకము", english: "Sumati Satakam", keys: ["sumati"], url: "/padyalu/padyam.html?type=sumati" });
+
+    const [samasya, saametha] = await Promise.all([
+        fetchJSON("/rachanalu/data/samasya.json"),
+        fetchJSON("/rachanalu/data/saametha.json")
+    ]);
+
+    for (const [key, item] of Object.entries(samasya || {})) {
+        index.push({
+            type: "Samasya Puranam",
+            telugu: item.samasya || "",
+            english: item.meaning || "",
+            keys: [key],
+            url: `/rachanalu/rachana.html?type=samasya#${key}`
+        });
+    }
+
+    for (const [key, item] of Object.entries(saametha || {})) {
+        index.push({
+            type: "Saametha Padyalu",
+            telugu: (item.lines && item.lines[0]) || "",
+            english: item.proverb || "",
+            keys: [key],
+            url: `/rachanalu/rachana.html?type=saametha#${key}`
+        });
+    }
+
+    return index;
+}
+
+function getSearchIndex() {
+    if (!searchIndexPromise) searchIndexPromise = buildSearchIndex();
+    return searchIndexPromise;
+}
+
+function matchesQuery(entry, query) {
+    if (entry.telugu && entry.telugu.includes(query)) return true;
+    const lower = query.toLowerCase();
+    if (entry.english && entry.english.toLowerCase().includes(lower)) return true;
+    return entry.keys.some(k => k.toLowerCase().includes(lower));
+}
+
+function renderSearchResults(container, matches, query) {
+    if (!query) {
+        container.classList.remove("open");
+        container.innerHTML = "";
+        return;
+    }
+
+    if (!matches.length) {
+        container.innerHTML = `<div class="search-no-results">No results for "${query}"</div>`;
+        container.classList.add("open");
+        return;
+    }
+
+    container.innerHTML = matches.slice(0, 8).map((m, i) => `
+        <a href="${m.url}" class="search-result-item${i === 0 ? " active" : ""}">
+            <span class="search-result-main">
+                <span class="search-result-telugu">${m.telugu || m.english}</span>
+                ${m.telugu ? `<span class="search-result-english">${m.english}</span>` : ""}
+            </span>
+            <span class="search-result-type">${m.type}</span>
+        </a>
+    `).join("");
+    container.classList.add("open");
+}
+
+function initSiteSearch() {
+    document.querySelectorAll(".search-box").forEach(box => {
+        const input = box.querySelector(".search-input");
+        const results = box.querySelector(".search-results");
+        if (!input || !results) return;
+
+        input.addEventListener("input", async () => {
+            const query = input.value.trim();
+            const index = await getSearchIndex();
+            const matches = query ? index.filter(e => matchesQuery(e, query)) : [];
+            renderSearchResults(results, matches, query);
+        });
+
+        input.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                const first = results.querySelector(".search-result-item");
+                if (first) {
+                    e.preventDefault();
+                    window.location.href = first.getAttribute("href");
+                }
+            } else if (e.key === "Escape") {
+                results.classList.remove("open");
+                input.blur();
+            }
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!box.contains(e.target)) results.classList.remove("open");
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initSiteSearch);
 
 
 /* ---------------------------------------------------------
@@ -216,3 +359,8 @@ document.addEventListener("DOMContentLoaded", initTheme);
 function toggleMenu() {
     document.querySelector(".nav").classList.toggle("open");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    if (menuToggle) menuToggle.addEventListener("click", toggleMenu);
+});

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padya Rachanalu</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">Learn Telugu Online</div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav class="nav">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../alphabet/alphabet.html" class="nav-link">Alphabet</a>
+      <a href="../words/index.html" class="nav-link">Words</a>
+      <a href="../numbers/index.html" class="nav-link">Numbers</a>
+      <a href="../categories/index.html" class="nav-link">Categories</a>
+      <a href="../grammar/overview.html" class="nav-link">Grammar</a>
+      <a href="../sentences/index.html" class="nav-link">Sentences</a>
+      <a href="../stories/index.html" class="nav-link">Stories</a>
+      <a href="../padyalu/index.html" class="nav-link">Shatakalu</a>
+      <a href="../rachanalu/index.html" class="nav-link active">Padya Rachanalu</a>
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search..." autocomplete="off" aria-label="Search">
+        <div class="search-results"></div>
+      </div>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+  </div>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb">
+  <a href="../index.html">Home</a>
+  <span>›</span>
+  <a href="index.html">Padya Rachanalu</a>
+  <span>›</span>
+  <span id="breadcrumbType">Verses</span>
+</nav>
+
+<main class="page-container">
+    <section id="rachanaContent"></section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 LearnTeluguOnline.com — Preserving Telugu Heritage</p>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+
+<script>
+const TYPE_META = {
+    samasya: {
+        title: "సమస్యా పూరణం — Samasya Puranam",
+        subtitle: "A challenging line is given; the poet completes it into a full verse where the line fits meaningfully.",
+        breadcrumb: "Samasya Puranam",
+        challengeLabel: "సమస్య — The Challenge Line",
+        dataFile: "data/samasya.json",
+        challengeField: "samasya"
+    },
+    saametha: {
+        title: "సామెత పద్యాలు — Saametha Padyalu",
+        subtitle: "An English proverb, rendered into a Telugu padyam with proper chandassu.",
+        breadcrumb: "Saametha Padyalu",
+        challengeLabel: "English Proverb",
+        dataFile: "data/saametha.json",
+        challengeField: "proverb"
+    }
+};
+
+async function loadRachana() {
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type");
+    const meta = TYPE_META[type];
+
+    const container = document.getElementById("rachanaContent");
+
+    if (!meta) {
+        container.innerHTML = "<p>Invalid type.</p>";
+        return;
+    }
+
+    document.getElementById("breadcrumbType").textContent = meta.breadcrumb;
+    document.title = meta.title;
+
+    container.innerHTML = `
+        <h1 class="page-title">${meta.title}</h1>
+        <p class="modules-subtitle">${meta.subtitle}</p>
+    `;
+
+    try {
+        const res = await fetch(meta.dataFile);
+        const data = await res.json();
+        const keys = Object.keys(data);
+
+        if (!keys.length) {
+            container.innerHTML += `
+                <div class="rachana-empty">
+                    <p>కొత్త రచనలు త్వరలో వస్తాయి — New verses coming soon. Check back later!</p>
+                </div>
+            `;
+            return;
+        }
+
+        keys.forEach(key => {
+            const item = data[key];
+            const linesHTML = (item.lines || []).map(line => `<div>${line}</div>`).join("");
+
+            const audioHTML = item.audio ? `
+                <div class="audio-player" data-src="audio/${item.audio}">
+                    <button class="play-btn">▶</button>
+                    <div class="progress-container"><div class="progress-bar"></div></div>
+                    <span class="time-label">0:00</span>
+                </div>
+            ` : "";
+
+            container.innerHTML += `
+                <div class="padyam-block fade-slide" id="${key}">
+                    <div class="rachana-challenge">
+                        <span class="challenge-label">${meta.challengeLabel}</span>
+                        ${item[meta.challengeField] || ""}
+                    </div>
+
+                    <div class="padyam-lines">
+                        ${linesHTML}
+                    </div>
+
+                    ${audioHTML}
+
+                    ${item.meaning ? `<p>${item.meaning}</p>` : ""}
+
+                    <div class="rachana-meta">
+                        ${item.chandassu ? `<span class="chandassu-tag">${item.chandassu}</span>` : ""}
+                        ${item.poet ? `<span class="poet-credit">— ${item.poet}</span>` : ""}
+                    </div>
+                </div>
+            `;
+        });
+
+        if (window.initAudioPlayers) window.initAudioPlayers();
+
+    } catch (e) {
+        console.error(e);
+        container.innerHTML += "<p>Unable to load content right now.</p>";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", loadRachana);
+</script>
+
+</body>
+</html>

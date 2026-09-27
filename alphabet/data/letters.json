@@ -60,7 +60,9 @@
     "english": "Ru",
     "type": "vowel",
     "audio": "ru.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఋషి", "meaning": "Sage" }
+    ]
   },
   "e": {
     "telugu": "ఎ",
@@ -168,14 +170,18 @@
     "english": "Gha",
     "type": "consonant",
     "audio": "gha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఘంట", "meaning": "Bell" }
+    ]
   },
   "nga": {
     "telugu": "ఙ",
     "english": "Nga",
     "type": "consonant",
     "audio": "nga.mp3",
-    "examples": []
+    "examples": [
+      { "word": "వాఙ్మయం", "meaning": "Literature" }
+    ]
   },
 
   "cha": {
@@ -192,7 +198,9 @@
     "english": "Chha",
     "type": "consonant",
     "audio": "chha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఛాయ", "meaning": "Shadow" }
+    ]
   },
   "ja": {
     "telugu": "జ",
@@ -208,14 +216,18 @@
     "english": "Jha",
     "type": "consonant",
     "audio": "jha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఝరి", "meaning": "Stream" }
+    ]
   },
   "nya": {
     "telugu": "ఞ",
     "english": "Nya",
     "type": "consonant",
     "audio": "nya.mp3",
-    "examples": []
+    "examples": [
+      { "word": "విజ్ఞానం", "meaning": "Knowledge / Science" }
+    ]
   },
 
   "tta": {
@@ -232,7 +244,9 @@
     "english": "Ṭha",
     "type": "consonant",
     "audio": "ttha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఠాణా", "meaning": "Police station" }
+    ]
   },
   "dda": {
     "telugu": "డ",
@@ -248,14 +262,18 @@
     "english": "Ḍha",
     "type": "consonant",
     "audio": "ddha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఢమరుకం", "meaning": "Small hand drum" }
+    ]
   },
   "nna": {
     "telugu": "ణ",
     "english": "Ṇa",
     "type": "consonant",
     "audio": "nna.mp3",
-    "examples": []
+    "examples": [
+      { "word": "కృష్ణుడు", "meaning": "Krishna" }
+    ]
   },
 
   "ta": {
@@ -272,7 +290,9 @@
     "english": "Tha",
     "type": "consonant",
     "audio": "tha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "రథం", "meaning": "Chariot" }
+    ]
   },
   "da": {
     "telugu": "ద",
@@ -288,7 +308,9 @@
     "english": "Dha",
     "type": "consonant",
     "audio": "dha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ధనం", "meaning": "Wealth" }
+    ]
   },
   "na": {
     "telugu": "న",
@@ -314,7 +336,9 @@
     "english": "Pha",
     "type": "consonant",
     "audio": "pha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "ఫలం", "meaning": "Fruit / Result" }
+    ]
   },
   "ba": {
     "telugu": "బ",
@@ -330,7 +354,9 @@
     "english": "Bha",
     "type": "consonant",
     "audio": "bha.mp3",
-    "examples": []
+    "examples": [
+      { "word": "భయం", "meaning": "Fear" }
+    ]
   },
   "ma": {
     "telugu": "మ",
@@ -421,7 +447,9 @@
     "english": "Ḷa",
     "type": "consonant",
     "audio": "lla.mp3",
-    "examples": []
+    "examples": [
+      { "word": "కళ", "meaning": "Art" }
+    ]
   },
   "ksha": {
     "telugu": "క్ష",
@@ -437,6 +465,8 @@
     "english": "Ṛa",
     "type": "consonant",
     "audio": "rra.mp3",
-    "examples": []
+    "examples": [
+      { "word": "మెఱుపు", "meaning": "Lightning" }
+    ]
   }
 }

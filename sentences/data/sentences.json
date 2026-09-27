@@ -13,6 +13,27 @@
       "audio": "bagunnara.mp3",
       "example": "మీరు బాగున్నారా?",
       "example_english": "Are you doing well?"
+    },
+    "good_morning": {
+      "telugu": "శుభోదయం",
+      "english": "Good morning",
+      "audio": "good_morning.mp3",
+      "example": "అందరికీ శుభోదయం!",
+      "example_english": "Good morning everyone!"
+    },
+    "good_night": {
+      "telugu": "శుభరాత్రి",
+      "english": "Good night",
+      "audio": "good_night.mp3",
+      "example": "ఇక పడుకుందాం, శుభరాత్రి.",
+      "example_english": "Let's sleep now, good night."
+    },
+    "nice_to_meet_you": {
+      "telugu": "మిమ్మల్ని కలవడం సంతోషంగా ఉంది",
+      "english": "Nice to meet you",
+      "audio": "nice_to_meet_you.mp3",
+      "example": "మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది.",
+      "example_english": "It is very nice to meet you."
     }
   },
   "home": {
@@ -22,6 +43,34 @@
       "audio": "tinala.mp3",
       "example": "వెళ్దాం తినాలా?",
       "example_english": "Shall we go eat?"
+    },
+    "lets_go_home": {
+      "telugu": "ఇంటికి వెళదాం",
+      "english": "Let's go home",
+      "audio": "lets_go_home.mp3",
+      "example": "పని అయిపోయింది, ఇంటికి వెళదాం.",
+      "example_english": "The work is done, let's go home."
+    },
+    "clean_the_room": {
+      "telugu": "గదిని శుభ్రం చెయ్యి",
+      "english": "Clean the room",
+      "audio": "clean_the_room.mp3",
+      "example": "ముందు గదిని శుభ్రం చెయ్యి, తర్వాత ఆడుకో.",
+      "example_english": "Clean the room first, then play."
+    },
+    "lock_the_door": {
+      "telugu": "తలుపు వేయి",
+      "english": "Lock the door",
+      "audio": "lock_the_door.mp3",
+      "example": "బయటకు వెళ్తున్నప్పుడు తలుపు వేయి.",
+      "example_english": "Lock the door when you go out."
+    },
+    "switch_off_lights": {
+      "telugu": "లైట్లు ఆపెయ్యి",
+      "english": "Switch off the lights",
+      "audio": "switch_off_lights.mp3",
+      "example": "పడుకునే ముందు లైట్లు ఆపెయ్యి.",
+      "example_english": "Switch off the lights before sleeping."
     }
   },
   "travel": {
@@ -31,6 +80,34 @@
       "audio": "ekkada.mp3",
       "example": "మీరు ఎక్కడికి వెళ్తున్నారు?",
       "example_english": "Where are you going?"
+    },
+    "how_far": {
+      "telugu": "ఇది ఎంత దూరం?",
+      "english": "How far is it?",
+      "audio": "how_far.mp3",
+      "example": "స్టేషన్ ఇక్కడి నుండి ఎంత దూరం?",
+      "example_english": "How far is the station from here?"
+    },
+    "safe_journey": {
+      "telugu": "ప్రయాణం సుఖంగా సాగాలి",
+      "english": "Have a safe journey",
+      "audio": "safe_journey.mp3",
+      "example": "జాగ్రత్తగా వెళ్ళండి, ప్రయాణం సుఖంగా సాగాలి.",
+      "example_english": "Go carefully, have a safe journey."
+    },
+    "i_am_lost": {
+      "telugu": "నేను దారి తప్పాను",
+      "english": "I am lost",
+      "audio": "i_am_lost.mp3",
+      "example": "క్షమించండి, నేను దారి తప్పాను.",
+      "example_english": "Excuse me, I am lost."
+    },
+    "which_way": {
+      "telugu": "ఏ దారిలో వెళ్ళాలి?",
+      "english": "Which way should I go?",
+      "audio": "which_way.mp3",
+      "example": "బస్ స్టాండ్‌కు ఏ దారిలో వెళ్ళాలి?",
+      "example_english": "Which way should I go to the bus stand?"
     }
   },
   "daily": {
@@ -98,6 +175,13 @@
       "audio": "tasty.mp3",
       "example": "ఈ కూర చాలా రుచిగా ఉంది",
       "example_english": "This curry is very tasty"
+    },
+    "more_please": {
+      "telugu": "కొంచెం ఎక్కువ పెట్టండి",
+      "english": "Please give a little more",
+      "audio": "more_please.mp3",
+      "example": "అన్నం కొంచెం ఎక్కువ పెట్టండి.",
+      "example_english": "Please give a little more rice."
     }
   },
   "work": {
@@ -128,6 +212,13 @@
       "audio": "busy_now.mp3",
       "example": "ఒక్కసారి ఆగండి, ఇప్పుడు బిజీగా ఉన్నాను",
       "example_english": "Wait a moment, I am busy right now"
+    },
+    "lets_start": {
+      "telugu": "పని మొదలుపెడదాం",
+      "english": "Let's start the work",
+      "audio": "lets_start.mp3",
+      "example": "అందరూ వచ్చారు, పని మొదలుపెడదాం.",
+      "example_english": "Everyone has arrived, let's start the work."
     }
   },
   "shopping": {
@@ -151,6 +242,20 @@
       "audio": "give_discount.mp3",
       "example": "ఇది బాగుంది, కొంచెం తగ్గించండి",
       "example_english": "This is good, please reduce the price"
+    },
+    "do_you_have": {
+      "telugu": "ఇది మీ దగ్గర ఉందా?",
+      "english": "Do you have this?",
+      "audio": "do_you_have.mp3",
+      "example": "ఈ సైజు మీ దగ్గర ఉందా?",
+      "example_english": "Do you have this size?"
+    },
+    "i_will_take_this": {
+      "telugu": "నేను దీన్ని తీసుకుంటాను",
+      "english": "I will take this",
+      "audio": "i_will_take_this.mp3",
+      "example": "బాగుంది, నేను దీన్ని తీసుకుంటాను.",
+      "example_english": "It's good, I will take this."
     }
   },
   "health": {
@@ -174,6 +279,20 @@
       "audio": "take_medicine.mp3",
       "example": "జ్వరం ఉంది, మందు తీసుకో",
       "example_english": "You have fever, take medicine"
+    },
+    "call_doctor": {
+      "telugu": "డాక్టర్‌ను పిలవండి",
+      "english": "Call the doctor",
+      "audio": "call_doctor.mp3",
+      "example": "అతనికి బాగా లేదు, డాక్టర్‌ను పిలవండి.",
+      "example_english": "He is not well, call the doctor."
+    },
+    "feeling_better": {
+      "telugu": "ఇప్పుడు బాగుంది",
+      "english": "Feeling better now",
+      "audio": "feeling_better.mp3",
+      "example": "మందు తీసుకున్నాక ఇప్పుడు బాగుంది.",
+      "example_english": "After taking medicine, I am feeling better now."
     }
   },
   "school": {
@@ -190,6 +309,27 @@
       "audio": "read_loudly.mp3",
       "example": "ఈ పాఠం జోరుగా చదువు",
       "example_english": "Read this lesson loudly"
+    },
+    "what_is_your_name": {
+      "telugu": "నీ పేరు ఏమిటి?",
+      "english": "What is your name?",
+      "audio": "what_is_your_name.mp3",
+      "example": "కొత్త విద్యార్థి పేరు ఏమిటి?",
+      "example_english": "What is the new student's name?"
+    },
+    "sit_down": {
+      "telugu": "కూర్చోండి",
+      "english": "Sit down",
+      "audio": "sit_down.mp3",
+      "example": "అందరూ కూర్చోండి, తరగతి మొదలవుతుంది.",
+      "example_english": "Everyone sit down, the class is starting."
+    },
+    "good_marks": {
+      "telugu": "మంచి మార్కులు వచ్చాయి",
+      "english": "Got good marks",
+      "audio": "good_marks.mp3",
+      "example": "పరీక్షలో మంచి మార్కులు వచ్చాయి.",
+      "example_english": "I got good marks in the exam."
     }
   },
   "family": {
@@ -206,6 +346,27 @@
       "audio": "call_me.mp3",
       "example": "చేరిన తర్వాత నన్ను కాల్ చేయి",
       "example_english": "Call me after you reach"
+    },
+    "how_is_everyone": {
+      "telugu": "అందరూ ఎలా ఉన్నారు?",
+      "english": "How is everyone?",
+      "audio": "how_is_everyone.mp3",
+      "example": "ఇంట్లో అందరూ ఎలా ఉన్నారు?",
+      "example_english": "How is everyone at home?"
+    },
+    "miss_you": {
+      "telugu": "నీవు గుర్తొస్తున్నావు",
+      "english": "I miss you",
+      "audio": "miss_you.mp3",
+      "example": "నాన్నా, నీవు చాలా గుర్తొస్తున్నావు.",
+      "example_english": "Dad, I miss you a lot."
+    },
+    "take_care": {
+      "telugu": "జాగ్రత్తగా ఉండు",
+      "english": "Take care",
+      "audio": "take_care.mp3",
+      "example": "ప్రయాణంలో జాగ్రత్తగా ఉండు.",
+      "example_english": "Take care during the journey."
     }
   },
   "nature": {
@@ -222,6 +383,27 @@
       "audio": "its_cold.mp3",
       "example": "ఈరోజు చాలా చలిగా ఉంది",
       "example_english": "It is very cold today"
+    },
+    "beautiful_sunset": {
+      "telugu": "సూర్యాస్తమయం అందంగా ఉంది",
+      "english": "The sunset is beautiful",
+      "audio": "beautiful_sunset.mp3",
+      "example": "ఈరోజు సూర్యాస్తమయం చాలా అందంగా ఉంది.",
+      "example_english": "Today's sunset is very beautiful."
+    },
+    "wind_is_blowing": {
+      "telugu": "గాలి వీస్తోంది",
+      "english": "The wind is blowing",
+      "audio": "wind_is_blowing.mp3",
+      "example": "బయట చల్లని గాలి వీస్తోంది.",
+      "example_english": "A cool wind is blowing outside."
+    },
+    "lets_go_to_park": {
+      "telugu": "పార్కుకు వెళదాం",
+      "english": "Let's go to the park",
+      "audio": "lets_go_to_park.mp3",
+      "example": "సాయంత్రం పార్కుకు వెళదాం.",
+      "example_english": "Let's go to the park in the evening."
     }
   },
   "emergency": {
@@ -238,6 +420,27 @@
       "audio": "call_ambulance.mp3",
       "example": "అతనికి గాయం అయింది, అంబులెన్స్‌కు కాల్ చేయండి",
       "example_english": "He is injured, call an ambulance"
+    },
+    "call_police": {
+      "telugu": "పోలీసులకు కాల్ చేయండి",
+      "english": "Call the police",
+      "audio": "call_police.mp3",
+      "example": "వెంటనే పోలీసులకు కాల్ చేయండి.",
+      "example_english": "Call the police immediately."
+    },
+    "fire": {
+      "telugu": "మంటలు వచ్చాయి",
+      "english": "There is a fire",
+      "audio": "fire.mp3",
+      "example": "వంటగదిలో మంటలు వచ్చాయి, జాగ్రత్త!",
+      "example_english": "There is a fire in the kitchen, be careful!"
+    },
+    "are_you_hurt": {
+      "telugu": "నీకు గాయమైందా?",
+      "english": "Are you hurt?",
+      "audio": "are_you_hurt.mp3",
+      "example": "పడిపోయావు, నీకు గాయమైందా?",
+      "example_english": "You fell down, are you hurt?"
     }
   },
   "temple": {
@@ -254,6 +457,27 @@
       "audio": "pray_well.mp3",
       "example": "దేవుడిని బాగా ప్రార్థించండి",
       "example_english": "Pray to God sincerely"
+    },
+    "take_off_shoes": {
+      "telugu": "చెప్పులు బయట పెట్టండి",
+      "english": "Take off your shoes outside",
+      "audio": "take_off_shoes.mp3",
+      "example": "గుడిలోకి వెళ్ళే ముందు చెప్పులు బయట పెట్టండి.",
+      "example_english": "Take off your shoes outside before entering the temple."
+    },
+    "offer_flowers": {
+      "telugu": "పువ్వులు సమర్పించండి",
+      "english": "Offer flowers",
+      "audio": "offer_flowers.mp3",
+      "example": "దేవుడికి పువ్వులు సమర్పించండి.",
+      "example_english": "Offer flowers to God."
+    },
+    "ring_the_bell": {
+      "telugu": "గంట మోగించండి",
+      "english": "Ring the bell",
+      "audio": "ring_the_bell.mp3",
+      "example": "గుడిలోకి వెళ్ళేటప్పుడు గంట మోగించండి.",
+      "example_english": "Ring the bell when entering the temple."
     }
   },
   "feelings": {
@@ -277,6 +501,20 @@
       "audio": "i_am_angry.mp3",
       "example": "అలా మాట్లాడితే నాకు కోపం వస్తుంది",
       "example_english": "If you talk like that, I get angry"
+    },
+    "i_am_tired": {
+      "telugu": "నాకు అలసటగా ఉంది",
+      "english": "I am tired",
+      "audio": "i_am_tired.mp3",
+      "example": "ఈరోజు పని ఎక్కువైంది, నాకు అలసటగా ఉంది.",
+      "example_english": "There was a lot of work today, I am tired."
+    },
+    "i_am_excited": {
+      "telugu": "నాకు చాలా ఉత్సాహంగా ఉంది",
+      "english": "I am very excited",
+      "audio": "i_am_excited.mp3",
+      "example": "ప్రయాణం గురించి నాకు చాలా ఉత్సాహంగా ఉంది.",
+      "example_english": "I am very excited about the trip."
     }
   },
   "directions": {
@@ -300,6 +538,20 @@
       "audio": "turn_right.mp3",
       "example": "దుకాణం తర్వాత కుడి వైపు తిరగండి",
       "example_english": "Turn right after the shop"
+    },
+    "turn_around": {
+      "telugu": "వెనక్కి తిరగండి",
+      "english": "Turn around",
+      "audio": "turn_around.mp3",
+      "example": "మీరు తప్పు దారిలో వెళ్తున్నారు, వెనక్కి తిరగండి.",
+      "example_english": "You are going the wrong way, turn around."
+    },
+    "its_near_here": {
+      "telugu": "ఇది దగ్గర్లోనే ఉంది",
+      "english": "It is near here",
+      "audio": "its_near_here.mp3",
+      "example": "బ్యాంకు ఇది దగ్గర్లోనే ఉంది.",
+      "example_english": "The bank is near here."
     }
   },
   "technology": {
@@ -323,6 +575,20 @@
       "audio": "phone_charge.mp3",
       "example": "ఫోన్ ఆఫ్ అవుతోంది, ఛార్జ్ పెట్టు",
       "example_english": "The phone is turning off, put it on charge"
+    },
+    "battery_low": {
+      "telugu": "బ్యాటరీ తక్కువగా ఉంది",
+      "english": "The battery is low",
+      "audio": "battery_low.mp3",
+      "example": "నా ఫోన్ బ్యాటరీ తక్కువగా ఉంది.",
+      "example_english": "My phone's battery is low."
+    },
+    "take_a_photo": {
+      "telugu": "ఫోటో తీయండి",
+      "english": "Take a photo",
+      "audio": "take_a_photo.mp3",
+      "example": "దయచేసి మా ఫోటో తీయండి.",
+      "example_english": "Please take our photo."
     }
   },
   "weather": {
@@ -339,6 +605,27 @@
       "audio": "windy.mp3",
       "example": "సాయంత్రం గాలి బలంగా వీస్తోంది",
       "example_english": "The wind is strong in the evening"
+    },
+    "its_sunny": {
+      "telugu": "ఎండగా ఉంది",
+      "english": "It is sunny",
+      "audio": "its_sunny.mp3",
+      "example": "ఈరోజు చాలా ఎండగా ఉంది.",
+      "example_english": "It is very sunny today."
+    },
+    "its_pleasant": {
+      "telugu": "వాతావరణం ఆహ్లాదకరంగా ఉంది",
+      "english": "The weather is pleasant",
+      "audio": "its_pleasant.mp3",
+      "example": "ఈరోజు వాతావరణం చాలా ఆహ్లాదకరంగా ఉంది.",
+      "example_english": "Today the weather is very pleasant."
+    },
+    "take_umbrella": {
+      "telugu": "గొడుగు తీసుకువెళ్ళు",
+      "english": "Take an umbrella",
+      "audio": "take_umbrella.mp3",
+      "example": "వర్షం పడొచ్చు, గొడుగు తీసుకువెళ్ళు.",
+      "example_english": "It might rain, take an umbrella."
     }
   },
   "transport": {
@@ -355,6 +642,27 @@
       "audio": "auto_available.mp3",
       "example": "ఇక్కడ ఆటో దొరుకుతుందా?",
       "example_english": "Can we get an auto here?"
+    },
+    "i_will_walk": {
+      "telugu": "నేను నడుచుకుంటూ వెళతాను",
+      "english": "I will walk",
+      "audio": "i_will_walk.mp3",
+      "example": "దగ్గరే ఉంది, నేను నడుచుకుంటూ వెళతాను.",
+      "example_english": "It's nearby, I will walk."
+    },
+    "train_is_late": {
+      "telugu": "రైలు ఆలస్యంగా వస్తోంది",
+      "english": "The train is coming late",
+      "audio": "train_is_late.mp3",
+      "example": "ఈరోజు రైలు ఆలస్యంగా వస్తోంది.",
+      "example_english": "Today the train is coming late."
+    },
+    "stop_here": {
+      "telugu": "ఇక్కడ ఆపండి",
+      "english": "Stop here",
+      "audio": "stop_here.mp3",
+      "example": "డ్రైవర్ గారు, ఇక్కడ ఆపండి.",
+      "example_english": "Driver, please stop here."
     }
   },
   "restaurant": {
@@ -371,6 +679,27 @@
       "audio": "bill_please.mp3",
       "example": "మేము పూర్తిచేశాం, బిల్ ఇవ్వండి",
       "example_english": "We are done, please give the bill"
+    },
+    "menu_please": {
+      "telugu": "మెనూ ఇవ్వండి",
+      "english": "Please give the menu",
+      "audio": "menu_please.mp3",
+      "example": "దయచేసి మెనూ ఇవ్వండి.",
+      "example_english": "Please give the menu."
+    },
+    "this_is_spicy": {
+      "telugu": "ఇది కారంగా ఉంది",
+      "english": "This is spicy",
+      "audio": "this_is_spicy.mp3",
+      "example": "ఈ కూర చాలా కారంగా ఉంది.",
+      "example_english": "This curry is very spicy."
+    },
+    "need_parcel": {
+      "telugu": "పార్సెల్ కావాలి",
+      "english": "I need a parcel (takeaway)",
+      "audio": "need_parcel.mp3",
+      "example": "ఇది పార్సెల్ కావాలి.",
+      "example_english": "I need this as a takeaway."
     }
   },
   "phone_calls": {
@@ -387,6 +716,27 @@
       "audio": "cant_hear.mp3",
       "example": "నెట్ స్లోగా ఉంది, నీ వాయిస్ వినిపించడం లేదు",
       "example_english": "The network is slow, I can’t hear your voice"
+    },
+    "who_is_this": {
+      "telugu": "ఇది ఎవరు?",
+      "english": "Who is this?",
+      "audio": "who_is_this.mp3",
+      "example": "క్షమించండి, ఇది ఎవరు మాట్లాడుతున్నారు?",
+      "example_english": "Excuse me, who is speaking?"
+    },
+    "hold_on": {
+      "telugu": "కొంచెం ఆగండి",
+      "english": "Please hold on",
+      "audio": "hold_on.mp3",
+      "example": "కొంచెం ఆగండి, నేను చూస్తాను.",
+      "example_english": "Please hold on, I will check."
+    },
+    "network_issue": {
+      "telugu": "నెట్‌వర్క్ సమస్య ఉంది",
+      "english": "There is a network issue",
+      "audio": "network_issue.mp3",
+      "example": "ఇక్కడ నెట్‌వర్క్ సమస్య ఉంది.",
+      "example_english": "There is a network issue here."
     }
   },
   "kids": {
@@ -403,6 +753,27 @@
       "audio": "do_homework.mp3",
       "example": "సాయంత్రం హోంవర్క్ చేయి",
       "example_english": "Do your homework in the evening"
+    },
+    "brush_your_teeth": {
+      "telugu": "పళ్ళు తోముకో",
+      "english": "Brush your teeth",
+      "audio": "brush_your_teeth.mp3",
+      "example": "పడుకునే ముందు పళ్ళు తోముకో.",
+      "example_english": "Brush your teeth before sleeping."
+    },
+    "wash_your_hands": {
+      "telugu": "చేతులు కడుక్కో",
+      "english": "Wash your hands",
+      "audio": "wash_your_hands.mp3",
+      "example": "తినే ముందు చేతులు కడుక్కో.",
+      "example_english": "Wash your hands before eating."
+    },
+    "go_to_sleep": {
+      "telugu": "నిద్రపో",
+      "english": "Go to sleep",
+      "audio": "go_to_sleep.mp3",
+      "example": "ఆలస్యమైంది, నిద్రపో.",
+      "example_english": "It's late, go to sleep."
     }
   },
   "neighbors": {
@@ -419,6 +790,27 @@
       "audio": "need_help.mp3",
       "example": "బరువు ఎక్కువగా ఉంది, సహాయం కావాలా?",
       "example_english": "It looks heavy, do you need help?"
+    },
+    "borrow_something": {
+      "telugu": "కొంచెం సామాను అరువు ఇస్తారా?",
+      "english": "Could you lend me something?",
+      "audio": "borrow_something.mp3",
+      "example": "కొంచెం ఉప్పు అరువు ఇస్తారా?",
+      "example_english": "Could you lend me some salt?"
+    },
+    "loud_noise": {
+      "telugu": "శబ్దం ఎక్కువగా ఉంది",
+      "english": "The noise is too loud",
+      "audio": "loud_noise.mp3",
+      "example": "రాత్రి శబ్దం ఎక్కువగా ఉంది.",
+      "example_english": "The noise was too loud at night."
+    },
+    "nice_garden": {
+      "telugu": "మీ తోట చాలా బాగుంది",
+      "english": "Your garden is very nice",
+      "audio": "nice_garden.mp3",
+      "example": "మీ తోటలో పూలు చాలా బాగున్నాయి.",
+      "example_english": "The flowers in your garden are very nice."
     }
   },
   "sports": {
@@ -435,6 +827,27 @@
       "audio": "good_shot.mp3",
       "example": "అది చాలా మంచి షాట్",
       "example_english": "That was a very good shot"
+    },
+    "who_won": {
+      "telugu": "ఎవరు గెలిచారు?",
+      "english": "Who won?",
+      "audio": "who_won.mp3",
+      "example": "నిన్నటి మ్యాచ్‌లో ఎవరు గెలిచారు?",
+      "example_english": "Who won yesterday's match?"
+    },
+    "lets_practice": {
+      "telugu": "సాధన చేద్దాం",
+      "english": "Let's practice",
+      "audio": "lets_practice.mp3",
+      "example": "రేపు ఉదయం సాధన చేద్దాం.",
+      "example_english": "Let's practice tomorrow morning."
+    },
+    "good_game": {
+      "telugu": "బాగా ఆడారు",
+      "english": "You played well",
+      "audio": "good_game.mp3",
+      "example": "మీరు అందరూ చాలా బాగా ఆడారు.",
+      "example_english": "All of you played very well."
     }
   }
 }

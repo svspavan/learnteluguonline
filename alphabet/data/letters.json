@@ -64,6 +64,13 @@
       { "word": "ఋషి", "meaning": "Sage" }
     ]
   },
+  "ruu": {
+    "telugu": "ౠ",
+    "english": "Ruu",
+    "type": "vowel",
+    "audio": "ruu.mp3",
+    "examples": []
+  },
   "e": {
     "telugu": "ఎ",
     "english": "E",

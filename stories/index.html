@@ -50,7 +50,13 @@
 <main class="page-container">
     <section class="modules">
         <h1 class="page-title">Telugu Stories</h1>
-        <p class="modules-subtitle">Simple stories with morals, audio, and meaning.</p>
+        <p class="modules-subtitle" id="storiesSubtitle">Simple stories with morals, audio, and meaning.</p>
+
+        <div class="story-tabs" id="storyTabs">
+            <button class="story-tab active" data-type="stories">నీతి కథలు — Moral Stories</button>
+            <button class="story-tab" data-type="tenali_rama">తెనాలి రామ కథలు — Tenali Rama</button>
+            <button class="story-tab" data-type="rhymes">జానపద గేయాలు — Rhymes</button>
+        </div>
 
         <div id="storiesGrid" class="module-grid"></div>
     </section>
@@ -64,17 +70,27 @@
 <script src="../assets/js/script.js"></script>
 
 <script>
-async function loadStories() {
-    const res = await fetch("data/stories.json");
+const STORY_TYPE_META = {
+    stories: { file: "data/stories.json", subtitle: "Simple stories with morals, audio, and meaning." },
+    tenali_rama: { file: "data/tenali_rama.json", subtitle: "Classic tales of the witty court poet Tenali Rama." },
+    rhymes: { file: "data/rhymes.json", subtitle: "Traditional Telugu rhymes and lullabies for little ones." }
+};
+
+async function loadStories(type) {
+    const meta = STORY_TYPE_META[type];
+    document.getElementById("storiesSubtitle").textContent = meta.subtitle;
+
+    const res = await fetch(meta.file);
     const stories = await res.json();
 
     const grid = document.getElementById("storiesGrid");
+    grid.innerHTML = "";
 
     Object.keys(stories).forEach(key => {
         const s = stories[key];
 
         const card = document.createElement("a");
-        card.href = `story.html?name=${key}`;
+        card.href = `story.html?type=${type}&name=${key}`;
         card.className = "module-card";
 
         card.innerHTML = `
@@ -86,7 +102,17 @@ async function loadStories() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", loadStories);
+document.addEventListener("DOMContentLoaded", () => {
+    loadStories("stories");
+
+    document.querySelectorAll(".story-tab").forEach(tab => {
+        tab.addEventListener("click", () => {
+            document.querySelectorAll(".story-tab").forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+            loadStories(tab.dataset.type);
+        });
+    });
+});
 </script>
 
 </body>

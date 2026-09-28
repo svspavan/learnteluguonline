@@ -44,7 +44,7 @@
 <nav class="breadcrumb">
   <a href="../index.html">Home</a>
   <span>›</span>
-  <a href="index.html">Stories</a>
+  <a href="index.html" id="breadcrumbSection">Stories</a>
   <span>›</span>
   <span id="breadcrumbTitle">Story</span>
 </nav>
@@ -61,11 +61,19 @@
 <script src="../assets/js/script.js"></script>
 
 <script>
+const STORY_TYPE_META = {
+    stories: { file: "data/stories.json", breadcrumb: "Stories", audioDir: "../assets/audio" },
+    tenali_rama: { file: "data/tenali_rama.json", breadcrumb: "Tenali Rama", audioDir: "audio/tenali_rama" },
+    rhymes: { file: "data/rhymes.json", breadcrumb: "Rhymes", audioDir: "audio/rhymes" }
+};
+
 async function loadStory() {
     const params = new URLSearchParams(window.location.search);
+    const type = params.get("type") || "stories";
     const name = params.get("name");
+    const meta = STORY_TYPE_META[type] || STORY_TYPE_META.stories;
 
-    const res = await fetch("data/stories.json");
+    const res = await fetch(meta.file);
     const data = await res.json();
     const story = data[name];
 
@@ -77,14 +85,15 @@ async function loadStory() {
     }
 
     document.getElementById("breadcrumbTitle").textContent = story.title;
+    document.getElementById("breadcrumbSection").textContent = meta.breadcrumb;
 
     container.innerHTML = `
         <h1 class="page-title">${story.title}</h1>
         <h3>${story.english_title}</h3>
 
         ${story.image ? `<img src="../assets/images/${story.image}" class="story-image">` : ""}
-        
-        <div class="audio-player" data-src="../assets/audio/${story.audio}">
+
+        <div class="audio-player" data-src="${meta.audioDir}/${story.audio}">
             <button class="play-btn">▶</button>
             <div class="progress-container">
                 <div class="progress-bar"></div>
@@ -93,14 +102,27 @@ async function loadStory() {
         </div>
     `;
 
-    story.paragraphs.forEach(p => {
-        container.innerHTML += `<p class="story-paragraph">${p}</p>`;
-    });
+    if (story.lines) {
+        container.innerHTML += `
+            <div class="rhyme-lines">
+                ${story.lines.map(l => `<div>${l}</div>`).join("")}
+            </div>
+        `;
+        if (story.meaning) {
+            container.innerHTML += `<p class="story-paragraph">${story.meaning}</p>`;
+        }
+    } else {
+        (story.paragraphs || []).forEach(p => {
+            container.innerHTML += `<p class="story-paragraph">${p}</p>`;
+        });
+    }
 
-    container.innerHTML += `
-        <h3>మూల్యం (Moral)</h3>
-        <p class="story-moral">${story.moral}</p>
-    `;
+    if (story.moral) {
+        container.innerHTML += `
+            <h3>మూల్యం (Moral)</h3>
+            <p class="story-moral">${story.moral}</p>
+        `;
+    }
 
     if (window.initAudioPlayers) window.initAudioPlayers();
 }

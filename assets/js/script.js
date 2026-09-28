@@ -78,7 +78,8 @@ const CATEGORY_META = {
     bodyparts: { telugu: "శరీర భాగాలు", english: "Body Parts" },
     vehicles: { telugu: "వాహనాలు", english: "Vehicles" },
     nature: { telugu: "ప్రకృతి", english: "Nature" },
-    school: { telugu: "పాఠశాల వస్తువులు", english: "School Items" }
+    school: { telugu: "పాఠశాల వస్తువులు", english: "School Items" },
+    festivals: { telugu: "పండుగలు", english: "Festivals" }
 };
 
 const GRAMMAR_TOPICS = [
@@ -128,11 +129,13 @@ async function fetchJSON(url) {
 }
 
 async function buildSearchIndex() {
-    const [letters, words, numbers, stories] = await Promise.all([
+    const [letters, words, numbers, stories, tenaliRama, rhymes] = await Promise.all([
         fetchJSON("/alphabet/data/letters.json"),
         fetchJSON("/words/data/words.json"),
         fetchJSON("/numbers/data/numbers.json"),
-        fetchJSON("/stories/data/stories.json")
+        fetchJSON("/stories/data/stories.json"),
+        fetchJSON("/stories/data/tenali_rama.json"),
+        fetchJSON("/stories/data/rhymes.json")
     ]);
 
     const index = [];
@@ -173,7 +176,27 @@ async function buildSearchIndex() {
             telugu: item.title,
             english: item.english_title,
             keys: [key],
-            url: `/stories/story.html?name=${key}`
+            url: `/stories/story.html?type=stories&name=${key}`
+        });
+    }
+
+    for (const [key, item] of Object.entries(tenaliRama || {})) {
+        index.push({
+            type: "Tenali Rama",
+            telugu: item.title,
+            english: item.english_title,
+            keys: [key],
+            url: `/stories/story.html?type=tenali_rama&name=${key}`
+        });
+    }
+
+    for (const [key, item] of Object.entries(rhymes || {})) {
+        index.push({
+            type: "Rhyme",
+            telugu: item.title,
+            english: item.english_title,
+            keys: [key],
+            url: `/stories/story.html?type=rhymes&name=${key}`
         });
     }
 

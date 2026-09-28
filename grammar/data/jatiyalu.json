@@ -1,9 +1,9 @@
 {
-  "title": "జాతీయాలు, సామెతలు — Idioms & Proverbs",
-  "description": "జాతీయాలు అంటే స్థిరపడిన భావయుక్తమైన పలుకుబళ్ళు; సామెతలు అంటే జీవిత అనుభవాన్ని తెలియజేసే సూక్తులు. రెండూ నిత్య వ్యవహారంలో మాటకు బలం, రుచి తెస్తాయి.",
+  "title": "జాతీయాలు — Jatiyalu (Idioms)",
+  "description": "జాతీయాలు అంటే స్థిరపడిన భావయుక్తమైన పలుకుబళ్ళు — నిత్య వ్యవహారంలో మాటకు బలం, రుచి తెచ్చే పద ప్రయోగాలు.",
   "items": [
     {
-      "heading": "1. గోరుచుట్టు మీద రోకటిపోటు (జాతీయం)",
+      "heading": "1. గోరుచుట్టు మీద రోకటిపోటు",
       "explanation": "ఇప్పటికే ఉన్న చిన్న బాధ మీద మరో పెద్ద బాధ రావడం — 'Adding insult to injury' అనే భావం.",
       "examples": [
         {
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "heading": "2. అరటిపండు ఒలిచి చేతిలో పెట్టినట్లు (జాతీయం)",
+      "heading": "2. అరటిపండు ఒలిచి చేతిలో పెట్టినట్లు",
       "explanation": "ఒక పనిని లేదా విషయాన్ని అతి సులభంగా, అందుబాటులో అందించడం.",
       "examples": [
         {
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "heading": "3. కోతి కొమ్మచ్చి ఆడటం (జాతీయం)",
+      "heading": "3. కోతి కొమ్మచ్చి ఆడటం",
       "explanation": "ఒక పని పూర్తి చేయకుండా ఒకదాని నుండి మరొకదానికి మారుతూ ఉండటం — నిలకడ లేకపోవడం.",
       "examples": [
         {
@@ -36,35 +36,46 @@
       ]
     },
     {
-      "heading": "4. చేతులు కాలాక ఆకులు పట్టుకున్నట్లు (సామెత)",
-      "explanation": "నష్టం జరిగిన తర్వాత జాగ్రత్త తీసుకోవడం — మరీ ఆలస్యంగా స్పందించడం.",
+      "heading": "4. చెవిలో పువ్వు పెట్టినట్లు",
+      "explanation": "ఎవరినైనా తియ్యటి మాటలతో మోసం చేయడం, తెలివిగా వంచించడం.",
       "examples": [
         {
-          "telugu": "పరీక్ష ముందు రోజు చదవడం చేతులు కాలాక ఆకులు పట్టుకున్నట్లు ఉంటుంది.",
-          "english": "Studying the day before the exam is like grabbing leaves after your hands have already burned.",
-          "audio": "chetulu_kalaka_1.mp3"
+          "telugu": "వ్యాపారి కస్టమర్ చెవిలో పువ్వు పెట్టి ఖరీదైన వస్తువు అమ్మాడు.",
+          "english": "The shopkeeper sweet-talked the customer into buying the expensive item.",
+          "audio": "chevilo_puvvu_1.mp3"
         }
       ]
     },
     {
-      "heading": "5. కొండను తవ్వి ఎలుకను పట్టినట్లు (సామెత)",
-      "explanation": "చాలా శ్రమ పడి, పెద్ద ప్రయత్నం చేసి కూడా చాలా చిన్న ఫలితం రావడం.",
+      "heading": "5. మొసలి కన్నీరు కార్చడం",
+      "explanation": "నిజమైన బాధ లేకుండా, పైకి మాత్రమే సానుభూతి నటించడం.",
       "examples": [
         {
-          "telugu": "అంత శ్రమ పడి చిన్న పొరపాటు పట్టుకోవడం కొండను తవ్వి ఎలుకను పట్టినట్లు అయింది.",
-          "english": "Putting in so much effort to catch a small mistake was like digging a mountain to catch a mouse.",
-          "audio": "kondanu_tavvi_1.mp3"
+          "telugu": "డబ్బు కోసమే వచ్చి, ఇప్పుడు మొసలి కన్నీరు కారుస్తున్నాడు.",
+          "english": "He came only for the money, and now he's shedding crocodile tears.",
+          "audio": "mosali_kanneeru_1.mp3"
         }
       ]
     },
     {
-      "heading": "6. కప్పకు ఈత నేర్పినట్లు (సామెత)",
-      "explanation": "ఇప్పటికే బాగా తెలిసిన వ్యక్తికి అదే విషయాన్ని నేర్పడానికి ప్రయత్నించడం — అనవసరమైన శ్రమ.",
+      "heading": "6. పాము చావకుండా కర్ర విరక్కుండా చూసుకోవడం",
+      "explanation": "రెండు వైపులా నష్టం జరగకుండా, జాగ్రత్తగా ఒక సమస్యను పరిష్కరించడం.",
       "examples": [
         {
-          "telugu": "అనుభవజ్ఞుడికి ఆ సంగతి చెప్పడం కప్పకు ఈత నేర్పినట్లు ఉంటుంది.",
-          "english": "Explaining that to an expert is like teaching a frog to swim.",
-          "audio": "kappaku_eta_1.mp3"
+          "telugu": "ఇద్దరు స్నేహితుల మధ్య పాము చావకుండా కర్ర విరక్కుండా సర్దుబాటు చేశాడు.",
+          "english": "He settled it between the two friends without hurting either side.",
+          "audio": "pamu_karra_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "7. కోతి చేతి కొబ్బరికాయ",
+      "explanation": "విలువైనది ఎవరికి తగినది కాదో వారికి దక్కడం, సద్వినియోగం కాకపోవడం.",
+      "examples": [
+        {
+          "telugu": "అతనికి ఆ పుస్తకం ఇవ్వడం కోతి చేతి కొబ్బరికాయ లాంటిది.",
+          "english": "Giving him that book is like giving a coconut to a monkey — wasted on him.",
+          "audio": "kothi_kobbarikaya_1.mp3"
         }
       ]
     }

@@ -99,7 +99,8 @@ const GRAMMAR_TOPICS = [
     { key: "saamethalu", label: "Proverbs (Saamethalu)", telugu: "సామెతలు" },
     { key: "gauravavachakalu", label: "Honorifics", telugu: "గౌరవ వాచకాలు" },
     { key: "dviruktalu", label: "Reduplication & Paired Words", telugu: "ద్విరుక్తాలు" },
-    { key: "vaakya_kathanam", label: "Reported Speech & Verb Forms", telugu: "కథనం, నిషేధం & షరతు" }
+    { key: "vaakya_kathanam", label: "Reported Speech & Verb Forms", telugu: "కథనం, నిషేధం & షరతు" },
+    { key: "punctuation", label: "Punctuation", telugu: "విరామ చిహ్నాలు" }
 ];
 
 const SENTENCE_CATEGORIES = [

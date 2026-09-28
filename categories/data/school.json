@@ -3,7 +3,7 @@
     "telugu": "పెన్సిల్",
     "english": "Pencil",
     "audio": "pencil.mp3",
-    "image": "pencil.png",
+    "image": "pencil.jpg",
     "example": "పెన్సిల్‌తో రాస్తాను.",
     "example_english": "I write with the pencil."
   },
@@ -11,7 +11,7 @@
     "telugu": "పుస్తకం",
     "english": "Book",
     "audio": "book.mp3",
-    "image": "book.png",
+    "image": "book.jpg",
     "example": "పుస్తకం చదువుతాను.",
     "example_english": "I read the book."
   },
@@ -19,7 +19,7 @@
     "telugu": "బ్యాగ్",
     "english": "Bag",
     "audio": "bag.mp3",
-    "image": "bag.png",
+    "image": "bag.jpg",
     "example": "బ్యాగ్‌లో పుస్తకాలు ఉంటాయి.",
     "example_english": "There are books in the bag."
   },
@@ -27,7 +27,7 @@
     "telugu": "రబ్బరు",
     "english": "Eraser",
     "audio": "eraser.mp3",
-    "image": "eraser.png",
+    "image": "eraser.jpg",
     "example": "రబ్బరుతో తుడుస్తాను.",
     "example_english": "I erase with the eraser."
   },
@@ -35,7 +35,7 @@
     "telugu": "స్కేలు",
     "english": "Ruler",
     "audio": "ruler.mp3",
-    "image": "ruler.png",
+    "image": "ruler.jpg",
     "example": "స్కేలుతో గీత గీస్తాను.",
     "example_english": "I draw a line with the ruler."
   },
@@ -43,7 +43,7 @@
     "telugu": "బ్లాక్‌బోర్డు",
     "english": "Blackboard",
     "audio": "blackboard.mp3",
-    "image": "blackboard.png",
+    "image": "blackboard.jpg",
     "example": "బ్లాక్‌బోర్డు మీద రాస్తారు.",
     "example_english": "They write on the blackboard."
   },
@@ -51,7 +51,7 @@
     "telugu": "నోట్‌బుక్",
     "english": "Notebook",
     "audio": "notebook.mp3",
-    "image": "notebook.png",
+    "image": "notebook.jpg",
     "example": "నోట్‌బుక్‌లో రాస్తాను.",
     "example_english": "I write in the notebook."
   },
@@ -59,7 +59,7 @@
     "telugu": "యూనిఫాం",
     "english": "School Uniform",
     "audio": "uniform.mp3",
-    "image": "uniform.png",
+    "image": "uniform.jpg",
     "example": "యూనిఫాం వేసుకుంటాను.",
     "example_english": "I wear the school uniform."
   },
@@ -67,7 +67,7 @@
     "telugu": "సుద్ద",
     "english": "Chalk",
     "audio": "chalk.mp3",
-    "image": "chalk.png",
+    "image": "chalk.jpg",
     "example": "సుద్దతో బ్లాక్‌బోర్డు మీద రాస్తారు.",
     "example_english": "They write on the blackboard with chalk."
   },
@@ -75,7 +75,7 @@
     "telugu": "గంట",
     "english": "School Bell",
     "audio": "bell.mp3",
-    "image": "bell.png",
+    "image": "bell.jpg",
     "example": "గంట మోగుతుంది.",
     "example_english": "The bell rings."
   }

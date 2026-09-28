@@ -3,7 +3,7 @@
     "telugu": "తల",
     "english": "Head",
     "audio": "head.mp3",
-    "image": "head.png",
+    "image": "head.jpg",
     "example": "తల మీద జుట్టు ఉంటుంది.",
     "example_english": "There is hair on the head."
   },
@@ -11,7 +11,7 @@
     "telugu": "కన్ను",
     "english": "Eye",
     "audio": "eye.mp3",
-    "image": "eye.png",
+    "image": "eye.jpg",
     "example": "కన్నుతో చూస్తాము.",
     "example_english": "We see with the eye."
   },
@@ -19,7 +19,7 @@
     "telugu": "చెవి",
     "english": "Ear",
     "audio": "ear.mp3",
-    "image": "ear.png",
+    "image": "ear.jpg",
     "example": "చెవితో వింటాము.",
     "example_english": "We hear with the ear."
   },
@@ -27,7 +27,7 @@
     "telugu": "మూకు",
     "english": "Nose",
     "audio": "nose.mp3",
-    "image": "nose.png",
+    "image": "nose.jpg",
     "example": "మూకుతో వాసన చూస్తాము.",
     "example_english": "We smell with the nose."
   },
@@ -35,7 +35,7 @@
     "telugu": "నోరు",
     "english": "Mouth",
     "audio": "mouth.mp3",
-    "image": "mouth.png",
+    "image": "mouth.jpg",
     "example": "నోరుతో తింటాము.",
     "example_english": "We eat with the mouth."
   },
@@ -43,7 +43,7 @@
     "telugu": "చేతి",
     "english": "Hand",
     "audio": "hand.mp3",
-    "image": "hand.png",
+    "image": "hand.jpg",
     "example": "చేతితో వ్రాస్తాము.",
     "example_english": "We write with the hand."
   },
@@ -51,7 +51,7 @@
     "telugu": "కాలు",
     "english": "Leg",
     "audio": "leg.mp3",
-    "image": "leg.png",
+    "image": "leg.jpg",
     "example": "కాలుతో నడుస్తాము.",
     "example_english": "We walk with the leg."
   },
@@ -59,7 +59,7 @@
     "telugu": "వేలు",
     "english": "Finger",
     "audio": "finger.mp3",
-    "image": "finger.png",
+    "image": "finger.jpg",
     "example": "వేళ్లతో పట్టుకుంటాము.",
     "example_english": "We hold things with fingers."
   },
@@ -67,7 +67,7 @@
     "telugu": "జుట్టు",
     "english": "Hair",
     "audio": "hair.mp3",
-    "image": "hair.png",
+    "image": "hair.jpg",
     "example": "జుట్టు నల్లగా ఉంటుంది.",
     "example_english": "Hair is black."
   },
@@ -75,7 +75,7 @@
     "telugu": "పాదం",
     "english": "Foot",
     "audio": "foot.mp3",
-    "image": "foot.png",
+    "image": "foot.jpg",
     "example": "పాదంతో నిలబడతాము.",
     "example_english": "We stand with the foot."
   }

@@ -3,7 +3,7 @@
     "telugu": "క్యారెట్",
     "english": "Carrot",
     "audio": "carrot.mp3",
-    "image": "carrot.png",
+    "image": "carrot.jpg",
     "example": "క్యారెట్ కరకరలాడుతుంది.",
     "example_english": "The carrot is crunchy."
   },
@@ -11,7 +11,7 @@
     "telugu": "బంగాళాదుంప",
     "english": "Potato",
     "audio": "potato.mp3",
-    "image": "potato.png",
+    "image": "potato.jpg",
     "example": "బంగాళాదుంప మెత్తగా ఉంటుంది.",
     "example_english": "The potato is soft."
   },
@@ -19,7 +19,7 @@
     "telugu": "టమాటా",
     "english": "Tomato",
     "audio": "tomato.mp3",
-    "image": "tomato.png",
+    "image": "tomato.jpg",
     "example": "టమాటా ఎరుపుగా ఉంటుంది.",
     "example_english": "The tomato is red."
   },
@@ -27,7 +27,7 @@
     "telugu": "ఉల్లిపాయ",
     "english": "Onion",
     "audio": "onion.mp3",
-    "image": "onion.png",
+    "image": "onion.jpg",
     "example": "ఉల్లిపాయ కారం గా ఉంటుంది.",
     "example_english": "The onion is spicy."
   },
@@ -35,7 +35,7 @@
     "telugu": "వంకాయ",
     "english": "Brinjal",
     "audio": "brinjal.mp3",
-    "image": "brinjal.png",
+    "image": "brinjal.jpg",
     "example": "వంకాయ పచ్చగా ఉంటుంది.",
     "example_english": "The brinjal is purple."
   },
@@ -43,7 +43,7 @@
     "telugu": "క్యాబేజీ",
     "english": "Cabbage",
     "audio": "cabbage.mp3",
-    "image": "cabbage.png",
+    "image": "cabbage.jpg",
     "example": "క్యాబేజీ ఆకులు мягంగా ఉంటాయి.",
     "example_english": "Cabbage leaves are soft."
   },
@@ -51,7 +51,7 @@
     "telugu": "కాలీఫ్లవర్",
     "english": "Cauliflower",
     "audio": "cauliflower.mp3",
-    "image": "cauliflower.png",
+    "image": "cauliflower.jpg",
     "example": "కాలీఫ్లవర్ తెలుపుగా ఉంటుంది.",
     "example_english": "The cauliflower is white."
   },
@@ -59,7 +59,7 @@
     "telugu": "బీన్స్",
     "english": "Beans",
     "audio": "beans.mp3",
-    "image": "beans.png",
+    "image": "beans.jpg",
     "example": "బీన్స్ పొడవుగా ఉంటాయి.",
     "example_english": "Beans are long."
   },
@@ -67,7 +67,7 @@
     "telugu": "పాలకూర",
     "english": "Spinach",
     "audio": "spinach.mp3",
-    "image": "spinach.png",
+    "image": "spinach.jpg",
     "example": "పాలకూర ఆకుపచ్చగా ఉంటుంది.",
     "example_english": "Spinach is green."
   },
@@ -75,7 +75,7 @@
     "telugu": "సొరకాయ",
     "english": "Bottle Gourd",
     "audio": "bottle-gourd.mp3",
-    "image": "bottle-gourd.png",
+    "image": "bottle-gourd.jpg",
     "example": "సొరకాయ పొడవుగా ఉంటుంది.",
     "example_english": "The bottle gourd is long."
   }

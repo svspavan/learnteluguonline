@@ -1,0 +1,51 @@
+{
+  "ugadi": {
+    "telugu": "ఉగాది",
+    "english": "Ugadi",
+    "audio": "ugadi.mp3",
+    "example": "ఉగాది తెలుగు నూతన సంవత్సరం, ఉగాది పచ్చడి తింటాము.",
+    "example_english": "Ugadi is the Telugu New Year, celebrated by eating ugadi pachadi — a mix of six tastes symbolizing life's varied experiences."
+  },
+  "sankranti": {
+    "telugu": "సంక్రాంతి",
+    "english": "Sankranti",
+    "audio": "sankranti.mp3",
+    "example": "సంక్రాంతి పంటల పండుగ, ముగ్గులు వేసి గాలిపటాలు ఎగరేస్తాము.",
+    "example_english": "Sankranti is the harvest festival, celebrated with rangoli (muggulu) patterns and flying kites."
+  },
+  "bonalu": {
+    "telugu": "బోనాలు",
+    "english": "Bonalu",
+    "audio": "bonalu.mp3",
+    "example": "బోనాలు తెలంగాణ పండుగ, మహంకాళి అమ్మవారికి బోనం సమర్పిస్తారు.",
+    "example_english": "Bonalu is a Telangana festival where devotees offer bonam (food) to Goddess Mahakali."
+  },
+  "dasara": {
+    "telugu": "దసరా",
+    "english": "Dasara",
+    "audio": "dasara.mp3",
+    "example": "దసరా చెడుపై మంచి గెలుపును సూచిస్తుంది, తొమ్మిది రోజులు నవరాత్రులు జరుపుతారు.",
+    "example_english": "Dasara marks the victory of good over evil, celebrated over nine nights as Navaratri."
+  },
+  "diwali": {
+    "telugu": "దీపావళి",
+    "english": "Diwali",
+    "audio": "diwali.mp3",
+    "example": "దీపావళి దీపాల పండుగ, ఇళ్లను దీపాలతో అలంకరించి బాణసంచా కాలుస్తాము.",
+    "example_english": "Diwali is the festival of lights, celebrated by decorating homes with lamps and bursting firecrackers."
+  },
+  "vinayaka_chavithi": {
+    "telugu": "వినాయక చవితి",
+    "english": "Vinayaka Chavithi",
+    "audio": "vinayaka_chavithi.mp3",
+    "example": "వినాయక చవితి రోజున గణేశుని విగ్రహాన్ని పూజించి, కొన్ని రోజుల తర్వాత నిమజ్జనం చేస్తాము.",
+    "example_english": "On Vinayaka Chavithi, an idol of Lord Ganesha is worshipped and immersed in water a few days later."
+  },
+  "bathukamma": {
+    "telugu": "బతుకమ్మ",
+    "english": "Bathukamma",
+    "audio": "bathukamma.mp3",
+    "example": "బతుకమ్మ తెలంగాణ పూల పండుగ, రంగురంగుల పూలతో బతుకమ్మను పేర్చి పాటలు పాడతారు.",
+    "example_english": "Bathukamma is a Telangana flower festival where women stack colorful flowers into a floral arrangement and sing songs around it."
+  }
+}

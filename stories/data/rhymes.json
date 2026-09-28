@@ -1,0 +1,36 @@
+{
+  "chandamama_rave": {
+    "title": "చందమామ రావే",
+    "english_title": "Come, Chandamama (Moon)",
+    "audio": "chandamama_rave.mp3",
+    "lines": [
+      "చందమామ రావే",
+      "జాబిల్లి రావే",
+      "కొండెక్కి రావే",
+      "కోటి పూలు తేవే"
+    ],
+    "meaning": "A classic Telugu rhyme calling out to the moon (Chandamama/Jabilli), asking it to climb over the hill and bring a shower of flowers — sung to soothe and delight young children."
+  },
+
+  "vaana_vaana": {
+    "title": "వానా వానా వల్లప్పా",
+    "english_title": "Rain, Rain, Vallappa",
+    "audio": "vaana_vaana.mp3",
+    "lines": [
+      "వానా వానా వల్లప్పా",
+      "వాకిట్లో నీళ్ళప్పా"
+    ],
+    "meaning": "A short, playful rhyme children chant when it rains, noticing the rainwater collecting right at the doorstep."
+  },
+
+  "nidrapo_nidrapo": {
+    "title": "నిద్రపో నిద్రపో",
+    "english_title": "Sleep, Sleep (Lullaby)",
+    "audio": "nidrapo_nidrapo.mp3",
+    "lines": [
+      "నిద్రపో నిద్రపో రామచంద్రా",
+      "నిద్రలేక నీకు తగునా"
+    ],
+    "meaning": "A gentle jola paata (lullaby) pattern sung to put babies to sleep — the child's own name is traditionally sung in place of 'Ramachandra'."
+  }
+}

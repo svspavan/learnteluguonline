@@ -691,6 +691,47 @@ main {
     color: #fff;
 }
 
+/* ============================
+   STORY SECTION TABS
+   ============================ */
+.story-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.story-tab {
+    background: var(--card-bg);
+    border: 2px solid var(--maroon);
+    color: var(--maroon);
+    padding: 0.55rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+}
+
+.story-tab:hover {
+    background: rgba(123, 30, 30, 0.08);
+}
+
+.story-tab.active {
+    background: var(--maroon);
+    color: #fff;
+}
+
+.rhyme-lines {
+    text-align: center;
+    font-family: 'Noto Sans Telugu', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: var(--maroon);
+    margin: 1.5rem 0;
+}
+
 /* =========================================================
    RESPONSIVE (GLOBAL)
    ========================================================= */

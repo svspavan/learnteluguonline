@@ -1,0 +1,83 @@
+{
+  "title": "సామెతలు — Saamethalu (Proverbs)",
+  "description": "సామెతలు అంటే జీవిత అనుభవాన్ని క్లుప్తంగా తెలియజేసే సూక్తులు — తరతరాలుగా వాడుకలో నిలిచిన జానపద జ్ఞానం.",
+  "items": [
+    {
+      "heading": "1. చేతులు కాలాక ఆకులు పట్టుకున్నట్లు",
+      "explanation": "నష్టం జరిగిన తర్వాత జాగ్రత్త తీసుకోవడం — మరీ ఆలస్యంగా స్పందించడం.",
+      "examples": [
+        {
+          "telugu": "పరీక్ష ముందు రోజు చదవడం చేతులు కాలాక ఆకులు పట్టుకున్నట్లు ఉంటుంది.",
+          "english": "Studying the day before the exam is like grabbing leaves after your hands have already burned.",
+          "audio": "chetulu_kalaka_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "2. కొండను తవ్వి ఎలుకను పట్టినట్లు",
+      "explanation": "చాలా శ్రమ పడి, పెద్ద ప్రయత్నం చేసి కూడా చాలా చిన్న ఫలితం రావడం.",
+      "examples": [
+        {
+          "telugu": "అంత శ్రమ పడి చిన్న పొరపాటు పట్టుకోవడం కొండను తవ్వి ఎలుకను పట్టినట్లు అయింది.",
+          "english": "Putting in so much effort to catch a small mistake was like digging a mountain to catch a mouse.",
+          "audio": "kondanu_tavvi_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "3. కప్పకు ఈత నేర్పినట్లు",
+      "explanation": "ఇప్పటికే బాగా తెలిసిన వ్యక్తికి అదే విషయాన్ని నేర్పడానికి ప్రయత్నించడం — అనవసరమైన శ్రమ.",
+      "examples": [
+        {
+          "telugu": "అనుభవజ్ఞుడికి ఆ సంగతి చెప్పడం కప్పకు ఈత నేర్పినట్లు ఉంటుంది.",
+          "english": "Explaining that to an expert is like teaching a frog to swim.",
+          "audio": "kappaku_eta_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "4. కంచే చేను మేసినట్లు",
+      "explanation": "రక్షించవలసినవాడే నష్టం కలిగించినప్పుడు వాడే సామెత.",
+      "examples": [
+        {
+          "telugu": "డబ్బు కాపలా కాయాల్సిన గుమస్తానే దొంగతనం చేస్తే, కంచే చేను మేసినట్లు అయింది.",
+          "english": "When the clerk who was supposed to guard the money steals it himself, it's like the fence eating the crop.",
+          "audio": "kanche_chenu_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "5. కాకి పిల్ల కాకికి ముద్దు",
+      "explanation": "తల్లిదండ్రులకు తమ పిల్లలు ఎలా ఉన్నా ముద్దుగానే కనిపిస్తారు అని చెప్పే సామెత.",
+      "examples": [
+        {
+          "telugu": "ఆ పిల్లవాడు అల్లరి చేసినా, కాకి పిల్ల కాకికి ముద్దు అన్నట్లు వాళ్ళ అమ్మకు ముద్దే.",
+          "english": "Even though the boy is mischievous, to his mother he's still adorable — a crow's chick is dear to the crow.",
+          "audio": "kaki_pilla_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "6. గుడ్డిలో మెల్ల",
+      "explanation": "రెండు చెడు ఎంపికలలో కొంచెం మెరుగైనది ఎంచుకోవడం.",
+      "examples": [
+        {
+          "telugu": "ఆ ఉద్యోగం అంత బాగోలేకపోయినా, మిగతా వాటికన్నా గుడ్డిలో మెల్లలా ఉంది.",
+          "english": "That job isn't great, but compared to the rest, it's the lesser evil.",
+          "audio": "guddilo_mella_1.mp3"
+        }
+      ]
+    },
+    {
+      "heading": "7. నీళ్ళలో వ్రాసిన వ్రాత",
+      "explanation": "నిలబడని వాగ్దానం లేదా త్వరగా మరచిపోయే విషయం గురించి చెప్పే సామెత.",
+      "examples": [
+        {
+          "telugu": "అతని వాగ్దానాలు నీళ్ళలో వ్రాసిన వ్రాత లాంటివి.",
+          "english": "His promises are like writing on water — they don't last.",
+          "audio": "neellalo_vrata_1.mp3"
+        }
+      ]
+    }
+  ]
+}

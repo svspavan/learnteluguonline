@@ -95,7 +95,8 @@ const GRAMMAR_TOPICS = [
     { key: "adverbs", label: "Adverbs", telugu: "క్రియావిశేషణాలు" },
     { key: "alankaralu", label: "Alankaralu (Figures of Speech)", telugu: "అలంకారాలు" },
     { key: "chandassu", label: "Chandassu (Meter)", telugu: "ఛందస్సు" },
-    { key: "jatiyalu", label: "Idioms & Proverbs", telugu: "జాతీయాలు, సామెతలు" },
+    { key: "jatiyalu", label: "Idioms (Jatiyalu)", telugu: "జాతీయాలు" },
+    { key: "saamethalu", label: "Proverbs (Saamethalu)", telugu: "సామెతలు" },
     { key: "gauravavachakalu", label: "Honorifics", telugu: "గౌరవ వాచకాలు" },
     { key: "dviruktalu", label: "Reduplication & Paired Words", telugu: "ద్విరుక్తాలు" },
     { key: "vaakya_kathanam", label: "Reported Speech & Verb Forms", telugu: "కథనం, నిషేధం & షరతు" }

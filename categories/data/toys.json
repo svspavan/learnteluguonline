@@ -3,7 +3,7 @@
     "telugu": "బంతి",
     "english": "Ball",
     "audio": "ball.mp3",
-    "image": "ball.png",
+    "image": "ball.jpg",
     "example": "బంతి గుండ్రంగా ఉంటుంది.",
     "example_english": "The ball is round."
   },
@@ -11,7 +11,7 @@
     "telugu": "బొమ్మ",
     "english": "Doll",
     "audio": "doll.mp3",
-    "image": "doll.png",
+    "image": "doll.jpg",
     "example": "బొమ్మ అందంగా ఉంటుంది.",
     "example_english": "The doll is beautiful."
   },
@@ -19,7 +19,7 @@
     "telugu": "కారు బొమ్మ",
     "english": "Toy Car",
     "audio": "car-toy.mp3",
-    "image": "car-toy.png",
+    "image": "car-toy.jpg",
     "example": "కారు బొమ్మ వేగంగా నడుస్తుంది.",
     "example_english": "The toy car moves fast."
   },
@@ -27,7 +27,7 @@
     "telugu": "రైలు బొమ్మ",
     "english": "Toy Train",
     "audio": "train-toy.mp3",
-    "image": "train-toy.png",
+    "image": "train-toy.jpg",
     "example": "రైలు బొమ్మ శబ్దం చేస్తుంది.",
     "example_english": "The toy train makes noise."
   },
@@ -35,7 +35,7 @@
     "telugu": "టెడ్డి బేర్",
     "english": "Teddy Bear",
     "audio": "teddy.mp3",
-    "image": "teddy.png",
+    "image": "teddy.jpg",
     "example": "టెడ్డి బేర్ మెత్తగా ఉంటుంది.",
     "example_english": "The teddy bear is soft."
   },
@@ -43,7 +43,7 @@
     "telugu": "బ్లాక్స్",
     "english": "Blocks",
     "audio": "blocks.mp3",
-    "image": "blocks.png",
+    "image": "blocks.jpg",
     "example": "బ్లాక్స్ తో ఇల్లు కట్టవచ్చు.",
     "example_english": "You can build a house with blocks."
   },
@@ -51,7 +51,7 @@
     "telugu": "బెలూన్",
     "english": "Balloon",
     "audio": "balloon.mp3",
-    "image": "balloon.png",
+    "image": "balloon.jpg",
     "example": "బెలూన్ గాల్లో ఎగురుతుంది.",
     "example_english": "The balloon flies in the air."
   },
@@ -59,7 +59,7 @@
     "telugu": "డ్రమ్",
     "english": "Drum",
     "audio": "drum.mp3",
-    "image": "drum.png",
+    "image": "drum.jpg",
     "example": "డ్రమ్ శబ్దం చేస్తుంది.",
     "example_english": "The drum makes sound."
   },
@@ -67,7 +67,7 @@
     "telugu": "గాలిపటం",
     "english": "Kite",
     "audio": "kite.mp3",
-    "image": "kite.png",
+    "image": "kite.jpg",
     "example": "గాలిపటం ఆకాశంలో ఎగురుతుంది.",
     "example_english": "The kite flies in the sky."
   },
@@ -75,7 +75,7 @@
     "telugu": "రోబో బొమ్మ",
     "english": "Robot Toy",
     "audio": "robot-toy.mp3",
-    "image": "robot-toy.png",
+    "image": "robot-toy.jpg",
     "example": "రోబో బొమ్మ మాట్లాడుతుంది.",
     "example_english": "The robot toy talks."
   }

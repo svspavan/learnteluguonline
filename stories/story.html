@@ -91,7 +91,7 @@ async function loadStory() {
         <h1 class="page-title">${story.title}</h1>
         <h3>${story.english_title}</h3>
 
-        ${story.image ? `<img src="../assets/images/${story.image}" class="story-image">` : ""}
+        ${story.image ? `<img src="../assets/images/${story.image}" class="story-image" alt="${story.english_title}">` : ""}
 
         <div class="audio-player" data-src="${meta.audioDir}/${story.audio}">
             <button class="play-btn">▶</button>

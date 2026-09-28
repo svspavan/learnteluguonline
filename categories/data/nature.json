@@ -3,7 +3,7 @@
     "telugu": "చెట్టు",
     "english": "Tree",
     "audio": "tree.mp3",
-    "image": "tree.png",
+    "image": "tree.jpg",
     "example": "చెట్టుకు ఆకులు ఉంటాయి.",
     "example_english": "The tree has leaves."
   },
@@ -11,7 +11,7 @@
     "telugu": "పువ్వు",
     "english": "Flower",
     "audio": "flower.mp3",
-    "image": "flower.png",
+    "image": "flower.jpg",
     "example": "పువ్వు మంచి వాసన వస్తుంది.",
     "example_english": "The flower smells good."
   },
@@ -19,7 +19,7 @@
     "telugu": "ఆకు",
     "english": "Leaf",
     "audio": "leaf.mp3",
-    "image": "leaf.png",
+    "image": "leaf.jpg",
     "example": "ఆకు ఆకుపచ్చగా ఉంటుంది.",
     "example_english": "The leaf is green."
   },
@@ -27,7 +27,7 @@
     "telugu": "సూర్యుడు",
     "english": "Sun",
     "audio": "sun.mp3",
-    "image": "sun.png",
+    "image": "sun.jpg",
     "example": "సూర్యుడు వెలుతురు ఇస్తాడు.",
     "example_english": "The sun gives light."
   },
@@ -35,7 +35,7 @@
     "telugu": "చంద్రుడు",
     "english": "Moon",
     "audio": "moon.mp3",
-    "image": "moon.png",
+    "image": "moon.jpg",
     "example": "చంద్రుడు రాత్రి కనిపిస్తాడు.",
     "example_english": "The moon appears at night."
   },
@@ -43,7 +43,7 @@
     "telugu": "నక్షత్రం",
     "english": "Star",
     "audio": "star.mp3",
-    "image": "star.png",
+    "image": "star.jpg",
     "example": "నక్షత్రం మెరిసుతుంది.",
     "example_english": "The star shines."
   },
@@ -51,7 +51,7 @@
     "telugu": "మేఘం",
     "english": "Cloud",
     "audio": "cloud.mp3",
-    "image": "cloud.png",
+    "image": "cloud.jpg",
     "example": "మేఘం ఆకాశంలో ఉంటుంది.",
     "example_english": "The cloud is in the sky."
   },
@@ -59,7 +59,7 @@
     "telugu": "వర్షం",
     "english": "Rain",
     "audio": "rain.mp3",
-    "image": "rain.png",
+    "image": "rain.jpg",
     "example": "వర్షం పడుతోంది.",
     "example_english": "It is raining."
   },
@@ -67,7 +67,7 @@
     "telugu": "నది",
     "english": "River",
     "audio": "river.mp3",
-    "image": "river.png",
+    "image": "river.jpg",
     "example": "నది నీరు ప్రవహిస్తుంది.",
     "example_english": "The river water flows."
   },
@@ -75,7 +75,7 @@
     "telugu": "పర్వతం",
     "english": "Mountain",
     "audio": "mountain.mp3",
-    "image": "mountain.png",
+    "image": "mountain.jpg",
     "example": "పర్వతం ఎత్తుగా ఉంటుంది.",
     "example_english": "The mountain is tall."
   }

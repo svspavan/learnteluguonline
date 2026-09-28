@@ -3,7 +3,7 @@
     "telugu": "పిల్లి",
     "english": "Cat",
     "audio": "pilli.mp3",
-    "image": "pilli.png",
+    "image": "pilli.jpg",
     "example": "పిల్లి పాలు తాగుతుంది.",
     "example_english": "The cat drinks milk."
   },
@@ -11,7 +11,7 @@
     "telugu": "కుక్క",
     "english": "Dog",
     "audio": "kukka.mp3",
-    "image": "kukka.png",
+    "image": "kukka.jpg",
     "example": "కుక్క పరుగెత్తుతుంది.",
     "example_english": "The dog runs."
   },
@@ -19,7 +19,7 @@
     "telugu": "గుర్రం",
     "english": "Horse",
     "audio": "gurram.mp3",
-    "image": "gurram.png",
+    "image": "gurram.jpg",
     "example": "గుర్రం వేగంగా పరుగెడుతుంది.",
     "example_english": "The horse runs fast."
   },
@@ -27,7 +27,7 @@
     "telugu": "కోతి",
     "english": "Monkey",
     "audio": "kothi.mp3",
-    "image": "kothi.png",
+    "image": "kothi.jpg",
     "example": "కోతి చెట్టు ఎక్కుతుంది.",
     "example_english": "The monkey climbs a tree."
   },
@@ -35,7 +35,7 @@
     "telugu": "ఏనుగు",
     "english": "Elephant",
     "audio": "enugu.mp3",
-    "image": "enugu.png",
+    "image": "enugu.jpg",
     "example": "ఏనుగు పెద్దది.",
     "example_english": "The elephant is big."
   },
@@ -43,7 +43,7 @@
     "telugu": "తాబేలు",
     "english": "Turtle",
     "audio": "tabelu.mp3",
-    "image": "tabelu.png",
+    "image": "tabelu.jpg",
     "example": "తాబేలు నెమ్మదిగా నడుస్తుంది.",
     "example_english": "The turtle walks slowly."
   },
@@ -51,7 +51,7 @@
     "telugu": "పిల్లి పిల్ల",
     "english": "Kitten",
     "audio": "pilli-papa.mp3",
-    "image": "pilli-papa.png",
+    "image": "pilli-papa.jpg",
     "example": "పిల్లి పిల్ల చిన్నది.",
     "example_english": "The kitten is small."
   },
@@ -59,7 +59,7 @@
     "telugu": "కుక్క పిల్ల",
     "english": "Puppy",
     "audio": "kukka-pilla.mp3",
-    "image": "kukka-pilla.png",
+    "image": "kukka-pilla.jpg",
     "example": "కుక్క పిల్ల ఆడుకుంటుంది.",
     "example_english": "The puppy plays."
   },  
@@ -67,7 +67,7 @@
     "telugu": "కోడి",
     "english": "Hen",
     "audio": "kodi.mp3",
-    "image": "kodi.png",
+    "image": "kodi.jpg",
     "example": "కోడి గుడ్లు పెడుతుంది.",
     "example_english": "The hen lays eggs."
   }

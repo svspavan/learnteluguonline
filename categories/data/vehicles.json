@@ -3,7 +3,7 @@
     "telugu": "కారు",
     "english": "Car",
     "audio": "car.mp3",
-    "image": "car.png",
+    "image": "car.jpg",
     "example": "కారు రోడ్డుపై నడుస్తుంది.",
     "example_english": "The car moves on the road."
   },
@@ -11,7 +11,7 @@
     "telugu": "బస్సు",
     "english": "Bus",
     "audio": "bus.mp3",
-    "image": "bus.png",
+    "image": "bus.jpg",
     "example": "బస్సులో చాలా మంది ప్రయాణిస్తారు.",
     "example_english": "Many people travel in the bus."
   },
@@ -19,7 +19,7 @@
     "telugu": "బైక్",
     "english": "Bike",
     "audio": "bike.mp3",
-    "image": "bike.png",
+    "image": "bike.jpg",
     "example": "బైక్ వేగంగా నడుస్తుంది.",
     "example_english": "The bike goes fast."
   },
@@ -27,7 +27,7 @@
     "telugu": "రైలు",
     "english": "Train",
     "audio": "train.mp3",
-    "image": "train.png",
+    "image": "train.jpg",
     "example": "రైలు పట్టాలపై నడుస్తుంది.",
     "example_english": "The train runs on tracks."
   },
@@ -35,7 +35,7 @@
     "telugu": "విమానం",
     "english": "Aeroplane",
     "audio": "aeroplane.mp3",
-    "image": "aeroplane.png",
+    "image": "aeroplane.jpg",
     "example": "విమానం ఆకాశంలో ఎగురుతుంది.",
     "example_english": "The aeroplane flies in the sky."
   },
@@ -43,7 +43,7 @@
     "telugu": "పడవ",
     "english": "Boat",
     "audio": "boat.mp3",
-    "image": "boat.png",
+    "image": "boat.jpg",
     "example": "పడవ నీటిలో తేలుతుంది.",
     "example_english": "The boat floats on water."
   },
@@ -51,7 +51,7 @@
     "telugu": "నౌక",
     "english": "Ship",
     "audio": "ship.mp3",
-    "image": "ship.png",
+    "image": "ship.jpg",
     "example": "నౌక సముద్రంలో ప్రయాణిస్తుంది.",
     "example_english": "The ship travels in the sea."
   },
@@ -59,7 +59,7 @@
     "telugu": "లారీ",
     "english": "Truck",
     "audio": "truck.mp3",
-    "image": "truck.png",
+    "image": "truck.jpg",
     "example": "లారీ బరువు సరుకు తీసుకెళ్తుంది.",
     "example_english": "The truck carries heavy goods."
   },
@@ -67,7 +67,7 @@
     "telugu": "ఆటో",
     "english": "Auto Rickshaw",
     "audio": "auto.mp3",
-    "image": "auto.png",
+    "image": "auto.jpg",
     "example": "ఆటో మూడు చక్రాలు కలిగి ఉంటుంది.",
     "example_english": "The auto has three wheels."
   },
@@ -75,7 +75,7 @@
     "telugu": "ట్రాక్టర్",
     "english": "Tractor",
     "audio": "tractor.mp3",
-    "image": "tractor.png",
+    "image": "tractor.jpg",
     "example": "ట్రాక్టర్ పొలంలో పని చేస్తుంది.",
     "example_english": "The tractor works in the field."
   }

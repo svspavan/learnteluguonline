@@ -3,7 +3,7 @@
     "telugu": "కుర్చీ",
     "english": "Chair",
     "audio": "chair.mp3",
-    "image": "chair.png",
+    "image": "chair.jpg",
     "example": "కుర్చీ మీద కూర్చుంటాను.",
     "example_english": "I sit on the chair."
   },
@@ -11,7 +11,7 @@
     "telugu": "మెజ్జ",
     "english": "Table",
     "audio": "table.mp3",
-    "image": "table.png",
+    "image": "table.jpg",
     "example": "మెజ్జ మీద పుస్తకం ఉంది.",
     "example_english": "There is a book on the table."
   },
@@ -19,7 +19,7 @@
     "telugu": "మంచం",
     "english": "Bed",
     "audio": "bed.mp3",
-    "image": "bed.png",
+    "image": "bed.jpg",
     "example": "మంచం మీద నిద్రపోతాను.",
     "example_english": "I sleep on the bed."
   },
@@ -27,7 +27,7 @@
     "telugu": "కప్పు",
     "english": "Cup",
     "audio": "cup.mp3",
-    "image": "cup.png",
+    "image": "cup.jpg",
     "example": "కప్పులో నీళ్లు ఉన్నాయి.",
     "example_english": "There is water in the cup."
   },
@@ -35,7 +35,7 @@
     "telugu": "పళ్లెం",
     "english": "Plate",
     "audio": "plate.mp3",
-    "image": "plate.png",
+    "image": "plate.jpg",
     "example": "పళ్లెంలో భోజనం ఉంది.",
     "example_english": "There is food on the plate."
   },
@@ -43,7 +43,7 @@
     "telugu": "చెంచా",
     "english": "Spoon",
     "audio": "spoon.mp3",
-    "image": "spoon.png",
+    "image": "spoon.jpg",
     "example": "చెంచాతో తింటాను.",
     "example_english": "I eat with a spoon."
   },
@@ -51,7 +51,7 @@
     "telugu": "తలుపు",
     "english": "Door",
     "audio": "door.mp3",
-    "image": "door.png",
+    "image": "door.jpg",
     "example": "తలుపు తెరిచి ఉంది.",
     "example_english": "The door is open."
   },
@@ -59,7 +59,7 @@
     "telugu": "కిటికీ",
     "english": "Window",
     "audio": "window.mp3",
-    "image": "window.png",
+    "image": "window.jpg",
     "example": "కిటికీ దగ్గర గాలి వస్తుంది.",
     "example_english": "Air comes through the window."
   },
@@ -67,7 +67,7 @@
     "telugu": "దీపం",
     "english": "Lamp",
     "audio": "lamp.mp3",
-    "image": "lamp.png",
+    "image": "lamp.jpg",
     "example": "దీపం వెలుగుతుంది.",
     "example_english": "The lamp gives light."
   },
@@ -75,7 +75,7 @@
     "telugu": "గడియారం",
     "english": "Clock",
     "audio": "clock.mp3",
-    "image": "clock.png",
+    "image": "clock.jpg",
     "example": "గడియారం సమయం చూపుతుంది.",
     "example_english": "The clock shows the time."
   }

@@ -1,10 +1,10 @@
 {
   "carrot": {
-    "telugu": "గాజర్",
+    "telugu": "క్యారెట్",
     "english": "Carrot",
     "audio": "carrot.mp3",
     "image": "carrot.png",
-    "example": "గాజర్ కరకరలాడుతుంది.",
+    "example": "క్యారెట్ కరకరలాడుతుంది.",
     "example_english": "The carrot is crunchy."
   },
   "potato": {
@@ -12,7 +12,7 @@
     "english": "Potato",
     "audio": "potato.mp3",
     "image": "potato.png",
-    "example": "బంగాళాదుంప мягంగా ఉంటుంది.",
+    "example": "బంగాళాదుంప మెత్తగా ఉంటుంది.",
     "example_english": "The potato is soft."
   },
   "tomato": {

@@ -48,29 +48,21 @@
     "example_english": "The turtle walks slowly."
   },
   "pilli-papa": {
-    "telugu": "పిల్లి పాప",
+    "telugu": "పిల్లి పిల్ల",
     "english": "Kitten",
     "audio": "pilli-papa.mp3",
     "image": "pilli-papa.png",
-    "example": "పిల్లి పాప చిన్నది.",
+    "example": "పిల్లి పిల్ల చిన్నది.",
     "example_english": "The kitten is small."
   },
-  "kukka-papa": {
-    "telugu": "కుక్క పాప",
+  "kukka-pilla": {
+    "telugu": "కుక్క పిల్ల",
     "english": "Puppy",
-    "audio": "kukka-papa.mp3",
-    "image": "kukka-papa.png",
-    "example": "కుక్క పాప ఆడుకుంటుంది.",
+    "audio": "kukka-pilla.mp3",
+    "image": "kukka-pilla.png",
+    "example": "కుక్క పిల్ల ఆడుకుంటుంది.",
     "example_english": "The puppy plays."
-  },
-  "pilli-gadu": {
-    "telugu": "పిల్లి గాడు",
-    "english": "Tomcat",
-    "audio": "pilli-gadu.mp3",
-    "image": "pilli-gadu.png",
-    "example": "పిల్లి గాడు నిద్రపోతుంది.",
-    "example_english": "The tomcat sleeps."
-  },
+  },  
   "kodi": {
     "telugu": "కోడి",
     "english": "Hen",

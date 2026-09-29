@@ -100,19 +100,12 @@ async function loadSentences() {
     }
 
     const labelMap = {
-        greetings: "Greetings",
-        home: "Home",
-        school: "School",
-        travel: "Travel",
         daily: "Daily Use",
         food: "Food & Eating",
-        work: "Workplace",
-        shopping: "Shopping",
-        health: "Health",
-        nature: "Nature"
+        work: "Workplace"
     };
 
-    const categoryLabel = labelMap[category] || category;
+    const categoryLabel = labelMap[category] || category.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
 
     // Update breadcrumb
     document.getElementById("breadcrumbCategory").textContent = categoryLabel;

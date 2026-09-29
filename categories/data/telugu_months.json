@@ -1,0 +1,86 @@
+{
+  "chaitram": {
+    "telugu": "చైత్రం",
+    "english": "Chaitram",
+    "audio": "chaitram.mp3",
+    "example": "చైత్రంలో ఉగాది పండుగ వస్తుంది.",
+    "example_english": "The Ugadi festival comes in the month of Chaitram."
+  },
+  "vaishakham": {
+    "telugu": "వైశాఖం",
+    "english": "Vaishakham",
+    "audio": "vaishakham.mp3",
+    "example": "వైశాఖంలో వేసవి కాలం మొదలవుతుంది.",
+    "example_english": "Summer season begins in Vaishakham."
+  },
+  "jyeshtham": {
+    "telugu": "జ్యేష్ఠం",
+    "english": "Jyeshtham",
+    "audio": "jyeshtham.mp3",
+    "example": "జ్యేష్ఠంలో ఎండలు ఎక్కువగా ఉంటాయి.",
+    "example_english": "The heat is intense in Jyeshtham."
+  },
+  "ashadham": {
+    "telugu": "ఆషాఢం",
+    "english": "Ashadham",
+    "audio": "ashadham.mp3",
+    "example": "ఆషాఢంలో వర్షాలు మొదలవుతాయి.",
+    "example_english": "Rains begin in Ashadham."
+  },
+  "shravanam": {
+    "telugu": "శ్రావణం",
+    "english": "Shravanam",
+    "audio": "shravanam.mp3",
+    "example": "శ్రావణంలో వరలక్ష్మి వ్రతం చేస్తారు.",
+    "example_english": "Varalakshmi Vratam is observed in Shravanam."
+  },
+  "bhadrapadam": {
+    "telugu": "భాద్రపదం",
+    "english": "Bhadrapadam",
+    "audio": "bhadrapadam.mp3",
+    "example": "భాద్రపదంలో వినాయక చవితి జరుపుకుంటారు.",
+    "example_english": "Vinayaka Chavithi is celebrated in Bhadrapadam."
+  },
+  "ashwayujam": {
+    "telugu": "ఆశ్వయుజం",
+    "english": "Ashwayujam",
+    "audio": "ashwayujam.mp3",
+    "example": "ఆశ్వయుజంలో దసరా పండుగ వస్తుంది.",
+    "example_english": "The Dasara festival comes in Ashwayujam."
+  },
+  "karthikam": {
+    "telugu": "కార్తీకం",
+    "english": "Karthikam",
+    "audio": "karthikam.mp3",
+    "example": "కార్తీకంలో దీపాలు వెలిగిస్తారు.",
+    "example_english": "Lamps are lit during the month of Karthikam."
+  },
+  "margashiram": {
+    "telugu": "మార్గశిరం",
+    "english": "Margashiram",
+    "audio": "margashiram.mp3",
+    "example": "మార్గశిరంలో చలి మొదలవుతుంది.",
+    "example_english": "Cold weather begins in Margashiram."
+  },
+  "pushyam": {
+    "telugu": "పుష్యం",
+    "english": "Pushyam",
+    "audio": "pushyam.mp3",
+    "example": "పుష్యంలో సంక్రాంతి పండుగ వస్తుంది.",
+    "example_english": "The Sankranti festival comes in Pushyam."
+  },
+  "magham": {
+    "telugu": "మాఘం",
+    "english": "Magham",
+    "audio": "magham.mp3",
+    "example": "మాఘంలో చలి ఎక్కువగా ఉంటుంది.",
+    "example_english": "It is very cold in Magham."
+  },
+  "phalgunam": {
+    "telugu": "ఫాల్గుణం",
+    "english": "Phalgunam",
+    "audio": "phalgunam.mp3",
+    "example": "ఫాల్గుణంలో వసంత ఋతువు మొదలవుతుంది.",
+    "example_english": "Spring season begins in Phalgunam."
+  }
+}

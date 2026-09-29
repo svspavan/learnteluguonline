@@ -78,5 +78,61 @@
     "image": "cousin.jpg",
     "example": "మరిది నాతో ఆడుకుంటాడు.",
     "example_english": "My cousin plays with me."
+  },
+  "husband": {
+    "telugu": "భర్త",
+    "english": "Husband",
+    "audio": "husband.mp3",
+    "image": "husband.jpg",
+    "example": "ఆమె భర్త ఉద్యోగం చేస్తాడు.",
+    "example_english": "Her husband works a job."
+  },
+  "wife": {
+    "telugu": "భార్య",
+    "english": "Wife",
+    "audio": "wife.mp3",
+    "image": "wife.jpg",
+    "example": "అతని భార్య వంట చేస్తుంది.",
+    "example_english": "His wife cooks food."
+  },
+  "son": {
+    "telugu": "కొడుకు",
+    "english": "Son",
+    "audio": "son.mp3",
+    "image": "son.jpg",
+    "example": "నా కొడుకు స్కూలుకు వెళ్తాడు.",
+    "example_english": "My son goes to school."
+  },
+  "daughter": {
+    "telugu": "కూతురు",
+    "english": "Daughter",
+    "audio": "daughter.mp3",
+    "image": "daughter.jpg",
+    "example": "నా కూతురు పాడుతుంది.",
+    "example_english": "My daughter sings."
+  },
+  "nephew": {
+    "telugu": "మేనల్లుడు",
+    "english": "Nephew",
+    "audio": "nephew.mp3",
+    "image": "nephew.jpg",
+    "example": "మేనల్లుడు సెలవుల్లో వచ్చాడు.",
+    "example_english": "My nephew came during vacation."
+  },
+  "niece": {
+    "telugu": "మేనకోడలు",
+    "english": "Niece",
+    "audio": "niece.mp3",
+    "image": "niece.jpg",
+    "example": "మేనకోడలు నాతో బొమ్మలు ఆడుతుంది.",
+    "example_english": "My niece plays dolls with me."
+  },
+  "grandson": {
+    "telugu": "మనవడు",
+    "english": "Grandson",
+    "audio": "grandson.mp3",
+    "image": "grandson.jpg",
+    "example": "మనవడు తాతయ్యతో ఆడుకుంటాడు.",
+    "example_english": "The grandson plays with his grandfather."
   }
 }

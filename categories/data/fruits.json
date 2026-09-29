@@ -78,5 +78,61 @@
     "image": "strawberry.jpg",
     "example": "స్ట్రాబెర్రీ ఎరుపుగా ఉంటుంది.",
     "example_english": "The strawberry is red."
+  },
+  "danimma": {
+    "telugu": "దానిమ్మ",
+    "english": "Pomegranate",
+    "audio": "danimma.mp3",
+    "image": "danimma.jpg",
+    "example": "దానిమ్మలో విత్తనాలు ఎక్కువ.",
+    "example_english": "The pomegranate has many seeds."
+  },
+  "seethaphalam": {
+    "telugu": "సీతాఫలం",
+    "english": "Custard Apple",
+    "audio": "seethaphalam.mp3",
+    "image": "seethaphalam.jpg",
+    "example": "సీతాఫలం తియ్యగా ఉంటుంది.",
+    "example_english": "The custard apple is sweet."
+  },
+  "panasapandu": {
+    "telugu": "పనసపండు",
+    "english": "Jackfruit",
+    "audio": "panasapandu.mp3",
+    "image": "panasapandu.jpg",
+    "example": "పనసపండు చాలా పెద్దది.",
+    "example_english": "The jackfruit is very large."
+  },
+  "sapota": {
+    "telugu": "సపోటా",
+    "english": "Sapota",
+    "audio": "sapota.mp3",
+    "image": "sapota.jpg",
+    "example": "సపోటా చాలా తియ్యగా ఉంటుంది.",
+    "example_english": "The sapota is very sweet."
+  },
+  "anjeer": {
+    "telugu": "అంజీర",
+    "english": "Fig",
+    "audio": "anjeer.mp3",
+    "image": "anjeer.jpg",
+    "example": "అంజీర ఆరోగ్యానికి మంచిది.",
+    "example_english": "Figs are good for health."
+  },
+  "kobbarikaya": {
+    "telugu": "కొబ్బరికాయ",
+    "english": "Coconut",
+    "audio": "kobbarikaya.mp3",
+    "image": "kobbarikaya.jpg",
+    "example": "కొబ్బరికాయలో నీళ్లు ఉంటాయి.",
+    "example_english": "The coconut has water inside."
+  },
+  "kharjooram": {
+    "telugu": "ఖర్జూరం",
+    "english": "Dates",
+    "audio": "kharjooram.mp3",
+    "image": "kharjooram.jpg",
+    "example": "ఖర్జూరం శక్తినిస్తుంది.",
+    "example_english": "Dates give energy."
   }
 }

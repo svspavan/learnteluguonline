@@ -78,5 +78,53 @@
     "image": "purple.png",
     "example": "ఊదా రంగు బెలూన్ ఉంది.",
     "example_english": "There is a purple balloon."
+  },
+  "grey": {
+    "telugu": "బూడిద రంగు",
+    "english": "Grey",
+    "audio": "grey.mp3",
+    "image": "grey.png",
+    "example": "బూడిద రంగు మేఘం ఉంది.",
+    "example_english": "There is a grey cloud."
+  },
+  "gold": {
+    "telugu": "బంగారు రంగు",
+    "english": "Gold",
+    "audio": "gold.mp3",
+    "image": "gold.png",
+    "example": "బంగారు రంగు నగ ఉంది.",
+    "example_english": "There is a gold-colored ornament."
+  },
+  "silver": {
+    "telugu": "వెండి రంగు",
+    "english": "Silver",
+    "audio": "silver.mp3",
+    "image": "silver.png",
+    "example": "వెండి రంగు గిన్నె ఉంది.",
+    "example_english": "There is a silver-colored bowl."
+  },
+  "sky-blue": {
+    "telugu": "ఆకాశనీలం",
+    "english": "Sky Blue",
+    "audio": "sky-blue.mp3",
+    "image": "sky-blue.png",
+    "example": "ఆకాశనీలం రంగు చొక్కా ఉంది.",
+    "example_english": "There is a sky blue shirt."
+  },
+  "maroon": {
+    "telugu": "ముదురు ఎరుపు",
+    "english": "Maroon",
+    "audio": "maroon.mp3",
+    "image": "maroon.png",
+    "example": "ముదురు ఎరుపు రంగు చీర ఉంది.",
+    "example_english": "There is a maroon saree."
+  },
+  "cream": {
+    "telugu": "క్రీమ్ రంగు",
+    "english": "Cream",
+    "audio": "cream.mp3",
+    "image": "cream.png",
+    "example": "క్రీమ్ రంగు గోడ ఉంది.",
+    "example_english": "There is a cream-colored wall."
   }
 }

@@ -1,0 +1,51 @@
+{
+  "aadivaram": {
+    "telugu": "ఆదివారం",
+    "english": "Sunday",
+    "audio": "aadivaram.mp3",
+    "example": "ఆదివారం నాకు సెలవు.",
+    "example_english": "Sunday is my holiday."
+  },
+  "somavaram": {
+    "telugu": "సోమవారం",
+    "english": "Monday",
+    "audio": "somavaram.mp3",
+    "example": "సోమవారం పాఠశాల తెరుస్తుంది.",
+    "example_english": "School opens on Monday."
+  },
+  "mangalavaram": {
+    "telugu": "మంగళవారం",
+    "english": "Tuesday",
+    "audio": "mangalavaram.mp3",
+    "example": "మంగళవారం నేను వ్యాయామం చేస్తాను.",
+    "example_english": "I exercise on Tuesday."
+  },
+  "budhavaram": {
+    "telugu": "బుధవారం",
+    "english": "Wednesday",
+    "audio": "budhavaram.mp3",
+    "example": "బుధవారం మేము సినిమాకు వెళ్తాము.",
+    "example_english": "We go to the movies on Wednesday."
+  },
+  "guruvaram": {
+    "telugu": "గురువారం",
+    "english": "Thursday",
+    "audio": "guruvaram.mp3",
+    "example": "గురువారం నాన్న ఇంటికి త్వరగా వస్తారు.",
+    "example_english": "Father comes home early on Thursday."
+  },
+  "shukravaram": {
+    "telugu": "శుక్రవారం",
+    "english": "Friday",
+    "audio": "shukravaram.mp3",
+    "example": "శుక్రవారం అమ్మ ప్రత్యేక వంట చేస్తుంది.",
+    "example_english": "Mother cooks something special on Friday."
+  },
+  "shanivaram": {
+    "telugu": "శనివారం",
+    "english": "Saturday",
+    "audio": "shanivaram.mp3",
+    "example": "శనివారం మేము బయటకు వెళ్తాము.",
+    "example_english": "We go out on Saturday."
+  }
+}

@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const CATEGORY_META = {
     colors: { telugu: "రంగులు", english: "Colors" },
-    animals: { telugu: "జంతువులు", english: "Animals" },
+    domestic_animals: { telugu: "పెంపుడు జంతువులు", english: "Domestic Animals" },
+    wild_animals: { telugu: "అడవి జంతువులు", english: "Wild Animals" },
     fruits: { telugu: "పండ్లు", english: "Fruits" },
     vegetables: { telugu: "కూరగాయలు", english: "Vegetables" },
     shapes: { telugu: "ఆకారాలు", english: "Shapes" },

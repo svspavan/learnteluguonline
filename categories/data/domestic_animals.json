@@ -23,30 +23,6 @@
     "example": "గుర్రం వేగంగా పరుగెడుతుంది.",
     "example_english": "The horse runs fast."
   },
-  "kothi": {
-    "telugu": "కోతి",
-    "english": "Monkey",
-    "audio": "kothi.mp3",
-    "image": "kothi.jpg",
-    "example": "కోతి చెట్టు ఎక్కుతుంది.",
-    "example_english": "The monkey climbs a tree."
-  },
-  "enugu": {
-    "telugu": "ఏనుగు",
-    "english": "Elephant",
-    "audio": "enugu.mp3",
-    "image": "enugu.jpg",
-    "example": "ఏనుగు పెద్దది.",
-    "example_english": "The elephant is big."
-  },
-  "tabelu": {
-    "telugu": "తాబేలు",
-    "english": "Turtle",
-    "audio": "tabelu.mp3",
-    "image": "tabelu.jpg",
-    "example": "తాబేలు నెమ్మదిగా నడుస్తుంది.",
-    "example_english": "The turtle walks slowly."
-  },
   "pilli-papa": {
     "telugu": "పిల్లి పిల్ల",
     "english": "Kitten",
@@ -62,7 +38,7 @@
     "image": "kukka-pilla.jpg",
     "example": "కుక్క పిల్ల ఆడుకుంటుంది.",
     "example_english": "The puppy plays."
-  },  
+  },
   "kodi": {
     "telugu": "కోడి",
     "english": "Hen",
@@ -70,5 +46,53 @@
     "image": "kodi.jpg",
     "example": "కోడి గుడ్లు పెడుతుంది.",
     "example_english": "The hen lays eggs."
+  },
+  "aavu": {
+    "telugu": "ఆవు",
+    "english": "Cow",
+    "audio": "aavu.mp3",
+    "image": "aavu.jpg",
+    "example": "ఆవు పాలు ఇస్తుంది.",
+    "example_english": "The cow gives milk."
+  },
+  "gede": {
+    "telugu": "గేదె",
+    "english": "Buffalo",
+    "audio": "gede.mp3",
+    "image": "gede.jpg",
+    "example": "గేదె చెరువులో ఉంది.",
+    "example_english": "The buffalo is in the pond."
+  },
+  "meka": {
+    "telugu": "మేక",
+    "english": "Goat",
+    "audio": "meka.mp3",
+    "image": "meka.jpg",
+    "example": "మేక గడ్డి తింటుంది.",
+    "example_english": "The goat eats grass."
+  },
+  "gorre": {
+    "telugu": "గొర్రె",
+    "english": "Sheep",
+    "audio": "gorre.mp3",
+    "image": "gorre.jpg",
+    "example": "గొర్రె ఉన్ని మెత్తగా ఉంటుంది.",
+    "example_english": "The sheep's wool is soft."
+  },
+  "baatu": {
+    "telugu": "బాతు",
+    "english": "Duck",
+    "audio": "baatu.mp3",
+    "image": "baatu.jpg",
+    "example": "బాతు నీటిలో ఈదుతుంది.",
+    "example_english": "The duck swims in water."
+  },
+  "kundelu": {
+    "telugu": "కుందేలు",
+    "english": "Rabbit",
+    "audio": "kundelu.mp3",
+    "image": "kundelu.jpg",
+    "example": "కుందేలు వేగంగా దూకుతుంది.",
+    "example_english": "The rabbit hops fast."
   }
 }

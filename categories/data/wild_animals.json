@@ -1,0 +1,82 @@
+{
+  "kothi": {
+    "telugu": "కోతి",
+    "english": "Monkey",
+    "audio": "kothi.mp3",
+    "image": "kothi.jpg",
+    "example": "కోతి చెట్టు ఎక్కుతుంది.",
+    "example_english": "The monkey climbs a tree."
+  },
+  "enugu": {
+    "telugu": "ఏనుగు",
+    "english": "Elephant",
+    "audio": "enugu.mp3",
+    "image": "enugu.jpg",
+    "example": "ఏనుగు పెద్దది.",
+    "example_english": "The elephant is big."
+  },
+  "tabelu": {
+    "telugu": "తాబేలు",
+    "english": "Turtle",
+    "audio": "tabelu.mp3",
+    "image": "tabelu.jpg",
+    "example": "తాబేలు నెమ్మదిగా నడుస్తుంది.",
+    "example_english": "The turtle walks slowly."
+  },
+  "simham": {
+    "telugu": "సింహం",
+    "english": "Lion",
+    "audio": "simham.mp3",
+    "image": "simham.jpg",
+    "example": "సింహం అడవికి రాజు.",
+    "example_english": "The lion is the king of the forest."
+  },
+  "puli": {
+    "telugu": "పులి",
+    "english": "Tiger",
+    "audio": "puli.mp3",
+    "image": "puli.jpg",
+    "example": "పులికి చారలు ఉంటాయి.",
+    "example_english": "The tiger has stripes."
+  },
+  "jinka": {
+    "telugu": "జింక",
+    "english": "Deer",
+    "audio": "jinka.mp3",
+    "image": "jinka.jpg",
+    "example": "జింక చాలా వేగంగా పరుగెడుతుంది.",
+    "example_english": "The deer runs very fast."
+  },
+  "nakka": {
+    "telugu": "నక్క",
+    "english": "Fox",
+    "audio": "nakka.mp3",
+    "image": "nakka.jpg",
+    "example": "నక్క తెలివైనది.",
+    "example_english": "The fox is clever."
+  },
+  "elugubanti": {
+    "telugu": "ఎలుగుబంటి",
+    "english": "Bear",
+    "audio": "elugubanti.mp3",
+    "image": "elugubanti.jpg",
+    "example": "ఎలుగుబంటి అడవిలో నివసిస్తుంది.",
+    "example_english": "The bear lives in the forest."
+  },
+  "zebra": {
+    "telugu": "జీబ్రా",
+    "english": "Zebra",
+    "audio": "zebra.mp3",
+    "image": "zebra.jpg",
+    "example": "జీబ్రాకు నలుపు, తెలుపు చారలు ఉంటాయి.",
+    "example_english": "The zebra has black and white stripes."
+  },
+  "jiraafi": {
+    "telugu": "జిరాఫీ",
+    "english": "Giraffe",
+    "audio": "jiraafi.mp3",
+    "image": "jiraafi.jpg",
+    "example": "జిరాఫీ మెడ చాలా పొడవు.",
+    "example_english": "The giraffe's neck is very long."
+  }
+}

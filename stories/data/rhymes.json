@@ -32,5 +32,37 @@
       "నిద్రలేక నీకు తగునా"
     ],
     "meaning": "A gentle jola paata (lullaby) pattern sung to put babies to sleep — the child's own name is traditionally sung in place of 'Ramachandra'."
+  },
+
+  "jojo_laali": {
+    "title": "జోజో లాలి",
+    "english_title": "Jo Jo Laali (Lullaby)",
+    "audio": "jojo_laali.mp3",
+    "lines": [
+      "జోజో జోజో లాలి",
+      "జోజో నా కన్నా జోజో"
+    ],
+    "meaning": "Another common jola paata (lullaby) refrain — 'jo jo' is a soothing sound used across many Telugu lullabies to gently rock a baby to sleep."
+  },
+
+  "chitti_chilakamma": {
+    "title": "చిట్టి చిలకమ్మ",
+    "english_title": "Little Parrot",
+    "audio": "chitti_chilakamma.mp3",
+    "lines": [
+      "చిట్టి చిలకమ్మా",
+      "చిన్నారి చిలకమ్మా"
+    ],
+    "meaning": "A gentle, affectionate rhyme addressing a pet parrot as 'little parrot' — a common opening used in children's rhymes and stories featuring a parrot character."
+  },
+
+  "bomma_borusu": {
+    "title": "బొమ్మ బొమ్మ బొరుసు",
+    "english_title": "Heads or Tails",
+    "audio": "bomma_borusu.mp3",
+    "lines": [
+      "బొమ్మ బొమ్మ బొరుసు"
+    ],
+    "meaning": "The traditional call Telugu children use when flipping a coin to make a choice — 'bomma' (the image side) or 'borusu' (the plain side), just like calling 'heads or tails' in English."
   }
 }

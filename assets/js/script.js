@@ -80,7 +80,10 @@ const CATEGORY_META = {
     vehicles: { telugu: "వాహనాలు", english: "Vehicles" },
     nature: { telugu: "ప్రకృతి", english: "Nature" },
     school: { telugu: "పాఠశాల వస్తువులు", english: "School Items" },
-    festivals: { telugu: "పండుగలు", english: "Festivals" }
+    festivals: { telugu: "పండుగలు", english: "Festivals" },
+    days_of_week: { telugu: "వారం రోజులు", english: "Days of the Week" },
+    telugu_months: { telugu: "తెలుగు మాసాలు", english: "Telugu Months" },
+    telugu_years: { telugu: "తెలుగు సంవత్సరాలు", english: "Telugu Years (60-Year Cycle)" }
 };
 
 const GRAMMAR_TOPICS = [

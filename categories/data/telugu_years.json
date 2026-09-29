@@ -1,0 +1,422 @@
+{
+  "prabhava": {
+    "telugu": "ప్రభవ",
+    "english": "Prabhava",
+    "audio": "prabhava.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 1వ సంవత్సరం.",
+    "example_english": "This is the 1st year in the 60-year cycle."
+  },
+  "vibhava": {
+    "telugu": "విభవ",
+    "english": "Vibhava",
+    "audio": "vibhava.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 2వ సంవత్సరం.",
+    "example_english": "This is the 2nd year in the 60-year cycle."
+  },
+  "shukla": {
+    "telugu": "శుక్ల",
+    "english": "Shukla",
+    "audio": "shukla.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 3వ సంవత్సరం.",
+    "example_english": "This is the 3rd year in the 60-year cycle."
+  },
+  "pramoduta": {
+    "telugu": "ప్రమోదూత",
+    "english": "Pramoduta",
+    "audio": "pramoduta.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 4వ సంవత్సరం.",
+    "example_english": "This is the 4th year in the 60-year cycle."
+  },
+  "prajotpatti": {
+    "telugu": "ప్రజోత్పత్తి",
+    "english": "Prajotpatti",
+    "audio": "prajotpatti.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 5వ సంవత్సరం.",
+    "example_english": "This is the 5th year in the 60-year cycle."
+  },
+  "angirasa": {
+    "telugu": "అంగీరస",
+    "english": "Angirasa",
+    "audio": "angirasa.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 6వ సంవత్సరం.",
+    "example_english": "This is the 6th year in the 60-year cycle."
+  },
+  "shrimukha": {
+    "telugu": "శ్రీముఖ",
+    "english": "Shrimukha",
+    "audio": "shrimukha.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 7వ సంవత్సరం.",
+    "example_english": "This is the 7th year in the 60-year cycle."
+  },
+  "bhava": {
+    "telugu": "భవ",
+    "english": "Bhava",
+    "audio": "bhava.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 8వ సంవత్సరం.",
+    "example_english": "This is the 8th year in the 60-year cycle."
+  },
+  "yuva": {
+    "telugu": "యువ",
+    "english": "Yuva",
+    "audio": "yuva.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 9వ సంవత్సరం.",
+    "example_english": "This is the 9th year in the 60-year cycle."
+  },
+  "dhata": {
+    "telugu": "ధాత",
+    "english": "Dhata",
+    "audio": "dhata.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 10వ సంవత్సరం.",
+    "example_english": "This is the 10th year in the 60-year cycle."
+  },
+  "ishvara": {
+    "telugu": "ఈశ్వర",
+    "english": "Ishvara",
+    "audio": "ishvara.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 11వ సంవత్సరం.",
+    "example_english": "This is the 11th year in the 60-year cycle."
+  },
+  "bahudhanya": {
+    "telugu": "బహుధాన్య",
+    "english": "Bahudhanya",
+    "audio": "bahudhanya.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 12వ సంవత్సరం.",
+    "example_english": "This is the 12th year in the 60-year cycle."
+  },
+  "pramadi": {
+    "telugu": "ప్రమాది",
+    "english": "Pramadi",
+    "audio": "pramadi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 13వ సంవత్సరం.",
+    "example_english": "This is the 13th year in the 60-year cycle."
+  },
+  "vikrama": {
+    "telugu": "విక్రమ",
+    "english": "Vikrama",
+    "audio": "vikrama.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 14వ సంవత్సరం.",
+    "example_english": "This is the 14th year in the 60-year cycle."
+  },
+  "vrisha": {
+    "telugu": "వృష",
+    "english": "Vrisha",
+    "audio": "vrisha.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 15వ సంవత్సరం.",
+    "example_english": "This is the 15th year in the 60-year cycle."
+  },
+  "chitrabhanu": {
+    "telugu": "చిత్రభాను",
+    "english": "Chitrabhanu",
+    "audio": "chitrabhanu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 16వ సంవత్సరం.",
+    "example_english": "This is the 16th year in the 60-year cycle."
+  },
+  "svabhanu": {
+    "telugu": "స్వభాను",
+    "english": "Svabhanu",
+    "audio": "svabhanu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 17వ సంవత్సరం.",
+    "example_english": "This is the 17th year in the 60-year cycle."
+  },
+  "tarana": {
+    "telugu": "తారణ",
+    "english": "Tarana",
+    "audio": "tarana.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 18వ సంవత్సరం.",
+    "example_english": "This is the 18th year in the 60-year cycle."
+  },
+  "parthiva": {
+    "telugu": "పార్థివ",
+    "english": "Parthiva",
+    "audio": "parthiva.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 19వ సంవత్సరం.",
+    "example_english": "This is the 19th year in the 60-year cycle."
+  },
+  "vyaya": {
+    "telugu": "వ్యయ",
+    "english": "Vyaya",
+    "audio": "vyaya.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 20వ సంవత్సరం.",
+    "example_english": "This is the 20th year in the 60-year cycle."
+  },
+  "sarvajittu": {
+    "telugu": "సర్వజిత్తు",
+    "english": "Sarvajittu",
+    "audio": "sarvajittu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 21వ సంవత్సరం.",
+    "example_english": "This is the 21th year in the 60-year cycle."
+  },
+  "sarvadhari": {
+    "telugu": "సర్వధారి",
+    "english": "Sarvadhari",
+    "audio": "sarvadhari.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 22వ సంవత్సరం.",
+    "example_english": "This is the 22th year in the 60-year cycle."
+  },
+  "virodhi": {
+    "telugu": "విరోధి",
+    "english": "Virodhi",
+    "audio": "virodhi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 23వ సంవత్సరం.",
+    "example_english": "This is the 23th year in the 60-year cycle."
+  },
+  "vikruti": {
+    "telugu": "వికృతి",
+    "english": "Vikruti",
+    "audio": "vikruti.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 24వ సంవత్సరం.",
+    "example_english": "This is the 24th year in the 60-year cycle."
+  },
+  "khara": {
+    "telugu": "ఖర",
+    "english": "Khara",
+    "audio": "khara.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 25వ సంవత్సరం.",
+    "example_english": "This is the 25th year in the 60-year cycle."
+  },
+  "nandana": {
+    "telugu": "నందన",
+    "english": "Nandana",
+    "audio": "nandana.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 26వ సంవత్సరం.",
+    "example_english": "This is the 26th year in the 60-year cycle."
+  },
+  "vijaya": {
+    "telugu": "విజయ",
+    "english": "Vijaya",
+    "audio": "vijaya.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 27వ సంవత్సరం.",
+    "example_english": "This is the 27th year in the 60-year cycle."
+  },
+  "jaya": {
+    "telugu": "జయ",
+    "english": "Jaya",
+    "audio": "jaya.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 28వ సంవత్సరం.",
+    "example_english": "This is the 28th year in the 60-year cycle."
+  },
+  "manmatha": {
+    "telugu": "మన్మథ",
+    "english": "Manmatha",
+    "audio": "manmatha.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 29వ సంవత్సరం.",
+    "example_english": "This is the 29th year in the 60-year cycle."
+  },
+  "durmukhi": {
+    "telugu": "దుర్ముఖి",
+    "english": "Durmukhi",
+    "audio": "durmukhi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 30వ సంవత్సరం.",
+    "example_english": "This is the 30th year in the 60-year cycle."
+  },
+  "hevilambi": {
+    "telugu": "హేవిళంబి",
+    "english": "Hevilambi",
+    "audio": "hevilambi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 31వ సంవత్సరం.",
+    "example_english": "This is the 31th year in the 60-year cycle."
+  },
+  "vilambi": {
+    "telugu": "విళంబి",
+    "english": "Vilambi",
+    "audio": "vilambi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 32వ సంవత్సరం.",
+    "example_english": "This is the 32th year in the 60-year cycle."
+  },
+  "vikari": {
+    "telugu": "వికారి",
+    "english": "Vikari",
+    "audio": "vikari.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 33వ సంవత్సరం.",
+    "example_english": "This is the 33th year in the 60-year cycle."
+  },
+  "sharvari": {
+    "telugu": "శార్వరి",
+    "english": "Sharvari",
+    "audio": "sharvari.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 34వ సంవత్సరం.",
+    "example_english": "This is the 34th year in the 60-year cycle."
+  },
+  "plava": {
+    "telugu": "ప్లవ",
+    "english": "Plava",
+    "audio": "plava.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 35వ సంవత్సరం.",
+    "example_english": "This is the 35th year in the 60-year cycle."
+  },
+  "shubhakrutthu": {
+    "telugu": "శుభకృత్తు",
+    "english": "Shubhakrutthu",
+    "audio": "shubhakrutthu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 36వ సంవత్సరం.",
+    "example_english": "This is the 36th year in the 60-year cycle."
+  },
+  "shobhakrutthu": {
+    "telugu": "శోభకృత్తు",
+    "english": "Shobhakrutthu",
+    "audio": "shobhakrutthu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 37వ సంవత్సరం.",
+    "example_english": "This is the 37th year in the 60-year cycle."
+  },
+  "krodhi": {
+    "telugu": "క్రోధి",
+    "english": "Krodhi",
+    "audio": "krodhi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 38వ సంవత్సరం.",
+    "example_english": "This is the 38th year in the 60-year cycle."
+  },
+  "vishvavasu": {
+    "telugu": "విశ్వావసు",
+    "english": "Vishvavasu",
+    "audio": "vishvavasu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 39వ సంవత్సరం.",
+    "example_english": "This is the 39th year in the 60-year cycle."
+  },
+  "parabhava": {
+    "telugu": "పరాభవ",
+    "english": "Parabhava",
+    "audio": "parabhava.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 40వ సంవత్సరం.",
+    "example_english": "This is the 40th year in the 60-year cycle."
+  },
+  "plavanga": {
+    "telugu": "ప్లవంగ",
+    "english": "Plavanga",
+    "audio": "plavanga.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 41వ సంవత్సరం.",
+    "example_english": "This is the 41th year in the 60-year cycle."
+  },
+  "kilaka": {
+    "telugu": "కీలక",
+    "english": "Kilaka",
+    "audio": "kilaka.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 42వ సంవత్సరం.",
+    "example_english": "This is the 42th year in the 60-year cycle."
+  },
+  "saumya": {
+    "telugu": "సౌమ్య",
+    "english": "Saumya",
+    "audio": "saumya.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 43వ సంవత్సరం.",
+    "example_english": "This is the 43th year in the 60-year cycle."
+  },
+  "sadharana": {
+    "telugu": "సాధారణ",
+    "english": "Sadharana",
+    "audio": "sadharana.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 44వ సంవత్సరం.",
+    "example_english": "This is the 44th year in the 60-year cycle."
+  },
+  "virodhikrutthu": {
+    "telugu": "విరోధికృత్తు",
+    "english": "Virodhikrutthu",
+    "audio": "virodhikrutthu.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 45వ సంవత్సరం.",
+    "example_english": "This is the 45th year in the 60-year cycle."
+  },
+  "paridhavi": {
+    "telugu": "పరిధావి",
+    "english": "Paridhavi",
+    "audio": "paridhavi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 46వ సంవత్సరం.",
+    "example_english": "This is the 46th year in the 60-year cycle."
+  },
+  "pramadicha": {
+    "telugu": "ప్రమాదీచ",
+    "english": "Pramadicha",
+    "audio": "pramadicha.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 47వ సంవత్సరం.",
+    "example_english": "This is the 47th year in the 60-year cycle."
+  },
+  "ananda": {
+    "telugu": "ఆనంద",
+    "english": "Ananda",
+    "audio": "ananda.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 48వ సంవత్సరం.",
+    "example_english": "This is the 48th year in the 60-year cycle."
+  },
+  "rakshasa": {
+    "telugu": "రాక్షస",
+    "english": "Rakshasa",
+    "audio": "rakshasa.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 49వ సంవత్సరం.",
+    "example_english": "This is the 49th year in the 60-year cycle."
+  },
+  "nala": {
+    "telugu": "నల",
+    "english": "Nala",
+    "audio": "nala.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 50వ సంవత్సరం.",
+    "example_english": "This is the 50th year in the 60-year cycle."
+  },
+  "pingala": {
+    "telugu": "పింగళ",
+    "english": "Pingala",
+    "audio": "pingala.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 51వ సంవత్సరం.",
+    "example_english": "This is the 51th year in the 60-year cycle."
+  },
+  "kalayukti": {
+    "telugu": "కాళయుక్తి",
+    "english": "Kalayukti",
+    "audio": "kalayukti.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 52వ సంవత్సరం.",
+    "example_english": "This is the 52th year in the 60-year cycle."
+  },
+  "siddharthi": {
+    "telugu": "సిద్ధార్థి",
+    "english": "Siddharthi",
+    "audio": "siddharthi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 53వ సంవత్సరం.",
+    "example_english": "This is the 53th year in the 60-year cycle."
+  },
+  "raudri": {
+    "telugu": "రౌద్రి",
+    "english": "Raudri",
+    "audio": "raudri.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 54వ సంవత్సరం.",
+    "example_english": "This is the 54th year in the 60-year cycle."
+  },
+  "durmati": {
+    "telugu": "దుర్మతి",
+    "english": "Durmati",
+    "audio": "durmati.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 55వ సంవత్సరం.",
+    "example_english": "This is the 55th year in the 60-year cycle."
+  },
+  "dundubhi": {
+    "telugu": "దుందుభి",
+    "english": "Dundubhi",
+    "audio": "dundubhi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 56వ సంవత్సరం.",
+    "example_english": "This is the 56th year in the 60-year cycle."
+  },
+  "rudhirodgari": {
+    "telugu": "రుధిరోద్గారి",
+    "english": "Rudhirodgari",
+    "audio": "rudhirodgari.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 57వ సంవత్సరం.",
+    "example_english": "This is the 57th year in the 60-year cycle."
+  },
+  "raktakshi": {
+    "telugu": "రక్తాక్షి",
+    "english": "Raktakshi",
+    "audio": "raktakshi.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 58వ సంవత్సరం.",
+    "example_english": "This is the 58th year in the 60-year cycle."
+  },
+  "krodhana": {
+    "telugu": "క్రోధన",
+    "english": "Krodhana",
+    "audio": "krodhana.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 59వ సంవత్సరం.",
+    "example_english": "This is the 59th year in the 60-year cycle."
+  },
+  "akshaya": {
+    "telugu": "అక్షయ",
+    "english": "Akshaya",
+    "audio": "akshaya.mp3",
+    "example": "60 సంవత్సరాల చక్రంలో ఇది 60వ సంవత్సరం.",
+    "example_english": "This is the 60th year in the 60-year cycle."
+  }
+}

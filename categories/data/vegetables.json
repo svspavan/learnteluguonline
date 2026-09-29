@@ -78,5 +78,61 @@
     "image": "bottle-gourd.jpg",
     "example": "సొరకాయ పొడవుగా ఉంటుంది.",
     "example_english": "The bottle gourd is long."
+  },
+  "bendakaya": {
+    "telugu": "బెండకాయ",
+    "english": "Okra",
+    "audio": "bendakaya.mp3",
+    "image": "bendakaya.jpg",
+    "example": "బెండకాయ కూర రుచిగా ఉంటుంది.",
+    "example_english": "Okra curry is tasty."
+  },
+  "gummadikaya": {
+    "telugu": "గుమ్మడికాయ",
+    "english": "Pumpkin",
+    "audio": "gummadikaya.mp3",
+    "image": "gummadikaya.jpg",
+    "example": "గుమ్మడికాయ పసుపు రంగులో ఉంటుంది.",
+    "example_english": "The pumpkin is yellow-orange in color."
+  },
+  "dosakaya": {
+    "telugu": "దోసకాయ",
+    "english": "Cucumber",
+    "audio": "dosakaya.mp3",
+    "image": "dosakaya.jpg",
+    "example": "దోసకాయ చల్లగా ఉంటుంది.",
+    "example_english": "The cucumber is cool."
+  },
+  "pachimirchi": {
+    "telugu": "పచ్చిమిర్చి",
+    "english": "Green Chili",
+    "audio": "pachimirchi.mp3",
+    "image": "pachimirchi.jpg",
+    "example": "పచ్చిమిర్చి కారంగా ఉంటుంది.",
+    "example_english": "Green chili is spicy."
+  },
+  "vellulli": {
+    "telugu": "వెల్లుల్లి",
+    "english": "Garlic",
+    "audio": "vellulli.mp3",
+    "image": "vellulli.jpg",
+    "example": "వెల్లుల్లి కూరకు రుచిని పెంచుతుంది.",
+    "example_english": "Garlic adds flavor to the curry."
+  },
+  "allam": {
+    "telugu": "అల్లం",
+    "english": "Ginger",
+    "audio": "allam.mp3",
+    "image": "allam.jpg",
+    "example": "అల్లం టీలో వేస్తారు.",
+    "example_english": "Ginger is added to tea."
+  },
+  "munagakaya": {
+    "telugu": "మునగకాయ",
+    "english": "Drumstick",
+    "audio": "munagakaya.mp3",
+    "image": "munagakaya.jpg",
+    "example": "మునగకాయ సాంబారులో వేస్తారు.",
+    "example_english": "Drumstick is added to sambar."
   }
 }

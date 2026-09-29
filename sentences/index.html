@@ -95,17 +95,15 @@ async function loadSentenceCategories() {
     const grid = document.getElementById("sentenceCategories");
 
     const labelMap = {
-        greetings: "Greetings",
-        home: "Home",
-        school: "School",
-        travel: "Travel",
         daily: "Daily Use",
         food: "Food & Eating",
         work: "Workplace",
-        shopping: "Shopping",
-        health: "Health",
-        nature: "Nature"
+        phone_calls: "Phone Calls"
     };
+
+    function prettifyLabel(key) {
+        return labelMap[key] || key.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    }
 
     Object.keys(data).forEach(cat => {
         const card = document.createElement("a");
@@ -113,8 +111,7 @@ async function loadSentenceCategories() {
         card.className = "module-card";
 
         card.innerHTML = `
-            <h3>${labelMap[cat] || cat}</h3>
-            <p>${cat}</p>
+            <h3>${prettifyLabel(cat)}</h3>
         `;
 
         grid.appendChild(card);

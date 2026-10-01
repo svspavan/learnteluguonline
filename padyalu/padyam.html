@@ -125,7 +125,7 @@ async function loadPadyam() {
         const p = data[key];
 
         const linesHTML = p.lines.map(line => `<div>${line}</div>`).join("");
-        const meaningHTML = p.meaning.map(m => `<li>${m}</li>`).join("");
+        const meaningHTML = (p.meaning || []).map(m => `<li>${m}</li>`).join("");
 
         container.innerHTML += `
             <div class="padyam-block">
@@ -143,12 +143,14 @@ async function loadPadyam() {
                     <span class="time-label">0:00</span>
                 </div>
 
+                ${meaningHTML ? `
                 <h4>Meaning</h4>
                 <ul class="meaning-list">
                     ${meaningHTML}
                 </ul>
+                ` : ""}
 
-                <p class="story-moral"><strong>Moral:</strong> ${p.moral}</p>
+                ${p.moral ? `<p class="story-moral"><strong>Moral:</strong> ${p.moral}</p>` : ""}
             </div>
         `;
     });

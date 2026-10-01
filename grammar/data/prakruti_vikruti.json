@@ -1,0 +1,62 @@
+{
+  "title": "ప్రకృతి వికృతి — Prakruti Vikruti",
+  "description": "ప్రకృతి అంటే సంస్కృతం నుండి మార్పు లేకుండా తెలుగులోకి వచ్చిన పదం (తత్సమం). వికృతి అంటే అదే పదం కాలక్రమేణా ధ్వని మార్పులు చెంది తెలుగులో వాడుకలోకి వచ్చిన రూపం (తద్భవం). నిత్య వ్యవహారంలో వికృతి పదాలే ఎక్కువగా వాడతారు.",
+  "items": [
+    {
+      "heading": "1. అగ్ని → అగ్గి",
+      "explanation": "ప్రకృతి పదం 'అగ్ని' (fire) సంస్కృత తత్సమం. దీని వికృతి రూపం 'అగ్గి' — నిత్య వ్యవహారంలో ఎక్కువగా ఈ రూపమే వాడతారు.",
+      "examples": [
+        { "telugu": "వంటగదిలో అగ్గి మండుతోంది.", "english": "The fire is burning in the kitchen.", "audio": "prakruti_agni_1.mp3" }
+      ]
+    },
+    {
+      "heading": "2. ఆకాశము → ఆకసము",
+      "explanation": "ప్రకృతి పదం 'ఆకాశము' (sky) సంస్కృత తత్సమం. దీని వికృతి రూపం 'ఆకసము'.",
+      "examples": [
+        { "telugu": "ఆకసమంతా మేఘాలతో నిండిపోయింది.", "english": "The whole sky filled with clouds.", "audio": "prakruti_akasamu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "3. రాజ్ఞి → రాణి",
+      "explanation": "ప్రకృతి పదం 'రాజ్ఞి' (queen) సంస్కృత తత్సమం. దీని వికృతి రూపమైన 'రాణి' నేడు చాలా సాధారణంగా వాడుకలో ఉంది.",
+      "examples": [
+        { "telugu": "రాణి గారు ప్రజల కోసం కొత్త పథకం ప్రారంభించారు.", "english": "The queen launched a new scheme for the people.", "audio": "prakruti_rani_1.mp3" }
+      ]
+    },
+    {
+      "heading": "4. దేవాలయము → దేవళము",
+      "explanation": "ప్రకృతి పదం 'దేవాలయము' (temple) సంస్కృత తత్సమం. దీని వికృతి రూపం 'దేవళము'.",
+      "examples": [
+        { "telugu": "ఊరి మధ్యలో పాత దేవళము ఒకటి ఉంది.", "english": "There is an old temple in the middle of the village.", "audio": "prakruti_devalayamu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "5. రథము → అరదము",
+      "explanation": "ప్రకృతి పదం 'రథము' (chariot) సంస్కృత తత్సమం. దీని వికృతి రూపం 'అరదము' — పద్య సాహిత్యంలో ఎక్కువగా కనిపిస్తుంది.",
+      "examples": [
+        { "telugu": "రథము వేగంగా ముందుకు సాగింది.", "english": "The chariot moved forward swiftly.", "audio": "prakruti_rathamu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "6. విష్ణువు → వెన్నుడు",
+      "explanation": "ప్రకృతి పదం 'విష్ణువు' సంస్కృత తత్సమం. దీని వికృతి రూపం 'వెన్నుడు' — పాత తెలుగు సాహిత్యంలో కనిపిస్తుంది.",
+      "examples": [
+        { "telugu": "వెన్నుడు లోకాలను కాపాడే దేవుడు.", "english": "Vishnu is the god who protects the worlds.", "audio": "prakruti_vishnuvu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "7. రూపము → రూపు",
+      "explanation": "ప్రకృతి పదం 'రూపము' (form, shape) సంస్కృత తత్సమం. దీని వికృతి రూపం 'రూపు' — వాడుక భాషలో మరింత సాధారణం.",
+      "examples": [
+        { "telugu": "ఆ విగ్రహం రూపు చాలా అందంగా ఉంది.", "english": "The shape of that statue is very beautiful.", "audio": "prakruti_roopamu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "8. యజ్ఞము → జన్నము",
+      "explanation": "ప్రకృతి పదం 'యజ్ఞము' (sacrificial ritual) సంస్కృత తత్సమం. దీని వికృతి రూపం 'జన్నము' — పాత సాహిత్యంలో, పద్యాలలో కనిపిస్తుంది.",
+      "examples": [
+        { "telugu": "రాజు గొప్ప జన్నము చేయించాడు.", "english": "The king had a great sacrificial ritual performed.", "audio": "prakruti_yagnamu_1.mp3" }
+      ]
+    }
+  ]
+}

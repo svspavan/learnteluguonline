@@ -1,0 +1,62 @@
+{
+  "title": "పర్యాయ పదాలు — Paryaya Padalu (Synonyms)",
+  "description": "పర్యాయ పదాలు అంటే ఒకే అర్థాన్నిచ్చే వేర్వేరు పదాలు. తెలుగులో చాలా పదాలకు సంస్కృత మూలం నుంచి వచ్చిన అనేక పర్యాయ పదాలు ఉంటాయి — రచనలో, పద్యాలలో ఒకే మాటను పదేపదే వాడకుండా ఉండటానికి ఇవి ఉపయోగపడతాయి.",
+  "items": [
+    {
+      "heading": "1. నీరు (Water)",
+      "explanation": "నీరు — జలం, పానీయం, అంబువు, తోయం అనే పదాలు కూడా అదే అర్థాన్నిస్తాయి.",
+      "examples": [
+        { "telugu": "నదిలో జలం స్వచ్ఛంగా ఉంది.", "english": "The water in the river is pure.", "audio": "paryaya_neeru_1.mp3" }
+      ]
+    },
+    {
+      "heading": "2. సూర్యుడు (Sun)",
+      "explanation": "సూర్యుడు — రవి, భానుడు, దినకరుడు, ఆదిత్యుడు అనే పదాలు కూడా సూర్యుడినే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "ఉదయాన్నే రవి కిరణాలు అందంగా ఉన్నాయి.", "english": "The sun's rays look beautiful early in the morning.", "audio": "paryaya_suryudu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "3. చంద్రుడు (Moon)",
+      "explanation": "చంద్రుడు — సోముడు, ఇందువు, శశి, జాబిల్లి అనే పదాలు కూడా చంద్రుడినే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "ఆకాశంలో జాబిల్లి అందంగా కనిపిస్తోంది.", "english": "The moon looks beautiful in the sky.", "audio": "paryaya_chandrudu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "4. పువ్వు (Flower)",
+      "explanation": "పువ్వు — కుసుమం, పుష్పం, సుమం అనే పదాలు కూడా పువ్వునే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "తోటలో పుష్పాలు రంగురంగులుగా విచ్చుకున్నాయి.", "english": "The flowers in the garden bloomed in many colors.", "audio": "paryaya_puvvu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "5. రాజు (King)",
+      "explanation": "రాజు — నృపుడు, భూపతి, ప్రభువు అనే పదాలు కూడా రాజునే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "ఆ రాజ్యాన్ని నృపుడు న్యాయంగా పరిపాలించాడు.", "english": "That king ruled the kingdom justly.", "audio": "paryaya_raju_1.mp3" }
+      ]
+    },
+    {
+      "heading": "6. ఇల్లు (House)",
+      "explanation": "ఇల్లు — గృహం, నివాసం, సదనం అనే పదాలు కూడా ఇంటినే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "మా గృహం చిన్నదే కానీ హాయిగా ఉంటుంది.", "english": "Our house is small but comfortable.", "audio": "paryaya_illu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "7. తల్లి (Mother)",
+      "explanation": "తల్లి — అమ్మ, మాత, జనని అనే పదాలు కూడా తల్లినే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "జనని మమకారం ఎన్నటికీ తరగనిది.", "english": "A mother's affection never diminishes.", "audio": "paryaya_talli_1.mp3" }
+      ]
+    },
+    {
+      "heading": "8. స్నేహితుడు (Friend)",
+      "explanation": "స్నేహితుడు — మిత్రుడు, సఖుడు, నేస్తం అనే పదాలు కూడా స్నేహితుడినే సూచిస్తాయి.",
+      "examples": [
+        { "telugu": "మంచి మిత్రుడు కష్టకాలంలో తోడుంటాడు.", "english": "A good friend stands by you in hard times.", "audio": "paryaya_snehithudu_1.mp3" }
+      ]
+    }
+  ]
+}

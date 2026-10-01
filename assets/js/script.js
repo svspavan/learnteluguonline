@@ -105,7 +105,10 @@ const GRAMMAR_TOPICS = [
     { key: "gauravavachakalu", label: "Honorifics", telugu: "గౌరవ వాచకాలు" },
     { key: "dviruktalu", label: "Reduplication & Paired Words", telugu: "ద్విరుక్తాలు" },
     { key: "vaakya_kathanam", label: "Reported Speech & Verb Forms", telugu: "కథనం, నిషేధం & షరతు" },
-    { key: "punctuation", label: "Punctuation", telugu: "విరామ చిహ్నాలు" }
+    { key: "punctuation", label: "Punctuation", telugu: "విరామ చిహ్నాలు" },
+    { key: "paryaya_padalu", label: "Synonyms", telugu: "పర్యాయ పదాలు" },
+    { key: "prakruti_vikruti", label: "Prakruti Vikruti", telugu: "ప్రకృతి వికృతి" },
+    { key: "vyathireka_padalu", label: "Antonyms", telugu: "వ్యతిరేక పదాలు" }
 ];
 
 const SENTENCE_CATEGORIES = [

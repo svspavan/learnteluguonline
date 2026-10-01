@@ -1,0 +1,62 @@
+{
+  "title": "వ్యతిరేక పదాలు — Vyathireka Padalu (Antonyms)",
+  "description": "వ్యతిరేక పదాలు అంటే ఒకదానికొకటి వ్యతిరేక అర్థాన్నిచ్చే పదాలు. ఇవి రచనలో, సంభాషణలో భావాన్ని స్పష్టంగా, బలంగా చెప్పడానికి ఉపయోగపడతాయి.",
+  "items": [
+    {
+      "heading": "1. మంచి ↔ చెడు",
+      "explanation": "మంచి (good) అనే పదానికి వ్యతిరేక పదం చెడు (bad).",
+      "examples": [
+        { "telugu": "మంచి పనులు చేస్తే మంచి ఫలితాలు వస్తాయి.", "english": "If you do good deeds, good results follow.", "audio": "vyathireka_manchi_1.mp3" }
+      ]
+    },
+    {
+      "heading": "2. పెద్ద ↔ చిన్న",
+      "explanation": "పెద్ద (big) అనే పదానికి వ్యతిరేక పదం చిన్న (small).",
+      "examples": [
+        { "telugu": "పెద్ద చెట్టు కింద చిన్న మొక్క పెరుగుతోంది.", "english": "A small plant is growing under the big tree.", "audio": "vyathireka_pedda_1.mp3" }
+      ]
+    },
+    {
+      "heading": "3. వేడి ↔ చల్లని",
+      "explanation": "వేడి (hot) అనే పదానికి వ్యతిరేక పదం చల్లని (cold).",
+      "examples": [
+        { "telugu": "వేసవిలో వేడి ఎక్కువ, చలికాలంలో చల్లని గాలి వీస్తుంది.", "english": "There is more heat in summer, cold wind blows in winter.", "audio": "vyathireka_vedi_1.mp3" }
+      ]
+    },
+    {
+      "heading": "4. ఎత్తు ↔ పొట్టి",
+      "explanation": "ఎత్తు (tall) అనే పదానికి వ్యతిరేక పదం పొట్టి (short).",
+      "examples": [
+        { "telugu": "అతను ఎత్తుగా ఉంటాడు, అతని తమ్ముడు పొట్టిగా ఉంటాడు.", "english": "He is tall, his younger brother is short.", "audio": "vyathireka_ettu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "5. కష్టం ↔ సుఖం",
+      "explanation": "కష్టం (difficulty) అనే పదానికి వ్యతిరేక పదం సుఖం (comfort, ease).",
+      "examples": [
+        { "telugu": "కష్టపడి పనిచేస్తే తర్వాత సుఖం దొరుకుతుంది.", "english": "If you work hard, comfort follows later.", "audio": "vyathireka_kashtam_1.mp3" }
+      ]
+    },
+    {
+      "heading": "6. రాత్రి ↔ పగలు",
+      "explanation": "రాత్రి (night) అనే పదానికి వ్యతిరేక పదం పగలు (day).",
+      "examples": [
+        { "telugu": "పగలు పనిచేసి రాత్రి విశ్రాంతి తీసుకుంటాడు.", "english": "He works during the day and rests at night.", "audio": "vyathireka_ratri_1.mp3" }
+      ]
+    },
+    {
+      "heading": "7. గెలుపు ↔ ఓటమి",
+      "explanation": "గెలుపు (victory) అనే పదానికి వ్యతిరేక పదం ఓటమి (defeat).",
+      "examples": [
+        { "telugu": "ప్రతి గెలుపు వెనుక చాలా ఓటముల అనుభవం ఉంటుంది.", "english": "Behind every victory lies the experience of many defeats.", "audio": "vyathireka_gelupu_1.mp3" }
+      ]
+    },
+    {
+      "heading": "8. నిజం ↔ అబద్ధం",
+      "explanation": "నిజం (truth) అనే పదానికి వ్యతిరేక పదం అబద్ధం (lie, falsehood).",
+      "examples": [
+        { "telugu": "ఎప్పుడూ నిజం చెప్పాలి, అబద్ధం ఆడకూడదు.", "english": "You should always tell the truth, never lie.", "audio": "vyathireka_nijam_1.mp3" }
+      ]
+    }
+  ]
+}

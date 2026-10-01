@@ -134,5 +134,13 @@
     "image": "munagakaya.jpg",
     "example": "మునగకాయ సాంబారులో వేస్తారు.",
     "example_english": "Drumstick is added to sambar."
+  },
+  "potlakaya": {
+    "telugu": "పొట్లకాయ",
+    "english": "Snake Gourd",
+    "audio": "potlakaya.mp3",
+    "image": "potlakaya.jpg",
+    "example": "పొట్లకాయ చాలా పొడవుగా ఉంటుంది.",
+    "example_english": "The snake gourd is long."
   }
 }

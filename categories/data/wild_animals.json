@@ -78,5 +78,13 @@
     "image": "jiraafi.jpg",
     "example": "జిరాఫీ మెడ చాలా పొడవు.",
     "example_english": "The giraffe's neck is very long."
-  }
+  }  ,
+  "cheetah": {
+    "telugu": "చిరుత పులి",
+    "english": "Cheetah",
+    "audio": "cheetah.mp3",
+    "image": "cheetah.jpg",
+    "example": "చిరుత పులి చాలా వేగంగా ఓడుతుంది.",
+    "example_english": "The cheetah runs very fast."
+  } 
 }
